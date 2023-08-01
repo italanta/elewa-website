@@ -7,9 +7,11 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
-        "outputPath": "dist/apps/elewa-website",
+        "outputPath": "dist/elewa-website/browser",
         "index": "apps/elewa-website/src/index.html",
         "main": "apps/elewa-website/src/main.ts",
         "polyfills": "apps/elewa-website/src/polyfills.ts",
@@ -19,7 +21,9 @@
           "apps/elewa-website/src/favicon.ico",
           "apps/elewa-website/src/assets"
         ],
-        "styles": ["apps/elewa-website/src/styles.scss"],
+        "styles": [
+          "apps/elewa-website/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -84,11 +88,74 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/elewa-website"],
+      "outputs": [
+        "coverage/apps/elewa-website"
+      ],
       "options": {
         "jestConfig": "apps/elewa-website/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "server": {
+      "executor": "@angular-devkit/build-angular:server",
+      "options": {
+        "outputPath": "dist/elewa-website/server",
+        "main": "apps/elewa-website/server.ts",
+        "tsConfig": "apps/elewa-website/tsconfig.server.json",
+        "inlineStyleLanguage": "scss"
+      },
+      "configurations": {
+        "production": {
+          "outputHashing": "media",
+          "fileReplacements": [
+            {
+              "replace": "apps/elewa-website/src/environments/environment.ts",
+              "with": "apps/elewa-website/src/environments/environment.prod.ts"
+            }
+          ]
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "sourceMap": true,
+          "extractLicenses": false,
+          "vendorChunk": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve-ssr": {
+      "executor": "@nguniversal/builders:ssr-dev-server",
+      "configurations": {
+        "development": {
+          "browserTarget": "elewa-website:build:development",
+          "serverTarget": "elewa-website:server:development"
+        },
+        "production": {
+          "browserTarget": "elewa-website:build:production",
+          "serverTarget": "elewa-website:server:production"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "prerender": {
+      "executor": "@nguniversal/builders:prerender",
+      "options": {
+        "routes": [
+          "/"
+        ]
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "elewa-website:build:production",
+          "serverTarget": "elewa-website:server:production"
+        },
+        "development": {
+          "browserTarget": "elewa-website:build:development",
+          "serverTarget": "elewa-website:server:development"
+        }
+      },
+      "defaultConfiguration": "production"
     }
   },
   "tags": []
