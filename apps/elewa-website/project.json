@@ -11,7 +11,7 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/elewa-website/browser",
+        "outputPath": "dist/apps/elewa-website/browser",
         "index": "apps/elewa-website/src/index.html",
         "main": "apps/elewa-website/src/main.ts",
         "polyfills": "apps/elewa-website/src/polyfills.ts",
