@@ -8,10 +8,10 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "dev:ssr": "ng run elewa-website:serve-ssr",
+    "dev:ssr": "nx run elewa-website:serve-ssr",
     "serve:ssr": "node dist/elewa-website/server/main.js",
-    "build:ssr": "ng build && ng run elewa-website:server",
-    "prerender": "ng run elewa-website:prerender"
+    "build:ssr": "nx build && ng run elewa-website:server",
+    "prerender": "nx run elewa-website:prerender"
   },
   "private": true,
   "dependencies": {
