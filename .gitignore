@@ -39,3 +39,9 @@ testem.log
 Thumbs.db
 
 .angular
+
+# Ignore env
+.env
+package-lock.json
+environment.ts
+environment.prod.ts
