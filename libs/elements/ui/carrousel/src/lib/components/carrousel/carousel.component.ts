@@ -15,11 +15,5 @@ import { ReferenceImage } from '@elewa-website/models/ui/images';
 export class CarouselComponent 
 {
   /** Images to load */
-  @Input() references : ReferenceImage[] = [
-    { 
-      src: '/assets/clients/client-image.png',
-      actionUrl: 'https://www.google.com',
-      isGray: true,
-    }
-  ];
+  @Input() references : ReferenceImage[] = [];
 }
