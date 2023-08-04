@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@elewa-website/about": ["libs/about/src/index.ts"],
+      "@elewa-website/elements/layout/header": [
+        "libs/elements/layout/header/src/index.ts"
+      ],
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
