@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { HomePageComponent } from './main/home/home-page.component';
 
+import { HomeRoutingModule } from './home.routing';
+
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, HomeRoutingModule],
   declarations: [HomePageComponent],
   exports: [HomePageComponent],
 })
