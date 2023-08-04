@@ -22,10 +22,10 @@ Here is what you need to be able to run the ElewaEducation Website.
 
 ### Setup
 
-1. Clone the repo into a public GitHub repository (or fork https://github.com/italanta/elewa-website/fork).
+1. Clone the repo into a public GitHub repository (fork <https://github.com/italanta/elewa-website/fork>).
 
    ```sh
-   git clone https://github.com/italanta/elewa-website.git
+   git clone https://github.com/{yourusername}/elewa-website.git
    ```
 
 2. Go to the project folder
