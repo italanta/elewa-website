@@ -1,0 +1,15 @@
+/* Use the CSS variables for color, font, etc. */
+.elewa-normal-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--button-background-color, rgb(35, 35, 85));
+    color: var(--button-font-color, white); 
+    font-size: var(--button-font-size, 16px);
+    font-weight: var(--button-font-weight, normal);
+  }
+
+ 
+  
+  
+  
