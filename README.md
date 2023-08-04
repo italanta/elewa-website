@@ -47,13 +47,15 @@ Here is what you need to be able to run the ElewaEducation Website.
    - Duplicate `.environment.prod.ts.example` to `.environment.prod.ts`
 
 5. Start the dev server (this will run your app as an SPA)
-
-    ```sh
-    nx serve
-    ```
+ 
 
 6. You can also server render your app.
 
     ```sh
-    npm run dev:ssr
+   npm run dev:ssr 
     ```
+git checkout -b 'name of sol and number ref'
+
+sass
+click generate
+
