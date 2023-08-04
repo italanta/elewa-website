@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@elewa-website/elements/layout/buttons": [
+        "libs/elements/layout/buttons/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
