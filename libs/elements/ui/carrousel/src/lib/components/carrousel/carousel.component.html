@@ -1,0 +1,14 @@
+<div id="carousel">
+  <div *ngFor="let reference of references">
+
+    <!-- Display of a single reference image -->
+    <a [href]="reference.actionUrl" target="_blank">
+      <img [class.gray]="reference.isGray" 
+           [src]="reference.src" />
+    </a>
+
+    <!-- Transclusion -->
+    <ng-content></ng-content>
+    
+  </div>
+</div>
