@@ -5,10 +5,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { TranslocoRootModule } from './transloco-root.module';
+import { FeaturesPagesHomeModule } from '@elewa-website/features/pages/home';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FeaturesPagesHomeModule],
   providers: [
     HttpClientModule,
     TranslocoRootModule

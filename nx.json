@@ -6,9 +6,10 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "MjMwNTQzZmMtNDE4Mi00NmU4LTllNjQtZTgyZTZjN2Y1OGJkfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -65,6 +66,19 @@
     },
     "@nrwl/angular:component": {
       "style": "scss"
+    },
+    "@nx/angular:application": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "none"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "css"
     }
   },
   "defaultProject": "elewa-website"
