@@ -1,8 +1,12 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+// imported the input
 @Component({
   selector: 'elewa-normal-button',
   templateUrl: './normal-button.component.html',
   styleUrls: ['./normal-button.component.scss'],
 })
-export class NormalButtonComponent {}
+export class NormalButtonComponent {
+ 
+  @Input() buttonText: string = '';
+
+}
