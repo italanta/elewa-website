@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { __homeCarouselData } from '@elewa-website/models/data/ui';
 
 @Component({
   selector: 'elewa-website-home',
@@ -7,14 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent 
 {
-  public myReferences= [{ 
-    src: 'https://place-hold.it/500x300/red',
-    actionUrl: 'https://www.google.com',
-    isGray: false,
-  },
-  { 
-    src: 'https://place-hold.it/500x300/red',
-    actionUrl: 'https://www.amazon.com',
-    isGray: true,
-  }];
+  public myReferences= __homeCarouselData;
 }
