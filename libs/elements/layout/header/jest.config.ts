@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'features-pages-header',
+  displayName: 'elements-layout-header',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/features/pages/header',
+  coverageDirectory: '../../../../coverage/libs/elements/layout/header',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
