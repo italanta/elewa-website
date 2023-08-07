@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import { ButtonData } from "../../../../../../models/schema/ui/buttons/button.interface";
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -7,12 +8,21 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./normal-button.component.scss'],
 })
 export class NormalButtonComponent {
+  /* Defined the Input decorator
+  * passing data to child component
+  * */
   @Input() buttonData:ButtonData = {};
+
+  /* Defined the Output decorator
+  *  decorator is used to emit events from a child component to its parent component.
+  * Used to trigger actions.
+  * */
   @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
 
-  isHovered: boolean = false;
 
-  onClick(){
+  /* Onclick function emits the event, and any parent component
+   that is listening for the buttonClick event will be notified  */
+  onClick(): void{
     this.buttonClick.emit();
   }
 }

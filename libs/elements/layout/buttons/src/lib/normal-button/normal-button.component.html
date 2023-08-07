@@ -1,1 +1,13 @@
-<p>normal-button works!</p>
+<button
+  class="custom-button"
+  [ngStyle]="{
+    '--bgColor': buttonData.bgColor,
+    '--color': buttonData.color,
+    '--hoverBgColor': buttonData.hoverBgColor,
+    '--hoverColor': buttonData.hoverColor
+  }"
+  [attr.title]="buttonData.text"
+>
+  <!--  ng-content allow the insertion of custom content withing the button -->
+  <ng-content></ng-content>
+</button>
