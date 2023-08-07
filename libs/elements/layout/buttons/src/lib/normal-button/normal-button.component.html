@@ -1,13 +1,11 @@
+<!-- This is a button element with custom styling and behavior -->
 <button
   class="custom-button"
-  [ngStyle]="{
-    '--bgColor': buttonData.bgColor,
-    '--color': buttonData.color,
-    '--hoverBgColor': buttonData.hoverBgColor,
-    '--hoverColor': buttonData.hoverColor
-  }"
-  [attr.title]="buttonData.text"
+  [style.backgroundColor]="buttonData.bgColor"
+  [style.color]="buttonData.color"
+  (click)="onClick()"
+  [title]="buttonData.text"
 >
-  <!--  ng-content allow the insertion of custom content withing the button -->
+  <!-- This allows you to put your own text or content inside the button -->
   <ng-content></ng-content>
 </button>
