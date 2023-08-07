@@ -10,7 +10,7 @@ import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
-  imports: [ BrowserModule, FeaturesPagesHomeModule, AppHeaderModule],
+  imports: [ BrowserModule, FeaturesPagesHomeModule, AppHeaderModule ],
   providers: [
     HttpClientModule,
     TranslocoRootModule
