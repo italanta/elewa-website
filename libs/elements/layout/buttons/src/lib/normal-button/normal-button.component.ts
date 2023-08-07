@@ -1,8 +1,18 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
-  selector: 'elewa-website-normal-button',
+  // eslint-disable-next-line @angular-eslint/component-selector
+  selector: 'elewa-normal-button',
   templateUrl: './normal-button.component.html',
   styleUrls: ['./normal-button.component.scss'],
 })
-export class NormalButtonComponent {}
+export class NormalButtonComponent {
+  @Input() buttonData:ButtonData = {};
+  @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
+
+  isHovered: boolean = false;
+
+  onClick(){
+    this.buttonClick.emit();
+  }
+}

@@ -17,6 +17,9 @@
     "paths": {
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/buttons": [
+        "libs/models/schema/ui/buttons/src/index.ts"
       ]
     }
   },
