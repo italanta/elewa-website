@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'elewa-website';
+  
+  /* data that will be display when i hover over my button */
+  myButtonData = {
+    text: 'Contact us',
+  };
 }
