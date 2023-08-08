@@ -15,22 +15,19 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elewa-website/element/layout/images": [
-        "libs/element/layout/images/src/index.ts"
-      ],
-      "@elewa-website/element/layout/images/images": [
-        "libs/element/layout/images/images/src/index.ts"
-      ],
+
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
       ],
+
       "@elewa-website/features/about": ["libs/features/about/src/index.ts"],
       "@elewa-website/features/pages/header": [
         "libs/features/pages/header/src/index.ts"
       ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
-      ]
+      ],
+    
     }
   },
   "exclude": ["node_modules", "tmp"]
