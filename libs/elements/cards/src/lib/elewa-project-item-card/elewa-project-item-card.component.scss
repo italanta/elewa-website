@@ -9,10 +9,10 @@
   max-width: 271px;
   height: auto;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--card-background-color);
   display: flex;
   font-family: Inter;
-  color: rgba(0, 0, 0, 1);
+  color: var(--card-color);
   text-align: left;
   font-weight: 400;
   gap: 15px;
@@ -21,7 +21,7 @@
   padding-left: 11px;
   padding-right: 11px;
   padding-top: 11px;
-  font: 'DM Sans', sans-serif;
+  font-style: var(--card-font-style);
 
   @media (min-width: 768px) {
     max-width: 100%; /* Allow the card to take up full width on tablets and larger screens */
