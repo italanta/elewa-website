@@ -1,1 +1,6 @@
-<p>elewa-text-content-item works!</p>
+<div class="text-content">
+  <h2>{{ content.title }}</h2>
+  <div *ngFor="let description of content.descriptions" class="description">
+    {{ description }}
+  </div>
+</div>
