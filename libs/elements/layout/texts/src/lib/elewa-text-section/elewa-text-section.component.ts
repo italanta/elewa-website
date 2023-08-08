@@ -1,8 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HeroText } from '@elewa-website/models/schema/ui/texts';
 
 @Component({
   selector: 'elewa-website-elewa-text-section',
   templateUrl: './elewa-text-section.component.html',
   styleUrls: ['./elewa-text-section.component.scss'],
 })
-export class ElewaTextSectionComponent {}
+
+// text section displays a series of texts
+
+export class ElewaTextSectionComponent {
+  
+  // texts to load
+  @Input() heroTexts : HeroText[] = []
+}
