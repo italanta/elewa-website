@@ -1,2 +1,7 @@
-<button class="elewa-normal-button">{{ buttonText }}</button>
+<button class="elewa-normal-button"
+        [ngStyle]="{ backgroundColor: isHovered ? buttonData.hoverBgColor : buttonData.bgColor, color: isHovered ? buttonData.hoverColor : buttonData.color }"
+        (click)="onButtonClick()">
+  {{ buttonData.text }}
+</button>
+
 <!-- my component -->
