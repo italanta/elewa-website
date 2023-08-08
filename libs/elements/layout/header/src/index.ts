@@ -1,1 +1,1 @@
-export * from './lib/elements-layout-header.module';
+export * from './lib/AppHeaderModule.module';
