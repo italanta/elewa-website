@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 // imported the input
 @Component({
   selector: 'elewa-normal-button',
