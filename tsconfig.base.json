@@ -16,12 +16,17 @@
     "baseUrl": ".",
     "paths": {
       "@elewa-website/about": ["libs/about/src/index.ts"],
+      "@elewa-website/elements/layout/buttons": [
+        "libs/elements/layout/buttons/src/index.ts"
+      ],
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
-      ]
+      ],
+      "@elewa-website/libs/models/schema/ui/buttons": ["libs/models/schema/ui/buttons/button.interface.ts"
+    ],
     }
   },
   "exclude": ["node_modules", "tmp"]
