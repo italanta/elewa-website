@@ -1,5 +1,7 @@
 import { Component, Input, EventEmitter, Output } from '@angular/core';
-// imported the input
+// imported the input Emitter and Output
+import { ButtonData } from '@elewa-website/libs/models/schema/ui/buttons';
+
 @Component({
   selector: 'elewa-normal-button',
   templateUrl: './normal-button.component.html',
@@ -7,6 +9,12 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
 })
 export class NormalButtonComponent {
  
-  @Input() buttonText: string = '';
+  @Input() buttonData: ButtonData = { text: '' };
+  @Output() click: EventEmitter<void> = new EventEmitter<void>();
+  isHovered = false;
+
+  onButtonClick(): void {
+    this.click.emit();
+  }
 
 }
