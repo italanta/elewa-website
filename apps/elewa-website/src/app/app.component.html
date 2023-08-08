@@ -1,1 +1,10 @@
-<router-outlet></router-outlet>
+<div
+  *ngFor="let content of textContents; let i = index"
+  class="text-content"
+  [ngClass]="{ 'pink-bg': i === 0, 'white-bg': i === 1 }"
+>
+  <h2>{{ content.title }}</h2>
+  <div *ngFor="let description of content.descriptions" class="description">
+    {{ description }}
+  </div>
+</div>
