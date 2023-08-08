@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ContentText } from '@libs/models/schema/ui/texts/content-text.interface';
+import { ContentText } from '../../../../../../models/schema/ui/texts/content-text.interface';
 
 
 @Component({
