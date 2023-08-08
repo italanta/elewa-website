@@ -1,3 +1,9 @@
+.card-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .card {
   width: 100%;
   max-width: 271px;
