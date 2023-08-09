@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "16.1.7",
     "@angular/platform-server": "16.1.7",
     "@angular/router": "16.1.7",
+    "@fortawesome/fontawesome-free": "^6.4.2",
     "@ngneat/transloco": "^5.0.2",
     "@nguniversal/express-engine": "^16.1.1",
     "@nrwl/angular": "16.6.0",

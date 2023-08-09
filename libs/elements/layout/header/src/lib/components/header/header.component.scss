@@ -1,0 +1,65 @@
+.app-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 999;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+
+    .logo img{
+        height: auto;
+        width: 8rem;
+        margin-top: 9px;
+    }
+
+    .nav-container{
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .nav-item{
+                margin-right: 20px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                &:first-child {
+                    text-decoration: underline;
+                }
+
+                .dropdown-indicator {
+                    display: inline-block;
+                    margin-left: 2px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .contact-btn {
+        background: #2d2e52;
+        cursor: pointer;
+        text-align: center;
+        width: 8rem;
+        border-radius: 22px;
+        color: #ffffff;
+        padding: 0.9em;
+        border: none;
+    }
+}
