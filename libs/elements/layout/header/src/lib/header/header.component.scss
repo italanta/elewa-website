@@ -65,7 +65,7 @@
       }
     }
 
-    // Media query for smaller screens
+    // Media query for medium screens
     @media (max-width: 768px) {
       .hamburger-icon {
         display: flex;
@@ -94,6 +94,8 @@
       }
     }
 
+    // Media query for small screens
+    
     @media (max-width: 360px) {
       .hamburger-icon {
           display: flex;
