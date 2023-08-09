@@ -1,0 +1,176 @@
+.container{
+    max-width: 100vw;
+    min-height: 10vh;
+    background-color: transparent;
+    z-index: 999;
+    left: 5vw;   
+  }
+  .centre{
+    display: flex;
+    align-items: center;  
+  }
+  .chevron{
+    position: relative;
+    padding-left: 10px;
+   i{
+    position: absolute;
+    bottom: -1px;
+   }
+  }
+  .navbars ul{
+    list-style-type: none;
+  }  
+  .navbars {
+    z-index:999;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color:#F9F8F4;
+  }
+  .border{
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    border-bottom: 1px solid var(white);
+    margin: 0 80px;
+    padding-top: 20px;
+  }
+  .hamburger {
+    color: black;
+    display: none;
+    align-items: left;
+    padding-left: 100px;
+  }
+  .hamburger :hover{
+    cursor: pointer
+  }  
+  .elewa-logo img{ 
+    top: 53px;
+    left: 209px;
+    width: 153px;
+    height: 65px;     
+    filter: url(#blackFilter); 
+  }
+  .elewa-logo{
+    flex-basis: 10%;
+  }
+  .nav-menus {
+    display: flex;    
+    align-items: center;
+    list-style-type: none;
+  } 
+    .nav-menu {
+    display: flex;
+    flex-basis: 60%;
+    justify-content:center;
+    align-items:center;
+    list-style-type: none;
+    gap: 50px;    
+  }
+  .nav-items {
+    margin: 10px 0;
+  }
+  .nav-link:hover {
+    cursor: pointer;
+  }
+  .menu-header{
+    background-color:#F9F8F4;
+    margin-inline: auto;
+    padding: 1em;
+    display: none;
+  } 
+  
+  .bar{
+  background: black; 
+  }  
+  @media only screen and (max-width: 1440px) {
+    .menu-header{
+      display: block;
+      width: 100%;
+      z-index: 999;    
+    }
+    .nav-menus {
+      position: fixed;
+      left: -150%;
+      top: 9%;
+      padding: 0 0;
+      flex-direction: column;  
+      width: 70%;
+      background-color: #DBC2F5;
+      border-radius: 50px;
+      text-align: center;    
+        }
+    .nav-menu{
+      display:none;
+    }   
+    .nav-menus.active {
+      left: 0%;      
+    }
+    .nav-items {
+      padding: 20px 0;
+      width: 100%;
+    }
+    .hamburger {
+      display: block;        
+    }
+  }
+  @media  only screen and (max-width: 1280px){
+    .navbars-mobile{
+      margin: 0;
+      display: flex;
+      padding: 0 15px; 
+  }
+     .hamburger {
+      width: 60%;      
+      margin: 5px 0;  
+      }
+      .bar{
+        height: 3px;
+        width: 50px;
+        margin: 5px 0;
+        float: right;  
+      } 
+  }
+  @media only screen and (max-width: 1200px) {
+    .navbars-mobile{
+      margin: 0;
+      display: flex;
+      padding: 0 15px;
+    }
+    .fixed-top{
+      display: none;
+    }
+    .hamburger {
+      width: 60%;      
+      margin: 5px 0;
+      }
+    .bar{
+      height: 3px;
+      width: 50px;
+      margin: 5px 0;
+      float: right;  
+    }
+   @media screen  and (max-width: 360px) {
+    .hamburger {
+     width: 20px;
+     padding-right: 20px;
+      
+    }
+   }
+   
+  }
+  .btn{
+    flex-basis: 20%;
+    justify-content: center;    
+    button{
+      border-radius: 30px;
+      border: 1px solid #000;
+      border-color: #000;
+      width: 134px;
+      height: 44px;
+      color:white;
+      background-color:#2D2E52;    
+      padding: 8px;
+    }
+  }
