@@ -1,56 +1,51 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  background-color: transparent;
-  color: #000;
-  font-family: sans-serif;
-  height: 60px;
+  background: transparent;
+  position: relative;
 
   .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 20px;
 
     .logo {
-      height: 30px;
+      max-width: 100px;
+      height: auto;
+    }
+
+    .hamburger-icon {
+      display: none;
+      /* Hide by default for larger screens */
+      flex-direction: column;
+      cursor: pointer;
+
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 3px 0;
+      }
     }
 
     .nav-menu {
+      display: flex;
+      align-items: center;
+
       ul {
         list-style: none;
         display: flex;
-        align-items: center;
         margin: 0;
+        padding: 0;
 
         li {
-          margin-left: 20px;
-          position: center;
+          margin-right: 20px;
 
           a {
             text-decoration: none;
-            color: #000;
-            padding: 8px 12px;
+            color: #333;
 
             &:hover {
-              background-color: transparent;
-            }
-
-            .arrow-down {
-              display: inline-block;
-              width: 0;
-              height: 0;
-              border-left: 5px solid transparent;
-              border-right: 5px solid transparent;
-              border-top: 5px solid #000;
-              margin-left: 5px;
-              vertical-align: middle;
+              color: #666;
             }
           }
         }
@@ -60,22 +55,72 @@
     .contact-button {
       background-color: #010e3a;
       color: #fff;
-      padding: 10px 20px;
       border: none;
+      padding: 10px 20px;
       border-radius: 12px;
       cursor: pointer;
-      font-weight: bold;
 
       &:hover {
-        background-color: #333;
+        background-color: #555;
       }
     }
-  }
 
-  .sticky {
-    position: fixed;
-    top: 10;
-    width: 100%
+    // Media query for smaller screens
+    @media (max-width: 768px) {
+      .hamburger-icon {
+        display: flex;
+      }
+
+      .nav-menu{
+        display: none; // Hide navigation and contact button
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.95);
+        width: 100%;
+        top: 90px; // Adjust this value as needed
+        left: 0;
+        right: 0;
+        padding: 20px;
+
+        ul {
+          li {
+            margin: 12px 15px;
+          }
+        }
+      }
+
+      .active {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .hamburger-icon {
+          display: flex;
+        }
+      
+        .nav-menu {
+          display: none; // Hide navigation and contact button
+          flex-direction: column;
+          position: center;
+          background-color: rgba(255, 255, 255, 0.95);
+          width: 100%;
+          top: 90px; // Adjust this value as needed
+          left: 0;
+          right: 0;
+          padding: 20px;
+      
+          ul {
+            li {
+              margin: 5px 10px;
+              font-size: small;
+            }
+          }
+        }
+      
+        .active {
+          display: flex;
+        }
+    }
   }
 }
-

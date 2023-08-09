@@ -1,10 +1,17 @@
 <header class="header">
   <div class="container">
     <!-- Logo -->
-      <img class="logo" [src]="logoUrl" alt="Elewa Logo"  />
+    <img class="logo" [src]="logoUrl" alt="Elewa Logo"  />
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-icon" (click)="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
 
     <!-- Navigation -->
-    <nav class="nav-menu">
+    <nav class="nav-menu" [ngClass]="{ 'active': isMenuOpen }">
       <ul>
         <li><a href="#">Solutions <span class="arrow-down"></span></a></li>
         <li><a href="#">Projects</a></li>
@@ -15,7 +22,7 @@
 
     <!-- Contact -->
     <!-- This button will be replaced with the button componenent -->
-    <button class="contact-button">Contact</button>
+    <button class="contact-button" [ngClass]="{ 'active': isMenuOpen }">Contact</button>
   </div>
 </header>
 
