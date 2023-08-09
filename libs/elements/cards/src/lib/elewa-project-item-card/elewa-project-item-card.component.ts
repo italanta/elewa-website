@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ProjectItem } from 'libs/models/sections/projects/project-item.interface';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { __highlightedProjects } from 'libs/data/sections/highlighted-projects.data'
 
 @Component({

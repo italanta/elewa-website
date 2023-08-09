@@ -1,7 +1,7 @@
 .card-container {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 
 .card {
@@ -22,11 +22,6 @@
   padding-right: 11px;
   padding-top: 11px;
   font-style: var(--card-font-style);
-
-  @media (min-width: 768px) {
-    max-width: 100%; /* Allow the card to take up full width on tablets and larger screens */
-    // flex-direction: row; /* Change to a horizontal layout on tablets and larger screens */
-  }
 }
 
 .card-image {
