@@ -17,7 +17,15 @@
     "paths": {
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
-      ]
+      ],
+      "@elewa-website/features/pages/about": [
+        "libs/features/pages/about/src/index.ts"
+      ],
+      "@elewa-website/features/pages/home": [
+        "libs/feat              ures/pages/home/src/index.ts"
+      ],
+      "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
+      "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

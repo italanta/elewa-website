@@ -22,8 +22,12 @@
           "apps/elewa-website/src/assets"
         ],
         "styles": [
-          "apps/elewa-website/src/styles.scss"
+          "apps/elewa-website/src/styles.scss",
+          "libs/elements/theming/_variables.scss"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": ["./libs/elements/theming"]
+        },
         "scripts": []
       },
       "configurations": {
