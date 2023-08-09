@@ -1,4 +1,4 @@
-export interface ButtonData 
+export interface ButtonData
 {
     text: string
   
