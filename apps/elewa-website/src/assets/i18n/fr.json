@@ -1,7 +1,7 @@
 {
-    "SOLUTIONS": "Solutions",
-    "PROJECTS": "Projets",
-    "COMPANY": "Société",
-    "NEWS": "Actualités",
-    "CONTACT_US": "Contactez-nous"
+    "solutions": "Solutions",
+    "projects": "Projets",
+    "company": "Société",
+    "news": "Actualités",
+    "contact": "Contactez-nous"
 }

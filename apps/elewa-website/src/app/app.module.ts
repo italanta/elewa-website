@@ -5,12 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TranslocoRootModule } from './transloco-root.module';
 
-import { AppRoutingModule } from './app.routing';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header'
+import { I18nModuleConfig } from '../i18n.config';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, AppHeaderModule],
+  imports: [BrowserModule, AppRoutingModule, AppHeaderModule, I18nModuleConfig],
   providers: [HttpClientModule, TranslocoRootModule],
   bootstrap: [AppComponent],
 })
