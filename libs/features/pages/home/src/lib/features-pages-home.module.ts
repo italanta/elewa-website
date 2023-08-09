@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ElementsLayoutTextsModule } from '@elewa-website/elements/layout/texts';
 
 import { HomePageComponent } from './main/home/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, ElementsLayoutTextsModule],
+  imports: [CommonModule, HomeRoutingModule],
   declarations: [HomePageComponent],
   exports: [HomePageComponent],
 })
