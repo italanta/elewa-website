@@ -1,1 +1,3 @@
-export * from './lib/models-schema-ui-texts.module';
+import { HeroText } from './lib/hero-text';
+
+export { HeroText }
