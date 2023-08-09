@@ -1,1 +1,6 @@
-<p>elewa-image-container works!</p>
+<div class="elewa-image-container">
+  <div class="elewa-images" *ngFor="let config of imageConfig" [id]="imageVisualisation(config) === 'window' ? 'window-card' : ''" >
+    <img [src]="config.imageSrc" alt="{{ config.title }}" [ngClass]="imageVisualisation(config)"
+      [style.max-width]="config.maxWidth ? config.maxWidth : 'none'" />
+  </div>
+</div>
