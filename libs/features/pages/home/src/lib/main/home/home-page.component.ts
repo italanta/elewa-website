@@ -10,14 +10,5 @@ export class HomePageComponent {
 
   // display the text using text-section component
 
-  public heroTexts: HeroText[] = [
-    {
-      title: 'Training at scale',
-      subtitle: 'Human-centered, meaningful and enjoyable',
-    },
-    {
-      title: 'Content development',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    }
-  ];
+  public heroTexts: HeroText[] = [];
 }
