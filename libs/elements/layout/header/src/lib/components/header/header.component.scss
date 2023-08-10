@@ -34,7 +34,7 @@
       color: #000;
       text-decoration: none;
       font-size: 1.125rem;
-      margin: 2rem;
+      margin-right: 4rem;
     }
     .sol {
       text-decoration: underline;
@@ -45,7 +45,7 @@
       }
     }
     .contact {
-      margin-left: 7rem;
+      margin-left: 14rem;
       background-color: #2d2e52;
       color: whitesmoke;
       border: none;
@@ -60,11 +60,23 @@
 @media screen and (max-width: 1440px) {
   .header {
     width: 1200px;
+    left: 8rem;
+    .logo {
+      margin-left: -8rem;
+    }
+    .navbar {
+      width: 100%;
+      margin-left: 8rem;
+      .contact {
+        margin-right: -8rem;
+      }
+    }
   }
 }
 @media screen and (max-width: 768px) {
   .header {
     width: 728px;
+    left: 4rem;
     .menu-list {
       display: inline-flex;
     }
@@ -106,6 +118,11 @@
 @media screen and (max-width: 360px) {
   .header {
     width: 320px;
+    left: -1rem;
+    .logo{
+      margin-left: .5rem;
+    }
+    
     .navbar {
       .contact {
         margin-left: 6rem;
