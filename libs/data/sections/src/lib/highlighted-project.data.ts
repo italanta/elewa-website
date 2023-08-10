@@ -1,4 +1,4 @@
-import { ProjectItem } from '../../models/sections/projects/src/lib/project-item.interface';
+import { ProjectItem } from '@elewa-website/models/sections/projects';
 
 /* Add sample data to be used by the cards*/
 
@@ -27,3 +27,4 @@ export const __highlightedProjects: ProjectItem[] = [
   },
   // Add more data as needed
 ];
+

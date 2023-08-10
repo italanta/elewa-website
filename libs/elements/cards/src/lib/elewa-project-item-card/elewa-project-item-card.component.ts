@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ProjectItem } from '@elewa-website/models/sections/projects';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { __highlightedProjects } from 'libs/data/sections/highlighted-projects.data';
+import { __highlightedProjects } from '@elewa-website/data/sections';
 
 
 @Component({
