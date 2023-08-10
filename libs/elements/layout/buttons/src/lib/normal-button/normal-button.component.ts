@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import { ButtonData } from "../../../../../../models/schema/ui/buttons/button.interface";
+import { ButtonData } from "@elewa-website/models/schema/ui/buttons";
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
