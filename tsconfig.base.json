@@ -24,7 +24,7 @@
       ],
       "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
       "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"],
-      "@elewa-website/models/data/ui/cards/*": ["libs/models/schema/ui/cards/*"]
+      "@elewa-website/models/schema/ui/cards/*": ["libs/models/schema/ui/cards/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
