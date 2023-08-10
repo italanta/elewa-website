@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <!-- Logo -->
-    <img class="logo" [src]="logoUrl" alt="Elewa Logo"  />
+    <img class="logo" [src]="logoUrl" alt="Elewa Logo" />
 
     <!-- Hamburger Menu Icon -->
     <div class="hamburger-icon" (click)="toggleMenu()">
@@ -11,19 +11,47 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="nav-menu" [ngClass]="{ 'active': isMenuOpen }">
+    <nav class="nav-menu" [ngClass]="{ active: isMenuOpen }">
       <ul>
-        <li><a href="#">Solutions {{ "HEADER.NAV-ITEMS.SOLUTIONS" | transloco }}<span class="arrow-down"></span></a></li>
+        <!-- <li class="dropdown">
+          <a href="#">Solutions {{ "HEADER.NAV-ITEMS.SOLUTIONS" | transloco }}<span class="arrow-down"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Solution 1</a></li>
+            <li><a href="#">Solution 2</a></li>
+            <li><a href="#">Solution 3</a></li>
+          </ul>
+        </li>
         <li><a href="#">Projects{{ "HEADER.NAV-ITEMS.PROJECTS" | transloco }}</a></li>
         <li><a href="#">Company{{ "HEADER.NAV-ITEMS.COMPANY" | transloco }}</a></li>
-        <li><a href="#">News Center{{ "HEADER.NAV-ITEMS.NEWS-ITEMS" | transloco }}</a></li>
+        <li><a href="#">News Center{{ "HEADER.NAV-ITEMS.NEWS-ITEMS" | transloco }}</a></li> -->
+        <li class="dropdown">
+          <a href="#"
+            >Solutions<span class="arrow-down"></span
+          ></a>
+          <ul class="dropdown-list">
+            <li><a href="#">Solution 1</a></li>
+            <li><a href="#">Solution 2</a></li>
+            <li><a href="#">Solution 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">Company</a>
+        </li>
+        <li>
+          <a href="#"
+            >News Center</a
+          >
+        </li>
       </ul>
     </nav>
 
     <!-- Contact -->
     <!-- This button will be replaced with the button componenent -->
-    <button class="contact-button" [ngClass]="{ 'active': isMenuOpen }">Contact {{ "HEADER.NAV-ITEMS.CONTACT" | transloco }}</button>
+    <button class="contact-button" [ngClass]="{ active: isMenuOpen }">
+      Contact 
+    </button>
   </div>
 </header>
-
-
