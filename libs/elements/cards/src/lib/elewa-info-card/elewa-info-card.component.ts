@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { InfoCard} from "libs/models/schema/ui/cards/info-card.interface"
 @Component({
   selector: 'elewa-website-elewa-info-card',
   templateUrl: './elewa-info-card.component.html',
   styleUrls: ['./elewa-info-card.component.scss'],
 })
-export class ElewaInfoCardComponent {}
+export class ElewaInfoCardComponent {
+  @Input() cardsData!:InfoCard; 
+}
