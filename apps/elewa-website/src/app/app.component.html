@@ -1,10 +1,1 @@
-<div
-  *ngFor="let content of textContents; let i = index"
-  class="text-content"
-  [ngClass]="{ 'pink-bg': i === 0, 'white-bg': i === 1 }"
->
-  <h2>{{ content.title }}</h2>
-  <div *ngFor="let description of content.descriptions" class="description">
-    <p class="paragraph">{{ description }}</p>
-  </div>
-</div>
+<elewa-website-elewa-text-content-item></elewa-website-elewa-text-content-item>
