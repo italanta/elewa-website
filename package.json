@@ -27,6 +27,7 @@
     "@ngneat/transloco": "^5.0.2",
     "@nguniversal/express-engine": "^16.1.1",
     "@nrwl/angular": "16.6.0",
+    "bootstrap-icons": "^1.10.5",
     "express": "^4.15.2",
     "rxjs": "7.8.1",
     "tslib": "^2.3.0",
