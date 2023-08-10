@@ -47,7 +47,13 @@
       }
     }
     .contact{
-      margin-left: 5rem;
+      margin-left: 7rem;
+      background-color: #2d2e52;
+      color: whitesmoke;
+      border: none;
+      height: 2.75rem;
+      width: 8.5rem;
+      border-radius: 1.5rem;
     }
   }
 }
@@ -91,11 +97,11 @@
         text-align: center;
       }
       .contact{
-        margin-left: 21rem;
+        margin-left: 18rem;
       }
     }
     #click:checked~.navbar {
-      height: 15rem;
+      height: 16rem;
     }
   }
 }
@@ -104,7 +110,7 @@
     width: 320px;
     .navbar{
       .contact{
-        margin-left: 8rem;
+        margin-left: 6rem;
       }
     }
   }
