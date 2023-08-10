@@ -1,13 +1,11 @@
 <!-- This is a button element with custom styling and behavior -->
-<div class="container">
-  <button
+<button
   class="reusable-custom-button"
   [style.backgroundColor]="buttonData.bgColor"
   [style.color]="buttonData.color"
   (click)="onClick()"
   [title]="buttonData.text"
-  >
-    <!-- This allows you to put your own text or content inside the button -->
-    <ng-content></ng-content>
-  </button>
-</div>
+>
+  <!-- ng-content is allows you to put your own text or content inside the button -->
+  <ng-content></ng-content>
+</button>

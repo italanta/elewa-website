@@ -1,7 +1,3 @@
-.container{
-  max-width: 960px;
-  margin: 5px auto;
-}
 
 .reusable-custom-button {
   padding: 10px 20px;
@@ -11,10 +7,9 @@
   background-color: var(--bgColor, #2D2E52);
   border-radius: 22px;
   opacity: 1;
-  float: right;
   color: var(--color, #fff);
 
-  // Hover 
+  // Hover
   &hover {
     background-color: var(--hoverBgColor, #F2AD69);
     color: var(--hoverColor, #000000);
