@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+<router-outlet>
+    <elewa-website-elewa-info-card 
+        *ngFor="let card of infoCards"
+        [infoCard]="card"
+    ></elewa-website-elewa-info-card>
+</router-outlet>

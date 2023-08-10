@@ -1,0 +1,24 @@
+.elewa-info-card {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+
+  fa-icon {
+    font-size: 40px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+}
