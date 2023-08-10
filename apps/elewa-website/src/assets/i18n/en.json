@@ -1,1 +1,12 @@
-{}
+{
+  "HEADER": {
+    "NAV-ITEMS":{
+      "SOLUTIONS" : "Solutions",
+      "PROJECTS" : "Projects",
+      "COMPANY" : "Company",
+      "NEWS-ITEMS": "News items",
+      "CONTACT": "Contact"
+    }
+  }
+}
+

@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { TranslocoModule } from '@ngneat/transloco'
+
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   declarations: [HeaderComponent],
   exports: [HeaderComponent]
 })
