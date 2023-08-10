@@ -4,20 +4,18 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TranslocoRootModule } from './transloco-root.module';
-import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 import { AppRoutingModule } from './app.routing';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule, 
-    ButtonsModule ,
-    AppRoutingModule,  /*configure button module*/
-
-  ],
-  providers: [
-    HttpClientModule,
-    TranslocoRootModule
-  ],
+    AppRoutingModule, 
+    ], 
+    providers: [
+      HttpClientModule,
+      TranslocoRootModule
+    ],
   bootstrap: [AppComponent],
 
 })
