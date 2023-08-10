@@ -13,18 +13,20 @@
     <!-- Navigation -->
     <nav class="nav-menu" [ngClass]="{ active: isMenuOpen }">
       <ul>
-        <!-- <li class="dropdown">
-          <a href="#">Solutions {{ "HEADER.NAV-ITEMS.SOLUTIONS" | transloco }}<span class="arrow-down"></span></a>
-          <ul class="dropdown-menu">
+        <li class="dropdown">
+          <a href="#">{{ "HEADER.NAV-ITEMS.SOLUTIONS" | transloco }}<span class="arrow-down"></span></a>
+          <ul class="dropdown-list">
             <li><a href="#">Solution 1</a></li>
             <li><a href="#">Solution 2</a></li>
             <li><a href="#">Solution 3</a></li>
           </ul>
         </li>
-        <li><a href="#">Projects{{ "HEADER.NAV-ITEMS.PROJECTS" | transloco }}</a></li>
-        <li><a href="#">Company{{ "HEADER.NAV-ITEMS.COMPANY" | transloco }}</a></li>
-        <li><a href="#">News Center{{ "HEADER.NAV-ITEMS.NEWS-ITEMS" | transloco }}</a></li> -->
-        <li class="dropdown">
+        <li><a href="#">{{ "HEADER.NAV-ITEMS.PROJECTS" | transloco }}</a></li>
+        <li><a href="#">{{ "HEADER.NAV-ITEMS.COMPANY" | transloco }}</a></li>
+        <li><a href="#">{{ "HEADER.NAV-ITEMS.NEWS-ITEMS" | transloco }}</a></li>
+
+
+        <!-- <li class="dropdown">
           <a href="#"
             >Solutions<span class="arrow-down"></span
           ></a>
@@ -44,14 +46,15 @@
           <a href="#"
             >News Center</a
           >
-        </li>
+        </li> -->
       </ul>
     </nav>
 
     <!-- Contact -->
     <!-- This button will be replaced with the button componenent -->
     <button class="contact-button" [ngClass]="{ active: isMenuOpen }">
-      Contact 
+    {{ "HEADER.NAV-ITEMS.CONTACT" | transloco }}
+            <!-- Contact  -->
     </button>
   </div>
 </header>
