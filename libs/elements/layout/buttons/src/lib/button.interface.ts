@@ -1,3 +1,4 @@
+/*Define the structure for the button data*/ 
 export interface ButtonData
 {
     text: string
