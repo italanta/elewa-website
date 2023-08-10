@@ -21,7 +21,8 @@
       ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
-      ]
+      ],
+      "@elewa-website/projects": ["libs/projects/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
