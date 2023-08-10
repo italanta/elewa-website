@@ -1,4 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+// Inside "libs/elements/layout/buttons/src/lib/slider-button.scss" file.
+// Use SCSS variables for colors, fonts, etc.
+// Import this SCSS file into the main "style.scss" in your Angular application.
+
+
 $slider-button-background: var(--slider-button-background, #f0f0f0);
 $slider-button-color: var(--slider-button-color, #000);
 $slider-button-border-color: var(--slider-button-border-color, #ccc);

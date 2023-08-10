@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+$slider-button-background: var(--slider-button-background, #f0f0f0);
+$slider-button-color: var(--slider-button-color, #000);
+$slider-button-border-color: var(--slider-button-border-color, #ccc);
+$slider-button-icon-color: var(--slider-button-icon-color, #fff);
+$slider-button-icon-background: var(--slider-button-icon-background, #007bff);
+
+.elewa-slider-button {
+  background-color: $slider-button-background;
+  color: $slider-button-color;
+  border: 1px solid $slider-button-border-color;
+}
