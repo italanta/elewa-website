@@ -1,12 +1,5 @@
-// .home-page {
-//   background-color: black;
-//   height: 100vh;
-//   color: white;
-// }
-
 .home-page {
-  background-color: var(--elewa-website-color-primary-black);
+  background-color: black;
   height: 100vh;
-  background: #dbc2f5 0% 0% no-repeat padding-box;
-  // opacity: 1;
+  background: var(--elewa-website-homepage-background-color);
 }
