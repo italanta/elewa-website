@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,500&display=swap');
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 .header {
   position: absolute;
@@ -18,10 +17,10 @@
     height: 4rem;
     opacity: 1;
   }
-  #click{
+  #click {
     display: none;
   }
-  .menu-list{
+  .menu-list {
     font-size: 1.2rem;
     color: #000;
     cursor: pointer;
@@ -34,7 +33,6 @@
       font-size: 1.5rem;
       color: #000;
       text-decoration: none;
-      font-family: 'DM Sans', sans-serif;
       font-size: 1.125rem;
       margin: 2rem;
     }
@@ -42,11 +40,11 @@
       text-decoration: underline;
       font-weight: 900;
       margin-right: 3.4rem;
-      .bi{
+      .bi {
         font-size: 1rem;
       }
     }
-    .contact{
+    .contact {
       margin-left: 7rem;
       background-color: #2d2e52;
       color: whitesmoke;
@@ -59,57 +57,57 @@
 }
 
 // Breaking Points
-@media screen and (max-width :1440px){
-  .header{
+@media screen and (max-width: 1440px) {
+  .header {
     width: 1200px;
   }
-  
 }
-@media screen and (max-width :768px){
-  .header{
+@media screen and (max-width: 768px) {
+  .header {
     width: 728px;
-    .menu-list{
+    .menu-list {
       display: inline-flex;
     }
 
-    #click:checked~.menu-list #menu-icon{
+    #click:checked ~ .menu-list #menu-icon {
       display: none;
     }
     .menu-list #close-icon {
       display: none;
     }
-    #click:checked~.menu-list #close-icon{
+    #click:checked ~ .menu-list #close-icon {
       display: block;
     }
-  
-    .navbar{
+
+    .navbar {
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
       height: 0;
       overflow: hidden;
-      transition: .5 ease;
-      a, .sol{
+      transition: 0.5 ease;
+      a,
+      .sol {
         display: block;
         font-size: 1rem;
         margin: 1.5rem 0;
         text-align: center;
       }
-      .contact{
+      .contact {
         margin-left: 18rem;
       }
     }
-    #click:checked~.navbar {
+    #click:checked ~ .navbar {
       height: 16rem;
     }
   }
 }
-@media screen and (max-width :360px){
-  .header{
+@media screen and (max-width: 360px) {
+  .header {
     width: 320px;
-    .navbar{
-      .contact{
+    .navbar {
+      .contact {
         margin-left: 6rem;
       }
     }
