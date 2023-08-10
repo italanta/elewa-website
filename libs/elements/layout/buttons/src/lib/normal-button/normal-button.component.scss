@@ -3,7 +3,7 @@
   margin: 5px auto;
 }
 
-.custom-button {
+.reusable-custom-button {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -13,9 +13,10 @@
   opacity: 1;
   float: right;
   color: var(--color, #fff);
-}
 
-.custom-button:hover {
-  background-color: var(--hoverBgColor, #F2AD69);
-  color: var(--hoverColor, #000000);
+  // Hover 
+  &hover {
+    background-color: var(--hoverBgColor, #F2AD69);
+    color: var(--hoverColor, #000000);
+  }
 }
