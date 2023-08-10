@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ElementsCardsModule } from '@elewa-website/elements/cards';
 
 import { HomePageComponent } from './main/home/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
 
-import { ElementsCardsModule } from '@elewa-website/elements/cards';
 
 @NgModule({
   imports: [CommonModule, HomeRoutingModule, ElementsCardsModule],

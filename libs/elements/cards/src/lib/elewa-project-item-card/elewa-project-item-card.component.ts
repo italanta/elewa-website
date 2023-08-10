@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { ProjectItem } from 'libs/models/sections/projects/project-item.interface';
+import { ProjectItem } from '@elewa-website/models/sections/projects';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { __highlightedProjects } from 'libs/data/sections/highlighted-projects.data'
+import { __highlightedProjects } from 'libs/data/sections/highlighted-projects.data';
+
 
 @Component({
   selector: 'elewa-website-elewa-project-item-card',
@@ -18,7 +19,7 @@ export class ElewaProjectItemCardComponent {
     title: '',
     description: '',
     tag: '',
-    imgSrc: ''
+    imgSrc: '',
   };
 
   // incorporate the mock projects data
