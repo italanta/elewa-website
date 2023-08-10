@@ -11,6 +11,6 @@ import { ButtonData } from '../button.interface';
 /* emit events from the template that the normal button can respond to*/
 export class ElewaNormalButtonComponent {
   @Input() buttonData!:ButtonData;
-  @Output() click: EventEmitter<void> = new EventEmitter<void>();
+  @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
 
 }
