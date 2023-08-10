@@ -15,10 +15,21 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+<<<<<<< HEAD
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
       ],
       "@elewa-website/models": ["libs/models/src/index.ts"]
+=======
+      "@elewa-website/features/pages/about": [
+        "libs/features/pages/about/src/index.ts"
+      ],
+      "@elewa-website/features/pages/home": [
+        "libs/features/pages/home/src/index.ts"
+      ],
+      "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
+      "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"]
+>>>>>>> 84c8344a4d16c0d6cbbb99b94ffde88681c88422
     }
   },
   "exclude": ["node_modules", "tmp"]
