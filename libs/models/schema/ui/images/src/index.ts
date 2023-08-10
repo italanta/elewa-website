@@ -1,2 +1,2 @@
-import { ImageConfig } from "./lib/image-config"
-export { ImageConfig }
+import { ImageConfig, ImageVisualisation } from "./lib/image-config"
+export { ImageConfig, ImageVisualisation }

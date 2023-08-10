@@ -1,1 +1,6 @@
-<p>elewa-image-container works!</p>
+<div class="image" *ngFor="let imageconfig of imageconfigs">
+    <div class="inlineimg">
+        <h4>{{ imageconfig.title }}</h4>
+        <img [src]="imageconfig.imageSrc" [style.maxWidth]="imageconfig.maxWidth" [ngClass]="getImageClass(imageconfig.visualisation)"/>
+    </div>
+</div>
