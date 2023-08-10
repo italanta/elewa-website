@@ -5,10 +5,28 @@ section{
 .container{
     display: flex;
 }
-img{
+.column1{
     margin-top: 1%;
 }
 .decription{
     margin-left: 4.5%;
     margin-top: -25px;
+}
+
+@media screen and (max-width: 700px) {
+    .decription{
+        margin-right: -40px;
+    }
+    .column1{
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .decription{
+        margin-right: -40px;
+    }
+    .column1{
+        margin-top: 3%;
+    }
 }

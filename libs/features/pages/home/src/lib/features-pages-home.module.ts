@@ -6,8 +6,8 @@ import {ElementsCardsModule} from '@elewa-website/elements/cards'
 import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, ElementsCardsModule],
+  imports: [CommonModule, HomeRoutingModule],
   declarations: [HomePageComponent],
-  exports: [HomePageComponent,],
+  exports: [HomePageComponent],
 })
 export class FeaturesPagesHomeModule {}
