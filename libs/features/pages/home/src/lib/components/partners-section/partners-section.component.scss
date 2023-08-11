@@ -38,21 +38,25 @@
   font-weight: bold;
   margin-right: 40px;
   color: #404040;
-  font-size: 26px;
+  font-size: 20px;
   letter-spacing: -0.54px;
 }
 .description {
   letter-spacing: -0.33px;
   color: #404040;
   opacity: 0.52;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 
 }
 .read-more {
   margin-left: 40px;
-  font-size: 18px;
+  font-size: 16px;
   color: #404040;
   padding: 0 0 10px 10px;
 
+}
+button {
+  border: none;
+  background: none;
 }
