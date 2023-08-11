@@ -9,9 +9,9 @@ import { Profile } from '@elewa-website/models/schemas/ui/profile';
   styleUrls: ['./user.component.scss'],
 })
 export class UserComponent implements OnInit {
-  @Input() user!:Profile;
+  @Input() user!: Profile;
 
   ngOnInit() {
-    this.user = mockUser
+    this.user = mockUser;
   }
 }

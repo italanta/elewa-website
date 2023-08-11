@@ -1,1 +1,6 @@
-<p>user component works!</p>
+<div>
+  <div>Id: {{ user.id }}</div>
+  <div>Name: {{ user.name }}</div>
+  <div *ngIf="user.email">Email: {{ user.email }}</div>
+  <div *ngIf="user.description">Description: {{ user.description }}</div>
+</div>
