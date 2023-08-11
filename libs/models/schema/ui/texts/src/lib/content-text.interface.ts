@@ -1,4 +1,4 @@
-interface ContentText {
+export interface ContentText {
   title: string
   descriptions: string[]
 }

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { ContentText } from '@elewa-website/elements/layout/texts';
+import { ContentText } from '@elewa-website/models/schema/ui/texts';
 
 @Component({
   selector: 'elewa-website-elewa-text-content-item',
@@ -9,6 +9,6 @@ import { ContentText } from '@elewa-website/elements/layout/texts';
 })
 export class ElewaTextContentItemComponent {
 
-  @Input() content: ContentText;
+  @Input() content!: ContentText;
 
 }
