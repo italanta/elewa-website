@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="news-container">
+    <!-- The header -->
+    <span>News</span>
+
+    <!-- 
+        Looping through the array of News and displaying each news
+     -->
+    <div class="list" *ngFor="let news of News">
+      <span class="title">{{ news.title }}</span>
+      <span class="desc">{{ news.desc }}</span>
+      <button>Read more</button>
+    </div>
+  </div>
+</div>

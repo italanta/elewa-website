@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 15px 0;
+  .news-container {
+    display: inline;
+    span {
+      font-size: 36px;
+      color: var(--elewa-website-color-primary-black);
+      opacity: 1;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-items: baseline;
+      border-bottom: 2px solid var(--partner-border-color);
+      padding: 30px 0;
+      margin: 0 auto;
+
+      .title {
+        font: normal normal bold 36px/55px DM Sans;
+        color: var(--primary-text-color);
+        letter-spacing: -0.54px;
+      }
+      .desc {
+        font: normal normal bold 22px/55px DM Sans;
+        color: var(--primary-text-color);
+        opacity: 0.52;
+        letter-spacing: -0.33px;
+      }
+
+      button {
+        color: var(--primary-text-color);
+        font: normal normal bold 22px/55px DM Sans;
+        outline: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+        letter-spacing: -0.33px;
+      }
+    }
+  }
+}
