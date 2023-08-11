@@ -1,0 +1,49 @@
+.content-text {
+  background-color: transparent;
+
+  .title {
+    font-size: 24px;
+    /* Default font size */
+  }
+
+  .desc {
+    font-size: 16px;
+    /* Default font size */
+  }
+
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 20px;
+      /* Adjust font size for screens <= 1200px */
+    }
+
+    .desc {
+      font-size: 14px;
+      /* Adjust font size for screens <= 1200px */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 18px;
+      /* Adjust font size for screens <= 768px */
+    }
+
+    .desc {
+      font-size: 12px;
+      /* Adjust font size for screens <= 768px */
+    }
+  }
+
+  @media (max-width: 360px) {
+    .title {
+      font-size: 16px;
+      /* Adjust font size for screens <= 360px */
+    }
+
+    .desc {
+      font-size: 10px;
+      /* Adjust font size for screens <= 360px */
+    }
+  }
+}
