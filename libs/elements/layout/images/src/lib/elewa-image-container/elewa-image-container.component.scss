@@ -8,7 +8,7 @@
 
 // Image container
 .elewa-images {
-  background-color: rgba(249, 248, 244, 1 );
+  background-color: rgba(249, 248, 244, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,20 +23,24 @@
 // Round the top and the bottom of the image to make it oval-shaped
 .pill {
   clip-path: inset(0 0 0 round 30vh);
+  height: 400px;
 }
 
+// Forms a figure-like 8
 .stacked {
-  
+  // clip-path: polygon(75% 50%, 83.01% 52.93%, 89.67% 58.24%, 94.81% 64.08%, 96.65% 71.64%, 94.81% 79.76%, 89.67% 86.32%, 83.01% 91.22%, 75% 93.3%, 25% 93.3%, 16.99% 91.22%, 10.33% 86.32%, 5.19% 79.76%, 3.35% 71.64%, 5.77% 64.38%, 10.33% 58.24%, 16.99% 52.93%, 25% 50%, 16.99% 47.92%, 10.33% 43.03%, 5.25% 36.45%, 3.36% 28.35%, 5.25% 20.25%, 10.33% 13.67%, 16.99% 8.78%, 25% 6.7%, 75% 6.7%, 83.01% 8.78%, 89.68% 13.67%, 95.76% 19.78%, 98.48% 28.87%, 95.76% 36.99%, 89.68% 43.03%, 82.48% 46.81%);
+  height: 400px;
+  clip-path: ellipse(30% 100%);
 }
 
 // Round the top of the image at 30% of vertical height
 .window {
   clip-path: inset(0 0 0 round 30vh 30vh 0 0);
+  height: 400px;
 }
 
 // Round the corners of the card image (10px)
 .card {
   clip-path: inset(0 0 0 round 10px);
+  height: 400px;
 }
-
-

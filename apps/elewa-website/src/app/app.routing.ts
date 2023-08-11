@@ -5,13 +5,11 @@ import { RouterModule, Route } from '@angular/router';
 export const ELEWA_WEBSITE_ROUTES: Route[] = [
   // { path: '*', redirectTo: 'home', pathMatch: 'full' },
 
-  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 
   { path: 'home', loadChildren: () => import('@elewa-website/features/pages/home').then(m => m.FeaturesPagesHomeModule) },
 
   { path: 'about', loadChildren: () => import('@elewa-website/features/pages/about').then(m => m.FeaturesPagesAboutModule) },
-
-  { path: '', loadChildren: () => import('@elewa-website/elements/layout/images').then(m => m.ElementsLayoutImagesModule) },
 ];
 
 @NgModule({
