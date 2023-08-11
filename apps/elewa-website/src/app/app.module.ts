@@ -10,8 +10,14 @@ import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, AppHeaderModule],
-  providers: [HttpClientModule, TranslocoRootModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TranslocoRootModule,
+    AppHeaderModule,
+  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
