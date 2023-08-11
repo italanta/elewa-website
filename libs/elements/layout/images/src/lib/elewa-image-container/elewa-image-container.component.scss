@@ -1,35 +1,41 @@
 .image
 {
   display: flex;
-  flex-direction: row;
+  gap: 20px;
+ 
 }
 .inlineimg
 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
+  justify-items: center;
+  padding: 10px;
+  background-color: gray;
+
 }
+
+
 /* Class for ImageVisualisation.Pill */
 .pill-style {
-    border-radius: 50%; /* Makes the image round */
-    border: 2px solid blue; /* Adds a blue border */
+  clip-path: polygon(13% 0, 90% 0, 100% 14%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  width: 400px;
+  height: 300px;
   }
   
   /* Class for ImageVisualisation.Stacked */
   .stacked-style {
-    margin-top: 10px; /* Adds some spacing between images */
-    display: block; /* Ensures each image takes up its own line */
+    clip-path: polygon(75% 0%, 100% 45%, 75% 100%, 0% 100%, 32% 47%, 0% 0%);
+    width: 400px;
+    height: 300px;
   }
   
   /* Class for ImageVisualisation.Window */
   .window-style {
-    border: 1px solid black; /* Adds a black border */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 70% 100%, 30% 100%, 0 85%);
+
   }
   
   /* Class for ImageVisualisation.Card */
   .card-style {
-    border: 1px solid gray; /* Adds a gray border */
-    padding: 10px; /* Adds padding around the image */
-    background-color: #f5f5f5; /* Adds a light background color */
+    border-radius: 10px;
+
   }
