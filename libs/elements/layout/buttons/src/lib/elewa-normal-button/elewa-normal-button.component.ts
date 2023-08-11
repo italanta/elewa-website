@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ButtonData } from '../button.interface';
+import { ButtonData } from '../../../../../../models/schema/ui/buttons/button.interface';
 
 @Component({
   selector: 'elewa-website-elewa-normal-button',
