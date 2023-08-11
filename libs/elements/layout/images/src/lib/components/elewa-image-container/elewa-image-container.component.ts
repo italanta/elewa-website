@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { __elewaImagesData } from '@elewa-website/models/data/schema/ui/images';
 import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
 
 @Component({
@@ -8,7 +9,7 @@ import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui
 })
 export class ElewaImageContainerComponent {
   // Image input with types
-  @Input() imageConfig: ImageConfig[] = [];
+  @Input() imageConfig: ImageConfig[] = __elewaImagesData;
 
   /**
    * Cases for Image visualisation to be used as classes in HTML and scss component files 
