@@ -1,5 +1,29 @@
 .home-page {
   background-color: var(--elewa-website-color-primary-black);
   height: 100vh;
-  color: white;
+  color: rgb(11, 11, 11);
 }
+
+.outer-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  min-height: 50vh; // Ensures the container takes up at least the viewport height
+}
+
+.container {
+  background-color: lightpink;
+  padding: 40px;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1, p {
+    color: #333;
+    margin-bottom: 15px;
+  }
+}
+
