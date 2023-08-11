@@ -8,6 +8,10 @@ import { ContentText } from '@elewa-website/models/schema/ui/texts';
   styleUrls: [ './elewa-text-content-item.component.scss' ],
 })
 export class ElewaTextContentItemComponent {
+  /**
+   * This is a class for ElewaTextContentItemComponent. 
+   * It can be used to create texts in the web app
+   */
 
   @Input() content!: ContentText;
 
