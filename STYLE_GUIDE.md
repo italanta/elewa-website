@@ -11,16 +11,12 @@ Before we get started you need to understand how this project is structured.
 └── italanta-apps/
     ├── .github
     ├── apps/
-    │   ├── conv-learning-manager/
-    │   └── conv-Im-backend/
-    ├── docs/
+    │   └── elewa-website/
     ├── libs/
     │   ├── elements/
     │   ├── features/
     │   ├── model/
-    │   ├── state/
-    │   ├── util/
-    │   └── README.md
+    │   └── data/
     ├── public/
     ├── tools/
     │   ├── generators/
@@ -31,7 +27,6 @@ Before we get started you need to understand how this project is structured.
     ├── .gitignore
     ├── .prettierignore
     ├── .prettierrc
-    ├── angular.json
     ├── CODE_OF_CONDUCT.md
     ├── CONTRIBUTING.md
     ├── decorate-angular-cli.js
