@@ -45,7 +45,7 @@
 
                 .dropdown-indicator{
                     display: inline-block;
-                    margin-left: 2px;
+                    margin-left: 3px;
                     font-size: 12px;
                 }
             }
@@ -62,73 +62,75 @@
         padding: 0.9em;
         border: none;
     }
-
-    .mobile-nav-btn{
-        display: none;
-    }
-// Media query for tablets (max-width: 768px)
-    @media (max-width: 768px) {
-        .app-header{
-            max-width: 728px;
-            padding: 20px;
-
-            .logo img{
-                width: 6rem;
-            }
-
-            .nav-container{
-                ul{
-                    flex-direction: column;
-                    position: absolute;
-                    top: 70px;
-                    left: -100%;
-                    background-color: white;
-                    width: 100%;
-                    padding: 20px;
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                    z-index: 998;
-
-                    .nav-item{
-                        margin-right: 0;
-                        margin-bottom: 10px;
-                    }
-                }
-            }
-        }
-    }
-// Media query for mobiles (max-width: 360px)
-    @media (max-width: 360px) {
-        .app-header{
-            max-width: 320px;
-            
-            .logo img {
-                width: 5rem;
-            }
-
-            .nav-container{
-                ul{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    position: static;
-                    width: 100%;
-                    padding: 10px;
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                    z-index: 998;
-                    background-color: white;
-                    margin: 0;
-                    padding: 0;
-
-                    .nav-item{
-                        margin-bottom: 10px;
-                        margin-right: 0;  
-                        
-                        .dropdown-indicator{
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-    }   
 }
+
+// Media query for tablets (max-width: 768px)
+@media (max-width: 768px) {    
+    .app-header{
+        max-width: 728px;
+        padding: 20px;
+
+        .logo img{
+            width: 8rem;
+        }
+
+        .nav-container{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            
+            ul{
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                
+                .nav-item{
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .contact-btn{
+            width: 7rem;
+        }
+    }
+}
+// Media query for mobiles (max-width: 360px)
+@media (max-width: 360px) {
+    .app-header{
+        max-width: 320px;
+            
+        .logo img {
+            width: 5rem;
+        }
+
+        .nav-container{
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: static;
+                width: 100%;
+                padding: 10px;
+                z-index: 998;
+                background-color: transparent;
+                margin: 0;
+                padding: 0;
+
+                .nav-item{
+                    margin-bottom: 10px;
+                    margin-right: 0;  
+                        
+                    .dropdown-indicator{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .contact-btn{
+            width: 5rem;
+        }
+    }
+}   

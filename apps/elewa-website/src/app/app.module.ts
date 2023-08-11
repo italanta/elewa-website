@@ -5,14 +5,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TranslocoRootModule } from './transloco-root.module';
 
-import { AppHeaderModule } from '@elewa-website/elements/layout/header'
-import { I18nModuleConfig } from '../i18n.config';
+import { AppHeaderModule } from '@elewa-website/elements/layout/header';
+
 import { AppRoutingModule } from './app.routing';
+import { ToggleMenuDirective } from './toggle-menu.directive';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, AppHeaderModule, I18nModuleConfig],
-  providers: [HttpClientModule, TranslocoRootModule],
+  declarations: [AppComponent, ToggleMenuDirective],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TranslocoRootModule,
+    AppHeaderModule,
+  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

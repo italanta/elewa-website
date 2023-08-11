@@ -4,8 +4,7 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/server",
     "types": [
-      "node",
-      "@angular/localize"
+      "node"
     ]
   },
   "files": [
