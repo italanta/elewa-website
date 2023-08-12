@@ -10,13 +10,10 @@ import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [AppComponent,],
-<<<<<<< HEAD
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule, ButtonsModule ],
   providers: [
     HttpClientModule,
     TranslocoRootModule,
-    ButtonsModule
   ],
   bootstrap: [AppComponent],
 })
