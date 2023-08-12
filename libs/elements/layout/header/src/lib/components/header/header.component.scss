@@ -1,11 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 header {
   position: absolute;
-  width: 90vw;
-  left: 5vw;
+  width: 100vw;
   z-index: 999;
   background-color: transparent;
   min-height: 5rem;
@@ -22,6 +17,7 @@ header {
 
 .logo img {
   width: 153px;
+  filter: brightness(0);
 }
 
 .nav-menu {
@@ -32,7 +28,7 @@ header {
 
 .nav-item {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 35px;
 }
 
 .nav-menu a {
@@ -120,6 +116,10 @@ header {
   .logo img {
     width: 100px;
   }
+
+  .btn {
+    width: 115px;
+  }
 }
 
 @media (max-width: 530px) {
@@ -135,7 +135,6 @@ header {
   }
   .btn {
     padding: 0.5em;
-    width: 80px;
     font-size: small;
   }
 
