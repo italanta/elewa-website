@@ -3,30 +3,37 @@
     <div class="logo">
       <img
         src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png"
-        alt="elewa logo"
+        [alt]="'ELEWA-WEBSITE-HEADER.LOGO-ALT' | transloco"
       />
     </div>
     <nav>
       <ul class="nav-menu">
         <li class="nav-item">
           <a class="nav-links" href="#"
-            >Solutions <i class="fa fa-chevron-down fa-xs"></i
+            >{{ 'ELEWA-WEBSITE-HEADER.SOLUTIONS' | transloco }}
+            <i class="fa fa-chevron-down fa-xs"></i
           ></a>
         </li>
         <li class="nav-item">
-          <a class="nav-links" href="#" elewaWebsiteHeaderToggleMenu
-            >Projects</a
-          >
+          <a class="nav-links" href="#" elewaWebsiteHeaderToggleMenu>{{
+            'ELEWA-WEBSITE-HEADER.PROJECTS' | transloco
+          }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-links" href="#" elewaWebsiteHeaderToggleMenu>Company</a>
+          <a class="nav-links" href="#" elewaWebsiteHeaderToggleMenu>{{
+            'ELEWA-WEBSITE-HEADER.COMPANY' | transloco
+          }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-links" href="#" elewaWebsiteHeaderToggleMenu>Links</a>
+          <a class="nav-links" href="#" elewaWebsiteHeaderToggleMenu>{{
+            'ELEWA-WEBSITE-HEADER.NEWS' | transloco
+          }}</a>
         </li>
       </ul>
     </nav>
-    <button class="btn">Contact Us</button>
+    <button class="btn">
+      {{ 'ELEWA-WEBSITE-HEADER.CONTACT-US' | transloco }}
+    </button>
 
     <div class="hambuger" elewaWebsiteHeaderToggleMenu>
       <span class="bar"></span>
