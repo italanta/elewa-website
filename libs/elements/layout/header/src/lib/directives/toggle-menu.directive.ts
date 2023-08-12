@@ -1,21 +1,24 @@
-import { Directive, Renderer2, HostListener } from '@angular/core';
+import {
+  Directive,
+  HostListener,
+  Input,
+  Output,
+  EventEmitter,
+} from '@angular/core';
 
 @Directive({
   selector: '[elewaWebsiteHeaderToggleMenu]',
 })
 export class ToggleMenuDirective {
-  constructor(private renderer: Renderer2) {}
+  // the input decorator is provided an alias same as the directive's selector name, therefore the directive will expect to be assigned a boolean value when used in the template.
+  @Input('elewaWebsiteHeaderToggleMenu') toggleValue!: boolean;
 
+  // The output decorator will bind the updated value that is changed by this decorator to the isActive value in the header.component.ts by emmiting this updated value as an event which is being listened to in the component.ts file
+  @Output() toggleActive = new EventEmitter<boolean>();
+
+  // This changes will occur when we click any element in our template which implement this directive
   @HostListener('click') onClick() {
-    const hambuger = document.querySelector('.hambuger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (hambuger?.classList.contains('active')) {
-      this.renderer.removeClass(hambuger, 'active');
-      this.renderer.removeClass(navMenu, 'active');
-    } else {
-      this.renderer.addClass(hambuger, 'active');
-      this.renderer.addClass(navMenu, 'active');
-    }
+    this.toggleValue = !this.toggleValue;
+    this.toggleActive.emit(this.toggleValue);
   }
 }
