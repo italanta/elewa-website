@@ -6,7 +6,7 @@ import { SliderButton } from '../slider-button';
 @Component({
   selector: 'elewa-website-slider-button', 
   templateUrl: './elewa-slider-button.component.html',
-  styleUrls: ['./elewa-slider-button.component.html']
+  styleUrls: ['./elewa-slider-button.component.scss']
 })
 export class ElewaSliderButtonComponent {
   @Input() buttonData: SliderButton = {
