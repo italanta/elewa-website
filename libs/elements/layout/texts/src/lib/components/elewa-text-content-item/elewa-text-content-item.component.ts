@@ -7,11 +7,13 @@ import { ContentText } from '@elewa-website/models/schema/ui/texts';
   templateUrl: './elewa-text-content-item.component.html',
   styleUrls: [ './elewa-text-content-item.component.scss' ],
 })
-export class ElewaTextContentItemComponent {
+
   /**
    * This is a class for ElewaTextContentItemComponent. 
    * It can be used to create texts in the web app
    */
+export class ElewaTextContentItemComponent {
+
 
   @Input() content!: ContentText;
 
