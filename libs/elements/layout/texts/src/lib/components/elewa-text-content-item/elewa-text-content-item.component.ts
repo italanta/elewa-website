@@ -9,7 +9,7 @@ import { ContentText } from '@elewa-website/models/schema/ui/texts';
   styleUrls: ['./elewa-text-content-item.component.scss'],
 })
 export class ElewaTextContentItemComponent implements OnInit {
-  @Input() content!: ContentText;
+  @Input() content!: ContentText[];
 
   ngOnInit(){
     this.content = mockContent;
