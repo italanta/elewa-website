@@ -9,6 +9,7 @@ import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 import { AppRoutingModule } from './app.routing';
 
 @NgModule({
+  declarations: [AppComponent,],
 <<<<<<< HEAD
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [BrowserModule],
@@ -17,11 +18,6 @@ import { AppRoutingModule } from './app.routing';
     TranslocoRootModule,
     ButtonsModule
   ],
-=======
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [HttpClientModule, TranslocoRootModule],
->>>>>>> 84c8344a4d16c0d6cbbb99b94ffde88681c88422
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,16 +1,44 @@
-// Inside "libs/elements/layout/buttons/src/lib/slider-button.scss" file.
-// Use SCSS variables for colors, fonts, etc.
-// Import this SCSS file into the main "style.scss" in your Angular application.
-
-
-$slider-button-background: var(--slider-button-background, #f0f0f0);
-$slider-button-color: var(--slider-button-color, #000);
-$slider-button-border-color: var(--slider-button-border-color, #ccc);
-$slider-button-icon-color: var(--slider-button-icon-color, #fff);
-$slider-button-icon-background: var(--slider-button-icon-background, #007bff);
-
 .elewa-slider-button {
-  background-color: $slider-button-background;
-  color: $slider-button-color;
-  border: 1px solid $slider-button-border-color;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Makes the button round */
+  padding: 10px 30px; /* Adjusted padding for space */
+  position: relative;
+  display: inline-flex;
+  align-items: center; /* Center text and icon vertically */
+  overflow: hidden;
+}
+
+.elewa-slider-button .button-text {
+  margin-right: 10px; /* Added margin to separate text and icon */
+}
+
+.elewa-slider-button i {
+  background-color: white;
+  color: #606060;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Additional styling for icon positioning */
+.container-xxl {
+  padding: 20px;
+}
+
+.elewa-slider-button:hover{
+  background-color: aqua;
+}
+
+.header{
+  font-size:45px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+.paragraph{
+  font-size:25px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
 }

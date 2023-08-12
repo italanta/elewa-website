@@ -1,19 +1,12 @@
 // elewa-slider-button.component.ts
 import { Component, Input } from '@angular/core';
+import { SliderButton } from '../slider-button';
 
-interface SliderButton {
-  text: string;
-  backgroundColor: string;
-  color: string;
-  borderColor: string;
-  iconColor: string;
-  iconBackgroundColor: string;
-}
  
 @Component({
   selector: 'elewa-website-slider-button', 
-  templateUrl: ''
-  styles: []
+  templateUrl: './elewa-slider-button.component.html',
+  styleUrls: ['./elewa-slider-button.component.html']
 })
 export class ElewaSliderButtonComponent {
   @Input() buttonData: SliderButton = {
