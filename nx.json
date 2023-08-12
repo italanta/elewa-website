@@ -77,11 +77,7 @@
       "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-<<<<<<< HEAD
-      "style": "css"
-=======
       "style": "scss"
->>>>>>> 84c8344a4d16c0d6cbbb99b94ffde88681c88422
     }
   },
   "defaultProject": "elewa-website"

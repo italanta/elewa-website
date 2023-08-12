@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'elewa-website-slider-button',
+  selector: 'elewa-website-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
