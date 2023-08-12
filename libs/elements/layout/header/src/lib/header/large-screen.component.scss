@@ -1,0 +1,31 @@
+.header {
+  background: transparent;
+  position: relative;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .logo {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .hamburger-icon {
+      display: none;
+      /* Hide by default for larger screens */
+      flex-direction: column;
+      cursor: pointer;
+
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: darkslategray;
+        margin: 3px 0;
+      }
+    }
+
+  }
+}

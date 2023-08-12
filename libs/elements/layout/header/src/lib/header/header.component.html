@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <!-- Logo -->
-    <img class="logo" [src]="logoUrl" alt="Elewa Logo" />
+    <img class="logo" [src]="LOGO_URL" alt="Elewa Logo" />
 
     <!-- Hamburger Menu Icon -->
     <div class="hamburger-icon" (click)="toggleMenu()">
@@ -11,6 +11,7 @@
     </div>
 
     <!-- Navigation -->
+    <!-- [routerLink] is to be added on the links below -->
     <nav class="nav-menu" [ngClass]="{ active: isMenuOpen }">
       <ul>
         <li class="dropdown">

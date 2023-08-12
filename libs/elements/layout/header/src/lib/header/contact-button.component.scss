@@ -1,0 +1,16 @@
+.header{
+  .container{
+    .contact-button {
+        background-color: #010e3a;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 12px;
+        cursor: pointer;
+    
+        &:hover {
+          background-color: gray;
+        }
+      }
+  }
+}

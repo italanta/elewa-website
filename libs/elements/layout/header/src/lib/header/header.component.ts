@@ -7,7 +7,13 @@ const logoUrl: string = "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675
 @Component({
   selector: 'elewa-website-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  styleUrls: [ 
+    './large-screen.component.scss', 
+    './medium-screen.component.scss', 
+    './small-screen.component.scss',
+    './contact-button.component.scss',
+    './nav-menu.component.scss'
+  ],
 })
 
   /** 
