@@ -1,4 +1,4 @@
-import { NewsItem } from "../../ui/cards/news-item.interface";
+import { NewsItem } from "../../schema/ui/cards/news-item.interface";
 
 export  const __highlightedNews: NewsItem[]=[
     {

@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import {NewsItem} from '../../../../../../models/schema/ui/cards/news-item.interface'
+import {__highlightedNews} from '../../../../../../models/data/sections/highlighted-news.data'
 
 @Component({
   selector: 'elewa-website-elewa-news-item-card',
@@ -7,5 +8,5 @@ import {NewsItem} from '../../../../../../models/schema/ui/cards/news-item.inter
   styleUrls: ['./elewa-news-item-card.component.scss'],
 })
 export class ElewaNewsItemCardComponent {
-  @Input() newsItem!: NewsItem;
+  highlightedNews:NewsItem[] = __highlightedNews
 }
