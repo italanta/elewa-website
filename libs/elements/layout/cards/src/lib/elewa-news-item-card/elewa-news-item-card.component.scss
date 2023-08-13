@@ -1,0 +1,18 @@
+@import '_variables';
+
+.news-item-card button{
+    border-radius: 8px;
+    background: transparent;
+    height: 20px;
+    width: 100px;
+}
+
+.news-item-card h2{
+    font-family: "DMSans-Bold";
+}
+.news-item-card p{
+    font-family: "DMSans-Regular";
+}
+.news-item-card button{
+    font-family: "DMS-Medium";
+}
