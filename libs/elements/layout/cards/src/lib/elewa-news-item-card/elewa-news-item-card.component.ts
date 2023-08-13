@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NewsItem} from '../../../../../../models/schema/ui/cards/news-item.interface'
 
 @Component({
   selector: 'elewa-website-elewa-news-item-card',
