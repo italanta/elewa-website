@@ -1,1 +1,10 @@
-<p>elewa-news-item-card works!</p>
+<div class="news-item-container">
+    
+    <div *ngFor="let item of highlightedNews" class="news-item-card">
+        <button>{{ item.buttonText }}</button>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+
+    </div>
+
+</div>
