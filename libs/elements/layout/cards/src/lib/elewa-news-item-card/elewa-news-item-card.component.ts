@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {NewsItem} from '../../../../../../models/schema/ui/cards/news-item.interface'
 
 @Component({
@@ -6,4 +6,6 @@ import {NewsItem} from '../../../../../../models/schema/ui/cards/news-item.inter
   templateUrl: './elewa-news-item-card.component.html',
   styleUrls: ['./elewa-news-item-card.component.scss'],
 })
-export class ElewaNewsItemCardComponent {}
+export class ElewaNewsItemCardComponent {
+  @Input() newsItem!: NewsItem;
+}
