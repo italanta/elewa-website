@@ -1,11 +1,15 @@
 .news-item {
-  border: 1px solid #ccc;
-  margin: 10px;
   padding: 10px;
+  background-color: rgb(229, 225, 221);
 }
 
 .news-item-content {
+  justify-content: space-between;
+  display: flex;
   flex: 1;
+  border: 1px solid #ccc; /* Add a border around each news item */
+  margin: 15px 10px;
+  padding: 15px;
 }
 
 .news-item-title {
@@ -20,7 +24,7 @@
 }
 
 .read-more-link {
-  color: #007bff;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
