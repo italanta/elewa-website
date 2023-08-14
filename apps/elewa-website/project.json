@@ -22,11 +22,14 @@
           "apps/elewa-website/src/assets"
         ],
         "styles": [
+          "@angular/material/prebuilt-themes/indigo-pink.css",
           "apps/elewa-website/src/styles.scss",
           "libs/elements/theming/_variables.scss"
         ],
         "stylePreprocessorOptions": {
-          "includePaths": ["./libs/elements/theming"]
+          "includePaths": [
+            "./libs/elements/theming"
+          ]
         },
         "scripts": []
       },
