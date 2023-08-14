@@ -5,5 +5,6 @@ import { ElewaNewsItemCardComponent } from './components/elewa-news-item-card/el
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaNewsItemCardComponent],
+  exports: [ElewaNewsItemCardComponent]
 })
 export class CardsModule {}
