@@ -1,6 +1,6 @@
 import { InfoCard } from "@elewa-website/models/schema/ui/cards";
 
-export const _infoCard: InfoCard = [
+export const _infoCard: InfoCard[] = [
   {
     title: 'Course Design',
     description:

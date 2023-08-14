@@ -1,1 +1,6 @@
-<p>elewa-info-card works!</p>
+<div *ngFor="let item of infoCard">
+    <div>
+        <h3>{{ item.title }}</h3>
+        <span>{{ item.description }}</span>
+    </div>
+</div>
