@@ -1,0 +1,42 @@
+.info-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  width: 500px;
+  display: flex;
+  align-items: start; /* Vertically center the icon and content */
+  color: black;
+  gap: 15px;
+}
+
+.info-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.material-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  object-fit: cover; /* Adjust how the image fits within the container */
+}
+
+.info-content {
+  flex: 1;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-family: 'DMSans-Medium';
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'DMSans-Regular';
+  }
+}
