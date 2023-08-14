@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { ElewaInfoCardComponent } from './components/elewa-info-card/elewa-info-card.component';
 
 export const CARDS_ROUTES: Routes = [
-    { path: ''}
+    { path: '', component: ElewaInfoCardComponent}
 ];
 
 @NgModule({
