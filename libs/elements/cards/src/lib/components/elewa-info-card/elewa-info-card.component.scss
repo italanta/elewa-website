@@ -1,0 +1,22 @@
+.info-card{
+    display: flex;
+    gap: 20px;
+
+    mat-icon{
+        font-size: 30px;
+    }
+
+    .desc{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        h3{
+            font-size: 30px;
+        }
+
+        span{
+            font-size: 20px;
+        }
+    }
+}

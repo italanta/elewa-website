@@ -5,6 +5,6 @@ export const _infoCard: InfoCard[] = [
     title: 'Course Design',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    icon: 'home',
+    icon: 'signal_cellular_alt',
   },
 ];

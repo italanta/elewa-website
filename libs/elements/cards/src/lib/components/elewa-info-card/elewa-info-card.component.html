@@ -1,8 +1,8 @@
-<div *ngFor="let item of infoCard">
+<div *ngFor="let item of infoCard" class="info-card">
     <div>
         <mat-icon>{{ item.icon }}</mat-icon>
     </div>
-    <div>
+    <div class="desc">
         <h3>{{ item.title }}</h3>
         <span>{{ item.description }}</span>
     </div>
