@@ -1,0 +1,26 @@
+.news-item {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+
+.news-item-content {
+  flex: 1;
+}
+
+.news-item-title {
+  font-size: 1.2rem;
+  margin: 0 0 5px;
+}
+
+.news-item-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.read-more-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
