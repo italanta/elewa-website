@@ -1,8 +1,9 @@
 <!-- HTML structure for your news item component -->
 <div class="news-item">
-  <div class="news-item-content">
-    <h2 class="news-item-title">Breaking News Title</h2>
-    <p class="news-item-description">This is a brief description of the breaking news...</p>
-    <a href="#" class="read-more-link">Read more</a>
+  <div class="news-item-content" *ngFor="let news of newsItem"> <!-- Loop through newsItems -->
+    <h2 class="news-item-title">{{ news.title }}</h2>
+    <p class="news-item-description">{{ news.description }}</p>
+    <a href="#" class="read-more-link">{{ news.buttonText }}</a>
   </div>
 </div>
+
