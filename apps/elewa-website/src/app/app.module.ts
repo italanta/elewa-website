@@ -7,7 +7,7 @@ import { TranslocoRootModule } from './transloco-root.module';
 
 import { AppRoutingModule } from './app.routing';
 
-import { AppHeaderModule } from '@elewa-website/elements/layout/header'
+// import { AppHeaderModule } from '@elewa-website/elements/layout/header'
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { AppHeaderModule } from '@elewa-website/elements/layout/header'
     AppRoutingModule,
     HttpClientModule,
     TranslocoRootModule,
-    AppHeaderModule
+    // AppHeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent],
