@@ -45,9 +45,18 @@
             >{{ 'ELEWA-WEBSITE-HEADER.NEWS' | transloco }}</a
           >
         </li>
+        <li class="nav-item">
+          <button
+            class="btn btn-small-screen"
+            [elewaWebsiteHeaderToggleMenu]="isActive"
+            (toggleActive)="toggleActiveClass($event)"
+          >
+            {{ 'ELEWA-WEBSITE-HEADER.CONTACT-US' | transloco }}
+          </button>
+        </li>
       </ul>
     </nav>
-    <button class="btn">
+    <button class="btn btn-big-screen">
       {{ 'ELEWA-WEBSITE-HEADER.CONTACT-US' | transloco }}
     </button>
 
