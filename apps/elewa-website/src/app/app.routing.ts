@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
-
 export const ELEWA_WEBSITE_ROUTES: Route[] = [
   { path: '*', redirectTo: 'home', pathMatch: 'full' },
 
@@ -30,28 +29,16 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.FeaturesPagesAboutModule
       ),
   },
-  {
-    path: 'content-text',
-    loadChildren: () =>
-      import('@elewa-website/elements/layout/texts').then(
-        (m) => m.TextsModule
-      ),
-  },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(
-      ELEWA_WEBSITE_ROUTES,
-      {
-        scrollPositionRestoration: 'enabled',
-        enableTracing: true,
-        onSameUrlNavigation: 'reload'
-      },
-    )
+    RouterModule.forRoot(ELEWA_WEBSITE_ROUTES, {
+      scrollPositionRestoration: 'enabled',
+      enableTracing: true,
+      onSameUrlNavigation: 'reload',
+    }),
   ],
-  exports: [
-    RouterModule
-  ]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
