@@ -17,6 +17,13 @@
     "paths": {
       "@elewa-website/cards": ["libs/cards/src/index.ts"],
       "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
+      ],
+      "@elewa-website/data/ui/content-text": [
+        "libs/data/ui/content-text/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/texts": [
+        "libs/elements/layout/texts/src/index.ts"
+      ],
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
@@ -26,6 +33,9 @@
       "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
       "@elewa-website/models/schema/ui/cards": [
         "libs/models/schema/ui/cards/src/index.ts"
+       ],
+      "@elewa-website/models/schema/ui/texts": [
+        "libs/models/schema/ui/texts/src/index.ts"
       ],
       "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"]
     }
