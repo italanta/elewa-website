@@ -11,22 +11,28 @@
     </div>
 
     <!-- Navigation -->
-    <!-- [routerLink] is to be added on the links below -->
     <nav class="nav-menu" [ngClass]="{ active: isMenuOpen }">
       <ul>
         <li class="dropdown">
-          <a href="#">{{ "HEADER.NAV-ITEMS.SOLUTIONS" | transloco }}<span class="arrow-down"></span></a>
+          <a href="#">{{ "HEADER.NAV-ITEMS.SOLUTIONS" | transloco }}
+            <span class="arrow-down"></span>
+          </a>
+          <!-- [routerLink] is to be added on the links below -->
           <ul class="dropdown-list">
             <li><a href="#">Solution 1</a></li>
             <li><a href="#">Solution 2</a></li>
             <li><a href="#">Solution 3</a></li>
           </ul>
         </li>
-        <li><a href="#">{{ "HEADER.NAV-ITEMS.PROJECTS" | transloco }}</a></li>
-        <li><a href="#">{{ "HEADER.NAV-ITEMS.COMPANY" | transloco }}</a></li>
-        <li><a href="#">{{ "HEADER.NAV-ITEMS.NEWS-ITEMS" | transloco }}</a></li>
-
-
+        <li>
+          <a href="#">{{ "HEADER.NAV-ITEMS.PROJECTS" | transloco }} [routerLink]="['/projects']"</a>
+        </li>
+        <li>
+          <a href="#">{{ "HEADER.NAV-ITEMS.COMPANY" | transloco }} [routerLink]="['/company']"</a>
+        </li>
+        <li>
+          <a href="#">{{ "HEADER.NAV-ITEMS.NEWS-ITEMS" | transloco }} [routerLink]="['/news-items']"</a>
+        </li>
       </ul>
     </nav>
 
