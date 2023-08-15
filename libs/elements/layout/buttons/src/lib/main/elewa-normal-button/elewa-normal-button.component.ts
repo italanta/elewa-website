@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './elewa-normal-button.component.html',
   styleUrls: ['./elewa-normal-button.component.scss'],
 })
-export class ElewaNormalButtonComponent {}
+export class ElewaNormalButtonComponent {
+
+  handleClick () {
+    alert('i was clicked')
+  }
+}
+
