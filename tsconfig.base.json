@@ -17,7 +17,6 @@
     "paths": {
       "@elewa-website/cards": ["libs/cards/src/index.ts"],
       "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
-      ],
       "@elewa-website/data/ui/content-text": [
         "libs/data/ui/content-text/src/index.ts"
       ],

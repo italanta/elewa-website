@@ -3,7 +3,7 @@ import { RouterModule, Route } from '@angular/router';
 
 
 export const ELEWA_WEBSITE_ROUTES: Route[] = [
-  // { path: '*', redirectTo: 'home', pathMatch: 'full' },
+  { path: '*', redirectTo: 'home', pathMatch: 'full' },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 
