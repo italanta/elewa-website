@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
 @Component({
@@ -6,29 +6,54 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
   templateUrl: './elewa-slider-button.component.html',
   styleUrls: ['./elewa-slider-button.component.scss'],
 })
-export class SliderButtonComponent implements OnInit {
+export class SliderButtonComponent {
   isHovered = false;
-  btnBackgroundColor!: string;
-  iconBackgroundColor!: string;
+
   @Input() buttonData?: SliderButtonData;
 
-  ngOnInit(): void {
-    this.setBgColor();
-    this.setIconColor();
+  @Output() btnClickEvent = new EventEmitter();
+
+  onMouseEnter() {
+    this.isHovered = true;
   }
 
-  setBgColor() {
+  onMouseLeave() {
+    this.isHovered = false;
+  }
+
+  onClick = () => {
+    this.btnClickEvent.emit();
+  };
+
+  get btnBgColor() {
     if (this.isHovered) {
-      this.btnBackgroundColor = this.buttonData?.hoverBorderColor as string;
+      return this.buttonData?.hoverBgColor;
     } else {
-      this.btnBackgroundColor = this.buttonData?.bgColor as string;
+      return this.buttonData?.bgColor;
     }
   }
-  setIconColor() {
+
+  get btnColor() {
     if (this.isHovered) {
-      this.iconBackgroundColor = this.buttonData?.hoverIconColor as string;
+      return this.buttonData?.hoverColor;
     } else {
-      this.iconBackgroundColor = this.buttonData?.iconColor as string;
+      return this.buttonData?.color;
+    }
+  }
+
+  get iconBgColor() {
+    if (this.isHovered) {
+      return this.buttonData?.hoverIconBackgroundColor;
+    } else {
+      return this.buttonData?.iconBackgroundColor;
+    }
+  }
+
+  get iconColor() {
+    if (this.isHovered) {
+      return this.buttonData?.iconBackgroundColor;
+    } else {
+      return this.buttonData?.iconColor;
     }
   }
 }
