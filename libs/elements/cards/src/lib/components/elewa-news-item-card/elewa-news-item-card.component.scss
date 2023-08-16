@@ -1,0 +1,18 @@
+.news-item{
+    display:flex;
+    gap:30px;
+    padding: 25px 15px;
+    align-items: center;
+    
+    .title{
+        font-size: 25px;
+        text-decoration: solid;
+    }
+    .description{
+        color: grey;
+    }
+    .button-text{
+text-decoration: solid;
+border-width: 20px;
+    }
+}
