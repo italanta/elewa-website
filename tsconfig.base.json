@@ -39,6 +39,9 @@
       "@elewa-website/models/schema/ui/texts": [
         "libs/models/schema/ui/texts/src/index.ts"
       ],
+      "@elewa-website/models/sections/projects/cards": [
+        "libs/models/sections/projects/cards/src/index.ts"
+      ],
       "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"]
     }
   },
