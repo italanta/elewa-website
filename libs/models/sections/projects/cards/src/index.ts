@@ -1,1 +1,1 @@
-export * from './lib/models-sections-projects-cards.module';
+export * from './lib/project-item.interface'
