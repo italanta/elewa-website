@@ -1,13 +1,14 @@
 <button
+  (mouseover)="(isHovered)"
+  (mouseout)="(!isHovered)"
   class="slider-button"
-  [style.background]="buttonData?.bgColor"
-  [style.color]="buttonData?.hoverBgColor"
+  [style.background]="btnBackgroundColor"
   [style.border-color]="buttonData?.borderColor"
 >
-  <span class="text">Unlock your potential</span>
+  <span class="text">{{ buttonData?.text }}</span>
   <i
     class="fa-solid fa-arrow-right right-arrow"
-    [style.background]="buttonData?.iconBackgroundColor"
+    [style.background]="iconBackgroundColor"
     [style.color]="buttonData?.iconColor"
   ></i>
 </button>
