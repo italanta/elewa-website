@@ -1,6 +1,6 @@
 // elewa-slider-button.component.ts
 import { Component, Input } from '@angular/core';
-import { SliderButton } from '../slider-button';
+import { SliderButton } from '@elewa-website/models/schema/ui/buttons';
 
  
 @Component({
