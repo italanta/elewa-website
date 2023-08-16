@@ -1,0 +1,20 @@
+.elewa-slider-button{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px; /* make the button round */
+    padding: 8px 10px; /* creating space */
+
+    .material-icons{
+        background-color: white;
+        color: #606060;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .button-text{
+        margin-right: 10px;
+    }
+}
