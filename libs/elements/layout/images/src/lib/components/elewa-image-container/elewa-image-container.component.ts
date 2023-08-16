@@ -3,12 +3,14 @@ import { __elewaImagesData } from '@elewa-website/models/data/schema/ui/images';
 import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
 
 @Component({
-  selector: 'elewa-website-elewa-image-container',
+  selector: 'elewa-website-image-container',
   templateUrl: './elewa-image-container.component.html',
   styleUrls: ['./elewa-image-container.component.scss'],
 })
 export class ElewaImageContainerComponent {
-  // Image input with types
+  /**
+   * Image input with types
+   */
   @Input() imageConfig: ImageConfig[] = __elewaImagesData;
 
   /**
