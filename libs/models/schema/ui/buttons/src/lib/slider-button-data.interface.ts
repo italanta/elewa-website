@@ -1,4 +1,4 @@
-export interface SliderButtonData
+export interface SliderButtonData extends ButtonData
 {
   text: string;
 
@@ -13,4 +13,15 @@ export interface SliderButtonData
   hoverBorderColor?: string;
   hoverIconColor?: string;
   hoverIconBackgroundColor?: string;
+}
+
+export interface ButtonData 
+{
+  text: string
+  
+  bgColor?: string; // Background colour
+  color?: string; // text color
+  
+  hoverBgColor?: string;
+  hoverColor?: string;
 }
