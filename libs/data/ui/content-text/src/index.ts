@@ -1,1 +1,1 @@
-export * from './lib/data-ui-content-text.module';
+export * from './lib/mock-content-text.data';

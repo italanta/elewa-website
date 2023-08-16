@@ -7,5 +7,5 @@ import { ContentText } from '@elewa-website/models/schema/ui/texts';
   styleUrls: ['./elewa-text-content-item.component.scss'],
 })
 export class ElewaTextContentItemComponent {
-  @Input() textContent!: ContentText [] 
+  @Input() textContent!: ContentText []; 
 }
