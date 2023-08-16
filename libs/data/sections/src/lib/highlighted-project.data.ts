@@ -1,10 +1,10 @@
 import { ProjectItem } from 'libs/models/sections/projects/src/lib/project-item.interface'
 
 export const __highlightedProjects: ProjectItem[] = [ {
-    title: 'Project 1',
-    description: 'Description for Project 1',
-    tag: 'Tag 1',
-    imgSrc: 'path/to/image1.jpg',
+    title: 'Empowering women for education',
+    description: '“Extremists have shown what frightens them most: a girl with a book.”',
+    tag: 'Education',
+    imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1JbDTy1gQw9sY2DxqRCI8BsVTX6XehGmgMsfIRsEGdD69MYLIc1UmrC30xNbGwsV5B3c&usqp=CAU',
   },
   {
     title: 'Project 2',
