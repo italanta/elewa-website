@@ -11,7 +11,7 @@ import { SliderButton } from '../slider-button';
 export class ElewaSliderButtonComponent {
   @Input() buttonData: SliderButton = {
     text: '',
-    backgroundColor: '',
+    bgColour: '',
     color: '',
     borderColor: '',
     iconColor: '',
