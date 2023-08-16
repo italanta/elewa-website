@@ -5,6 +5,6 @@ import { ElewaProjectItemCardComponent } from './elewa-project-item-card/elewa-p
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaInfoCardComponent, ElewaProjectItemCardComponent],
-  exports: [ElewaInfoCardComponent],
+  exports: [ElewaInfoCardComponent, ElewaProjectItemCardComponent],
 })
 export class CardsModule {}
