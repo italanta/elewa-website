@@ -7,24 +7,30 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
   styleUrls: ['./elewa-slider-button.component.scss'],
 })
 export class SliderButtonComponent {
+  /** initial values that checks if the button is hovered  */
   isHovered = false;
 
+  /** data that contains the dynamic button data  */
   @Input() buttonData?: SliderButtonData;
 
   @Output() btnClickEvent = new EventEmitter();
 
+  /** sets hover to true when the button is hovered  */
   onMouseEnter() {
     this.isHovered = true;
   }
 
+  /** sets hover to false when mouse leaves the button  */
   onMouseLeave() {
     this.isHovered = false;
   }
 
+  /** function to be executed when the button is clicked */
   onClick = () => {
     this.btnClickEvent.emit();
   };
 
+  /** toggles button background color when the button is hovered  */
   get btnBgColor() {
     if (this.isHovered) {
       return this.buttonData?.hoverBgColor;
@@ -33,6 +39,7 @@ export class SliderButtonComponent {
     }
   }
 
+  /** toggles button color when the button is hovered  */
   get btnColor() {
     if (this.isHovered) {
       return this.buttonData?.hoverColor;
@@ -41,6 +48,7 @@ export class SliderButtonComponent {
     }
   }
 
+  /** toggles button icon background color when the button is hovered  */
   get iconBgColor() {
     if (this.isHovered) {
       return this.buttonData?.hoverIconBackgroundColor;
@@ -49,6 +57,7 @@ export class SliderButtonComponent {
     }
   }
 
+  /** toggles button icon color when the button is hovered  */
   get iconColor() {
     if (this.isHovered) {
       return this.buttonData?.iconBackgroundColor;
