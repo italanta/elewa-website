@@ -1,1 +1,1 @@
-export * from './lib/ project-item.interface'
+export * from './lib/project-item.interface'
