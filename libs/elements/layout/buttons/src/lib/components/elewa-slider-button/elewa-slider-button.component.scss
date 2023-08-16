@@ -1,24 +1,37 @@
 .slider-button {
   position: relative;
-  min-width: 200px;
-  height: 40px;
+  min-width: var(--elewa-website-slider-btn-width);
+  height: var(--elewa-website-slider-btn-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 5px 5px 16px;
-  background: #000000;
+  padding: var(--elewa-website-slider-btn-padding);
+  background: var(--elewa-website-color-primary-black);
   border: 1px solid;
-  border-radius: 29px;
-  color: #ffffff;
+  border-radius: var(--elewa-website-slider-btn-border-radius);
+  color: var(--elewa-website-color-primary-white);
   cursor: pointer;
-  // animation effect on hover
+  /* animation effect on hover */
   &:hover {
+    background: var(--elewa-website-color-primary-white);
+    color: var(--elewa-website-color-primary-black);
     .right-arrow {
-      right: calc(100% - (32px + 5px));
+      right: calc(
+        100% -
+          (
+            var(--elewa-website-slider-btn-icon-size) +
+              var(--elewa-website-slider-btn-icon-position)
+          )
+      );
+      background: var(--elewa-website-color-primary-black);
+      color: var(--elewa-website-color-primary-white);
     }
 
     .text {
-      left: 25%;
+      left: calc(
+        var(--elewa-website-slider-btn-icon-size) +
+          var(--elewa-website-slider-btn-text-position)
+      );
     }
   }
 }
@@ -26,21 +39,21 @@
 .text {
   position: absolute;
   white-space: nowrap;
-  left: 16px;
+  left: var(--elewa-website-slider-btn-text-position);
   transition: left 1s ease-in-out;
 }
 
 .right-arrow {
   position: absolute;
-  right: 2%;
-  height: 32px;
-  width: 32px;
+  right: var(--elewa-website-slider-btn-icon-position);
+  height: var(--elewa-website-slider-btn-icon-size);
+  width: var(--elewa-website-slider-btn-icon-size);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
-  font-size: 1.2rem;
-  color: #000000;
-  border-radius: 50%;
+  background: var(--elewa-website-color-primary-white);
+  font-size: var(--elewa-website-slider-btn-icon-font-size);
+  color: var(--elewa-website-color-primary-black);
+  border-radius: var(--elewa-website-slider-btn-icon-border-radius);
   transition: right 1s ease-in-out;
 }
