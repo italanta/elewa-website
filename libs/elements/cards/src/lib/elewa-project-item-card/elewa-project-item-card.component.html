@@ -1,1 +1,6 @@
-<p>elewa-project-item-card works!</p>
+<div class="project-card">
+  <img [src]="project.imgSrc" alt="{{ project.title }}" class="project-image" />
+  <h3 class="project-title">{{ project.title }}</h3>
+  <p class="project-description">{{ project.description }}</p>
+  <span class="project-tag">{{ project.tag }}</span>
+</div>
