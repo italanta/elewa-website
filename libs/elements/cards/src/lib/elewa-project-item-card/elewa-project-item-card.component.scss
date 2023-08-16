@@ -11,7 +11,7 @@
           border-style: none;
           padding-bottom: 20px;
           border-radius: 5px 5px 5px 5px;
-          .project-image{
+          .project-image{ //Styles the image
             flex: auto;
             width: 25vw;
             height: 75vh;
@@ -21,18 +21,18 @@
       }
         .card-content{
           padding: 5px;
-          .project-tag{
+          .project-tag{ // styles the tag
           border-radius: 22px;
           border: 0.1rem solid;
           padding: 2px 12px 3px 12px;
           
         }
-          .project-title{
+          .project-title{ // styles the title
             padding: 10px;
             font-size: medium;
             font-weight: bold;
           }
-          .project-description{
+          .project-description{ // styles the description
             padding: 5px;
             font-size: medium;
             border-radius: 20px;
