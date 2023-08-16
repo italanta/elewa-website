@@ -1,0 +1,46 @@
+.slider-button {
+  position: relative;
+  min-width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px 5px 16px;
+  background: #000000;
+  border: 1px solid;
+  border-radius: 29px;
+  color: #ffffff;
+  cursor: pointer;
+  // animation effect on hover
+  &:hover {
+    .right-arrow {
+      right: calc(100% - (32px + 5px));
+    }
+
+    .text {
+      left: 25%;
+    }
+  }
+}
+
+.text {
+  position: absolute;
+  white-space: nowrap;
+  left: 16px;
+  transition: left 1s ease-in-out;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 2%;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-size: 1.2rem;
+  color: #000000;
+  border-radius: 50%;
+  transition: right 1s ease-in-out;
+}

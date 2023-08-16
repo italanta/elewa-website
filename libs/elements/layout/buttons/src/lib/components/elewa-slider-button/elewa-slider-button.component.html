@@ -1,1 +1,13 @@
-<p>elewa-slider-button works!</p>
+<button
+  class="slider-button"
+  [style.background]="buttonData?.bgColor"
+  [style.color]="buttonData?.hoverBgColor"
+  [style.border-color]="buttonData?.borderColor"
+>
+  <span class="text">Unlock your potential</span>
+  <i
+    class="fa-solid fa-arrow-right right-arrow"
+    [style.background]="buttonData?.iconBackgroundColor"
+    [style.color]="buttonData?.iconColor"
+  ></i>
+</button>

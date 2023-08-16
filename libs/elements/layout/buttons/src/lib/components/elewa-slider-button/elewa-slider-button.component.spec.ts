@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ElewaSliderButtonComponent } from './elewa-slider-button.component';
+import { SliderButtonComponent } from './elewa-slider-button.component';
 
 describe('ElewaSliderButtonComponent', () => {
-  let component: ElewaSliderButtonComponent;
-  let fixture: ComponentFixture<ElewaSliderButtonComponent>;
+  let component: SliderButtonComponent;
+  let fixture: ComponentFixture<SliderButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ElewaSliderButtonComponent],
+      declarations: [SliderButtonComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ElewaSliderButtonComponent);
+    fixture = TestBed.createComponent(SliderButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
