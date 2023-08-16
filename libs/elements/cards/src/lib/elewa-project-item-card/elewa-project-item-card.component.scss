@@ -1,0 +1,42 @@
+.container{
+    box-sizing: border-box;
+    position:relative;
+    padding: 1px;
+    margin: auto;
+      .project-card {
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        
+        .img-div{
+          border-style: none;
+          padding-bottom: 20px;
+          border-radius: 5px 5px 5px 5px;
+          .project-image{
+            flex: auto;
+            width: 25vw;
+            height: 75vh;
+            padding: 5px;
+            border-radius: 20px;
+          }
+      }
+        .card-content{
+          padding: 5px;
+          .project-tag{
+          border-radius: 22px;
+          border: 0.1rem solid;
+          padding: 2px 12px 3px 12px;
+          
+        }
+          .project-title{
+            padding: 10px;
+            font-size: medium;
+            font-weight: bold;
+          }
+          .project-description{
+            padding: 5px;
+            font-size: medium;
+            border-radius: 20px;
+          }
+        }
+    }
+}
