@@ -23,6 +23,9 @@
       ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/texts": [
+        "libs/models/schema/ui/texts/src/index.ts"
       ]
     }
   },
