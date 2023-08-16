@@ -1,1 +1,5 @@
-<p>elewa-text-section works!</p>
+<div *ngFor="let herotext of herotexts">
+    <h1>{{ herotext.title }}</h1>
+    <h3>{{ herotext.subtitle }}</h3>
+    <p>{{ herotext.description }}</p>
+</div>
