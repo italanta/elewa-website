@@ -11,6 +11,8 @@
   border-radius: var(--elewa-website-slider-btn-border-radius);
   color: var(--elewa-website-color-primary-white);
   cursor: pointer;
+  transition: all 1s ease-in-out;
+
   /* animation effect on hover */
   &:hover {
     background: var(--elewa-website-color-primary-white);
