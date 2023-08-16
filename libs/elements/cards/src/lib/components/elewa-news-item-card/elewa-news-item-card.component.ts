@@ -1,7 +1,7 @@
 // Importing necessary components and modules from Angular and other sources
-import { Component, Input} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { NewsItem } from '@elewa-website/models/schema/ui/cards/cards-module';
-import { __highlightedNews } from '@elewa-website/models/schema/ui/cards/cards-module';
+import { __highlightedNews } from '@elewa-website/models/data/sections';
 
 // Defining a new Angular component named ElewaNewsItemCardComponent
 @Component({
@@ -9,11 +9,15 @@ import { __highlightedNews } from '@elewa-website/models/schema/ui/cards/cards-m
   templateUrl: './elewa-news-item-card.component.html',
   styleUrls: ['./elewa-news-item-card.component.scss'],
 })
-export class ElewaNewsItemCardComponent {
+export class ElewaNewsItemCardComponent implements OnInit {
 
   // Declaring an input property named 'item'
   @Input() item!: NewsItem
 
   // Creating an array 'newsItem' to store highlighted news items
-  newsItem: NewsItem[] = __highlightedNews;
+  newsItem: NewsItem[] = [];
+  ngOnInit(): void {
+    // Assign the highlighted news items to the newsItem array during initialization
+    this.newsItem = __highlightedNews;
+  }
 }
