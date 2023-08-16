@@ -1,12 +1,15 @@
+<!-- This is a project item card template -->
 <div class="container">
   <div class="project-card">
     <div class="img-div">
+      <!-- image placement -->
       <img
         [src]="project.imgSrc"
         alt="{{ project.title }}"
         class="project-image"
       />
     </div>
+    <!-- details placement -->
     <div class="card-content">
       <span class="project-tag">{{ project.tag }}</span>
       <h3 class="project-title">{{ project.title }}</h3>
