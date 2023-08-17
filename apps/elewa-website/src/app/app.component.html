@@ -1,7 +1,20 @@
 
 <!-- Render the elewa website header component before the router outlet and at the top of the main app component so that the header can be displayed at the top of every page / route of the main application -->
-<!-- <elewa-website-header></elewa-website-header> -->
+<elewa-website-header></elewa-website-header>
 
 <router-outlet></router-outlet>
-
-<elewa-website-elewa-slider-button [data]="sliderButtonData" (click)="handleClick()"></elewa-website-elewa-slider-button>
+<elewa-website-elewa-slider-button
+[data]="{
+    text: 'Unlock your potential',
+    bgColor: 'black',
+    color: 'white',
+    borderColor: 'black',
+    iconColor: '#606060',
+    iconBackgroundColor: 'white',
+    hoverBgColor: 'white',
+    hoverColor: 'black',
+    hoverBorderColor: 'black',
+    hoverIconColor: 'white',
+    hoverIconBgColor: 'black'
+}"
+(buttonClick)="handleButtonClick()"></elewa-website-elewa-slider-button>

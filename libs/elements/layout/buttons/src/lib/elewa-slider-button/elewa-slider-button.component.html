@@ -1,4 +1,19 @@
-<button class="elewa-slider-button">
-    <span class="button-text">Unlock your potential</span>
-    <i class="material-icons">arrow_right_alt</i>
+<button
+    class="elewa-slider-button"
+    [class.hovered]="isHovered" 
+    [class.default]="!isHovered" 
+    (mouseenter)="isHovered = true" 
+    (mouseleave)="isHovered = false" 
+    (click)="emitClick()" 
+    [style.background-color]="isHovered ? data.hoverBgColor : data.bgColor" 
+    [style.color]="isHovered ? data.hoverColor : data.color" 
+    [style.border-color]="isHovered ? data.hoverBorderColor : data.borderColor" 
+>
+    <span class="button-text">{{ data.text }}</span> <!-- Display the button text -->
+    <i class="material-icons"
+        [style.background-color]="isHovered ? data.hoverIconBgColor : data.iconBackgroundColor" 
+        [style.color]="isHovered ? data.hoverIconColor : data.iconColor"
+    >
+        arrow_right_alt <!-- Display the icon -->
+    </i>
 </button>

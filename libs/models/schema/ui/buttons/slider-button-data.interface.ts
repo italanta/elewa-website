@@ -1,13 +1,16 @@
 export interface SliderButtonData {
+[x: string]: any;
     text: string;
-    bgColour?: string;
+
+    bgColor?: string;
     color?: string;
     borderColor?: string;
     iconColor?: string;
     iconBackgroundColor?: string;
-    hoverBgColour?: string;
+
+    hoverBgColor?: string;
     hoverColor?: string;
     hoverBorderColor?: string;
     hoverIconColor?: string;
-    hoverIconBackgroundColor?: string;
+    hoverIconBgColor?: string;
 }

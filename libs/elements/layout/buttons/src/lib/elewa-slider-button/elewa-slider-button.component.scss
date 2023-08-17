@@ -1,20 +1,32 @@
-.elewa-slider-button{
+.elewa-slider-button {
     display: flex;
     align-items: center;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50px; /* make the button round */
-    padding: 8px 10px; /* creating space */
+    justify-content: space-between;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: all 0.8s;
 
-    .material-icons{
-        background-color: white;
-        color: #606060;
+    .material-icons {
         border-radius: 50%;
         padding: 5px;
+        transition: all 0.8s;
     }
 
-    .button-text{
+    .button-text {
         margin-right: 10px;
+        font-weight: 600;
+        transition: all 0.8s;
+    }
+    /* Styles for the button when hovered */
+    &.hovered {
+        .button-text {
+            transform: translateX(40px); /* Move the text to the right by 40px when hovered */
+        }
+
+        .material-icons {
+            transform: translateX(-415%); /* Move the icon to the left by 415% when hovered */
+        }
     }
 }
