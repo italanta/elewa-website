@@ -18,18 +18,7 @@ To get a local copy up and running, please follow these simple steps.
 Here is what you need to be able to run the ElewaEducation Website.
 
 - Node.js
-- npm
-- AngularCLI (run the command below to install globally)
-
-```bash
- npm install -g @angular/cli 
-```
-
-- Nx (run the command below to install globally)
-
-```bash
- npm i -g nx 
-```
+- npm _(recommended)_
 
 ### Setup
 
@@ -54,8 +43,8 @@ Here is what you need to be able to run the ElewaEducation Website.
 4. Set up your `.env` file
 
    - Navigate into the environments directory `apps/elewa-website/src/environments`
-   - Duplicate and then Rename `environment.ts.example` to `environment.ts`
-   - Duplicate and then Rename `environment.prod.ts.example` to `environment.prod.ts`
+   - Rename `environment.ts.example` to `environment.ts`
+   - Rename `environment.prod.ts.example` to `environment.prod.ts`
 
 5. Start the dev server (this will run your app as an SPA)
 
