@@ -1,0 +1,23 @@
+.slider-button{
+    margin-top: 100px;
+    position: relative;
+    border-radius: 29px; /* Makes the button have rounded edges */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.text{
+
+}
+
+.icon{
+    border-radius: 50%;
+    margin-left: 5px;
+    right: 0;
+    
+}
