@@ -1,5 +1,6 @@
 <button
     class="slider-button"
+    (click)="emitSliderButtonClick()"
     [ngStyle]="hovered ? hoveredCurrentStyles : currentStyles"
     (mouseenter)="hovered = true"
     (mouseleave)="hovered = false"     
