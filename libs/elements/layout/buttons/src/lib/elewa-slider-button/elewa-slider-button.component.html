@@ -5,7 +5,11 @@
     (mouseleave)="hovered = false"     
 >
     <span class="text">{{ sliderButtonData.text }}</span>
-    <mat-icon [ngStyle]="hovered ? hoveredIconCurrentStyles : iconCurrentStyles" class="icon">arrow_right_alt</mat-icon>
+    <i
+    class="fas fa-long-arrow-alt-right icon"
+    [ngStyle]="hovered ? hoveredIconCurrentStyles : iconCurrentStyles"
+    >
+    </i>
 
 </button>
 
