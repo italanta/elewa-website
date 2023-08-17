@@ -1,23 +1,34 @@
 .slider-button{
-    margin-top: 100px;
+
     position: relative;
     border-radius: 29px; /* Makes the button have rounded edges */
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 5px 10px;
     justify-content: space-between;
+    padding: 5px 10px;
     cursor: pointer;
     transition: all 1s ease-in-out;
 }
 
-.text{
-
-}
 
 .icon{
     border-radius: 50%;
     margin-left: 5px;
-    right: 0;
+    transition: transform 0.5s ease;    
+}
+
+
+.text {
+  transition: transform 0.3s ease;   
+}
+  
+  
+.slider-button:hover .text {
+  transform: translateX(20%); /* Move the text to the right */
+}
+  
+.slider-button:hover .icon {
+  /* Move the icon to the start of the button */
+  transform: translateX(-560%);
     
 }
