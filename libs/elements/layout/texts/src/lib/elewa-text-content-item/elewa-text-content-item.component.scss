@@ -1,0 +1,21 @@
+.Text-card{
+    padding: 20px;
+
+    h3{
+        font-size: 30px;
+        margin: 30px 0px 20px 0px;
+        font-family: "DMSans-Medium";
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;;
+
+        li{
+            font-size: 20px;
+            font-family: "DMSans-Regular";
+        }
+    }
+}
