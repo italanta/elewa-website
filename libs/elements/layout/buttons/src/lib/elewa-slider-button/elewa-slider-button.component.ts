@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter  } from '@angular/core';
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
 
@@ -9,10 +9,41 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 })
 export class ElewaSliderButtonComponent {
   @Input() sliderButtonData!: SliderButtonData;
-  @Input() currentStyles!:object;
-  @Input() iconCurrentStyles!:object;
-  @Input() hoveredCurrentStyles!:object;
-  @Input() hoveredIconCurrentStyles!:object;
-  @Input() hovered!:boolean;
+  @Output() sliderButtonClick: EventEmitter<void> = new EventEmitter<void>();
+  hovered = false;
+  currentStyles: object = {};
+  iconCurrentStyles: object = {};
+  hoveredCurrentStyles: object = {};
+  hoveredIconCurrentStyles: object = {};
+
+  ngOnInit(): void {
+    this.currentStyles = {
+
+      "background-color": this.sliderButtonData.bgColour,
+      "color":this.sliderButtonData.color,
+      "border": `2px solid ${this.sliderButtonData.borderColor}`
+    }
+
+    this.iconCurrentStyles = {
+      "background-color": this.sliderButtonData.iconBackgroundColor,
+      "color":this.sliderButtonData.iconColor,
+    }
+
+    this.hoveredCurrentStyles = {
+      "background-color": this.sliderButtonData.hoverBgColour,
+      "color":this.sliderButtonData.hoverColor,
+      "border": `2px solid ${this.sliderButtonData.hoverBorderColor}`
+    }
+
+    this.hoveredIconCurrentStyles = {
+      "background-color": this.sliderButtonData.hoverIconBackgroundColor,
+      "color":this.sliderButtonData.hoverIconColor,
+
+    }
+  }
+
+  emitSliderButtonClick() {
+    this.sliderButtonClick.emit();
+  }
   
 }
