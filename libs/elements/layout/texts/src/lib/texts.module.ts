@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ElewaTextSectionComponent } from './components/elewa-text-section/elewa-text-section.component';
 
-// import { TextsRoutesMoule } from './texts.routing';
+import { TextsRoutesMoule } from './texts.routing';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, TextsRoutesMoule],
   declarations: [ElewaTextSectionComponent]
 })
 export class TextsModule {}
