@@ -7,6 +7,7 @@ import { TranslocoRootModule } from './transloco-root.module';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 
 import { AppRoutingModule } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app.routing';
     HttpClientModule,
     TranslocoRootModule,
     AppHeaderModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
