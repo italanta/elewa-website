@@ -1,0 +1,20 @@
+<div class="overViewContainer">
+    <div class="positioning">
+      <div class="left">
+        <div class="imageContainer" [ngStyle]="{
+          'background-image': 'url(' + data.imgUrl + ')'
+        }">
+  
+        </div>
+        <!-- <img [src]="data.imgUrl" alt="Home Page Overview Image" class="image"/> -->
+      </div>
+      <div class="right">
+        <div class="rightContent">
+          <h1 class="header"  [ngStyle]="{
+            'color': data.headerColor
+          }">{{data.header}}</h1>
+          <p class="text" *ngFor="let item of data.content">{{item}}</p>
+        </div>
+      </div>
+    </div>
+</div>
