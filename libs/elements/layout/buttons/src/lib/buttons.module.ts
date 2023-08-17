@@ -5,5 +5,6 @@ import { ElewaSliderButtonComponent } from './elewa-slider-button/elewa-slider-b
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaSliderButtonComponent],
+  exports: [ElewaSliderButtonComponent]
 })
 export class ButtonsModule {}
