@@ -1,6 +1,6 @@
 import { ContentText } from '@elewa-website/models/schema/ui/texts';
 
-export const content: ContentText [] = [
+export const Content: ContentText [] = [
     {
         title: 'From here to the world',
         descriptions: [

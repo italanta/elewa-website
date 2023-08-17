@@ -1,0 +1,6 @@
+<div class="Text-card" *ngFor="let item of Content ">
+    <h2>{{item.title}}</h2>
+    <ul>
+        <li *ngFor="let description of item.descriptions">{{description}}</li>
+    </ul>
+</div>

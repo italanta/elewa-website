@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ContentText } from '@elewa-website/models/schema/ui/texts';
+import { Content as mockContent } from '@elewa-website/data/ui/content-text';
+
 
 @Component({
   selector: 'elewa-website-elewa-text-content-item',
@@ -8,4 +10,9 @@ import { ContentText } from '@elewa-website/models/schema/ui/texts';
 })
 export class ElewaTextContentItemComponent {
   @Input() textContent!: ContentText []; 
+  Content: ContentText[];
+
+  constructor () {
+    this.Content = mockContent;
+  }
 }
