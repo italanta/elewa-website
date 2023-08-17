@@ -11,7 +11,7 @@ export class ElewaImageContainerComponent {
   /**
    * Image input with types
    */
-  @Input() imageConfig: ImageConfig[] = __elewaImagesData;
+  @Input() imageConfig: ImageConfig = __elewaImagesData;
 
   /**
    * Cases for Image visualisation to be used as classes in HTML and scss component files 

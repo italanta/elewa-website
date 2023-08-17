@@ -1,6 +1,6 @@
 <div class="elewa-image-container">
-  <div class="elewa-images" *ngFor="let config of imageConfig" [id]="imageVisualisation(config) === 'window' ? 'window-card' : ''" >
-    <img [src]="config.imageSrc" alt="{{ config.title }}" [ngClass]="imageVisualisation(config)"
-      [style.max-width]="config.maxWidth ? config.maxWidth : 'none'" />
+  <div class="elewa-images" [id]="imageVisualisation(imageConfig) === 'window' ? 'window-card' : ''" >
+    <img [src]="imageConfig.imageSrc" alt="{{ imageConfig.title }}" [ngClass]="imageVisualisation(imageConfig)"
+      [style.max-width]="imageConfig.maxWidth ? imageConfig.maxWidth : 'none'" />
   </div>
 </div>

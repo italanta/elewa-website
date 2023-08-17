@@ -29,6 +29,8 @@
 // Forms a figure-like 8: Two pills placed on top of each other horizontally
 .stacked {
   clip-path: inset(0 0 0 0 round 30vh);
+  height: 50%;
+  width: 100%;
 }
 
 // Round the top of the image at 30% of vertical height

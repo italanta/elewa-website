@@ -1,4 +1,6 @@
-// Image interface type
+/**
+ * Image interface type
+ */
 export interface ImageConfig {
   title: string
   imageSrc: string
@@ -6,7 +8,9 @@ export interface ImageConfig {
   maxWidth?: string
 }
 
-// Image interface enum
+/**
+ * Image interface enum
+ */
 export enum ImageVisualisation {
   Pill = 0,
   Stacked = 1,
