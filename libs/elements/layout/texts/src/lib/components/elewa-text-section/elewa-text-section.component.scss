@@ -3,12 +3,17 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    font-weight: 600;
 
     h2{
         font-size: 40px;
     }
     h3{
-        font-size: 25px;
+        font-size: 30px;
+        font-weight: 500;
     }
-    span{}
+    span{
+        font-size: 18px;
+        font-weight: 300;
+    }
 }
