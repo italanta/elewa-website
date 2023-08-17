@@ -1,17 +1,23 @@
 .elewa-slider-button {
-  background-color: black;
+  background-color:#000000;
   color: white;
   border: none;
-  border-radius: 50px; /* Makes the button round */
+  border-radius: 29px; /* Makes the button round */
   padding: 5px 20px; /* Adjusted padding for space */
   position: relative;
   display: inline-flex;
   align-items: center; /* Center text and icon vertically */
   overflow: hidden;
+  cursor: pointer;
 }
 
 .elewa-slider-button .button-text {
   margin-right: 10px; /* Added margin to separate text and icon */
+  font: normal normal bold 18px/42px DM Sans;
+  color: #FFFFFF;
+  opacity: 1;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .elewa-slider-button i {
@@ -26,17 +32,21 @@
   padding: 20px;
 }
 
-.elewa-slider-button:hover{
-  background-color: aqua;
-}
+// .elewa-slider-button:hover{
+//   background-color: aqua;
+// }
 
 .header{
+  font: normal normal medium 40px/110px DM Sans;
+  color: #000000;
   font-size:45px;
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 2px;
 }
 .paragraph{
+  font: normal normal medium 40px/110px DM Sans;
+  color: #000000;
   font-size:25px;
   font-weight: 400;
   line-height: 24px;
