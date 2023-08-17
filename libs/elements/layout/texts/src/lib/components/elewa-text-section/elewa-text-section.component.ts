@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { _heroInfo as mockHeroText } from '@elewa-website/data/ui/hero-text'
+import { _heroText as mockHeroTexts } from '@elewa-website/data/ui/texts'
 import { HeroText } from '@elewa-website/models/schema/ui/texts';
 
 @Component({
@@ -8,10 +8,10 @@ import { HeroText } from '@elewa-website/models/schema/ui/texts';
   templateUrl: './elewa-text-section.component.html',
   styleUrls: ['./elewa-text-section.component.scss'],
 })
-export class ElewaTextSectionComponent {
-  @Input() heroInfo!: HeroText[]
+export class ElewaTextSectionComponent implements OnInit {
+  @Input() heroText!: HeroText[]
 
   ngOnInit(){
-    this.heroInfo = mockHeroText
+    this.heroText = mockHeroTexts
   }
 }

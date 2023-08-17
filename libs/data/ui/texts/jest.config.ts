@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'data-ui-content-text',
+  displayName: 'data-ui-texts',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/data/ui/content-text',
+  coverageDirectory: '../../../../coverage/libs/data/ui/texts',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
