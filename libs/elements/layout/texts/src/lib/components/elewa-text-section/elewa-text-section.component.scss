@@ -1,0 +1,14 @@
+.text-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    span{}
+}
