@@ -7,8 +7,9 @@ export const _heroText: HeroText[] = [
     description: '',
   },
   {
-    title: 'Conetent development',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolorem ipsum quia dolor sit Eos qui ratione voluptatem sequi nesciunt.',
-    description: '',
+    title: 'Content development',
+    subtitle: '',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolorem ipsum quia dolor sit Eos qui ratione voluptatem sequi nesciunt.',
   },
 ];
