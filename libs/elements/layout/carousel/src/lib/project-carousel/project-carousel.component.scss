@@ -1,0 +1,31 @@
+.slider-main{
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s;
+    
+}
+
+img{
+    margin: 10px;
+    height: 330px;
+    width: 290px;
+}
+
+section{
+    margin-top: 100px;
+}
+button{
+    background-color: transparent;
+    border: 0;
+}
+.button-area{
+    margin-left: 1300px;
+}
+
+i{
+    font-size: 500;
+}
+.stretched-icon {
+    transform: scaleX(1.5);  /* 1.5 times the original width */
+  }
+  
