@@ -1,3 +1,1 @@
-import { HeroText } from './lib/hero-text';
-
-export { HeroText }
+export * from './lib/hero-text';

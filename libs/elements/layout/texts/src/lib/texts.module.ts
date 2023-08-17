@@ -8,4 +8,4 @@ import { ElewaTextSectionComponent } from './elewa-text-section/elewa-text-secti
   //export text-section component
   exports: [ElewaTextSectionComponent]
 })
-export class ElementsLayoutTextsModule {}
+export class TextsModule {}
