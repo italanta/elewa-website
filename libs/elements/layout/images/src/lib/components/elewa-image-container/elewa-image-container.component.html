@@ -1,4 +1,4 @@
 <div class="elewa-image-container" *ngFor="let item of images" [ngClass]="{ 'pill': item.visualisation === 0, 'stacked': item.visualisation === 1, 'window': item.visualisation === 2, 'card': item.visualisation === 3 }">
   <div class="title">{{ item.title }}</div>
-  <img src={{item.imageSrc}} alt="">
+  <img class='image' src={{item.imageSrc}} alt="">
 </div>
