@@ -1,11 +1,21 @@
 <!-- <p>elewa-project-item-card works!</p> -->
 <div class="container">
-  <h1>Image Carousel</h1>
+  <div>  <h1>Image Carousel</h1>
+  </div>
   <div>
-    <div> <img class="banner" [src]="projectCard.imgSrc" alt=""></div>
-    <div><span>{{ projectCard.title}}</span></div>
-    <div><p> {{ projectCard.description}}</p></div>
-    <div><button>{{ projectCard.tag}}</button></div>
+    <div>
+      <img class="banner" [src]="projectCard.imgSrc" alt="">
+    </div>
+    <div>
+      <span class="tag">{{projectCard.tag}}</span>
+    </div>
+    <div class="title">
+      <h3>{{projectCard.title}}</h3>
+    </div>
+    <div class="description">
+      <p> {{projectCard.description}}</p>
+    </div>
+
 
   </div>
 </div>
