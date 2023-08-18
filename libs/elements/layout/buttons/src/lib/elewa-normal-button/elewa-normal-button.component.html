@@ -1,1 +1,8 @@
-<p>elewa-normal-button works!</p>
+<!-- The button element and how it's rendered in the component's template -->
+<button 
+    class="elewa-normal-button"
+    [style.backgroundColor]="buttonData.bgColor"
+    [style.color]="buttonData.color"
+>
+    <ng-content></ng-content>
+</button>
