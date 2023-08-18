@@ -23,10 +23,10 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
   },
 
   {
-    path: 'about',
+    path: 'images',
     loadChildren: () =>
-      import('@elewa-website/features/pages/about').then(
-        (m) => m.FeaturesPagesAboutModule
+      import('@elewa-website/elements/layout/images').then(
+        (m) => m.ImagesModule
       ),
   },
 ];
