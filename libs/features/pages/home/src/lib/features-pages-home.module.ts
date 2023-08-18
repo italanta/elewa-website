@@ -7,7 +7,7 @@ import { HomeRoutingModule } from './home.routing';
 import { ElementsLayoutCarouselModule } from '@elewa-website/elements/layout/carousel';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, ElementsLayoutCarouselModule],
+  imports: [CommonModule, HomeRoutingModule],
   declarations: [HomePageComponent],
   exports: [HomePageComponent],
 })
