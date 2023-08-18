@@ -1,18 +1,20 @@
 .elewa-slider-button {
-  background-color:#000000;
+  background-color: #000000;
   color: white;
   border: none;
-  border-radius: 29px; /* Makes the button round */
-  padding: 5px 20px; /* Adjusted padding for space */
+  border-radius: 29px;
+  padding: 5px 20px;
   position: relative;
   display: inline-flex;
-  align-items: center; /* Center text and icon vertically */
+  align-items: center;
   overflow: hidden;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+  transform-origin: right center;
 }
 
 .elewa-slider-button .button-text {
-  margin-right: 10px; /* Added margin to separate text and icon */
+  margin-right: 10px;
   font: normal normal bold 18px/42px DM Sans;
   color: #FFFFFF;
   opacity: 1;
@@ -25,30 +27,25 @@
   color: #606060;
   border-radius: 50%;
   padding: 5px;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s;
 }
 
-/* Additional styling for icon positioning */
 .container-xxl {
   padding: 20px;
 }
 
-// .elewa-slider-button:hover{
-//   background-color: aqua;
-// }
-
-.header{
-  font: normal normal medium 40px/110px DM Sans;
-  color: #000000;
-  font-size:45px;
-  font-weight: 500;
-  line-height: 24px;
-  margin-bottom: 2px;
+.elewa-slider-button:hover {
+  background-color: #000000; /* Change to the desired hover background color */
+  color: white; /* Change to the desired hover text color */
+  transform: scale(1.05); /* Apply scale transformation on hover */
 }
-.paragraph{
-  font: normal normal medium 40px/110px DM Sans;
-  color: #000000;
-  font-size:25px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.3px;
+
+.elewa-slider-button:hover .button-text {
+  color: white; /* Change to the desired hover text color */
+}
+
+.elewa-slider-button:hover i {
+  transform: translateX(10px); /* Adjust the amount of translation as needed */
+  color: #000000; /* Change to the desired hover icon color */
+  background-color: white; /* Change to the desired hover icon background color */
 }
