@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ButtonData } from '@elewa-website/models/schema/ui/buttons';
 
 @Component({
@@ -8,8 +8,21 @@ import { ButtonData } from '@elewa-website/models/schema/ui/buttons';
 })
 export class ElewaNormalButtonComponent {
 
+  @Input() buttonData!: ButtonData;
 
+  @Output() buttonClicked: EventEmitter<void> = new EventEmitter<void>();
 
+  isHovered = false;
 
+  onButtonClick(): void {
+    this.buttonClicked.emit();
+  }
 
+  onMouseEnter(): void {
+    this.isHovered = true;
+  }
+
+  onMouseLeave(): void {
+    this.isHovered = false;
+  }
 }
