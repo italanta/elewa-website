@@ -18,11 +18,4 @@ export class ElewaNormalButtonComponent {
     this.buttonClicked.emit();
   }
 
-  onMouseEnter(): void {
-    this.isHovered = true;
-  }
-
-  onMouseLeave(): void {
-    this.isHovered = false;
-  }
 }
