@@ -1,3 +1,4 @@
+
 .text-card{
     padding: 20px;
     background-color: #ffffff;
@@ -25,4 +26,9 @@
 
         }
     }
+    
 }
+@media only screen and (max-width: 768px) {.text-card {
+  display: 'block';
+  
+}}
