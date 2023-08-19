@@ -25,11 +25,5 @@
   
   
 .slider-button:hover .text {
-  transform: translateX(20%); /* Move the text to the right */
-}
-  
-.slider-button:hover .icon {
-  /* Move the icon to the start of the button */
-  transform: translateX(-560%);
-    
+  transform: translateX(30px); /* Move the text to the right */
 }
