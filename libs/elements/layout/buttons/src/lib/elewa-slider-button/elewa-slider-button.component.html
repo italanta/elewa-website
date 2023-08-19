@@ -1,14 +1,16 @@
 <button
     class="slider-button"
+    #buttonRef
+    [ngStyle]="getButtonStyles(hovered)"
+
     (click)="emitSliderButtonClick()"
-    [ngStyle]="hovered ? hoveredCurrentStyles : currentStyles"
     (mouseenter)="hovered = true"
     (mouseleave)="hovered = false"     
 >
     <span class="text">{{ sliderButtonData.text }}</span>
     <i
     class="fas fa-long-arrow-alt-right icon"
-    [ngStyle]="hovered ? hoveredIconCurrentStyles : iconCurrentStyles"
+    [ngStyle]="getIconStyles(hovered)"
     >
     </i>
 
