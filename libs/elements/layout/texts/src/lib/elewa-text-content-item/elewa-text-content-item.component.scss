@@ -1,5 +1,11 @@
-.Text-card{
+.text-card{
     padding: 20px;
+    background-color: #ffffff;
+    color: black;
+    width: 756px;
+    height: 444px;
+    gap: 10px;
+
 
     h3{
         font-size: 30px;
@@ -10,12 +16,13 @@
     ul{
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        list-style: none;;
+        gap: 10px;
 
         li{
             font-size: 20px;
             font-family: "DMSans-Regular";
+            display: flex;
+
         }
     }
 }
