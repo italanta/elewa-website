@@ -1,10 +1,16 @@
 
+<!-- button element with dynamic styling and text, creating color, 
+    bg-color, texts 
+    and binding the click events whenever button is clicked.  
+-->
+
 <button 
     class="elewa-normal-button"
     [style.backgroundColor]="buttonData.bgColor"
     [style.color]="buttonData.color"
-    (click)="onButtonClick()"
+    (click)="onButtonClick()"  
 >
-    {{ buttonData.text }}
+
+    {{ buttonData.text }} 
 
 </button>
