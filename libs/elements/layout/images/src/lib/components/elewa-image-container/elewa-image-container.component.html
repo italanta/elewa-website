@@ -1,1 +1,8 @@
-<p>elewa-image-container works!</p>
+<div *ngFor="let singleConfig of config" class="image-container" [ngClass]="getImageClass(singleConfig.visualisation)">
+    <picture>
+    <!-- Higher resolution image source for larger screens -->
+        <source [srcset]="getHighResImage(singleConfig.imageSrc)" media="(min-width: 1025px)">  
+    <!-- Regular image source for smaller screens or when higher res is not available -->
+    <img [src]="singleConfig.imageSrc" [style.max-width]="singleConfig.maxWidth || '100%'" alt="{{ singleConfig.title }}" />
+    </picture>
+</div>
