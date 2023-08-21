@@ -8,14 +8,14 @@ import { ButtonData } from '@elewa-website/models/schema/ui/buttons';
 })
 export class ElewaNormalButtonComponent {
 
-  @Input() buttonData!: ButtonData; // Input property to receive button data from parent component
+  @Input() buttonData!: ButtonData; /** Input property to receive button data from parent component */
 
-  @Output() buttonClicked: EventEmitter<void> = new EventEmitter<void>(); // Output event to emit when the button is clicked
+  @Output() buttonClicked: EventEmitter<void> = new EventEmitter<void>(); /** Output event to emit when the button is clicked */
 
 
-  isHovered = false; // Flag to track hover state of the button
+  isHovered = false; /** Flag to track hover state of the button /
 
-  // Function triggered when the button is clicked
+  /** Function triggered when the button is clicked */
   onButtonClick(): void {
     this.buttonClicked.emit();
   }
