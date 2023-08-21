@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'elewa-website';
 
-  // Button function; when button is clicked, the text will be displayed in the console as in below.
+  /*  Button function; when button is clicked, an empty/void event is sent  */
   
   Click(): void {
-    console.log('Button Clicked!');
+    /* an empty output. */
   
   }
 
