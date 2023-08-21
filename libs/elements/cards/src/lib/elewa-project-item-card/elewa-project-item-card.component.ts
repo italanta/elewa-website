@@ -8,7 +8,6 @@ import { ProjectItem } from '@elewa-website/models/sections/projects/cards'
 })
 export class ElewaProjectItemCardComponent implements OnInit {
   
-  // Import of the interface
   @Input() project!: ProjectItem;
 
 }
