@@ -1,1 +1,1 @@
-export * from './lib/data-ui-infocard-data.module';
+export * from './lib/mock-infocard.data';
