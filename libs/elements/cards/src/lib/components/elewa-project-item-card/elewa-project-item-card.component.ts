@@ -6,8 +6,7 @@ import { ProjectItem } from '@elewa-website/models/cards';
   templateUrl: './elewa-project-item-card.component.html',
   styleUrls: ['./elewa-project-item-card.component.scss'],
 })
-export class ElewaProjectItemCardComponent  {
-  @Input() project!: ProjectItem;
+export class ElewaProjectItemCardComponent {
+  @Input() project!: ProjectItem
 
- 
 }
