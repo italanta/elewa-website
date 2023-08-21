@@ -11,7 +11,7 @@ export class SliderButtonComponent {
   isHovered = false;
 
   /** data that contains the dynamic button data  */
-  @Input() buttonData?: SliderButtonData;
+  @Input() buttonData!: SliderButtonData;
 
   @Output() btnClickEvent = new EventEmitter();
 
