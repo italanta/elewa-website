@@ -7,5 +7,5 @@ import { InfoCard } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-info-card.component.scss'],
 })
 export class ElewaInfoCardComponent {
-  @Input() cardInfo : InfoCard | undefined
+  @Input() cardInfo!: InfoCard
 }
