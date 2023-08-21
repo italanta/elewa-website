@@ -4,7 +4,7 @@
 >
     <div class="card-header">
         <h6 class="card-title">{{ priceItem.title }}</h6>
-        <p [style.color]="priceItem.amountColor" class="card-amount">${{ priceItem.amount }}</p>
+        <p [style.color]="priceItem.amountColor" class="card-amount">${{ formattedPrice }}</p>
     </div>
     <div class="card-body">
         <p class="card-subtitle">{{ priceItem.subTitle }}</p>
