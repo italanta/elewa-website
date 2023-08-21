@@ -1,10 +1,10 @@
-<div class="info-card">
+<div class="info-card" *ngFor="let item of content ">
     <div class="info-icon">
-      <img class="material-icons" src="{{cardInfo?.icon}}"/> 
+      <img class="material-icons" src="{{item.icon}}"/> 
     </div>
     <div class="info-content">
-      <h2>{{cardInfo?.title}}</h2>
-      <p>{{cardInfo?.description}}</p>
+      <h2>{{item.title}}</h2>
+      <p>{{item.description}}</p>
     </div>
   </div>
   
