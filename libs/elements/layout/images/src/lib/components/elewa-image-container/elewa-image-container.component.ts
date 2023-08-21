@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { ImageConfig, ImageVisualisation } from '../../../../../../../models/schema/ui/images/image-config.interface';
+import { ImageConfig, ImageVisualisation } from '../../../../../../../models/schema/ui/images/src/lib/image-config.interface';
 /**  import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';*/
 
 @Component({
