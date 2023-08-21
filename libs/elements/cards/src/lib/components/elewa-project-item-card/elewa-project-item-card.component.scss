@@ -4,7 +4,6 @@
   max-width: 424px; /* Added max-width to prevent excessive width on larger screens */
   padding: 10px;
   margin: 10px;
-  // border-radius: 10px;
   opacity: 1;
   font-weight: 400;
   display: flex;
@@ -12,12 +11,9 @@
   font: 'DM Sans', sans-serif;
 }
 
-
-
 .tagSection {
   margin-top: 20px;
   justify-content:flex-start;/* Center the tag horizontally ;*/
-  // top: 5778px;
   left: 211px;
   max-width: 122px;
   max-height: 37px;
