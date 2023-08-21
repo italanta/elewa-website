@@ -1,1 +1,1 @@
-export * from './lib/sections.module';
+export * from './lib/highlighted-projects.data';
