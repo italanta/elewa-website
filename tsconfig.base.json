@@ -22,7 +22,7 @@
       "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
-      ],
+      ], 
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
       ],
