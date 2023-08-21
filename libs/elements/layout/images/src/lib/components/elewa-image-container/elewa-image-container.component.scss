@@ -1,0 +1,30 @@
+.image-container {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+
+    &.pill {
+      border-radius: 65% / 50%;
+      height: auto;
+    }
+
+    &.window {
+      height: 125px;
+      border-radius: 100% 100% 0% 0%;
+    }
+
+    &.card {
+      border-radius: 5px;
+      height: 125px;
+    }
+  }
+
+  .clip-svg {
+    clip-path: url(#stacked);
+    transform: scale();
+    height: 125px;
+  }
+}
