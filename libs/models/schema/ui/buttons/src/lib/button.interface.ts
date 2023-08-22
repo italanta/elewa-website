@@ -1,10 +1,9 @@
-export interface ButtonData 
-{
-  text: string
-  
-  bgColor?: string; // Background colour
-  color?: string; // text color
-  
+export interface ButtonData {
+  text: string;
+
+  bgColor?: string;
+  color?: string;
+
   hoverBgColor?: string;
   hoverColor?: string;
 }
