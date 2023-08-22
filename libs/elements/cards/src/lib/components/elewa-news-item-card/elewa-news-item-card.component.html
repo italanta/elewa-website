@@ -1,14 +1,14 @@
-<div *ngFor="let item of newsItem" class="news-item">
+<div class="news-item">
   <!-- title -->
   <div class="title">
-    {{ item.title }}
+    {{ newsItem[0].title }}
   </div>
   <!-- description -->
   <div class="description">
-    {{ item.description }}
+    {{ newsItem[0].description }}
   </div>
-  <!-- button test -->
+  <!-- button text -->
   <div class="button-text">
-    {{ item.buttonText }}
+    {{ newsItem[0].buttonText }}
   </div>
 </div>
