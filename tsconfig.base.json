@@ -29,7 +29,8 @@
       "@elewa-website/models/cards": [
         "libs/models/sections/projects/src/index.ts"
       ],
-      "@elewa-website/projects": ["libs/projects/src/index.ts"]
+      "@elewa-website/projects": ["libs/projects/src/index.ts"],
+      "@elewa-website/ui/buttons": ["libs/ui/buttons/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

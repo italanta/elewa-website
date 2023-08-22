@@ -1,8 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ButtonData } from '@elewa-website/ui/buttons';
 
 @Component({
   selector: 'elewa-website-normal-button',
-  templateUrl: './elewa-normal-button.component.html',
-  styleUrls: ['./elewa-normal-button.component.scss'],
+  template: `
+    <button
+      [style.backgroundColor]="buttonData?.bgColor || defaultBgColor"
+      [style.color]="buttonData?.color || defaultColor"
+      (click)="handleClick()"
+    >
+      {{ buttonData?.text }}
+    </button>
+  `,
 })
-export class ElewaNormalButtonComponent {}
+export class ElewaNormalButtonComponent {
+  @Input() buttonData: ButtonData | undefined;
+  @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
+
+  defaultBgColor = '#f0f0f0';
+  defaultColor = '#333';
+
+  handleClick(): void {
+    this.buttonClick.emit();
+  }
+}
