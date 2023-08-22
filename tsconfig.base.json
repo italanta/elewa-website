@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@elewa-website/elements/layout/buttons": [
+        "libs/elements/layout/buttons/src/index.ts"
+      ],
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
