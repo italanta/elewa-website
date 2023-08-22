@@ -8,10 +8,11 @@
     background-color: var(--bgColor, #2D2E52); // Default colors
     color: var(--color, #ffffff);
     transition: background-color 0.3s, color 0.3s; // Hover animation
-  
+
+  /* Styling for when the button is hovered over */
     &:hover {
-      background-color: var(--hoverBgColor, #F2AD69); // Change to hoverBgColor if provided
-      color: var(--hoverColor, #000); // Change to hoverColor if provided
+      background-color: var(--hoverBgColor, #F2AD69);
+      color: var(--hoverColor, #000);
     }
   }
   

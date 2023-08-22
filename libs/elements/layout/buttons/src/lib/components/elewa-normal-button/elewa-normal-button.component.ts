@@ -8,15 +8,29 @@ import { ButtonData } from '@elewa-website/models/schema/ui/buttons';
   styleUrls: ['./elewa-normal-button.component.scss'],
 })
 
-/*Pass data to the component */
-/* emit events from the template that the normal button can respond to*/
 export class ElewaNormalButtonComponent {
+  /** Input property to customize button appearance and behavior */
   @Input() buttonData!: ButtonData;
 
+  /** Output Property which emits click events when the button is clicked */
+
   @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
+
+  /** tracks whether the button is being hovered */
   isHovered = false;
 
+  /** triggers the buttonClick event emitter, indicating that the button has been clicked.*/
   handleClick(): void {
     this.buttonClick.emit();
+  }
+
+  /** Set hovered state to true when mouse enters */
+  handleMouseEnter(): void {
+    this.isHovered = true;
+  }
+
+  /** Set hovered state to false when mouse leaves */
+  handleMouseLeave(): void {
+    this.isHovered = false;
   }
 }

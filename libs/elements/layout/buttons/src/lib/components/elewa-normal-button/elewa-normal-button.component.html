@@ -3,6 +3,10 @@
     class="elewa-normal-button"
     [style.backgroundColor]="buttonData.bgColor"
     [style.color]="buttonData.color"
+    (click)="handleClick()"
+    (mouseenter)="handleMouseEnter()"
+    (mouseleave)="handleMouseLeave()"
 >
-    <ng-content></ng-content>
+<span>{{buttonData.text}}</span>
+
 </button>
