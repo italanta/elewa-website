@@ -1,1 +1,1 @@
-export * from './lib/elewa-images.data';
+export * from './lib/elewa-image.data';
