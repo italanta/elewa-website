@@ -8,8 +8,8 @@ export class NextDirective {
 
   @HostListener('click')
   nextFunc(){
-    var elm = this.el.nativeElement.parentElement.parentElement.children[0];
-    var item = elm.getElementsByClassName("item");
+    const elm = this.el.nativeElement.parentElement.parentElement.children[0];
+    const item = elm.getElementsByClassName("item");
     elm.append(item[0])
   }
 }
