@@ -29,6 +29,13 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.FeaturesPagesAboutModule
       ),
   },
+  {
+    path: 'consultancy',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/consultancy-page').then(
+        (m) => m.ConsultancyPageModule
+      ),
+  },
 ];
 
 @NgModule({
