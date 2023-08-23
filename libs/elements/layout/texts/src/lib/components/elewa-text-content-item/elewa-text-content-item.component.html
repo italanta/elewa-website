@@ -1,6 +1,6 @@
-<div *ngFor="let item of content" class="elewa-content">
-    <h3>{{item.title}}</h3>
+<div class="elewa-content">
+    <h3>{{content.title}}</h3>
     <ul>
-        <li *ngFor="let description of item.descriptions">{{description}}</li>
+        <li *ngFor="let description of content.descriptions">{{description}}</li>
     </ul>
 </div>
