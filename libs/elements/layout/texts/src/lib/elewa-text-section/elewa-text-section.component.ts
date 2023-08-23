@@ -12,5 +12,5 @@ import { HeroText } from '@elewa-website/models/schema/ui/texts';
 export class ElewaTextSectionComponent {
   
   // texts to load
-  @Input() heroTexts : HeroText[] = []
+  @Input() herotexts!: HeroText; 
 }
