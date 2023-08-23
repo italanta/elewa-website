@@ -8,13 +8,17 @@
     overflow: hidden; /* Prevent child overflow */
 }
 
-.card-header, .card-slider-button {
-    padding : 20px; /* Add padding to all card sections */
+.card-slider-button {
+    padding: 0 20px 30px 20px;
+    margin-top: 39px;
+}
+
+.card-header{
+    padding:30px 20px 0 20px ;
 }
 
 .card-body{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 0 20px;
 }
 
 .card-amount {
