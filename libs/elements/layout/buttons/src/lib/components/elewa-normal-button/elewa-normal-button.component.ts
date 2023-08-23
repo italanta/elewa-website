@@ -10,8 +10,7 @@ import { ButtonData } from '@elewa-website/models/schema/ui/buttons';
 export class ElewaNormalButtonComponent {
   @Input() buttonData!: ButtonData;
 
-  @Output() buttonClick: EventEmitter<void> =new EventEmitter<void>
-  ();
+  @Output() buttonClick: EventEmitter<void> =new EventEmitter<void>();
   isHovered = false;
 
   handleClick(): void {
