@@ -1,5 +1,4 @@
 import { ProjectItem } from '@elewa-website/models/sections/projects/cards'
-// import { ProjectItem } from "../../models/sections/projects/cards/src";
 
 export const __highlightedProjects: ProjectItem[] = [
   {
