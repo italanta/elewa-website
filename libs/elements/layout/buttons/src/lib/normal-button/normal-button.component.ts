@@ -11,7 +11,7 @@ export class NormalButtonComponent {
   /* Defined the Input decorator
   * passing data to child component
   * */
-  @Input() buttonData:ButtonData = {};
+  @Input() buttonData !: ButtonData;
 
   /* Defined the Output decorator
   *  decorator is used to emit events from a child component to its parent component.
