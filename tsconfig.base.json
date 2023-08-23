@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elewa-website/cards": ["libs/cards/src/index.ts"],
       "@elewa-website/data/ui/content-text": [
         "libs/data/ui/content-text/src/index.ts"
       ],
@@ -35,7 +34,6 @@
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
-      "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
       "@elewa-website/models/schema/ui/buttons": [
         "libs/models/schema/ui/buttons/src/index.ts"
       ],
