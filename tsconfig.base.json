@@ -21,8 +21,14 @@
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
+      "@elewa-website/elements/layout/button/module":[
+        "libs/elements/layout/buttons/src/lib/ButtonsModule.module.ts"
+      ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
+      ],
+      "@elewa-website/libs/models/buttons/data":[
+          "libs/models/schema/ui/buttons/src/lib/button.interface.ts"
       ],
       "@elewa-website/libs/models/schema/ui/buttons": [
         "libs/libs/models/schema/ui/buttons/src/index.ts"

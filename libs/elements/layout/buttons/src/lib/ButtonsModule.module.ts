@@ -5,5 +5,6 @@ import { ElewaNormalButtonComponent } from './elewa-normal-button/elewa-normal-b
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaNormalButtonComponent],
+  exports: [ElewaNormalButtonComponent],
 })
-export class ElementsLayoutButtonsModule {}
+export class ButtonsModule {}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ButtonData } from '@elewa-website/libs/models/buttons/data'
 
 @Component({
   selector: 'elewa-website-elewa-normal-button',
