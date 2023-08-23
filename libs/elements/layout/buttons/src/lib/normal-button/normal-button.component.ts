@@ -2,8 +2,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import { ButtonData } from "@elewa-website/models/schema/ui/buttons";
 
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
-  selector: 'elewa-normal-button',
+  selector: 'elewa-website-normal-button',
   templateUrl: './normal-button.component.html',
   styleUrls: ['./normal-button.component.scss'],
 })

@@ -6,6 +6,6 @@
   (click)="onClick()"
   [title]="buttonData.text"
 >
-  <!-- ng-content is allows you to put your own text or content inside the button -->
-  <ng-content></ng-content>
+  <!-- Interpolate text using curly braces notation -->
+  {{ buttonData.text }}
 </button>
