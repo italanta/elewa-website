@@ -4,9 +4,10 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './main/home/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { ElementsLayoutCarouselModule } from '@elewa-website/elements/layout/carousel';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule],
+  imports: [CommonModule, HomeRoutingModule, ElementsLayoutCarouselModule],
   declarations: [HomePageComponent],
   exports: [HomePageComponent],
 })

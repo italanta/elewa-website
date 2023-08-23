@@ -12,5 +12,4 @@ export class NextDirective {
     var item = elm.getElementsByClassName("item");
     elm.append(item[0])
   }
-
 }
