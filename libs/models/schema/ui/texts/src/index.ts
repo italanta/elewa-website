@@ -1,1 +1,1 @@
-export * from './lib/hero-text';
+export * from './lib/hero-text.interface';
