@@ -8,11 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'elewa-website';
 
-  /*  Button function; when button is clicked, an empty/void event is sent  */
-  
-  Click(): void {
-    /* an empty output. */
-  
-  }
-
 }
