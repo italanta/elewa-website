@@ -35,6 +35,12 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
       import('@elewa-website/features/pages/contact-page').then(
         (m) => m.ContactPageModule
       ),
+  }, {
+    path: 'booklets-page',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/booklets-page').then(
+        (m) => m.BookletsPageModule
+      ),
   },
 ];
 

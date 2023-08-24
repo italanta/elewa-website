@@ -6,4 +6,4 @@ import { BookletsPageComponent } from './main/booklets-page/booklets-page.compon
   imports: [CommonModule],
   declarations: [BookletsPageComponent],
 })
-export class FeaturesPagesBookletsPageModule {}
+export class BookletsPageModule {}
