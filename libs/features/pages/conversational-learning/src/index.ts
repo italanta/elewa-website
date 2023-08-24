@@ -1,1 +1,1 @@
-export * from './lib/features-pages-conversational-learning.module';
+export * from './lib/conversational-learning.module';

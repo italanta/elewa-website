@@ -29,6 +29,14 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.FeaturesPagesAboutModule
       ),
   },
+
+    {
+    path: 'conversational-learning',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/conversational-learning').then(
+        (module) => module.ConversationalLearningModule
+      ),
+  },
 ];
 
 @NgModule({
