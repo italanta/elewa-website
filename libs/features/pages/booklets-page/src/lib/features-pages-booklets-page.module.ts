@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { BookletsPageComponent } from './main/booklets-page/booklets-page.component';
 
+import { BookletsPageRoutingModule } from './booklets-page.routing';
+
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, BookletsPageRoutingModule],
     exports: [BookletsPageComponent],
     declarations: [BookletsPageComponent]
 })
-export class FeaturesPagesBookletsPageModule {}
+export class BookletsPageModule {}
