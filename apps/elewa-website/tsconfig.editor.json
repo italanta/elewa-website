@@ -3,5 +3,5 @@
   "include": ["**/*.ts"],
   "compilerOptions": {
     "types": ["jest", "node"]
-  }
+  },
 }

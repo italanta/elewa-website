@@ -32,7 +32,7 @@
         "libs/features/pages/about/src/index.ts"
       ],
       "@elewa-website/features/pages/booklets-page": [
-        "libs/features/pages/booklets-page/src/index.ts"
+        "libs/features/pages/booklets-page/src/index.ts"],
       "@elewa-website/features/pages/content-development": [
         "libs/features/pages/content-development/src/index.ts"
       ],
