@@ -28,6 +28,12 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
       import('@elewa-website/features/pages/about').then(
         (m) => m.FeaturesPagesAboutModule
       ),
+  },  {
+    path: 'booklets-page',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/booklets-page').then(
+        (m) => m.BookletsPageModule
+      ),
   },
 ];
 
