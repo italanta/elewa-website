@@ -31,6 +31,9 @@
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
+      "@elewa-website/features/pages/conversational-learning": [
+        "libs/features/pages/conversational-learning/src/index.ts"
+      ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
