@@ -6,5 +6,6 @@ import { NewsPageRoutingModule } from './news-page-routing';
 @NgModule({
   imports: [CommonModule, NewsPageRoutingModule],
   declarations: [NewsPageComponent],
+  exports: [NewsPageComponent],
 })
 export class FeaturesPagesNewsPageModule {}
