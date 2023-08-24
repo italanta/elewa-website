@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, RouterModule, Route } from '@angular/router';
-import { featuresPagesConsultancyPageRoutes } from './consultancy-page.routing';
-import { ConsultancyPageComponent } from './consultancy-page/consultancy-page.component';
+
+import { ConsultancyPageComponent } from './main/consultancy-page/consultancy-page.component';
+
+import { ConsultancyPageRoutingModule } from './consultancy-page.routing';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(featuresPagesConsultancyPageRoutes),
-    RouterModule,
-  ],
+  imports: [CommonModule, ConsultancyPageRoutingModule],
   declarations: [ConsultancyPageComponent],
+  exports: [ConsultancyPageComponent],
 })
 export class ConsultancyPageModule {}
