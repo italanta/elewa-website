@@ -31,6 +31,14 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
   },
 
   {
+    path: 'news',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/news-page').then(
+        (m) => m.FeaturesPagesNewsPageModule
+      ),
+  },
+
+  {
     path: 'contact',
     loadChildren: () =>
       import('@elewa-website/features/pages/contact-page').then(
