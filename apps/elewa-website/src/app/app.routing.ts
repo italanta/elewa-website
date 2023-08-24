@@ -33,7 +33,7 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
   { 
     path: 'consultancy',
     loadChildren: () =>
-      import('@e').then(
+      import('@elewa-website/features/pages/consultancy-page').then(
         (m) => m.ConsultancyPageModule
       ),
   },
