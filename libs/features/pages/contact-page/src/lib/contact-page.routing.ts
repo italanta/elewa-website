@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
+
 import { ContactPageComponent } from './main/contact-page/contact-page.component';
 
 const ELEWA_CONTACT_ROUTES: Route[] = [
