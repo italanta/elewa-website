@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
 
-export const ELEWA_HOME_ROUTES: Route[] = [
+export const ELEWA_CONTACT_ROUTES: Route[] = [
 
   { path: '', component: ContactPageComponent },
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(ELEWA_HOME_ROUTES)],
+  imports: [RouterModule.forChild(ELEWA_CONTACT_ROUTES)],
   exports: [RouterModule]
 })
-export class HomeRoutingModule { }
+export class ContactRoutingModule { }
