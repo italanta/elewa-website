@@ -6,7 +6,7 @@ import {
 export const __elewaImageData: ImageConfig = {
   title: 'Image 1',
   imageSrc:
-    'https://images.pexels.com/photos/1876790/pexels-photo-1876790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  visualisation: ImageVisualisation.Card,
-  // maxWidth: '300px',
+    'https://us.123rf.com/450wm/astemmer/astemmer2101/astemmer210114186/162217866-panoramic-view-of-the-green-plowed-agricultural-field-against-clear-blue-sky-with-white-clouds.jpg?ver=6',
+  visualisation: ImageVisualisation.Pill,
+
 };

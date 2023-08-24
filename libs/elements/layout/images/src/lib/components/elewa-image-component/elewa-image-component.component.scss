@@ -1,0 +1,86 @@
+.elewa-image-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Image container */
+.elewa-images {
+  background-color: rgba(249, 248, 244, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1% 0.7% 0.7% 0.7%;
+}
+
+/* Add background color to the window-shaped image card */
+#window-card {
+  background-color: #DBC2F5E6;
+  // define in root
+}
+
+/* Round the top and the bottom of the image to make it oval-shaped */
+.pill {
+  clip-path: inset(0 0 0 round 30vh);
+  width: 180px;
+}
+
+/* Forms a figure-like 8: Two pills placed on top of each other horizontally */
+.stacked {
+  // clip-path: inset(0 0 0 0 round 30vh);
+  // height: 50%;
+  // width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+  width: 180px;
+}
+
+/* Round the top of the image at 30% of vertical height */
+.window {
+  clip-path: inset(0 0 0 round 30vh 30vh 0 0);
+  width: 180px;
+}
+
+/* Round the corners of the card image (10px) */
+.card {
+  clip-path: inset(0 0 0 round 10px);
+  width: 180px;
+}
+
+/* Add responsiveness to screens between 481 px and 768 px  */
+@media (min-width: 481px) and (max-width: 768px) {
+  .pill {
+    width: 240px;
+  }
+
+  .stacked {
+    width: 240px;
+  }
+
+  .window {
+    width: 240px;
+  }
+
+  .card {
+    width: 240px;
+  }
+}
+
+/* Add responsiveness to screens above 768 pd */
+@media (min-width: 769px) {
+  .pill {
+    width: 280px;
+  }
+
+  .stacked {
+    width: 280px;
+  }
+
+  .window {
+    width: 280px;
+  }
+
+  .card {
+    width: 280px;
+  }
+}
