@@ -5,5 +5,6 @@ import { ImageContainerComponent } from './components/image-container/image-cont
 @NgModule({
   imports: [CommonModule],
   declarations: [ImageContainerComponent],
+  exports: [ImageContainerComponent]
 })
 export class ImagesModule {}
