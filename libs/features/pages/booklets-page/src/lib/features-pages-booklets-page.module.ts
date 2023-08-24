@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, RouterModule, Route } from '@angular/router';
-import { featuresPagesBookletsPageRoutes } from './lib.routes';
+
+import { BookletsPageComponent } from './main/booklets-page/booklets-page.component';
+
+import { BookletsPageRoutingModule } from './booklets-page.routing';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(featuresPagesBookletsPageRoutes),
-    RouterModule,
-  ],
+  imports: [CommonModule, BookletsPageRoutingModule],
+  declarations: [BookletsPageComponent],
+  exports: [BookletsPageComponent],
 })
-export class FeaturesPagesBookletsPageModule {}
+export class BookletsPageModule {}
