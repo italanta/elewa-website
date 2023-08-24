@@ -31,13 +31,15 @@
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
+      "@elewa-website/features/pages/contact-page": [
+        "libs/features/pages/contact-page/src/index.ts"
+      ],
       "@elewa-website/features/pages/conversational-learning": [
         "libs/features/pages/conversational-learning/src/index.ts"
       ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
-      "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
       "@elewa-website/models/schema/ui/buttons": [
         "libs/models/schema/ui/buttons/src/index.ts"
       ],
