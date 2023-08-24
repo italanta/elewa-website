@@ -14,4 +14,4 @@ const ELEWA_CONTACT_ROUTES: Route[] = [
   imports: [RouterModule.forChild(ELEWA_CONTACT_ROUTES)],
   exports: [RouterModule],
 })
-export class PageNameRoutingModule {}
+export class ContactPageRoutingModule {}

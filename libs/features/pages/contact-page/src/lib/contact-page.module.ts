@@ -5,6 +5,6 @@ import { ContactPageComponent } from './main/contact-page/contact-page.component
 @NgModule({
   imports: [CommonModule],
   declarations: [ContactPageComponent],
-  exports: [ContactPageComponent]
+  exports: [ContactPageComponent],
 })
 export class ContactPageModule {}
