@@ -37,6 +37,22 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.FeaturesPagesNewsPageModule
       ),
   },
+
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/contact-page').then(
+        (m) => m.ContactPageModule
+      ),
+  },
+
+  {
+    path: 'conversational-learning',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/conversational-learning').then(
+        (m) => m.ConversationalLearningModule
+      ),
+  },
 ];
 
 @NgModule({
