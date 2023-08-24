@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ContactPageComponent } from './main/contact-page/contact-page.component';
 
-import { ContactRoutingModule } from './contact.routing';
+import { ContactRoutingModule } from './contact-page.routing';
 
 @NgModule({
   imports: [CommonModule, ContactRoutingModule],
