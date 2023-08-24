@@ -36,7 +36,6 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.BookletsPageModule
       ),
   },  
-=======
 
   {
     path: 'news',
