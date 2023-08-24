@@ -34,4 +34,23 @@
       opacity: 1;
     }
   }
+  h1 {
+    position: relative;
+    top: 6rem;
+    text-align: left;
+    font: normal normal normal 36px/42px DM Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  .desc {
+    position: relative;
+    top: 7rem;
+    text-align: left;
+    font: normal normal normal 22px/30px DM Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-wrap: balance;
+  }
 }
