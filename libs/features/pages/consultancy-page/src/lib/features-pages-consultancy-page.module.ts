@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterModule, Route } from '@angular/router';
-import { featuresPagesConsultancyPageRoutes } from './consultancy-page';
+import { featuresPagesConsultancyPageRoutes } from './consultancy-page.routing';
 import { ConsultancyPageComponent } from './consultancy-page/consultancy-page.component';
 
 @NgModule({
