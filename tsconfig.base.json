@@ -31,6 +31,9 @@
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
+      "@elewa-website/features/pages/consultancy-page": [
+        "libs/features/pages/consultancy-page/src/index.ts"
+      ],
       "@elewa-website/features/pages/content-development": [
         "libs/features/pages/content-development/src/index.ts"
       ],
