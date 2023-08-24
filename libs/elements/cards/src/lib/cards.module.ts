@@ -14,6 +14,6 @@ import { ElewaProjectItemCardComponent } from './elewa-project-item-card/elewa-p
     ElewaWebsitePriceItemCardComponent,
     ElewaProjectItemCardComponent,
   ],
-  exports: [ElewaInfoCardComponent, ElewaWebsitePriceItemCardComponent],
+  exports: [ElewaInfoCardComponent, ElewaWebsitePriceItemCardComponent, ElewaProjectItemCardComponent],
 })
 export class CardsModule {}
