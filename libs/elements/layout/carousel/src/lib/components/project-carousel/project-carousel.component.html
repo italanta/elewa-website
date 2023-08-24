@@ -1,21 +1,25 @@
-    <!-- Slides -->
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+<!-- Slides -->
+<link
+  rel="stylesheet"
+  href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+/>
 <section class="product">
-    <div class="container">
-      <div class="slider-wrap">
-        <div class="slider-main">
-          <!-- colecting data from imgCollection array -->
-          <div class="item" *ngFor="let img of imgCollection">
-            <div class="text"><img src="{{ img }}" alt="">
-            </div>
-          </div>
-        </div>
-        
-        <div class="button-area">
-          <button type="button" class="prev" elewaWebsitePrev><i class="uil uil-arrow-left "></i></button>
-          <button type="button" class="next" elewaWebsiteNext><i class="uil uil-arrow-right"></i></button>
+  <div class="container">
+    <div class="slider-wrap">
+      <div class="slider-main">
+        <!-- colecting data from projectItems array -->
+        <div class="item" *ngFor="let img of projectItems">
+          <div class="text"><img src="{{ img }}" alt="" /></div>
         </div>
       </div>
+      <div class="button-area">
+        <button type="button" class="prev" elewaWebsitePrev>
+          <i class="uil uil-arrow-left"></i>
+        </button>
+        <button type="button" class="next" elewaWebsiteNext>
+          <i class="uil uil-arrow-right"></i>
+        </button>
+      </div>
     </div>
+  </div>
 </section>
-    
