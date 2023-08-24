@@ -8,8 +8,7 @@ import { ElewaProjectItemCardComponent } from './elewa-project-item-card/elewa-p
   declarations: [
     ElewaInfoCardComponent,
     ElewaProjectItemCardComponent,
-    ElewaProjectItemCardComponent,
   ],
-  exports: [ElewaInfoCardComponent],
+  exports: [ElewaInfoCardComponent, ElewaProjectItemCardComponent],
 })
 export class CardsModule {}
