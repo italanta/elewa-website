@@ -32,7 +32,7 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
   {
     path: 'contact',
     loadChildren: () =>
-      import('@elewa-website/features/pages/contact-page').then(
+      import('@elewa-website/features/pages/contact-page/contact-page-module').then(
         (m) => m.FeaturesPagesContactPageModule 
       ),
   },
