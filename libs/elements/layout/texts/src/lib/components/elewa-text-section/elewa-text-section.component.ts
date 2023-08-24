@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { _heroText as mockHeroTexts } from '@elewa-website/data/ui/texts'
+import { _heroText as mockHeroTexts } from '@elewa-website/data/ui/texts';
 import { HeroText } from '@elewa-website/models/schema/ui/texts';
 
 @Component({

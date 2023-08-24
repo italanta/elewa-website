@@ -15,21 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-<<<<<<< HEAD
-      "@elewa-website/cards": ["libs/cards/src/index.ts"],
       "@elewa-website/data/ui/texts": [
         "libs/data/ui/texts/src/index.ts"
-      ],
-      "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
-=======
-      "@elewa-website/data/ui/content-text": [
-        "libs/data/ui/content-text/src/index.ts"
       ],
       "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
       ],
->>>>>>> 68bdac219625ce89eb304743b3168062b615be43
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
       ],
