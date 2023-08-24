@@ -1,1 +1,1 @@
-export * from './lib/features-pages-consultancy-page-contact-page-module.module';
+export * from './lib/features-pages-consultancy-page-module.module';
