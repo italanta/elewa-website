@@ -5,7 +5,7 @@ import { ContactPageComponent } from './main/contact-page/contact-page.component
 
 export const ELEWA_CONTACT_ROUTES: Route[] = [
     
-    { path: 'contact', component: ContactPageComponent },
+    { path: '', component: ContactPageComponent },
 
 ];
 
