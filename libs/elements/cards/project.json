@@ -1,7 +1,10 @@
 {
-  "name": "cards",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/cards/src",
+
+
+  "name": "elements-cards",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/elements/cards/src",
+
   "prefix": "elewa-website",
   "tags": [],
   "projectType": "library",
@@ -10,7 +13,10 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/cards/jest.config.ts",
+
+
+        "jestConfig": "libs/elements/cards/jest.config.ts",
+
         "passWithNoTests": true
       },
       "configurations": {
@@ -24,7 +30,12 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/cards/**/*.ts", "libs/cards/**/*.html"]
+
+        "lintFilePatterns": [
+          "libs/elements/cards/**/*.ts",
+          "libs/elements/cards/**/*.html"
+        ]
+
       }
     }
   }

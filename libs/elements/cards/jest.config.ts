@@ -1,9 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'cards',
-  preset: '../../jest.preset.js',
+
+
+  displayName: 'elements-cards',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/cards',
+  coverageDirectory: '../../../coverage/libs/elements/cards',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
