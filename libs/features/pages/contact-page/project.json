@@ -1,7 +1,7 @@
 {
-  "name": "features-pages-about",
+  "name": "features-pages-contact",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/features/pages/about/src",
+  "sourceRoot": "libs/features/pages/contact-page/src",
   "prefix": "elewa-website",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/features/pages/about/jest.config.ts",
+        "jestConfig": "libs/features/pages/contact-page/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/features/pages/about/**/*.ts",
-          "libs/features/pages/about/**/*.html"
+          "libs/features/pages/contact-page/**/*.ts",
+          "libs/features/pages/contact-page/**/*.html"
         ]
       }
     }
