@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
-
+//- import consultancy component
 import { ConsultancyPageComponent } from './main/consultancy-page/consultancy-page.component';
 
 export const ELEWA_CONSULTANCY_ROUTES: Route[] = [
