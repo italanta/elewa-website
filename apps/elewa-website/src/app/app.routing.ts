@@ -29,6 +29,13 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.FeaturesPagesAboutModule
       ),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/contact-page').then(
+        (m) => m.ContactPageModule
+      ),
+  },
 ];
 
 @NgModule({
