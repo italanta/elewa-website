@@ -25,6 +25,9 @@
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
       ],
+      "@elewa-website/elements/layout/images": [
+        "libs/elements/layout/images/src/index.ts"
+      ],
       "@elewa-website/elements/layout/texts": [
         "libs/elements/layout/texts/src/index.ts"
       ],
