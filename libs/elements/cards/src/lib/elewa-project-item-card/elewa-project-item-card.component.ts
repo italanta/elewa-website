@@ -7,10 +7,10 @@ import { ProjectItem } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-project-item-card.component.scss'],
 })
 export class ElewaProjectItemCardComponent {
-  projectitem : ProjectItem = {
+  item : ProjectItem = {
     title: 'Introducing Conversational learning ipsum dolar',
     description: 'Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam dolerem ipsum quia',
     tag: 'Education',
-    imgSrc: 'img/gettyimages-1017628288-2048x2048.png'
+    imgSrc: 'https://media.gettyimages.com/id/1191061770/photo/happy-african-family-sitting-and-using-laptop.jpg?s=612x612&w=0&k=20&c=HwyA5I0iiaCfsj3I-AKNM25rexpOJkSxUhV73VG_oxY='
   }
 }
