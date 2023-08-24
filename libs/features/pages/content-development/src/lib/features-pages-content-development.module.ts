@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ContentDevelopmentPageComponent } from './main/content-development-page/content-development-page.component';
 
-import { ContentDevelopmentPageRoutingModule } from './lib.routes';
+import { ContentDevelopmentPageRoutingModule } from './content-development.routing';
+
 @NgModule({
   imports: [CommonModule, ContentDevelopmentPageRoutingModule],
   declarations: [ContentDevelopmentPageComponent],
