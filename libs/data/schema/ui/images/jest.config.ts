@@ -1,10 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'models-data-schema-ui-images',
-  preset: '../../../../../../jest.preset.js',
+  displayName: 'data-schema-ui-images',
+  preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory:
-    '../../../../../../coverage/libs/models/data/schema/ui/images',
+  coverageDirectory: '../../../../../coverage/libs/data/schema/ui/images',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

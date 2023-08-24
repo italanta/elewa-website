@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { __elewaImageData } from '@elewa-website/models/data/schema/ui/images';
+import { __elewaImageData } from '@elewa-website/data/schema/ui/images';
 import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
 
 @Component({
