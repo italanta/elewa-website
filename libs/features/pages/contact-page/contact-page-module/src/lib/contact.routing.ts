@@ -1,3 +1,4 @@
+//create the route for the contact module
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
