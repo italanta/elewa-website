@@ -29,6 +29,14 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.FeaturesPagesAboutModule
       ),
   },
+
+  {
+    path: 'news-page',
+    loadChildren: () =>
+      import('@elewa-website/features/pages/news-page').then(
+        (m) => m.NewsPageModule
+      ),
+  },
 ];
 
 @NgModule({

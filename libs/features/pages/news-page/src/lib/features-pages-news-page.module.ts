@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, RouterModule, Route } from '@angular/router';
-import { featuresPagesNewsPageRoutes } from './lib.routes';
+
+import { NewsPageComponent } from './main/news-page/news-page.component';
+
+import { NewsPageRoutingModule } from './news-page.routing';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(featuresPagesNewsPageRoutes),
-    RouterModule,
-  ],
+  imports: [CommonModule, NewsPageRoutingModule],
+  declarations: [NewsPageComponent],
+  exports: [NewsPageComponent],
 })
-export class FeaturesPagesNewsPageModule {}
+export class NewsPageModule {}
