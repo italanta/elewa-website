@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProjectItem } from '@elewa-website/models/ui/cards';
 
 @Component({
   selector: 'elewa-website-elewa-project-item-card',
@@ -6,3 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./elewa-project-item-card.component.scss'],
 })
 export class ElewaProjectItemCardComponent {}
+
+
