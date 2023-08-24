@@ -5,7 +5,7 @@ import { NewsPageComponent } from './main/news-page/news-page.component';
 
 export const ELEWA_NEWS_ROUTES: Route[] = [
 
-  { path: 'news', component: NewsPageComponent },
+  { path: '', component: NewsPageComponent },
 
 ];
 
