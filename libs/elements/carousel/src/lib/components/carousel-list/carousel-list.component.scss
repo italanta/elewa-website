@@ -1,0 +1,51 @@
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  // Hide scrollbar
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .carousel-slide {
+    flex: 0 0 auto;
+    margin-right: 20px; // Adjust spacing between items as needed
+    min-width: 50%; // Ensure two items per slide
+    transition: opacity 0.3s; // Add fade transition
+    opacity: 1; // Initial opacity
+  }
+
+  // Responsive styles
+  @media (min-width: 768px) {
+    .carousel-slide {
+      min-width: 25%; // Display four items per slide
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .carousel-slide {
+      min-width: 12.5%; // Display eight items per slide
+    }
+  }
+
+  // Apply fade-out for items outside of the screen width
+  @media (max-width: 359px) {
+    .carousel-slide {
+      opacity: 0.3; // Reduce opacity for small screens
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 767px) {
+    .carousel-slide {
+      opacity: 0.6; // Reduce opacity for medium screens
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .carousel-slide {
+      opacity: 0.8; // Reduce opacity for large screens
+    }
+  }
+}
