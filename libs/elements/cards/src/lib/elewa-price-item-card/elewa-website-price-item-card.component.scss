@@ -1,0 +1,47 @@
+.card {
+    margin: 20px; /* Add overall margin */
+    border-radius: 10px;
+    // width: 40vw;
+    background-color: var(--backgroundColor, #F4EDFD);
+    color: var(--textColor, black);
+    border: 1px solid #ccc;
+    overflow: hidden; /* Prevent child overflow */
+}
+
+.card-slider-button {
+    padding: 0 20px 30px 20px;
+    margin-top: 39px;
+}
+
+.card-header{
+    padding:30px 20px 0 20px ;
+}
+
+.card-body{
+    padding: 0 20px 0 20px;
+}
+
+.card-amount {
+    text-align: left;
+    padding: 5px 0;
+    color: var(--amountColor, black);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-title {
+    text-align: left;
+    padding: 2px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card-description {
+    text-align: left;
+    font-size: 1rem;
+}
