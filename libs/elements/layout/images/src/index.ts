@@ -1,1 +1,1 @@
-export * from './lib/elements-layout-images.module';
+export * from './lib/images.module';

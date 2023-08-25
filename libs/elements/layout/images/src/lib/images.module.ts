@@ -7,4 +7,4 @@ import { ElewaImageContainerComponent } from './elewa-image-container/elewa-imag
   declarations: [ElewaImageContainerComponent],
   exports: [ElewaImageContainerComponent]
 })
-export class ElementsLayoutImagesModule {}
+export class ImagesModule {}
