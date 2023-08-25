@@ -1,0 +1,23 @@
+.news
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.descr
+{
+    font-size: 14px;
+}
+
+.button
+{
+    font-size: 14px;
+    font-weight: bold;
+}
