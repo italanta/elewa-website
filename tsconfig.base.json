@@ -19,6 +19,9 @@
         "libs/data/ui/content-text/src/index.ts"
       ],
       "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
+      "@elewa-website/elements/cards/elewa-news-item-card": [
+        "libs/elements/cards/elewa-news-item-card/src/index.ts"
+      ],
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
       ],
