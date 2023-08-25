@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeroText } from '../../interfaces/text-interface';
 
 @Component({
   selector: 'elewa-website-elewa-text-section',

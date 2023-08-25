@@ -5,5 +5,6 @@ import { ElewaTextSectionComponent } from './components/elewa-text-section/elewa
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaTextSectionComponent],
+  exports: [ElewaTextSectionComponent]
 })
-export class ElementsLayoutTextsModule {}
+export class TextsModule {}

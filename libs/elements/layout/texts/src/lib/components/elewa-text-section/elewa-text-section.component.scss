@@ -1,0 +1,19 @@
+$myFont: sans-serif;
+$myColor: black;
+$myFontSize: 18px;
+$myWidth: 70pc;
+$myText:  center;
+
+.containerHeader{
+    width: $myWidth;
+    border: 2px solid black;
+    text-align: $myText;
+    
+}
+
+.containerParagraph{
+    width: $myWidth;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
