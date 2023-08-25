@@ -6,5 +6,6 @@ import { ElewaImageContainerComponent } from './elewa-image-container/elewa-imag
   imports: [CommonModule],
   declarations: [ElewaImageContainerComponent],
   exports: [ElewaImageContainerComponent],
+  bootstrap: [ElewaImageContainerComponent]
 })
 export class ElementsLayoutImagesModule {}
