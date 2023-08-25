@@ -26,5 +26,33 @@ export const __highlightedProjects: ProjectItem[] = [
       'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3BvcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
   },
   // Add more data as needed
+  {
+    title: 'Project 2',
+    description: 'Description of Project 2',
+    tag: 'Medicine',
+    imgSrc:
+      'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVkaWNhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  },
+  {
+    title: 'Cardio',
+    description: 'Run Barry, Run',
+    tag: 'Sport',
+    imgSrc:
+      'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3BvcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+  },
+  {
+    title: 'Project 2',
+    description: 'Description of Project 2',
+    tag: 'Medicine',
+    imgSrc:
+      'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVkaWNhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  },
+  {
+    title: 'Cardio',
+    description: 'Run Barry, Run',
+    tag: 'Sport',
+    imgSrc:
+      'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3BvcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+  },
 ];
 

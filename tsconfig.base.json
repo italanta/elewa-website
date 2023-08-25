@@ -16,9 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@elewa-website/data/sections": ["libs/data/sections/src/index.ts"],
-      "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
       "@elewa-website/data/ui/content-text": [
         "libs/data/ui/content-text/src/index.ts"
+      ],
+      "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
+      "@elewa-website/elements/carousel": [
+        "libs/elements/carousel/src/index.ts"
       ],
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
@@ -38,11 +41,11 @@
       "@elewa-website/features/pages/consultancy-page": [
         "libs/features/pages/consultancy-page/src/index.ts"
       ],
-      "@elewa-website/features/pages/content-development": [
-        "libs/features/pages/content-development/src/index.ts"
-      ],
       "@elewa-website/features/pages/contact-page": [
         "libs/features/pages/contact-page/src/index.ts"
+      ],
+      "@elewa-website/features/pages/content-development": [
+        "libs/features/pages/content-development/src/index.ts"
       ],
       "@elewa-website/features/pages/conversational-learning": [
         "libs/features/pages/conversational-learning/src/index.ts"
@@ -53,9 +56,6 @@
       "@elewa-website/features/pages/news-page": [
         "libs/features/pages/news-page/src/index.ts"
       ],
-      "@elewa-website/models/sections/projects": [
-        "libs/models/sections/projects/src/index.ts"
-      ],
       "@elewa-website/models/schema/ui/buttons": [
         "libs/models/schema/ui/buttons/src/index.ts"
       ],
@@ -64,6 +64,9 @@
       ],
       "@elewa-website/models/schema/ui/texts": [
         "libs/models/schema/ui/texts/src/index.ts"
+      ],
+      "@elewa-website/models/sections/projects": [
+        "libs/models/sections/projects/src/index.ts"
       ],
       "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"]
     }
