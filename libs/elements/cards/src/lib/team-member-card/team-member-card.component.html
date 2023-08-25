@@ -1,1 +1,9 @@
-<p>team-member-card works!</p>
+<!-- libs/elements/cards/team-member-card/team-member-card.component.html -->
+<div class="team-member-card">
+  <img
+    [src]="teamMemberData.imgSrc"
+    [alt]="teamMemberData.fullName"
+    class="team-member-image"
+  />
+  <h3 class="team-member-full-name">{{ teamMemberData.fullName }}</h3>
+</div>

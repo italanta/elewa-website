@@ -20,6 +20,7 @@ import { TeamMemberCardComponent } from './team-member-card/team-member-card.com
     ElewaInfoCardComponent,
     ElewaWebsitePriceItemCardComponent,
     ElewaProjectItemCardComponent,
+    TeamMemberCardComponent,
   ],
 })
 export class CardsModule {}
