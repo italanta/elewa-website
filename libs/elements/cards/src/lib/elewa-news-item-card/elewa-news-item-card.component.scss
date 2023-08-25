@@ -1,68 +1,61 @@
-.inner-news-item-card {
+.news-section {
+    color: black;
     display: flex;
-    flex-direction: row;
-}
-.news-item-card{
-        height: 180px;
-        width: 630px;
-}
-
-.icon-img {
-    width: 52px;
-    height: 54px;
-    margin-right: 57px;
-}
-
-.news-item-card-title {
-    font-size: 42px;
-    font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
-}
-
-.news-item-card-text {
+    justify-content: center;
+  }
+  .ulist {
+    list-style-type: none;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .title {
+    text-align: start;
+    color: #000000;
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  .list {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-section {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px 10px;
+  }
+  .heading {
+    font-weight: bold;
+    margin-right: 40px;
+    color: #404040;
     font-size: 20px;
-    font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
-}
-
-.news-item-card-icon {
-    flex-direction: column;
-    padding-right: 15px;
-    margin-top: 1em;
-}
-
-.news-item-card-content {
-    margin-top: 1em;
-}
-
-/* Media Queries for Responsive Design */
-
-/* For screens with a maximum width of 768px */
-@media (max-width: 768px) {
-    .inner-news-item-card {
-        flex-direction: row;
-    }
-
-    .news-item-card {
-        width: 100%; /* Occupy full width */
-    }
-    .news-item-card-title {
-        font-size: 32px;
-        font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
-    }
-
-    .news-item-card-text {
-        font-size: 14px;
-        font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
-    }
-
-    .icon-img {
-        margin-right: 0; /* Remove margin for smaller screens */
-        margin-bottom: 15px; /* Add margin to separate from text */
-        width: 32px;
-        height: 34px;
-    }
-
-    .news-item-card-icon {
-        flex-direction: row; /* Align icon and content side by side */
-        padding-right: 0; /* Remove padding */
-    }
-}
+    letter-spacing: -0.54px;
+  }
+  .description {
+    letter-spacing: -0.33px;
+    color: #404040;
+    opacity: 0.52;
+    font-size: 16px;
+    text-align: center;
+  
+  }
+  .read-more {
+    margin-left: 40px;
+    font-size: 16px;
+    color: #404040;
+    padding: 0 0 10px 10px;
+  
+  }
+  button {
+    border: none;
+    background: none;
+  }

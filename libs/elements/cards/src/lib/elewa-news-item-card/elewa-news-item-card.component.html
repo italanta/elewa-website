@@ -1,11 +1,23 @@
-<div class="news-item-card">
-    <div class="inner-news-item-card">
-      <div class="news-item-card-icon">
-        <img class="icon-img" [src]="cardsData.icon" alt="Icon" />
-      </div>
-      <div class="news-item-card-content">
-        <h2 class="news-item-card-title">{{ cardsData.title }}</h2>
-        <p class="news-item-card-text">{{ cardsData.description }}</p>
-      </div>
-      </div>
-</div>
+<!-- news item section -->
+<div class="news-section">
+    <ul class="ulist" *ngFor="let news of newsItem">
+      <!-- list of all news -->
+      <li class="list" >
+          <div class="list-section">
+            <!-- header and description section -->
+              <div class="content">
+                  <p class="heading">
+                    {{ news.title }}
+                  </p>
+                  <p class="description">
+                    {{ news.title }}
+                  </p>
+              </div>
+              <!-- read-more tag -->
+              <button class="read-more">
+                {{ news.buttonText }}
+            </button>
+          </div>
+      </li>
+      </ul>
+    </div>
