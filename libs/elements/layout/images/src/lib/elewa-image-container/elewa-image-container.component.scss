@@ -15,9 +15,14 @@
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
-    .pill{
+    .pill {
+      clip-path: ellipse(30% 50% at center);
+    }
+    .stacked {
       clip-path: inset(5% 20% round 30%);
-
+    }
+    .window {
+      clip-path: ellipse(30% 70% at center);
     }
     h1 {
       font: normal normal medium 62px/80px DM Sans;
