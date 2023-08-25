@@ -1,0 +1,95 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  width: 100%;
+  max-width: 271px;
+  height: auto;
+  box-sizing: border-box;
+  background-color: var(--elewa-website-card-background-color);
+  display: flex;
+  font-family: Inter;
+  color: var(--elewa-website-card-color);
+  text-align: left;
+  font-weight: 400;
+  gap: 15px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 11px;
+  font-style: var(--elewa-website-card-font-style);
+}
+
+.card-image {
+  border-radius: 12px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .card-image {
+    width: 50%; /* Take up half the width on tablets and larger screens */
+    height: 317px; /* Restore the fixed height for consistent appearance */
+  }
+}
+
+.card-image img {
+  border-radius: 12px;
+  height: 317px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 248px;
+}
+
+.card-tag {
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 1px rgb(184, 178, 178) inset;
+  background-color: rgb(255, 255, 255);
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  height: 18px;
+  width: 62px;
+  margin-top: 8px;
+  margin-bottom: -14px;
+}
+@media (min-width: 768px) {
+  .card-tag {
+    margin-top: 0; /* Remove the margin on tablets and larger screens */
+  }
+}
+
+.card-tag-info {
+  width: 38px;
+  height: 10px;
+  font-size: 8px;
+}
+
+.card-title {
+  font-size: 18px;
+  width: 248px;
+  height: 10px;
+  margin-top: 12px;
+}
+
+.card-description {
+  font-size: 11px;
+  width: 246px;
+  height: 27px;
+  margin-top: 40px;
+}/*# sourceMappingURL=elewa-project-item-card.component.css.map */

@@ -1,0 +1,16 @@
+.elewa-content {
+  padding: 20px;
+}
+.elewa-content h3 {
+  font-size: 30px;
+  margin: 30px 0px 20px 0px;
+}
+.elewa-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.elewa-content ul li {
+  font-size: 20px;
+}/*# sourceMappingURL=elewa-text-content-item.component.css.map */
