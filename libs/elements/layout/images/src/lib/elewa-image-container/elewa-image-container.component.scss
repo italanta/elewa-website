@@ -1,17 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    position: absolute;
-    top: 10rem;
+.container {
+  position: absolute;
+  top: 10rem;
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  .pil {
     display: flex;
-    .pil{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    h1 {
+      font: normal normal medium 62px/80px DM Sans;
     }
+    img {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
 }
