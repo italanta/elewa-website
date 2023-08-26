@@ -1,1 +1,17 @@
-<p>team-member-card works!</p>
+ <!--  properties for member object -->
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img
+        [src]="member.imgSrc"
+        ngSrcset="100w, 200w, 300w"
+        sizes="(max-width: 480px) 100vw,
+        (max-width: 768px) 50vw,
+        33.3vw"
+        [alt]="member.fullName"
+      />
+    </div>
+    <div class="card-title">{{ member.fullName }}</div>
+  </div>
+</div>
