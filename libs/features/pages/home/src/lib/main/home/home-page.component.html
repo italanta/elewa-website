@@ -1,4 +1,8 @@
 <div class="home-page">
   Elewa Education
-  <elewa-website-text-content-item></elewa-website-text-content-item>
+  <div *ngFor="let contentItem of yourContentData">
+    <elewa-website-elewa-text-content-item
+      [content]="contentItem"
+    ></elewa-website-elewa-text-content-item>
+  </div>
 </div>
