@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    position: relative;
+}
+
+.main::after {
+    content: '';
+    position: absolute; 
+    bottom: 0;
+    left: 50%; /* this will center the border */
+    width: 80%; /* adjust this value to your desired width */
+    border-bottom: 1px solid rgb(200, 191, 191);
+    transform: translateX(-50%); /* this will ensure the border remains centered regardless of its width */
+}
+
+#space{
+    margin: 30px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+h3{
+    font-size: 17px;
+    color: rgb(49, 48, 48);
+}
+a{
+    text-decoration: none;
+    color: rgb(61, 61, 60);
+    font-weight: bolder;
+}
+
+p{
+    color: rgb(149, 149, 149);
+}
+
+h1{
+    font-size: 30px;
+    margin-left: -1%;
+}
