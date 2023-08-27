@@ -1,9 +1,12 @@
 /* eslint-disable */
 export default {
-  displayName: 'schema-ui-buttons',
-  preset: '../../../../jest.preset.js',
+
+
+  displayName: 'models-schema-ui-buttons',
+  preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/schema/ui/buttons',
+  coverageDirectory: '../../../../../coverage/libs/models/schema/ui/buttons',
+
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

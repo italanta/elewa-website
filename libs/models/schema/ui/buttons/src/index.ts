@@ -1,1 +1,5 @@
-export * from './lib/schema-ui-buttons.module';
+
+
+export * from './lib/button.interface';
+export * from './lib/slider-button-data.interface';
+

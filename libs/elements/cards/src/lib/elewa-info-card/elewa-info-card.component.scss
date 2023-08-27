@@ -1,0 +1,69 @@
+.inner-info-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-card {
+    height: 180px;
+    width: 630px;
+}
+
+.icon-img {
+    width: 52px;
+    height: 54px;
+    margin-right: 57px;
+}
+
+.info-card-title {
+    font-size: 42px;
+    font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
+}
+
+.info-card-text {
+    font-size: 20px;
+    font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
+}
+
+.info-card-icon {
+    flex-direction: column;
+    padding-right: 15px;
+    margin-top: 1em;
+}
+
+.info-card-content {
+    margin-top: 1em;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .inner-info-card {
+        flex-direction: row;
+    }
+
+    .info-card {
+        width: 100%; /* Occupy full width */
+    }
+    .info-card-title {
+        font-size: 32px;
+        font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
+    }
+    
+    .info-card-text {
+        font-size: 14px;
+        font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
+    }
+
+    .icon-img {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 15px; /* Add margin to separate from text */
+        width: 32px;
+        height: 34px;
+    }
+
+    .info-card-icon {
+        flex-direction: row; /* Align icon and content side by side */
+        padding-right: 0; /* Remove padding */
+    }
+}

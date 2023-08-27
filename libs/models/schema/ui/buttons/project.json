@@ -1,7 +1,10 @@
 {
-  "name": "schema-ui-buttons",
-  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/schema/ui/buttons/src",
+
+
+  "name": "models-schema-ui-buttons",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/models/schema/ui/buttons/src",
+
   "prefix": "elewa-website",
   "tags": [],
   "projectType": "library",
@@ -10,7 +13,9 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/schema/ui/buttons/jest.config.ts",
+
+        "jestConfig": "libs/models/schema/ui/buttons/jest.config.ts",
+
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +30,11 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/schema/ui/buttons/**/*.ts",
-          "libs/schema/ui/buttons/**/*.html"
+
+
+          "libs/models/schema/ui/buttons/**/*.ts",
+          "libs/models/schema/ui/buttons/**/*.html"
+
         ]
       }
     }

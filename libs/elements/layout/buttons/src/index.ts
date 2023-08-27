@@ -1,1 +1,4 @@
-export * from './lib/ButtonsModule.module';
+
+
+export * from './lib/elements-layout-buttons.module';
+
