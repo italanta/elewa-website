@@ -1,1 +1,9 @@
-<p>elewa-normal-button works!</p>
+<button
+  class="normal-button"
+  [style.backgroundColor]="buttonData.bgColor"
+  [style.color]="buttonData.color"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+>
+  {{ buttonData.text }}
+</button>

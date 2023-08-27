@@ -28,7 +28,7 @@
         "libs/features/pages/home/src/index.ts"
       ],
       "@elewa-website/libs/models/buttons/data":[
-          "libs/models/schema/ui/buttons/src/lib/button.interface.ts"
+          "libs/models/schema/ui/buttons/src/lib/buttons.interface.ts"
       ],
       "@elewa-website/libs/models/schema/ui/buttons": [
         "libs/libs/models/schema/ui/buttons/src/index.ts"
