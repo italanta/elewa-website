@@ -4,10 +4,9 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './main/home/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
-import { ElementsLayoutImagesModule } from '@elewa-website/elements/layout/images';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, ElementsLayoutImagesModule],
+  imports: [CommonModule, HomeRoutingModule],
   declarations: [HomePageComponent],
   exports: [HomePageComponent],
 })
