@@ -1,0 +1,102 @@
+.mainContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.pill {
+  width: 180px;
+  height: 300px;
+  clip-path:path('M 0 200 L 0,90 A 5,5 0,0,1 180,90 L 180 200 A 5,5 0,0,1 0,200 z');
+
+
+}
+
+.window{
+  width: 200px;
+  height: 300px;
+  clip-path: path('M 0 300 L 0,125 A 5,5 0,0,1 200,125 L 200 300 z');
+}
+
+.stacked {
+    height: 260px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: path(
+        'm0.1.5h260.12c0,1.11,36.25,25.2,33.82,66.67-2.01,34.32-27.79,53.58-31.33,56.14,21.77,12.29,34.9,35.71,33.93,60.53-.94,23.99-14.91,45.7-36.42,56.67h-195.12c-2.32-1.16-32.32-16.75-36.29-50.11-3.14-26.4,11.34-52.81,36.4-65.73-1.74-1.04-35.13-21.84-35.23-61.93-.1-40.24,33.44-61.21,35.12-62.22Z'
+    );
+  
+}
+
+.sigleImg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    border: 20px solid red;
+}
+
+.card {
+  width: 200px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+// .NgContainer{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.singleImgWindow{
+    padding-top: 5px;
+    width: 220px;
+  height: fit-content;
+  background-color: #DBC2F5;
+  text-align: center;
+}
+
+.singleImgStacked{
+    padding-top: 20px;
+    width: 320px;
+    background-color: lightgray;
+  height: fit-content;
+  text-align: center;
+}
+
+
+.singleImgPill{
+    width: 240px;
+    background-color: lightgray;
+  height: fit-content;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.singleImgCard{
+    padding-top: 10px;
+    width: 220px;
+    background-color: lightgray;
+  height: fit-content;
+  text-align: center;
+}
+
+
+// img{
+//     object-fit: cover;
+// }

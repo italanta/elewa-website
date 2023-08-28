@@ -1,1 +1,55 @@
-<p>elewa-image-container workscccc!</p>
+<div class="mainContainer">
+  <div class="imageContainer" *ngFor="let item of images">
+    <div *ngIf="item.visualisation === 0" class="NgContainer">
+        <h3 class="title">{{ item.title }}</h3>      
+        <div class="singleImg singleImgPill">
+        <img
+          [ngClass]="{
+                pill: item.visualisation === 0,
+              }"
+          src="{{ item.imageSrc }}"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div *ngIf="item.visualisation === 1" class="NgContainer stackedImg">
+        <h3 class="title">{{ item.title }}</h3>
+        <div class="singleImg singleImgStacked">
+        <img
+          [ngClass]="{
+                stacked: item.visualisation === 1,
+              }"
+          src="{{ item.imageSrc }}"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div *ngIf="item.visualisation === 2" class="NgContainer">
+      <h3 class="title">{{ item.title }}</h3>
+      <div class="singleImg singleImgWindow">
+        <img
+          [ngClass]="{
+                window: item.visualisation === 2,
+              }"
+          src="{{ item.imageSrc }}"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div *ngIf="item.visualisation === 3" class="NgContainer">
+        <h3 class="title">{{ item.title }}</h3>
+        <div class="singleImg singleImgCard">
+        <img
+          [ngClass]="{
+                card: item.visualisation === 3,
+              }"
+          src="{{ item.imageSrc }}"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
