@@ -1,55 +1,63 @@
 <div class="image-container" *ngFor="let item of images">
-  <ng-container *ngIf="item.visualisation === 0">
+  <div *ngIf="item.visualisation === 0">
     <h3 class="title">{{ item.title }}</h3>
-    <img
-      [ngClass]="{
+    <div class="contain">
+      <img
+        [ngClass]="{
         pill: item.visualisation === 0,
       }"
-      [style.width]="item.maxWidth"
-      src="{{ item.imageSrc }}"
-      alt=""
-    />
-  </ng-container>
+        [style.width]="item.maxWidth"
+        src="{{ item.imageSrc }}"
+        alt=""
+      />
+    </div>
+  </div>
 
-  <ng-container *ngIf="item.visualisation === 1">
-    <h3 class="title">{{ item.title }}</h3>
-    <img
-      class="clip-svg"
-      [style.width]="item.maxWidth"
-      src="{{ item.imageSrc }}"
-      alt=""
-    />
-    <svg width="0" height="0">
-      <defs>
-        <clipPath id="stacked">
-          <ellipse cx="60" cy="38" rx="60" ry="45" />
-          <ellipse cx="60" cy="88" rx="60" ry="45" />
-        </clipPath>
-      </defs>
-    </svg>
-  </ng-container>
+  <div *ngIf="item.visualisation === 1">
+    <h3>{{ item.title }}</h3>
+    <div class="stack">
+      <div class="image">
+        <img src="{{ item.imageSrc }}" alt="" />
+      </div>
+      <div class="triangle"></div>
+      <div class="triangle mid-left"></div>
+      <div class="frame"></div>
+      <div class="stacked-container">
+        <div class="stacked stacked1"></div>
+        <div class="stacked stacked2"></div>
+      </div>
+      <div class="stacked-container1">
+        <div class="stacked stacked3"></div>
+        <div class="stacked stacked4"></div>
+      </div>
+    </div>
+  </div>
 
-  <ng-container *ngIf="item.visualisation === 2">
+  <div *ngIf="item.visualisation === 2">
     <h3 class="title">{{ item.title }}</h3>
-    <img
-      [ngClass]="{
+    <div class="contain">
+      <img
+        [ngClass]="{
         window: item.visualisation === 2,
       }"
-      [style.width]="item.maxWidth"
-      src="{{ item.imageSrc }}"
-      alt=""
-    />
-  </ng-container>
+        [style.width]="item.maxWidth"
+        src="{{ item.imageSrc }}"
+        alt=""
+      />
+    </div>
+  </div>
 
-  <ng-container *ngIf="item.visualisation === 3">
+  <div *ngIf="item.visualisation === 3">
     <h3 class="title">{{ item.title }}</h3>
-    <img
-      [ngClass]="{
+    <div class="contain">
+      <img
+        [ngClass]="{
         card: item.visualisation === 3,
       }"
-      [style.width]="item.maxWidth"
-      src="{{ item.imageSrc }}"
-      alt=""
-    />
-  </ng-container>
+        [style.width]="item.maxWidth"
+        src="{{ item.imageSrc }}"
+        alt=""
+      />
+    </div>
+  </div>
 </div>
