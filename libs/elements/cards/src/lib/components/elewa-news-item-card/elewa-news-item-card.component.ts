@@ -1,6 +1,6 @@
 import { Component, Input, OnInit} from '@angular/core';
 import { NewsItem } from '@elewa-website/models/schema/ui/cards';
-import { __highlightedNews } from '@elewa-website/models/data/sections';
+
 
 // Component
 @Component({
@@ -10,10 +10,7 @@ import { __highlightedNews } from '@elewa-website/models/data/sections';
 })
 export class ElewaNewsItemCardComponent implements OnInit {
 
-  @Input() item!: NewsItem
+  @Input() item!: NewsItem;
 
-  newsItem: NewsItem;
-  ngOnInit(): void {
-    this.newsItem = __highlightedNews;
-  }
+
 }

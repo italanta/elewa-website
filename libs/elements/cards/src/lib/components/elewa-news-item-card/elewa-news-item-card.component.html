@@ -1,21 +1,20 @@
 <!-- news item section -->
   <div class="news-section">
-    <ul class="ulist" *ngFor="let news of newsItem">
-      <!-- list of all news -->
+    <ul class="ulist">
       <li class="list" >
           <div class="list-section">
             <!-- header and description section -->
               <div class="content">
                   <p class="heading">
-                    {{ news.title }}
+                    {{ item.title }}
                   </p>
                   <p class="description">
-                    {{ news.title }}
+                    {{ item.title }}
                   </p>
               </div>
               <!-- read-more tag -->
               <button class="read-more">
-                {{ news.buttonText }}
+                {{ item.buttonText }}
             </button>
           </div>
       </li>
