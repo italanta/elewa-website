@@ -1,5 +1,5 @@
 <div class="content-item">
-  <h2>{{ content.title }}</h2>
+  <h2 class="title">{{ content.title }}</h2>
   <p *ngFor="let description of content.descriptions; let last = last">
     {{ description }}<ng-container *ngIf="!last"> </ng-container>
   </p>

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ElewaTextContentItemComponent } from 'libs/elements/layout/texts/src/lib/elewa-text-content-item/elewa-text-content-item.component';
+
 import { ContentText } from '@elewa-website/models/schema/ui/texts';
 @Component({
-  selector: 'elewa-website-text-content-item',
+  selector: 'elewa-website-elewa-text-content-item',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })

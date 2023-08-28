@@ -7,7 +7,7 @@ import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
   imports: [CommonModule, HomeRoutingModule, ElementsLayoutTextsModule],
-  declarations: [HomePageComponent],
+  declarations: [ElewaTextContentItemComponent, HomePageComponent],
   exports: [HomePageComponent],
 })
 export class FeaturesPagesHomeModule {}

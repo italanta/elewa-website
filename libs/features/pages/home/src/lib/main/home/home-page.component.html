@@ -1,8 +1,9 @@
 <div class="home-page">
-  Elewa Education
-  <div *ngFor="let contentItem of yourContentData">
-    <elewa-website-elewa-text-content-item
-      [content]="contentItem"
-    ></elewa-website-elewa-text-content-item>
+  <h1>Elewa Education</h1>
+  <div *ngFor="let contentItem of yourContentData" class="content-item">
+    <h2>{{ contentItem.title }}</h2>
+    <p *ngFor="let description of contentItem.descriptions; let last = last">
+      {{ description }}<ng-container *ngIf="!last"> </ng-container>
+    </p>
   </div>
 </div>
