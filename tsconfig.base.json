@@ -65,6 +65,9 @@
       "@elewa-website/models/schema/ui/cards": [
         "libs/models/schema/ui/cards/src/index.ts"
       ],
+      "@elewa-website/models/schema/ui/images": [
+        "libs/models/schema/ui/images/src/index.ts"
+      ],
       "@elewa-website/models/schema/ui/texts": [
         "libs/models/schema/ui/texts/src/index.ts"
       ],
