@@ -1,9 +1,17 @@
 <div class="home-page">
-  <h1>Elewa Education</h1>
-  <div *ngFor="let contentItem of yourContentData" class="content-item">
-    <h2>{{ contentItem.title }}</h2>
-    <p *ngFor="let description of contentItem.descriptions; let last = last">
-      {{ description }}<ng-container *ngIf="!last"> </ng-container>
-    </p>
+  <div
+    *ngFor="let contentItem of yourContentData; let i = index"
+    class="content-item"
+    [ngClass]="{ 'alternate-bg': i % 2 === 1, 'even-bg': i % 2 === 0 }"
+  >
+    <h2 class="title">{{ contentItem.title }}</h2>
+    <div class="description_sec">
+      <p
+        class="description"
+        *ngFor="let description of contentItem.descriptions; let last = last"
+      >
+        {{ description }}<ng-container *ngIf="!last"> </ng-container>
+      </p>
+    </div>
   </div>
 </div>
