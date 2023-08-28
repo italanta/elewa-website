@@ -1,6 +1,5 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NewsItem } from '@elewa-website/models/schema/ui/cards';
-
 
 // Component
 @Component({
@@ -8,9 +7,6 @@ import { NewsItem } from '@elewa-website/models/schema/ui/cards';
   templateUrl: './elewa-news-item-card.component.html',
   styleUrls: ['./elewa-news-item-card.component.scss'],
 })
-export class ElewaNewsItemCardComponent implements OnInit {
-
+export class ElewaNewsItemCardComponent {
   @Input() item!: NewsItem;
-
-
 }
