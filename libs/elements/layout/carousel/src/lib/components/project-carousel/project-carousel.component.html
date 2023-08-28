@@ -1,0 +1,20 @@
+<!-- Slides -->
+<section class="product">
+  <div class="container">
+    <div class="slider-wrap">
+      <div class="slider-main">
+        <div class="item" *ngFor="let item of projectItems">
+          <elewa-website-project-item-card [project]="item"></elewa-website-project-item-card>
+        </div>
+      </div>
+      <div class="button-area">
+        <button type="button" class="prev" elewaWebsitePrev>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button type="button" class="next" elewaWebsiteNext>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

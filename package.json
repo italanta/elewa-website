@@ -2,6 +2,7 @@
   "name": "elewa-website",
   "version": "0.0.0",
   "license": "MIT",
+  
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",

@@ -1,1 +1,1 @@
-export * from './lib/cards-module.module';
+export * from './lib/cards.module';
