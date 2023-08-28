@@ -1,0 +1,7 @@
+<div class="home-page">
+  <div *ngFor="let config of imageConfigs" class="image-item">
+    <h2 class="title">{{ config.title }}</h2>
+    <img [src]="config.imageSrc" [style.maxWidth]="config.maxWidth" />
+    <p>{{ getImageVisualisationName(config.visualisation) }}</p>
+  </div>
+</div>
