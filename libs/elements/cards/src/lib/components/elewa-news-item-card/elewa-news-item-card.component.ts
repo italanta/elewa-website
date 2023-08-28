@@ -12,7 +12,7 @@ export class ElewaNewsItemCardComponent implements OnInit {
 
   @Input() item!: NewsItem
 
-  newsItem: NewsItem[] = [];
+  newsItem: NewsItem;
   ngOnInit(): void {
     this.newsItem = __highlightedNews;
   }
