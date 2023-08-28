@@ -1,1 +1,4 @@
-export * from './lib/elements-layout-texts.module';
+
+
+export * from './lib/texts.module';
+

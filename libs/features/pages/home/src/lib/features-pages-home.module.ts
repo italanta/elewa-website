@@ -5,6 +5,7 @@ import { HomePageComponent } from './main/home/home-page.component';
 import { ElementsLayoutTextsModule } from '../../../../../elements/layout/texts/src/lib/elements-layout-texts.module';
 import { HomeRoutingModule } from './home.routing';
 
+
 @NgModule({
   imports: [CommonModule, HomeRoutingModule, ElementsLayoutTextsModule],
   declarations: [ElewaTextContentItemComponent, HomePageComponent],

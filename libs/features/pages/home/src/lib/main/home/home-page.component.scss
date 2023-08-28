@@ -1,36 +1,7 @@
 .home-page {
-  background-color: var(--elewa-website-color-primary-black);
+  background-color: black;
   height: 100vh;
-  color: black;
-  padding: 10px;
-}
 
-.title {
-  padding: 5px;
-  margin-left: 15px;
-}
+  background: var(--elewa-website-homepage-background-color);
 
-.content-item {
-  border: 2px solid transparent;
-  margin-top: 30px;
-  width: 40%;
-  margin-left: 10px;
-  background-color: aquamarine;
-}
-
-.alternate-bg {
-  background-color: white;
-}
-
-.even-bg {
-  background-color: lightblue;
-}
-
-.description_sec {
-  padding: 6px;
-  margin: 7px;
-  margin-left: 15px;
-}
-.description {
-  margin-top: 10px;
 }
