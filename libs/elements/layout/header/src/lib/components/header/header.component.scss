@@ -1,9 +1,6 @@
 header {
-  position: absolute;
-  width: 100vw;
-  z-index: 999;
   background-color: transparent;
-  min-height: 5rem;
+  min-height: var(--elewa-website-header-bg-height);
   padding: 0 2em;
 }
 

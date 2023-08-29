@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ElewaTextContentItemComponent } from 'libs/elements/layout/texts/src/lib/elewa-text-content-item/elewa-text-content-item.component';
+
+
+import { CardsModule } from '@elewa-website/elements/cards';
+import { AppHeaderModule } from '@elewa-website/elements/layout/header';
+
 import { HomePageComponent } from './main/home/home-page.component';
-import { ElementsLayoutTextsModule } from '../../../../../elements/layout/texts/src/lib/elements-layout-texts.module';
+import { NewsSectionComponent } from './components/news-section/news-section.component';
+
+
 import { HomeRoutingModule } from './home.routing';
 
-
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, ElementsLayoutTextsModule],
-  declarations: [ElewaTextContentItemComponent, HomePageComponent],
+
+
+  imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule],
+  declarations: [HomePageComponent, NewsSectionComponent],
+
   exports: [HomePageComponent],
 })
 export class FeaturesPagesHomeModule {}
