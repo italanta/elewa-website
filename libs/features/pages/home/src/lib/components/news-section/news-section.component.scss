@@ -1,0 +1,44 @@
+.section-title {
+    margin-left: 254px;
+}
+
+.news-item-separator {
+    position: relative;
+    height: 1px;
+    width: 800px;
+    background-color: #ccc;
+    margin: 10px auto;
+    right: -10px;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+    .news-section{
+        padding: 20px;
+
+        .section-title {
+            margin-left: 20px;
+        }
+
+        .news-item-separator {
+            width: 100%;
+            right: 0; 
+        }
+    }
+}
+
+/* Phone responsiveness */
+@media (max-width: 480px) {
+    .news-section {
+        padding: 10px;
+
+        .section-title {
+            margin-left: 20px;
+        }
+
+        .news-item-separator {
+            width: 100%; 
+            right: 0; 
+        }
+    }
+}
