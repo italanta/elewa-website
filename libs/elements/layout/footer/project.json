@@ -1,7 +1,7 @@
 {
-  "name": "-libs-elements-layout-footer",
-  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/-libs/elements/layout/footer/src",
+  "name": "elements-layout-footer",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/elements/layout/footer/src",
   "prefix": "elewa-website",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/-libs/elements/layout/footer/jest.config.ts",
+        "jestConfig": "libs/elements/layout/footer/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/-libs/elements/layout/footer/**/*.ts",
-          "libs/-libs/elements/layout/footer/**/*.html"
+          "libs/elements/layout/footer/**/*.ts",
+          "libs/elements/layout/footer/**/*.html"
         ]
       }
     }
