@@ -6,6 +6,13 @@
   --elewa-website-color-primary-black: #000;
   --elewa-website-color-primary-white: #ffffff;
 
+  /** homepage colors **/
+  --elewa-website-homepage-background-color: #dbc2f5;
+  --elewa-website-news-section-bg-color: #F9F8F4;
+  --elewa-website-news-item-primary-color: #404040;
+
+
+  /** Resusable Components Variables **/
   /** card CSS variables **/
   --elewa-website-card-font-style: 'DMSans-Regular';
   --elewa-website-card-background-color: rgba(255, 255, 255, 1);
@@ -26,6 +33,4 @@
 
   /** elewa website header **/
   --elewa-website-header-bg-height: 5rem;
-
-  --elewa-website-homepage-background-color: #dbc2f5
 }
