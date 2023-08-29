@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TranslocoRootModule } from './transloco-root.module';
-import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 
 import { AppRoutingModule } from './app.routing';
 
@@ -15,7 +14,6 @@ import { AppRoutingModule } from './app.routing';
     AppRoutingModule,
     HttpClientModule,
     TranslocoRootModule,
-    AppHeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
