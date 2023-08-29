@@ -1,7 +1,16 @@
 <div class="home-page">
-  <div *ngFor="let config of imageConfigs" class="image-item">
-    <h2 class="title">{{ config.title }}</h2>
-    <img [src]="config.imageSrc" [style.maxWidth]="config.maxWidth" />
-    <p>{{ getImageVisualisationName(config.visualisation) }}</p>
+  <div *ngFor="let config of imageConfigs">
+    <!-- <h2 class="title">{{ config.title }}</h2> -->
+    <h2 class="visual">
+      {{ getImageVisualisationClass(config.visualisation) }}
+    </h2>
+    <div class="image-item">
+      <img
+        [src]="config.imageSrc"
+        class="image"
+        [style.maxWidth]="config.maxWidth"
+        [ngClass]="getImageVisualisationClass(config.visualisation)"
+      />
+    </div>
   </div>
 </div>

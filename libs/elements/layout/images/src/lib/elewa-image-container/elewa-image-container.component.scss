@@ -1,0 +1,49 @@
+.home-page {
+  display: flex;
+  gap: 5px;
+}
+.visual {
+  display: hidden;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  width: 280px;
+  height: 350px;
+  border: 2px solid transparent;
+  background-color: lightgray;
+}
+
+.image-item h2 {
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 250px;
+  height: 280px;
+}
+
+.pill {
+  clip-path: ellipse(120px 140px);
+}
+
+.stacked {
+  clip-path: ellipse(80px 120px at 50% 30%), ellipse(80px 120px at 50% 70%);
+}
+
+.window {
+  border: 2px solid white;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+}
+
+.card {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+.visual {
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+}

@@ -12,16 +12,16 @@ import {
 export class ElewaImageContainerComponent {
   @Input() imageConfigs: ImageConfig[] = []; // Use an array of ImageConfig
 
-  getImageVisualisationName(visualisation: ImageVisualisation): string {
+  getImageVisualisationClass(visualisation: ImageVisualisation): string {
     switch (visualisation) {
       case ImageVisualisation.Pill:
-        return 'Pill';
+        return 'pill';
       case ImageVisualisation.stacked:
-        return 'Stacked';
+        return 'stacked';
       case ImageVisualisation.Window:
-        return 'Window';
+        return 'window';
       case ImageVisualisation.Card:
-        return 'Card';
+        return 'card';
       default:
         return '';
     }
