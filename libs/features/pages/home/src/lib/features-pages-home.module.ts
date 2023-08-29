@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ElewaImageContainerComponent } from 'libs/elements/layout/images/src/lib/elewa-image-container/elewa-image-container.component';
+
+
+import { CardsModule } from '@elewa-website/elements/cards';
+import { AppHeaderModule } from '@elewa-website/elements/layout/header';
+
 import { HomePageComponent } from './main/home/home-page.component';
-import {LayoutImagesModule} from '../../../../../elements/layout/images/src/lib/layout-images.module'
+import { NewsSectionComponent } from './components/news-section/news-section.component';
+
 import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule],
-  declarations: [HomePageComponent, ElewaImageContainerComponent],
+  imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule],
+  declarations: [HomePageComponent, NewsSectionComponent],
+
   exports: [HomePageComponent],
 })
 export class FeaturesPagesHomeModule {}

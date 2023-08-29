@@ -15,19 +15,66 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@elewa-website/data/sections": ["libs/data/sections/src/index.ts"],
+      "@elewa-website/data/ui/content-text": [
+        "libs/data/ui/content-text/src/index.ts"
+      ],
+      "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
+      "@elewa-website/elements/layout/buttons": [
+        "libs/elements/layout/buttons/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/carousel": [
+        "libs/elements/layout/carousel/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/header": [
+        "libs/elements/layout/header/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/texts": [
+        "libs/elements/layout/texts/src/index.ts"
+      ],
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
-      "@elewa-website/models/schema/ui/images": [
-        "libs/models/schema/ui/images/src/lib/image-config.interface.ts"
+
+      "@elewa-website/features/pages/booklets-page": [
+        "libs/features/pages/booklets-page/src/index.ts"
+      ],
+      "@elewa-website/features/pages/consultancy-page": [
+        "libs/features/pages/consultancy-page/src/index.ts"
+      ],
+      "@elewa-website/features/pages/contact-page": [
+        "libs/features/pages/contact-page/src/index.ts"
+      ],
+      "@elewa-website/features/pages/content-development": [
+        "libs/features/pages/content-development/src/index.ts"
+      ],
+      "@elewa-website/features/pages/conversational-learning": [
+        "libs/features/pages/conversational-learning/src/index.ts"
+
       ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
-      "@elewa-website/layout/images": ["libs/layout/images/src/index.ts"],
+
+      "@elewa-website/models/data/sections": [
+        "libs/models/data/sections/src/index.ts"
+      ],
       "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
-      "@elewa-website/models/schema/ui/images/lib": [
-        "libs/models/schema/ui/images/src/index.ts"
+      "@elewa-website/features/pages/news-page": [
+        "libs/features/pages/news-page/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/buttons": [
+        "libs/models/schema/ui/buttons/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/cards": [
+        "libs/models/schema/ui/cards/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/texts": [
+        "libs/models/schema/ui/texts/src/index.ts"
+      ],
+      "@elewa-website/models/sections/projects": [
+        "libs/models/sections/projects/src/index.ts"
+
       ],
       "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"]
     }
