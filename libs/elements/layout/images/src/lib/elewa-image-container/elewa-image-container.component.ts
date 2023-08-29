@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import {
   ImageConfig,
   ImageVisualisation,
-} from '../../../../../../models/schema/ui/images/src/lib/image-config.interface';
+} from '@elewa-website/models/schema/ui/images';
 
 @Component({
   selector: 'elewa-website-elewa-image-container',
