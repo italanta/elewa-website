@@ -24,6 +24,9 @@
     .window {
       clip-path: ellipse(70% 100% at bottom);
     }
+    .card{
+      clip-path: inset(2% 12%);
+    }
     h1 {
       font: normal normal medium 62px/80px DM Sans;
     }

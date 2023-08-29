@@ -30,6 +30,10 @@
   -webkit-clip-path: ellipse(70% 100% at bottom);
           clip-path: ellipse(70% 100% at bottom);
 }
+.image-container .cont .card {
+  -webkit-clip-path: inset(2% 12%);
+          clip-path: inset(2% 12%);
+}
 .image-container .cont h1 {
   font: normal normal medium 62px/80px DM Sans;
 }
