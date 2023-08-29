@@ -4,7 +4,7 @@ import {
   ImageVisualisation,
 } from '@elewa-website/models/schema/ui/images';
 @Component({
-  selector: 'elewa-website-elewa-image-container',
+  selector: 'elewa-website-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })
