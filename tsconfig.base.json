@@ -19,10 +19,17 @@
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
+      "@elewa-website/models/schema/ui/images": [
+        "libs/models/schema/ui/images/src/lib/image-config.interface.ts"
+      ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
+      "@elewa-website/layout/images": ["libs/layout/images/src/index.ts"],
       "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
+      "@elewa-website/models/schema/ui/images/lib": [
+        "libs/models/schema/ui/images/src/index.ts"
+      ],
       "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"]
     }
   },
