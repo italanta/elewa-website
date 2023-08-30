@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { TranslocoRootModule } from './transloco-root.module';
 
 import { AppRoutingModule } from './app.routing';
+import { CardsModule } from '@elewa-website/elements/cards';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    CardsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
