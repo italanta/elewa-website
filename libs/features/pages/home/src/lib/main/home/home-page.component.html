@@ -1,5 +1,9 @@
-<elewa-website-elewa-image-and-text-banner
+<div
   *ngFor="let content of contentData; let i = index"
-  [content]="content"
-  
-></elewa-website-elewa-image-and-text-banner>
+  class="elewa-image-and-text-banner"
+>
+  <elewa-website-elewa-image-and-text-banner
+    [content]="content"
+    [image]="imageData[i]"
+  ></elewa-website-elewa-image-and-text-banner>
+</div>
