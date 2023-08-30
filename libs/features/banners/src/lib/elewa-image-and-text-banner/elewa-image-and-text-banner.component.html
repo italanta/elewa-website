@@ -1,11 +1,29 @@
 <div class="elewa-image-and-text-banner">
-  <div [ngClass]="getImageVisualisationClass(image.visualisation)">
-    <img class="images" [src]="image.imageSrc" alt="Banner Image" />
+  <div [ngClass]="getImageVisualisationClass(imageData[0].visualisation)">
+    <img class="images" [src]="imageData[0].imageSrc" alt="Banner Image" />
   </div>
   <div class="content">
-    <h2 class="title">{{ content.title }}</h2>
-    <p class="text" *ngFor="let description of content.descriptions; let last = last">
+    <h2 class="title">{{ contentData[0].title }}</h2>
+    <p
+      class="text"
+      *ngFor="let description of contentData[0].descriptions; let last = last"
+    >
       {{ description }}<ng-container *ngIf="!last"> </ng-container>
     </p>
+  </div>
+</div>
+
+<div class="elewa-image-and-text-banner">
+  <div class="content">
+    <h2 class="title">{{ contentData[1].title }}</h2>
+    <p
+      class="text"
+      *ngFor="let description of contentData[1].descriptions; let last = last"
+    >
+      {{ description }}<ng-container *ngIf="!last"> </ng-container>
+    </p>
+  </div>
+  <div [ngClass]="getImageVisualisationClass(imageData[1].visualisation)">
+    <img class="images" [src]="imageData[1].imageSrc" alt="Banner Image" />
   </div>
 </div>
