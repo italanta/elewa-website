@@ -1,10 +1,11 @@
-
 <div class="elewa-image-and-text-banner">
   <div [ngClass]="getImageVisualisationClass(image.visualisation)">
-    <img [src]="image.imageSrc" alt="Banner Image" />
+    <img class="images" [src]="image.imageSrc" alt="Banner Image" />
   </div>
   <div class="content">
     <h2>{{ content.title }}</h2>
-    <p>{{ content.descriptions[0] }}</p>
+    <p *ngFor="let description of content.descriptions; let last = last">
+      {{ description }}<ng-container *ngIf="!last"> </ng-container>
+    </p>
   </div>
 </div>
