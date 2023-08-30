@@ -1,1 +1,13 @@
 <p>elewa-price-list works!</p>
+
+<!-- Loop through pricingList and display pricing items -->
+<div *ngFor="let item of pricingList">
+  <!-- Reuse the elewa-website-price-item-card component for each pricing item -->
+  <elewa-website-price-item-card [priceItem]="item"></elewa-website-price-item-card>
+
+  <!-- Display additional information for each pricing item -->
+  <div>
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.description }}</p>
+  </div>
+</div>
