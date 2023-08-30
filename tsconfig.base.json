@@ -26,6 +26,9 @@
       "@elewa-website/elements/layout/carousel": [
         "libs/elements/layout/carousel/src/index.ts"
       ],
+      "@elewa-website/elements/layout/footer": [
+        "libs/elements/layout/footer/src/index.ts"
+      ],
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
       ],
@@ -53,13 +56,13 @@
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
+      "@elewa-website/features/pages/news-page": [
+        "libs/features/pages/news-page/src/index.ts"
+      ],
       "@elewa-website/models/data/sections": [
         "libs/models/data/sections/src/index.ts"
       ],
       "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
-      "@elewa-website/features/pages/news-page": [
-        "libs/features/pages/news-page/src/index.ts"
-      ],
       "@elewa-website/models/schema/ui/buttons": [
         "libs/models/schema/ui/buttons/src/index.ts"
       ],
