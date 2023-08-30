@@ -2,10 +2,10 @@
 
 <div class="elewa-image-and-text-banner">
   <div [ngClass]="getImageVisualisationClass(image.visualisation)">
-    <img [src]="image.src" alt="Banner Image" />
+    <img [src]="image.imageSrc" alt="Banner Image" />
   </div>
   <div class="content">
     <h2>{{ content.title }}</h2>
-    <p>{{ content.paragraph }}</p>
+    <p>{{ content.descriptions[0] }}</p>
   </div>
 </div>
