@@ -1,1 +1,7 @@
-<p>elewa-price-list works!</p>
+<div *ngFor="let item of pricingList">
+    <elewa-website-price-item-card [priceItem]="item"></elewa-website-price-item-card>
+     <div>
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.description }}</p>
+    </div>
+  </div>
