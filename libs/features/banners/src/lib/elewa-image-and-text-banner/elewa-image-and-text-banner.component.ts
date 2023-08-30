@@ -10,4 +10,8 @@ import { ImageConfig } from '@elewa-website/models/schema/ui/images';
 export class ElewaImageAndTextBannerComponent {
   @Input() content!: ContentText;
   @Input() image!: ImageConfig;
+
+  getImageVisualisationClass(visualisation: string): string {
+    // Implement your logic here and return the appropriate class
+  }
 }
