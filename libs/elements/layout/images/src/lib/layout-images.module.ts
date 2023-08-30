@@ -4,6 +4,6 @@ import { ElewaImageContainerComponent } from './elewa-image-container/elewa-imag
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [],
+  declarations: [ElewaImageContainerComponent],
 })
 export class LayoutImagesModule {}

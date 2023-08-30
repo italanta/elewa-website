@@ -1,1 +1,11 @@
 <p>elewa-image-and-text-banner works!</p>
+
+<div class="elewa-image-and-text-banner">
+  <div [ngClass]="getImageVisualisationClass(image.visualisation)">
+    <img [src]="image.src" alt="Banner Image" />
+  </div>
+  <div class="content">
+    <h2>{{ content.title }}</h2>
+    <p>{{ content.paragraph }}</p>
+  </div>
+</div>
