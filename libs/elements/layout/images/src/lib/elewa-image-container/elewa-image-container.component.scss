@@ -31,7 +31,7 @@
       aspect-ratio: 1 /1;
       object-fit: cover;
     }
-    .card{
+    .card {
       clip-path: inset(1%);
       width: 100%;
       aspect-ratio: 1 /1;
@@ -45,4 +45,20 @@
       height: 20rem;
     }
   }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1025px) {
+  
 }

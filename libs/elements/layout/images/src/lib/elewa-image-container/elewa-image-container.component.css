@@ -21,18 +21,32 @@
 .image-container .cont .pill {
   -webkit-clip-path: ellipse(30% 50% at center);
           clip-path: ellipse(30% 50% at center);
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .image-container .cont .stacked {
-  -webkit-clip-path: url(#number-eight-shape);
-          clip-path: url(#number-eight-shape);
+  -webkit-clip-path: url(#clip);
+          clip-path: url(#clip);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .image-container .cont .window {
   -webkit-clip-path: ellipse(70% 100% at bottom);
           clip-path: ellipse(70% 100% at bottom);
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .image-container .cont .card {
-  -webkit-clip-path: inset(2% 12%);
-          clip-path: inset(2% 12%);
+  -webkit-clip-path: inset(1%);
+          clip-path: inset(1%);
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .image-container .cont h1 {
   font: normal normal medium 62px/80px DM Sans;
@@ -40,4 +54,17 @@
 .image-container .cont img {
   width: 25rem;
   height: 20rem;
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=elewa-image-container.component.css.map */
