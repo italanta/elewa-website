@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
+import { ElewaPriceListComponent } from 'libs/elements/cards/src/lib/components/elewa-price-list/elewa-price-list.component';
 
 export const ELEWA_WEBSITE_ROUTES: Route[] = [
   { path: '*', redirectTo: 'home', pathMatch: 'full' },
@@ -65,6 +66,11 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
       import('@elewa-website/features/pages/booklets-page').then(
         (m) => m.BookletsPageModule
       ),
+  },
+   // Add the route for the ElewaPriceListComponent
+   {
+    path: 'pricing', // The URL path
+    component: ElewaPriceListComponent, // The component to render
   },
 ];
 
