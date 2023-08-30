@@ -1,0 +1,46 @@
+.container {
+  min-height: 70vh;
+  background-color: var(--elewa-website-news-section-bg-color);
+  display: grid;
+  place-content: center;
+}
+
+.news-item-separator {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 10px auto;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .news-section {
+    padding: 20px;
+
+    .section-title {
+      margin-left: 20px;
+    }
+
+    .news-item-separator {
+      width: 100%;
+      right: 0;
+    }
+  }
+}
+
+/* Phone responsiveness */
+@media (max-width: 480px) {
+  .news-section {
+    padding: 10px;
+
+    .section-title {
+      margin-left: 20px;
+    }
+
+    .news-item-separator {
+      width: 100%;
+      right: 0;
+    }
+  }
+}

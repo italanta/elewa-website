@@ -1,0 +1,12 @@
+<!-- The button element and how it's rendered in the component's template -->
+<button 
+    class="elewa-normal-button"
+    [style.backgroundColor]="buttonData.bgColor"
+    [style.color]="buttonData.color"
+    (click)="handleClick()"
+    (mouseenter)="handleMouseEnter()"
+    (mouseleave)="handleMouseLeave()"
+>
+<span>{{buttonData.text}}</span>
+
+</button>
