@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {__highlightedPricingList } from '@elewa-website/models/data/sections';
+import { __highlightedPricingList } from '@elewa-website/models/data/sections';
 import { PriceItem } from '@elewa-website/models/schema/ui/cards';
 
 @Component({
@@ -8,11 +8,11 @@ import { PriceItem } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-price-list.component.scss'],
 })
 export class ElewaPriceListComponent {
-  somePriceItemData: any;
+  somePriceItemData: PriceItem[] = []; // Initialize with an empty array
   pricingList: PriceItem[];
 
   constructor(){
-    // assign mock data to the property;
+    // Assign mock data to the property;
     this.pricingList = __highlightedPricingList;
   }
 }
