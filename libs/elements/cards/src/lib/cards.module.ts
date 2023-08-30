@@ -26,6 +26,7 @@ import { ElewaPriceListComponent } from './components/elewa-price-list/elewa-pri
     ElewaNewsItemCardComponent,
     ElewaProjectItemCardComponent,
     ElewaTeamMemberCardComponent,
+    ElewaPriceListComponent,
   ],
 })
 export class CardsModule {}
