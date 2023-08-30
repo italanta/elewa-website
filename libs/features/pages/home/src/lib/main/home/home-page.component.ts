@@ -10,7 +10,7 @@ import { ImageVisualisation } from '@elewa-website/models/schema/ui/images';
 export class HomePageComponent {
   contentData: ContentText[] = [
     {
-      title: 'from here to the world',
+      title: 'From here to the world',
       descriptions: [
         'Getting thousands of people up to speed can be hard and expensive. But it doesnt have to be.',
         'Elewa is an education partner which develops the kind of training that work at scale. This without losing track of what matters most, people!',
@@ -18,7 +18,7 @@ export class HomePageComponent {
       ],
     },
     {
-      title: 'people at the center',
+      title: 'People at the center',
       descriptions: [
         'People are the secret to successful education programs. Through in-depth research, we work with your organization at different levels, to understand "elewa" how people live and learn',
         'Based on decades of research, this understanding allows us to co-create strong learning networks within your organization, networks can be reused every time a training need arises; at a fraction of the cost of the current solution.',
