@@ -23,8 +23,8 @@
           clip-path: ellipse(30% 50% at center);
 }
 .image-container .cont .stacked {
-  -webkit-clip-path: inset(5% 20% round 30%);
-          clip-path: inset(5% 20% round 30%);
+  -webkit-clip-path: url(#number-eight-shape);
+          clip-path: url(#number-eight-shape);
 }
 .image-container .cont .window {
   -webkit-clip-path: ellipse(70% 100% at bottom);

@@ -17,15 +17,25 @@
     margin-left: 2rem;
     .pill {
       clip-path: ellipse(30% 50% at center);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      object-fit: cover;
     }
     .stacked {
-      clip-path: inset(5% 20% round 30%);
+      clip-path: url(#clip);
+      object-fit: cover;
     }
     .window {
       clip-path: ellipse(70% 100% at bottom);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      object-fit: cover;
     }
     .card{
-      clip-path: inset(2% 12%);
+      clip-path: inset(1%);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      object-fit: cover;
     }
     h1 {
       font: normal normal medium 62px/80px DM Sans;
