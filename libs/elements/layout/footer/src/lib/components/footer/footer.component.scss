@@ -1,0 +1,100 @@
+footer {
+  background-color: var(--elewa-website-footer-background-color);
+  color: white;
+  border-radius: 100px 100px 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.ng-content {
+  text-align: center;
+  font-size: 24px;
+  padding: 10rem 3rem 7rem 3rem;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.btn-container {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1200px;
+  border-top: 1px solid;
+  gap: 3em;
+  padding: 2em;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.item p {
+  opacity: 76%;
+}
+
+.logo img {
+  width: 7.5rem;
+  filter: brightness(1000);
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+  padding-bottom: 2em;
+  align-items: center;
+}
+
+.link-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ng-content {
+    font-size: 20px;
+    padding-inline: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .btn-container {
+    margin-top: 3em;
+  }
+  footer {
+    border-radius: 60px 60px 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .ng-content {
+    font-size: 16px;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
+
+  footer {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .btn-container {
+    margin-top: 2em;
+  }
+}
