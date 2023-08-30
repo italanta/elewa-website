@@ -1,7 +1,9 @@
-<div *ngFor="let item of pricingList">
-    <elewa-website-price-item-card [priceItem]="item"></elewa-website-price-item-card>
-     <div>
-      <h2>{{ item.title }}</h2>
-      <p>{{ item.description }}</p>
-    </div>
+<div class="card-layout">
+<div class="card-container">
+  <div class="card" *ngFor="let item of pricingList">
+    <div class="button">
+      <elewa-website-price-item-card [priceItem]="item">      
+      </elewa-website-price-item-card>
+    </div>     
   </div>
+</div>
