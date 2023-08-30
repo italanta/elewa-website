@@ -1,1 +1,38 @@
-<p>footer works!</p>
+<div class="footer">
+    <ng-content select="[footer]"></ng-content>
+    <div class="footer__links">
+        <div *ngFor="let footerlink of footerLinks">
+            <div class="footer__link">
+            <h4>
+                {{ footerlink.title }}
+            </h4>
+            <ul>
+                <li *ngFor="let link of footerlink.links; let last = last"
+                    class="list">
+                {{ link.title }}
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <img
+        src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png"
+        [alt]="'ELEWA-WEBSITE-HEADER.LOGO-ALT'"
+        class="logo_img"
+      />
+      
+        <div class="icon">
+            <ng-container *ngFor="let social of socialMedia; let index = index">
+              <img
+                [src]="social.icon"
+                [alt]="social.id"
+                class="img-icon" 
+                [class.mr-6]="index !== socialMedia.length - 1" 
+                [class.mr-0]="index === socialMedia.length - 1"
+              />
+            </ng-container>
+          </div> 
+    </div>      
+</div>
+  
