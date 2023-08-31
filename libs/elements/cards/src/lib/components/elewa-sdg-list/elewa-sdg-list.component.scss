@@ -11,3 +11,9 @@
 .sdg-list-container {
   margin-inline: auto;
 }
+
+@media (max-width: 768px) {
+  .sdg-section {
+    padding: 3em;
+  }
+}
