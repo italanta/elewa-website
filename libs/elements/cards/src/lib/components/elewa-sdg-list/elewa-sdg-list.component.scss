@@ -1,3 +1,4 @@
+/* Base styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,8 +30,15 @@
 }
 
 .icon {
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 10px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Add margin to create space between icon and title */
+  margin-bottom: 20px;
 }
 
 .title-and-description {
@@ -41,7 +49,9 @@
 
 h2 {
   font-size: 20px;
-  margin: 0; /* Remove margin-bottom from h2 */
+  margin: 0;
+  display: flex; /* Align title and icon on the same line */
+  align-items: center; /* Align title and icon vertically */
 }
 
 p {
@@ -53,4 +63,24 @@ p {
   justify-content: center;
   margin-top: 20px;
   margin-left: 50px;
+}
+
+/* Responsive media queries */
+
+/* For screens up to 768px width */
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .slider-button {
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+}
+
+/* For screens up to 480px width */
+@media screen and (max-width: 480px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
