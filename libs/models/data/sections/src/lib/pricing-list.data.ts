@@ -10,7 +10,7 @@ export const __highlightedPricingList: PriceItem[] = [
     sliderButton: {
       text: 'Unlock your potential',
     },
-    amountColor: '#00FF00', // Example amount color
+    amountColor: '#2E145D', // Example amount color
     textColor: '#000000',   // Example text color
     backgroundColor: '#FFFFFF' // Example background color
   },
@@ -22,7 +22,7 @@ export const __highlightedPricingList: PriceItem[] = [
     sliderButton: {
       text: 'Unlock your potential',
     },
-    amountColor: '#00FF00', // Example amount color
+    amountColor: '#2E145D', // Example amount color
     textColor: '#000000',   // Example text color
     backgroundColor: '#FFFFFF' // Example background color
   },
@@ -34,9 +34,9 @@ export const __highlightedPricingList: PriceItem[] = [
     sliderButton: {
       text: 'Unlock your potential',
     },
-    amountColor: '#FF0000', // Example amount color
+    amountColor: '#FFFFFF', // Example amount color
     textColor: '#FFFFFF',   // Example text color
-    backgroundColor: '#000000' // Example background color
+    backgroundColor: '#2E145D' // Example background color
   },
   // Add more pricing items as needed
 ];
