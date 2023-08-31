@@ -5,7 +5,11 @@
     <div class="card-container">
       <div class="card-item" *ngFor="let sdgItem of sdgList">
         <div class="content">
-          <div class="icon">{{ sdgItem.icon }}</div>
+          <div class="icon">
+            <a [href]="sdgItem.icon" target="_blank">
+              <img src="{{ sdgItem.icon }}" alt="{{ sdgItem.title }} Icon" />
+            </a>
+          </div>
           <div class="title-and-description">
             <h2>{{ sdgItem.title }}</h2>
             <p>{{ sdgItem.description }}</p>
