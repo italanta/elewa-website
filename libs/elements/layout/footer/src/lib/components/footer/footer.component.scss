@@ -11,9 +11,9 @@ footer {
 
 .ng-content {
   text-align: center;
-  font-size: 28px;
+  font-size: var(--elewa-website-footer-dynamic-content-font-size);
   padding: 10rem 3rem 7rem 3rem;
-  max-width: 900px;
+  max-width: var(--elewa-website-footer-dynamic-content-max-width);
   margin-inline: auto;
 }
 
@@ -42,7 +42,7 @@ footer {
 
 .logo img {
   width: 7.5rem;
-  filter: brightness(1000);
+  filter: brightness(0) invert(1);
 }
 
 .icons-container {
@@ -58,6 +58,7 @@ footer {
   gap: 1rem;
 }
 
+// tablet responsiveness (medium screen sizes)
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -77,6 +78,7 @@ footer {
   }
 }
 
+// phone responsiveness (small screen size)
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
