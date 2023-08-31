@@ -1,6 +1,5 @@
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 import { InfoCard } from '@elewa-website/models/schema/ui/cards';
-
 export const __highlightedSDGList: InfoCard[] = [
   {
     title: 'Quality Education',
