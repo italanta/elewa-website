@@ -2,11 +2,11 @@ import { SliderButtonData } from "@elewa-website/models/schema/ui/buttons";
 
 export const __mockSliderButtonData: SliderButtonData = {
   text: 'Unlock your potential',
-  bgColor: 'black',
+  bgColor: 'transparent',
   color: 'white',
   hoverBgColor: 'white',
   hoverColor: 'black',
-  borderColor: '#3498db',
+  borderColor: '#ffffff',
   iconColor: '#3498db',
   iconBackgroundColor: '#ffffff',
   hoverBorderColor: '#2980b9',

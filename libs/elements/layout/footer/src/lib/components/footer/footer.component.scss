@@ -1,17 +1,17 @@
 footer {
   background-color: var(--elewa-website-footer-background-color);
-  color: white;
+  color: var(--elewa-website-color-primary-white);
   border-radius: 100px 100px 0 0;
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: var(--elewa-website-footer-max-width);
   margin-inline: auto;
 }
 
 .ng-content {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   padding: 10rem 3rem 7rem 3rem;
   max-width: 900px;
   margin-inline: auto;
@@ -26,7 +26,7 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  max-width: 1200px;
+  max-width: var(--elewa-website-footer-max-width);
   border-top: 1px solid;
   gap: 3em;
   padding: 2em;
