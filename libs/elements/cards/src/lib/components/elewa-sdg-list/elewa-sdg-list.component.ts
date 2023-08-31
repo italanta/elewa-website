@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { __mockSliderButtonData } from '@elewa-website/models/data/sections';
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 import { InfoCard } from '@elewa-website/models/schema/ui/cards';
 
 @Component({
@@ -8,5 +10,5 @@ import { InfoCard } from '@elewa-website/models/schema/ui/cards';
 })
 export class ElewaSdgListComponent {
   @Input() sdgList: InfoCard[] = [];
-
+  buttonData: SliderButtonData = __mockSliderButtonData;
 }
