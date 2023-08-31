@@ -1,1 +1,8 @@
-<p>team-members-section works!</p>
+<elewa-website-project-carousel>
+    <ng-container carouselItems *ngFor="let item of highlightedTeamMembers">
+        <elewa-website-team-member-card 
+            
+            [teamMemberData]="item"
+        ></elewa-website-team-member-card>
+    </ng-container>
+</elewa-website-project-carousel>
