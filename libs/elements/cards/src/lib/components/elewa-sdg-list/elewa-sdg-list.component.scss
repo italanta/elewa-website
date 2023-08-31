@@ -1,9 +1,9 @@
+/* Base styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
-
 .header-lorem {
   display: flex;
   justify-content: space-between;
@@ -16,9 +16,8 @@
   flex: 1;
   margin-right: 10px;
 }
-
 .card {
-  background-color: #f2f2f2;
+  background-color: #30106b;
   padding: 20px;
   border-radius: 10px;
   margin-top: 2rem;
@@ -26,7 +25,7 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -36,33 +35,60 @@
   padding: 5px;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+}
+
 .icon {
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 10px;
 }
 
-.slider-button {
-  margin-top: 20px;
-  background-color: #007bff;
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Add margin to create space between icon and title */
+  margin-bottom: 20px;
+}
+
+.title-and-description {
+  display: flex;
+  flex-direction: column;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px; /* Add this property to make the button rounded */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.slider-button:hover {
-  background-color: #0056b3;
+h2 {
+  font-size: 20px;
+  margin: 0;
+  display: flex; /* Align title and icon on the same line */
+  align-items: center; /* Align title and icon vertically */
 }
 
+p {
+  font-size: 16px;
+}
 
+.slider-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive media queries */
+
+/* For screens up to 768px width */
 @media screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .slider-button {
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
 }
 
+/* For screens up to 480px width */
 @media screen and (max-width: 480px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
