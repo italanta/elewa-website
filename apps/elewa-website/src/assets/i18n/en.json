@@ -8,15 +8,16 @@
       "LOGO-ALT": "Elewa Company Logo"
     }, 
     "ELEWA-WEBSITE-FOOTER": {
-      "SOLUTIONS": "Solutions",
-      "SOLUTIONLINKS": {
-        "CONSULTANCY": "Consultancy",
-        "CONTENT-DEVELOPMENT": "Content development",
-        "CONVERSATIONAL-LEARNING": "Conversational learning",
-        "BOOKLETS": "Booklets"
-      },
-      "HADQUARTERS": {
-        "ADRESS": "the promenade "
+      
+      "CONTACT": "Contact",
+      "CONTACTLINKS": {
+      "NUMBER":"T +254 78 92 27 755",
+      "EMAIL":"E info@elewa.co.ke"
+    },
+      "HADQUARTERS":"Headquarters",
+      "HADQUARTERSLINK": {
+        "ADRESS": "The Promenade 19 General Mathenge Rd",
+        "CITY":"Nairobi, Kenya"
       },
     "NAVIGATION": "Navigation",
     "NAVLINKS": {
@@ -25,8 +26,17 @@
       "NEWS": "News",
       "CONTACTS": "Contacts"
     },
+    "SOLUTIONS": "Solutions",
+      "SOLUTIONLINKS": {
+        "CONSULTANCY": "Consultancy",
+        "CONTENT-DEVELOPMENT": "Content development",
+        "CONVERSATIONAL-LEARNING": "Conversational learning",
+        "BOOKLETS": "Booklets"
+      },
     "PRIVACY": "Privacy",
-    "TERMS-AND-CONDITIONS": "Terms and contitions",
-    "COOKIE-PREFRENCES": "Cookie preferences"
+    "PRIVACYLINKS":{
+        "TERMS-AND-CONDITIONS": "Terms and contitions",
+        "COOKIE-PREFRENCES": "Cookie preferences"
+    }
     } 
   }

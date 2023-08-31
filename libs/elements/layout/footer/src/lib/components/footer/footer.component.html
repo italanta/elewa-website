@@ -1,52 +1,52 @@
 <section>
     <ng-content select="[footer]"></ng-content> 
-    
+    <elewa-website-slider-button></elewa-website-slider-button>  
     <hr class="item-separator" />
 <div class="footer-container">
     <div class="footer-section">
-        <h4>Headquarters</h4>
+        <h4>{{ 'ELEWA-WEBSITE-FOOTER.HADQUARTERS' | transloco }}</h4>
         <ul>
-            <li>The promnade, 19 General <br> Mathenge Rd </li>
-            <li>Nairobi, Kenya</li>
+            <li>{{ 'ELEWA-WEBSITE-FOOTER.HADQUARTERSLINK.ADRESS' | transloco }}</li>
+            <li>{{ 'ELEWA-WEBSITE-FOOTER.HADQUARTERSLINK.CITY' | transloco }}</li>
         </ul>
     </div>
     <div class="footer-section">
-        <h4>Contact</h4>
+        <h4>{{ 'ELEWA-WEBSITE-FOOTER.CONTACT' | transloco }}</h4>
         <ul>
-            <li><a routerLink="tel: +254 78 92 27 755">+254 78 92 27 755</a></li>
-            <li><a href="info@elewa.co.ke">E: info@elewa.co.ke</a></li>
+            <li><a href="tel:+254789227755">{{ 'ELEWA-WEBSITE-FOOTER.CONTACTLINKS.NUMBER' | transloco }}</a></li>
+            <li><a href="mailto:info@elewa.co.ke">{{ 'ELEWA-WEBSITE-FOOTER.CONTACTLINKS.EMAIL' | transloco }}</a></li>
         </ul>
     </div>
     <div class="footer-section">
-        <h4>{{ 'ELEWA-WEBSITE-HEADER.COMPANY' | transloco }}</h4>
+        <h4>{{ 'ELEWA-WEBSITE-FOOTER.NAVIGATION' | transloco }}</h4>
         <ul>
-            <li><a routerLink="#">Projects</a></li>
-            <li><a routerLink="#">Company</a></li>
-            <li><a routerLink="#">News</a></li>
-            <li><a routerLink="#">Contact</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.NAVLINKS.PROJECTS' | transloco }}</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.NAVLINKS.COMPANY' | transloco }}</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.NAVLINKS.NEWS' | transloco }}</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.NAVLINKS.CONTACTS' | transloco }}</a></li>
         </ul>
     </div>
     <div class="footer-section">
-        <h4>Solution</h4>
+        <h4>{{ 'ELEWA-WEBSITE-FOOTER.SOLUTIONS' | transloco }}</h4>
         <ul>
-            <li><a routerLink="#">Consultancy</a></li>
-            <li><a routerLink="#">Content Development</a></li>
-            <li><a routerLink="#">Conversational Learning</a></li>
-            <li><a routerLink="#">Booklets</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.SOLUTIONLINKS.CONSULTANCY' | transloco }}</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.SOLUTIONLINKS.CONTENT-DEVELOPMENT' | transloco }}</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.SOLUTIONLINKS.CONVERSATIONAL-LEARNING' | transloco }}</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.SOLUTIONLINKS.BOOKLETS' | transloco }}</a></li>
         </ul>
     </div>
     <div class="footer-section">
-        <h4>Privacy</h4>
+        <h4>{{ 'ELEWA-WEBSITE-FOOTER.PRIVACY' | transloco }}</h4>
         <ul>
-            <li><a routerLink="#">Terms & Conditions</a></li>
-            <li><a routerLink="#">Coocie preferences</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.PRIVACYLINKS.TERMS-AND-CONDITIONS' | transloco }}</a></li>
+            <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.PRIVACYLINKS.COOKIE-PREFRENCES' | transloco }}</a></li>
         </ul>
     </div>
     
 </div>
 <div class="social">
     <div class="footer-logo">
-        <img src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png"/>
+        <img src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png" [alt]="'ELEWA-WEBSITE-HEADER.LOGO-ALT' | transloco"/>
     </div>
     <div class="social-links">
         <i class="fab fa-instagram"></i> 

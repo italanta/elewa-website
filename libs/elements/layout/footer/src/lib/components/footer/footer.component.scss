@@ -7,8 +7,8 @@ section{
  img{
     width: 7.5rem;
     filter: brightness(0) invert(1);
-    margin-left: 120px;
-    margin-top: 80px;
+    margin-left: 100px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -80,7 +80,7 @@ ul{
 
 i{
     margin-left: 20px;
-    margin-top: 100px;
+    margin-top: 43px;
 }
 
 .social-links{
@@ -133,6 +133,11 @@ i{
 
 }
 
+@media (max-width: 450px){
+    .social-links{
+      display: flex;
+    }
+}
 
 
 
