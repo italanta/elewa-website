@@ -3,9 +3,7 @@
   <div class="container">
     <div class="slider-wrap">
       <div class="slider-main">
-        <div class="item" *ngFor="let item of projectItems">
-          <elewa-website-project-item-card [project]="item"></elewa-website-project-item-card>
-        </div>
+        <ng-content [carouselItems]></ng-content>
       </div>
       <div class="button-area">
         <button type="button" class="prev" elewaWebsitePrev>
