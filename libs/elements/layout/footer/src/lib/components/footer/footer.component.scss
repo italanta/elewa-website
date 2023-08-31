@@ -1,6 +1,6 @@
 .footer
 {
-    background-color: rgb(48, 48, 85);
+    background-color: var(--elewa-website-footer-background-color);
     padding: 5%;
 }
 
@@ -11,7 +11,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 10px;
-    border-top: 1px solid #aaaaaa;
+    border-top: 1px solid var(--elewa-website-footer-list-color);
 }
 
 .footer__link
@@ -25,7 +25,7 @@ h4
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-    color: #eeeeee;  
+    color: var(--elewa-website-color-primary-white);  
 }
 
 ul
@@ -41,7 +41,7 @@ ul
     font-size: 16px;
     line-height: 24px;
     cursor: pointer;
-    color: #aaaaaa;
+    color: var(--elewa-website-footer-list-color);
 }
 
 .bottom_footer
@@ -70,7 +70,7 @@ ul
 
 @media only screen and (max-width: 820px) {
     .footer {
-        background-color: black;
+        background-color: var(--elewa-website-color-primary-black);
         .logo_img {
             width: 7.5rem;
         }
