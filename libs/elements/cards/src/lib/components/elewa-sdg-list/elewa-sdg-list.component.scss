@@ -1,14 +1,70 @@
-.sdg-card {
-    /* Example styles */
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-lorem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header,
+.lorem {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 15px;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.slider-button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Add this property to make the button rounded */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (max-width: 768px) {
-    .sdg-card {
-      /* Adjust styles for smaller screens */
-    }
+}
+
+@media screen and (max-width: 480px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
+}
