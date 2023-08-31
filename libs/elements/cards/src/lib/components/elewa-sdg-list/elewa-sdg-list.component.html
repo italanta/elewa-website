@@ -1,1 +1,11 @@
-<p>elewa-sdg-list works!</p>
+<div class="sdg-list">
+    <div class="sdg-item" *ngFor="let card of cardsData">
+      <div class="icon">
+        <img [src]="card.icon" alt="SDG Icon">
+      </div>
+      <div class="info">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+    </div>
+</div>
