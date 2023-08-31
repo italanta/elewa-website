@@ -1,15 +1,30 @@
 import { InfoCard } from '@elewa-website/models/schema/ui/cards';
-
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 export const __highlightedSDGList: InfoCard[] = [
   {
-    title: 'SDG 1: No Poverty',
-    description: 'End poverty in all its forms everywhere.',
+    title: 'Quality Education',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     icon: 'sdg1.svg', // You can specify the icon URL or path here
   },
   {
-    title: 'SDG 2: Zero Hunger',
-    description: 'End hunger, achieve food security and improved nutrition.',
+    title: 'Economic Growth',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     icon: 'sdg2.svg',
+  },
+  {
+    title: 'Reduce Inequalities',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: 'sdg3.svg',
+  },
+  {
+    title: 'Parnership fo the Goals',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: 'sdg4.svg',
+  },
+  {
+    title: 'Gender Equality',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: 'sdg5.svg',
   },
   // Add more SDG items as needed
 ];
