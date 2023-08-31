@@ -1,0 +1,18 @@
+.conv-hero-section {
+    // Your styles here
+  
+    // You can use CSS variables for consistent design
+    --primary-color: #007bff;
+    --font-family: 'Roboto', sans-serif;
+  
+    // Example usage
+    .hero-title {
+      color: var(--primary-color);
+      font-family: var(--font-family);
+      font-size: 36px;
+      // Additional styles...
+    }
+  
+    // Additional styles...
+  }
+  
