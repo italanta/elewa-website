@@ -10,31 +10,21 @@
         align-items: flex-start;
         text-align: left;
         width: calc(30% - 40px);
-        margin: 30px 20px;
+        margin: 20px 10px;
         padding: 40px;
         margin-left: 50px;
-        
-        .icon {
-            font-size: 20px;
-            margin-right: 15px;
-        }
-        
-        .info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            
-            h3 {
-                margin: 0;
-                font-family: "DMSans-Medium";
-                font-size: 18px;
-            }
-            
-            p {
-                margin: 5px 0 0;
-                font-family: "DMSans-Regular";
-                font-size: 13px;
-            }
-        }
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: -210px;
+        right: 150px; 
     }
 } 
+
+@media (max-width: 768px) {
+    .button-container {
+        bottom: 100px; 
+        right: 100px;     
+    }
+}

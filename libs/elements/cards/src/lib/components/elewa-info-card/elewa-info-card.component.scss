@@ -3,35 +3,34 @@
     flex-direction: row;
 }
 
-.info-card {
-    height: 180px;
-    width: 630px;
-}
-
-.icon-img {
+.icon {
     width: 52px;
     height: 54px;
     margin-right: 57px;
 }
 
 .info-card-title {
-    font-size: 42px;
+    font-size: 18px;
     font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
 }
 
 .info-card-text {
-    font-size: 20px;
+    font-size: 13px;
     font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
 }
 
-.info-card-icon {
+.icon {
     flex-direction: column;
     padding-right: 15px;
-    margin-top: 1em;
+    margin-top: 0.2em;
+    margin-right: 30px;
 }
 
 .info-card-content {
-    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.1px; /* Adjust margin-top value as needed */
+    margin-left: -20px; /* Adjust margin-left value as needed */
 }
 
 /* Media Queries for Responsive Design */
@@ -46,7 +45,7 @@
         width: 100%; /* Occupy full width */
     }
     .info-card-title {
-        font-size: 32px;
+        font-size: 14px;
         font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
     }
     
