@@ -1,0 +1,14 @@
+.sdg-card {
+    /* Example styles */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .sdg-card {
+      /* Adjust styles for smaller screens */
+    }
+  }
+  
