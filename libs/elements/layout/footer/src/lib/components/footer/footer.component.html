@@ -1,1 +1,63 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="container">
+    <div class="filler-section">
+      <p>
+        <ng-content></ng-content>
+      </p>
+      <div class="button">
+        <elewa-website-slider-button
+          [buttonData]="buttonData"
+        ></elewa-website-slider-button>
+      </div>
+
+      <hr />
+      <div class="details">
+        <div class="column">
+          <!-- <h4>Headquarters</h4> -->
+          <h4>{{ 'ELEWA-WEBSITE-FOOTER.HEADQUARTERS' | transloco }}</h4>
+          The Promenade, 19 General <br />
+          Mathenge Road <br />
+          Nairobi, Kenya
+        </div>
+
+        <div class="column">
+          <h4>{{ 'ELEWA-WEBSITE-FOOTER.NAVIGATIONS.CONTACTS' | transloco }}</h4>
+          T +254 789 277 55 <br />
+          E info@elewa.co.ke
+        </div>
+        <div class="column">
+          <h4>{{ 'ELEWA-WEBSITE-FOOTER.NAVIGATION' | transloco }}</h4>
+
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.NAVIGATIONS.PROJECTS' | transloco }}</a> <br />
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.NAVIGATIONS.COMPANY' | transloco }}</a> <br />
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.NAVIGATIONS.NEWS' | transloco }}</a> <br />
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.NAVIGATIONS.CONTACTS' | transloco }}</a>
+        </div>
+        <div class="column">
+          <h4>{{ 'ELEWA-WEBSITE-FOOTER.SOLUTIONS' | transloco }}</h4>
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.SOLUTION.CONSULTANCY' | transloco }} </a> <br />
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.SOLUTION.CONTENT-DEVELOPMENT' | transloco }} </a> <br />
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.SOLUTION.BOOKLETS' | transloco }} </a><br />
+          Booklets
+        </div>
+        <div class="column">
+          <h4>{{ 'ELEWA-WEBSITE-FOOTER.PRIVACY' | transloco }}</h4>
+          <a>{{ 'ELEWA-WEBSITE-FOOTER.TERMS-AND-CONDITIONS' | transloco }}</a> <br />
+          <a> {{ 'ELEWA-WEBSITE-FOOTER.COOKIE-PREFRENCES' | transloco }} </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <img
+        src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png"
+        [alt]="'ELEWA-WEBSITE-HEADER.LOGO-ALT' | transloco"
+      />
+      <div class="social-links">
+        <a href="#"><img [src]="ig_URL" alt="Instagram" /></a>
+        <a href="#"><img [src]="linkedIn_URL" alt="LinkedIn" /></a>
+        <a href="#"><img [src]="fb_URL" alt="Facebook" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
