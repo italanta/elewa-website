@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
-import { ElewaPriceListComponent } from '@elewa-website/elements/cards'; // Adjust the npm scope and path as needed
 
 export const ELEWA_WEBSITE_ROUTES: Route[] = [
   { path: '*', redirectTo: 'home', pathMatch: 'full' },
@@ -67,11 +66,6 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
       import('@elewa-website/features/pages/booklets-page').then(
         (m) => m.BookletsPageModule
       ),
-  },
-  // Add the route for the ElewaPriceListComponent
-  {
-    path: 'pricing', // The URL path
-    component: ElewaPriceListComponent,
   },
 ];
 
