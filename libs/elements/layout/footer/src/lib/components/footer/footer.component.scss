@@ -1,0 +1,139 @@
+
+section{
+    background-color: #292A50;
+    border-radius: 50px 50px 0px 0px; 
+}
+ 
+ img{
+    width: 7.5rem;
+    filter: brightness(0) invert(1);
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.social{
+    display: flex;
+    color: white;
+}
+
+.item-separator{
+    position: relative;
+    top: 60px;
+    color: rgb(107, 98, 82);
+    width: 1200px;
+    margin-left: 70px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 70px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 15px;
+}
+
+ul{
+    margin-top: 40px;
+}
+
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.content{
+    text-align: center;
+}
+
+.footer-container::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 0;
+    border-top: 2px solid rgb(246, 243, 243);
+    position: absolute;          
+    top: 50%;                    
+    left: 50%;             
+}
+
+
+i{
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.social-links{
+    margin-left: 800px;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 700px){
+    section{
+        background-color: black;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+    }
+
+    .social {
+        grid-column: span 2;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        margin-right: 30px;
+        margin-top: -100px;
+    }
+    .item-separator{
+        width: 450px;
+    }
+
+    .social-links{
+        margin-left: 15px;
+        position: absolute;
+        right: 30px;
+        left: 320px;
+        margin-top: -270px;
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+

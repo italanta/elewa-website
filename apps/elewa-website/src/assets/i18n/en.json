@@ -6,5 +6,27 @@
       "NEWS": "News",
       "CONTACT-US": "Contact Us",
       "LOGO-ALT": "Elewa Company Logo"
-    }
+    }, 
+    "ELEWA-WEBSITE-FOOTER": {
+      "SOLUTIONS": "Solutions",
+      "SOLUTIONLINKS": {
+        "CONSULTANCY": "Consultancy",
+        "CONTENT-DEVELOPMENT": "Content development",
+        "CONVERSATIONAL-LEARNING": "Conversational learning",
+        "BOOKLETS": "Booklets"
+      },
+      "HADQUARTERS": {
+        "ADRESS": "the promenade "
+      },
+    "NAVIGATION": "Navigation",
+    "NAVLINKS": {
+      "PROJECTS": "Projects",
+      "COMPANY": "Company",
+      "NEWS": "News",
+      "CONTACTS": "Contacts"
+    },
+    "PRIVACY": "Privacy",
+    "TERMS-AND-CONDITIONS": "Terms and contitions",
+    "COOKIE-PREFRENCES": "Cookie preferences"
+    } 
   }
