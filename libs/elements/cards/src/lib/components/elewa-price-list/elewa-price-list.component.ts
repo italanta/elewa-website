@@ -8,11 +8,5 @@ import { PriceItem } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-price-list.component.scss'],
 })
 export class ElewaPriceListComponent {
-  somePriceItemData: PriceItem[] = []; // Initialize with an empty array
-  @Input() pricingList: PriceItem[] = [];
-
-  constructor(){
-    // Assign mock data to the property;
-    this.pricingList = __highlightedPricingList;
-  }
+  @Input() pricingList: PriceItem[] = __highlightedPricingList;
 }
