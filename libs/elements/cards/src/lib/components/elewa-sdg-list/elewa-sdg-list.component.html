@@ -1,6 +1,7 @@
 <p>elewa-sdg-list works!</p>
 
 <div class="container">
+<<<<<<< HEAD
   <div class="card">
     <div class="card-container">
       <div class="card-item" *ngFor="let sdgItem of sdgList">
@@ -21,6 +22,30 @@
           [buttonData]="buttonData"
         ></elewa-website-slider-button>
       </div>
+=======
+  <div class="header-lorem">
+    <div class="header">
+      <h1>A proud supporter of SDG</h1>
+    </div>
+    <div class="lorem">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+        tincidunt ipsum dapibus, pellentesque risus nec, dictum.
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-container">
+      <div class="card-item" *ngFor="let sdgItem of sdgList">
+        <div class="icon">{{ sdgItem.icon }}</div>
+        <div class="content">
+          <h2>{{ sdgItem.title }}</h2>
+          <p>{{ sdgItem.description }}</p>
+        </div>
+      </div>
+      <!-- Slider Button -->
+      <button class="slider-button">Learn more about SDG</button>
+>>>>>>> structure html
     </div>
   </div>
 </div>
