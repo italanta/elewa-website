@@ -5,7 +5,7 @@
 }
 
 .card {
-  background-color: #f2f2f2;
+  background-color: #30106b;
   padding: 20px;
   border-radius: 10px;
   margin-top: 2rem;
@@ -13,10 +13,7 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -26,34 +23,34 @@
   padding: 5px;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+}
+
 .icon {
   font-size: 24px;
   margin-right: 10px;
 }
 
-.slider-button {
-  margin-top: 20px;
-  background-color: #007bff;
+.title-and-description {
+  display: flex;
+  flex-direction: column;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px; /* Add this property to make the button rounded */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.slider-button:hover {
-  background-color: #0056b3;
+h2 {
+  font-size: 20px;
+  margin: 0; /* Remove margin-bottom from h2 */
 }
 
-@media screen and (max-width: 768px) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+p {
+  font-size: 16px;
 }
 
-@media screen and (max-width: 480px) {
-  .card-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.slider-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 50px;
 }
