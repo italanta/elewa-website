@@ -4,4 +4,33 @@
 :root {
   /** primary colors **/
   --elewa-website-color-primary-black: #000;
+  --elewa-website-color-primary-white: #ffffff;
+
+  /** homepage colors **/
+  --elewa-website-homepage-background-color: #dbc2f5;
+  --elewa-website-news-section-bg-color: #F9F8F4;
+  --elewa-website-news-item-primary-color: #404040;
+
+
+  /** Resusable Components Variables **/
+  /** card CSS variables **/
+  --elewa-website-card-font-style: 'DMSans-Regular';
+  --elewa-website-card-background-color: rgba(255, 255, 255, 1);
+  --elewa-website-card-color: rgba(0, 0, 0, 1)
+
+  /** slider button styles **/
+  --elewa-website-slider-btn-width: 200px;
+  --elewa-website-slider-btn-height: 40px;
+  --elewa-website-slider-btn-border-radius: 29px;
+  --elewa-website-slider-btn-padding: 5px 5px 5px 16px;
+
+  /** slider button icon styles **/
+  --elewa-website-slider-btn-icon-size: 32px;
+  --elewa-website-slider-btn-icon-border-radius: 29px;
+  --elewa-website-slider-btn-text-position: 8%;
+  --elewa-website-slider-btn-icon-position: 2%;
+  --elewa-website-slider-btn-icon-font-size: 1.2rem;
+
+  /** elewa website header **/
+  --elewa-website-header-bg-height: 5rem;
 }
