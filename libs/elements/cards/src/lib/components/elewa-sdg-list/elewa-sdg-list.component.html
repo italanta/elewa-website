@@ -1,1 +1,5 @@
-<p>elewa-sdg-list works!</p>
+<div class="sdg-section">
+    <div class="sdg-list-container" *ngFor="let item of sdgList">
+        <elewa-website-info-card [cardsData]="item"></elewa-website-info-card>
+    </div>
+</div>

@@ -5,30 +5,30 @@ export const __highlightedSDGList: InfoCard[] = [
     title: 'Quality Education',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: '',
+    icon: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg',
   },
   {
     title: 'Quality Education',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: '',
+    icon: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg',
   },
   {
     title: 'Quality Education',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: '',
+    icon: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg',
   },
   {
     title: 'Quality Education',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: '',
+    icon: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg',
   },
   {
     title: 'Quality Education',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: '',
+    icon: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg',
   },
 ];
