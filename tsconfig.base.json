@@ -53,13 +53,13 @@
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
+      "@elewa-website/features/pages/news-page": [
+        "libs/features/pages/news-page/src/index.ts"
+      ],
       "@elewa-website/models/data/sections": [
         "libs/models/data/sections/src/index.ts"
       ],
       "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
-      "@elewa-website/features/pages/news-page": [
-        "libs/features/pages/news-page/src/index.ts"
-      ],
       "@elewa-website/models/schema/ui/buttons": [
         "libs/models/schema/ui/buttons/src/index.ts"
       ],
