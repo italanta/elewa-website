@@ -37,15 +37,29 @@
   <div class="card">
     <div class="card-container">
       <div class="card-item" *ngFor="let sdgItem of sdgList">
-        <div class="icon">{{ sdgItem.icon }}</div>
         <div class="content">
-          <h2>{{ sdgItem.title }}</h2>
-          <p>{{ sdgItem.description }}</p>
+          <div class="icon">
+            <a [href]="sdgItem.icon" target="_blank">
+              <img src="{{ sdgItem.icon }}" alt="{{ sdgItem.title }} Icon" />
+            </a>
+          </div>
+          <div class="title-and-description">
+            <h2>{{ sdgItem.title }}</h2>
+            <p>{{ sdgItem.description }}</p>
+          </div>
         </div>
       </div>
+<<<<<<< HEAD
       <!-- Slider Button -->
       <button class="slider-button">Learn more about SDG</button>
 >>>>>>> structure html
+=======
+      <div class="slider-button">
+        <elewa-website-slider-button
+          [buttonData]="buttonData"
+        ></elewa-website-slider-button>
+      </div>
+>>>>>>> feat: restructure html template
     </div>
   </div>
 </div>
