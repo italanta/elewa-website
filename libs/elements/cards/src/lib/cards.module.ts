@@ -9,7 +9,7 @@ import { ElewaNewsItemCardComponent } from './components/elewa-news-item-card/el
 import { ElewaWebsitePriceItemCardComponent } from './components/elewa-price-item-card/elewa-website-price-item-card.component';
 import { ElewaTeamMemberCardComponent } from './components/elewa-team-member-card/team-member-card.component';
 import { ElewaPriceListComponent } from './components/elewa-price-list/elewa-price-list.component';
-import { ElewaSdgListComponent } from './elewa-sdg-list/elewa-sdg-list.component';
+import { ElewaSdgListComponent } from './components/elewa-sdg-list/elewa-sdg-list.component';
 
 @NgModule({
   imports: [CommonModule, ButtonsModule],
