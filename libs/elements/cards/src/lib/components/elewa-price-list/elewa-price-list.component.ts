@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { __highlightedPricingList } from '@elewa-website/models/data/sections';
 import { PriceItem } from '@elewa-website/models/schema/ui/cards';
 
@@ -9,7 +9,7 @@ import { PriceItem } from '@elewa-website/models/schema/ui/cards';
 })
 export class ElewaPriceListComponent {
   somePriceItemData: PriceItem[] = []; // Initialize with an empty array
-  pricingList: PriceItem[];
+  @Input() pricingList: PriceItem[] = [];
 
   constructor(){
     // Assign mock data to the property;
