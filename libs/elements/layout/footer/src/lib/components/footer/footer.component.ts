@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
+import { __mockSliderButtonData } from '@elewa-website/data/ui/content-text';
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
-import { __mockSliderButtonData } from '@elewa-website/data/ui/slider-button';
 
 @Component({
   selector: 'elewa-website-footer',
