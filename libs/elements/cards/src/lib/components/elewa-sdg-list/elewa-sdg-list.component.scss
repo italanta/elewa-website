@@ -1,0 +1,13 @@
+.sdg-section {
+  background-color: var(--elewa-website-SDG-list-background-color);
+  color: var(--elewa-website-color-primary-white);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  border-radius: 50px;
+  padding: 5rem;
+}
+
+.sdg-list-container {
+  margin-inline: auto;
+}
