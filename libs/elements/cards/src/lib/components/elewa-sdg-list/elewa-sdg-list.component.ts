@@ -8,5 +8,5 @@ import { InfoCard } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-sdg-list.component.scss'],
 })
 export class ElewaSdgListComponent {
-  @Input() sdgList !: InfoCard[];
+  @Input() sdgList: InfoCard[] = []
 }

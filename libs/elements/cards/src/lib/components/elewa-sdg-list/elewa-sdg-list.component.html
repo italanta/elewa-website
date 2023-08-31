@@ -1,9 +1,11 @@
-<div class="elewa-sdg-list">
-    <div class="elewa-sdg-list-icon">
-        <img class="icon-img" [src]="sdgList.icon" alt="">
-    </div>
-    <div class="elewa-sdg-list-content">
-        <h2 class="elewa-sdg-list-title"></h2>
-        <p class="elewa-sdg-list-description"></p>
+<div class="elewa-sdg-list" >
+    <div class="elewa-sdg-list-card" *ngFor="let list of sdgList">
+        <div class="elewa-sdg-list-icon">
+            <i class="fas {{list.icon}}"></i>
+        </div>
+        <div class="elewa-sdg-list-content">
+            <h2 class="elewa-sdg-list-title">{{list.title}}</h2>
+            <p class="elewa-sdg-list-description">{{list.description}}</p>
+        </div>
     </div>
 </div>

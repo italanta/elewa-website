@@ -26,6 +26,7 @@ import { ElewaSdgListComponent } from './components/elewa-sdg-list/elewa-sdg-lis
     ElewaNewsItemCardComponent,
     ElewaProjectItemCardComponent,
     ElewaTeamMemberCardComponent,
+    ElewaSdgListComponent,
   ],
 })
 export class CardsModule {}
