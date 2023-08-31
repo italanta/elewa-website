@@ -1,61 +1,38 @@
-.news-section {
-  color: black;
-  display: flex;
-  justify-content: center;
-}
 .ulist {
   list-style-type: none;
-  padding-top: 15px;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.title {
-  text-align: start;
-  color: #000000;
-  font-size: 30px;
-  padding-bottom: 30px;
-}
-.list {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.list-section {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.content {
-  display: flex;
-  align-items: center;
-  padding: 0 0 10px 10px;
-}
-.heading {
-  font-weight: bold;
-  margin-right: 40px;
-  color: #404040;
-  font-size: 20px;
-  letter-spacing: -0.54px;
-}
-.description {
-  letter-spacing: -0.33px;
-  color: #404040;
-  opacity: 0.52;
-  font-size: 16px;
-  text-align: center;
 
-}
-.read-more {
-  margin-left: 40px;
-  font-size: 16px;
-  color: #404040;
-  padding: 0 0 10px 10px;
+  .list-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 
-}
-button {
-  border: none;
-  background: none;
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      padding: 2rem 0;
+
+      .heading {
+        font-weight: bold;
+        color: var(--elewa-website-news-item-primary-color);
+        font-size: 20px;
+        letter-spacing: -0.54px;
+      }
+
+      .description {
+        letter-spacing: -0.33px;
+        color: var(--elewa-website-news-item-primary-color);
+        opacity: 0.52;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    .read-more {
+      font-size: 16px;
+      color: var(--elewa-website-news-item-primary-color);
+      border: none;
+      background: none;
+    }
+  }
 }
