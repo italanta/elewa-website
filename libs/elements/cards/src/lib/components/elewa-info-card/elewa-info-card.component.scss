@@ -10,12 +10,12 @@
 }
 
 .info-card-title {
-    font-size: 18px;
+    font-size: var(--elewa-website-info-card-title-font-size);
     font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
 }
 
 .info-card-text {
-    font-size: 13px;
+    font-size: var(--elewa-website-info-card-text-font-size);
     font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
 }
 
