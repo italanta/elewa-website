@@ -30,6 +30,7 @@ import { ElewaSdgListComponent } from './components/elewa-sdg-list/elewa-sdg-lis
     ElewaTeamMemberCardComponent,
     ElewaPriceListComponent,
     ElewaWebsitePriceItemCardComponent,
+    ElewaSdgListComponent,
   ],
 })
 export class CardsModule {}
