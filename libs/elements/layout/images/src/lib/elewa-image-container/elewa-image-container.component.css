@@ -21,8 +21,6 @@
 .image-container .cont .pill {
   -webkit-clip-path: ellipse(30% 50% at center);
           clip-path: ellipse(30% 50% at center);
-  width: 100%;
-  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
 }

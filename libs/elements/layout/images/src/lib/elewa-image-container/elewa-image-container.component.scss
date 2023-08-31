@@ -17,8 +17,6 @@
     margin-left: 2rem;
     .pill {
       clip-path: ellipse(30% 50% at center);
-      width: 100%;
-      aspect-ratio: 1 /1;
       object-fit: cover;
     }
     .stacked {
