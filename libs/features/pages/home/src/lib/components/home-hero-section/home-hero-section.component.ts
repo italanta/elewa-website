@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomeHeroSectionComponent{
 
+  //Wording of the button
   buttonData = {
     text: 'Unlock your potential ', 
   }
 
+  // Wording of the text section
   herotexts = {
     title: "Training at scale",
     subtitle: `Human-centered, meaningful and enjoyable`
