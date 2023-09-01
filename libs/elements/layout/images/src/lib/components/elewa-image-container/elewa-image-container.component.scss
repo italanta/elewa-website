@@ -46,3 +46,18 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+        .pill, .card, .stacked, .window{
+            padding: 2rem;
+        }
+    }
+   
+}
