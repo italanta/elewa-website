@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { __highlightedPricingList } from '@elewa-website/data/sections';
 
 import { PriceItem } from '@elewa-website/models/schema/ui/cards';
 
@@ -9,9 +10,12 @@ import { PriceItem } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-price-list.component.scss'],
 })
 export class ElewaPriceListComponent {
-  /** Input property that receives an array of price items to be displayed in the pricing list.*/
+  /** 
+  * This variable represents a list of PriceItem objects
+  * that are highlighted or featured in a pricing list.
+ */
+  highlightedPricingList:PriceItem[] = __highlightedPricingList;
 
-  @Input() priceItem: PriceItem[] = [];
 
 
 }
