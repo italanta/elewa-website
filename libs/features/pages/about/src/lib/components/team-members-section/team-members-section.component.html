@@ -3,7 +3,7 @@
     <p class="heading">{{ 'ELEWA-WEBSITE-TEAM-MEMBER-SECTION.HEADING' | transloco }}</p>
     <div>
         <elewa-website-project-carousel>
-            <ng-container carouselItems *ngFor="let item of highlightedTeamMembers">
+            <ng-container carouselItems *ngFor="let item of teamMember">
                 <elewa-website-team-member-card 
                     [teamMemberData]="item"
                 ></elewa-website-team-member-card>
