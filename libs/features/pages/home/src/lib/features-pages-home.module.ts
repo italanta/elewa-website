@@ -9,6 +9,7 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
 
 import { HomeRoutingModule } from './home.routing';
 
+
 @NgModule({
   imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule],
   declarations: [HomePageComponent, NewsSectionComponent],

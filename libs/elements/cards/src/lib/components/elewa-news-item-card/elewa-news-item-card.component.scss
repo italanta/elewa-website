@@ -13,9 +13,9 @@
       padding: 2rem 0;
 
       .heading {
-        font-weight: bold;
         color: var(--elewa-website-news-item-primary-color);
-        font-size: 20px;
+        font-size: 26px;
+        font-weight: bold;
         letter-spacing: -0.54px;
       }
 
@@ -23,12 +23,14 @@
         letter-spacing: -0.33px;
         color: var(--elewa-website-news-item-primary-color);
         opacity: 0.52;
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: bold;
         text-align: center;
       }
     }
 
     .read-more {
+      font-weight: bold;
       font-size: 16px;
       color: var(--elewa-website-news-item-primary-color);
       border: none;
