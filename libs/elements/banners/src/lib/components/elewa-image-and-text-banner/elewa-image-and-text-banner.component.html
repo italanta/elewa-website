@@ -1,1 +1,23 @@
+<!-- The outer container for the image and text banner -->
+<div class="image-text-banner">
 
+    <!-- Container for the image -->
+    <div class="image-container">
+
+         <!-- Display the image with binding -->
+      <img [src]="ImageAndText.image.imageSrc" [alt]="ImageAndText.image.title"
+      ngSrcset="100w, 200w, 300w"
+      sizes="(max-width: 640px) 100vw,
+      (max-width: 768px) 50vw,
+      33.3vw"
+      />
+    </div>
+
+    <!-- Container for the text content -->
+    <div class="text-container">
+      <h2>{{ ImageAndText.content.title }}</h2>
+      
+      <!-- Angular *ngFor directive to iterate through and display multiple descriptions -->
+      <p *ngFor="let description of ImageAndText.content.descriptions">{{ description }}</p>
+    </div>
+  </div>
