@@ -6,10 +6,9 @@ export const __highlightedPricingList: PriceItem[] = [
     title: 'Elewa Model',
     amount: 500,
     subTitle: 'Lorem Ipsum',
-    description:'Pretium quam vulputate dignissim suspendisse in est ante in. Ultrices gravida dictum fusce ut placepellentesque eu tincidunt tortor aliquam.rat orci nulla. Ipsum consequat nisl vel pretium lectus quam id leo.',
+    description:'Pretium quam vulputate dignissim suspendisse in est ante in. Ultrices gravida dictum fusce ut placerat orci nulla. Ipsum consequat nisl vel pretium lectus quam id leo.',
     sliderButton: {
       text: 'Unlock your potential',
-
 
     },
     amountColor: '#292A50',
@@ -35,7 +34,7 @@ export const __highlightedPricingList: PriceItem[] = [
     title: 'Elewa Model',
     amount: 500,
     subTitle: 'Lorem Ipsum',
-    description:'Pretium quam vulputate dignissim suspendisse in est ante in. Ultrices gravida dictum fusce ut placerat orci nulla. Ipsum consequat nisl vel pretium lectus quam id leo. Rutrum tellus pellentesque eu tincidunt tortor aliquam.',
+    description:'Pretium quam vulputate dignissim suspendisse in est ante in. Ultrices gravida dictum fusce ut placerat orci nulla. Ipsum consequat nisl vel pretium lectus quam id leo.',
     sliderButton: {
       text: 'Unlock your potential',
 
