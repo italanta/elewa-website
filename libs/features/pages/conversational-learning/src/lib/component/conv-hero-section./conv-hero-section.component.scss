@@ -1,0 +1,36 @@
+.conv-hero-section {
+  --font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(236, 172, 162, 1),
+    rgba(237, 175, 166, 1),
+    rgba(240, 189, 182, 1),
+    rgba(244, 203, 198, 1),
+    rgba(247, 222, 219, 1),
+    rgba(250, 233, 232, 1) 50%
+  );
+  background-size: 100% 100%;
+  height: 100vh;
+  padding-left: 180px; /* Add padding from the left */
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 56px;
+  line-height: 1.5;
+}
+
+.description {
+  margin: 10px 0;
+  width: 35%;
+  font-size: 25px;
+}
+
+.button-container {
+  margin-top: 10px; /* Add margin to separate the button from the description */
+}
