@@ -11,6 +11,9 @@ export class HomeHeroSectionComponent{
     text: 'Unlock your potential ', 
   }
 
-
+  herotexts = {
+    title: "Training at scale",
+    subtitle: `Human-centered, meaningful and enjoyable`
+  }
 
 }
