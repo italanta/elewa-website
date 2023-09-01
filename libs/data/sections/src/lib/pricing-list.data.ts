@@ -5,11 +5,11 @@ import { PriceItem } from "@elewa-website/models/schema/ui/cards";
     subTitle: 'Basic Features',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     sliderButton: {
-      text: 'Choose Plan',
+      text: 'Choose Plan',    
     },
-    amountColor: '#00FF00',
+    amountColor: '#000000',
     textColor: '#000000',  
-    backgroundColor: '#FFFFFF' 
+    backgroundColor: '#F4EDFD' 
   },
   {
     title: 'Silver',
@@ -19,9 +19,9 @@ import { PriceItem } from "@elewa-website/models/schema/ui/cards";
     sliderButton: {
       text: 'Choose Plan',
     },
-    amountColor: '#FF0000', 
-    textColor: '#FFFFFF',  
-    backgroundColor: '#000000' 
+    amountColor: '#000000', 
+    textColor: '#000000',  
+    backgroundColor: '#F4EDFD' 
   },{
   title: 'Gold',
     amount:1500, 
@@ -29,10 +29,15 @@ import { PriceItem } from "@elewa-website/models/schema/ui/cards";
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     sliderButton: {
       text: 'Choose Plan',
+      bgColor:'white',
+      color:'black',
+      hoverBgColor:"black",
+      hoverColor:'white',     
+
     },
-    amountColor: '#00FF00',
-    textColor: '#000000',  
-    backgroundColor: '#FFFFFF' 
+    amountColor: '#FFFFFF',
+    textColor: '#FFFFFF',  
+    backgroundColor: '#292A50' 
   },
     
   ]
