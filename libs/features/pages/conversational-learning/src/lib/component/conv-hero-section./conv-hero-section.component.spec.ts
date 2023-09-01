@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ConvHeroSectionComponent } from './conv-hero-section..component';
+import { ConvHeroSectionComponent } from './conv-hero-section.component';
 
 describe('ConvHeroSectionComponent', () => {
   let component: ConvHeroSectionComponent;
