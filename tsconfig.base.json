@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@elewa-website/-libs/elements/layout/footer": [
+        "libs/-libs/elements/layout/footer/src/index.ts"
+      ],
       "@elewa-website/data/schema/ui/images": [
         "libs/data/schema/ui/images/src/index.ts"
       ],
@@ -28,6 +31,9 @@
       ],
       "@elewa-website/elements/layout/carousel": [
         "libs/elements/layout/carousel/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/footer": [
+        "libs/elements/layout/footer/src/index.ts"
       ],
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
