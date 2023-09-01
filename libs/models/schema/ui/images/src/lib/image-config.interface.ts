@@ -1,5 +1,5 @@
 /**
- * Image interface type
+ * Image config type
  */
 export interface ImageConfig {
   title: string
@@ -9,7 +9,7 @@ export interface ImageConfig {
 }
 
 /**
- * Image interface enum
+ * Image visualisation enum
  */
 export enum ImageVisualisation {
   Pill = 0,

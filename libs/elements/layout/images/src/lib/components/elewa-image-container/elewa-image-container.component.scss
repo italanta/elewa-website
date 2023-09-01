@@ -29,9 +29,7 @@
 /* Forms a figure-like 8: Two pills placed on top of each other horizontally */
 .stacked {
   height: 70%;
-  // width: 100%;
-  // clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);  // top part
-  // clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); // bottom part
+  width: 180px;
   clip-path: polygon(
     0% 0%,
     80% 0,
@@ -95,7 +93,6 @@
     15% 2%,
     20% 0%,
   );
-  width: 180px;
 }
 
 /* Round the top of the image at 30% of vertical height */

@@ -18,9 +18,6 @@
       "@elewa-website/data/schema/ui/images": [
         "libs/data/schema/ui/images/src/index.ts"
       ],
-      "@elewa-website/elements/layout/images": [
-        "libs/elements/layout/images/src/index.ts"
-      ],
       "@elewa-website/data/sections": ["libs/data/sections/src/index.ts"],
       "@elewa-website/data/ui/content-text": [
         "libs/data/ui/content-text/src/index.ts"
@@ -34,6 +31,9 @@
       ],
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/images": [
+        "libs/elements/layout/images/src/index.ts"
       ],
       "@elewa-website/elements/layout/texts": [
         "libs/elements/layout/texts/src/index.ts"
