@@ -1,0 +1,37 @@
+.container {
+  height: 100vh;
+}
+.box{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+.left-column {
+  flex: 1;
+  /* Grow to take available space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align content to the left within the left column */
+  padding-left: 80px;
+}
+
+.right-column {
+  flex: 1;
+  /* Grow to take available space */
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 150px;
+  /* Align content to the right within the right column */
+}
+
+.text,
+.button,
+.image {
+  width: 100%;
+  /* Make text, button, and image divs the same width */
+  padding: 10px;
+  /* Add padding for spacing */
+  height: auto;
+}
