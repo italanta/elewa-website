@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { __highlightedPricingList } from '@elewa-website/data/sections';
 
 import { PriceItem } from '@elewa-website/models/schema/ui/cards';
