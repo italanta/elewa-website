@@ -1,6 +1,7 @@
 .conv-main {
     background-color: var(--elewa-website-conversational-learning-bg-color);
     height: 100vh;
+    width: 100vw;
 }
 
 .conv-hero-section {
@@ -26,8 +27,8 @@
     transform: translate(-50%, -50%) matrix(0, 1, -1, 0, 0, 0);
     /* Combine translation and matrix transformation */
 
-    width: 300px;
-    height: 600px;
+    width: 380px;
+    height: 700px;
 
     /* UI Properties */
     background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
@@ -37,21 +38,41 @@
 
 .block2 {
     position: fixed;
-    bottom: -50%;
-    right: 10%;
+    bottom: -80%;
+    right: 5%;
     margin: 20px;
 
     transform: translate(-50%, -50%) matrix(0, -1, 1, 0, 0, 0);
     /* Combine translation and matrix transformation */
 
-    width: 300px;
-    height: 600px;
+    width: 380px;
+    height: 700px;
+
 
     /* UI Properties */
     background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
     border-radius: 600px;
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+    .block1 {
+
+        width: 150px;
+        height: 300px;
+
+    }
+
+    .block2 {
+        bottom: 10%;
+        right: 7%;
+        width: 150px;
+        height: 300px;
+
+    }
+}
+
 
 .conv-button {
     margin-top: 30px;
