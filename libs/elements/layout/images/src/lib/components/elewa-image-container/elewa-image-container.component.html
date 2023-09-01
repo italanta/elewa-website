@@ -5,7 +5,7 @@
   </div>
   <div class="stacked">
     <h2>{{ stacked.title }}</h2>
-    <img src="{{ stacked.imageSrc }}" alt="" />
+    <img class="stack" src="{{ stacked.imageSrc }}" alt="" />
   </div>
   <div class="window">
     <h2>{{ window.title }}</h2>
@@ -16,3 +16,12 @@
     <img src="{{ card.imageSrc }}" alt="" />
   </div>
 </div>
+
+<svg>
+  <defs>
+    <clipPath id="clip">
+      <ellipse cx="200" cy="50" rx="200" ry="150" ></ellipse>
+      <ellipse cx="200" cy="250" rx="200" ry="150" ></ellipse>
+    </clipPath>
+  </defs>
+</svg>

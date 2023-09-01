@@ -18,4 +18,13 @@
       object-fit: cover;
     }
   }
+  .stacked{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .stack{
+        clip-path: url(#clip);
+    }
+  }
 }
