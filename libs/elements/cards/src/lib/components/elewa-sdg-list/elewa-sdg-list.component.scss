@@ -1,124 +1,62 @@
-/*.elewa-sdg-list {
-  display: flex;
-  flex-wrap: wrap;
+.elewa-sdg-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px; // Increase gap for better spacing
+  max-width: 100%;
   border-radius: 40px;
   background-color: var(--elewa-website-sdg-background-color);
   color: var(--elewa-website-color-primary-white);
+  margin: 70px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); // Change to two columns on screens <= 1024px
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr); // Change to one column on screens <= 768px
+  }
 
   .elewa-sdg-list-card {
     width: 100%; // Occupy full width by default
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 5px;
+    padding: 20px; // Reduced padding for smaller screens
     text-align: left;
     display: flex;
     align-items: flex-start; // Align items to the top
-
-    @media (min-width: 768px) {
-      width: calc(33.33% - 20px); // Adjust for larger screens
-    }
-
-    @media (min-width: 1024px) {
-      &:nth-child(4),
-      &:nth-child(5) {
-        width: calc(50% - 20px); // Adjust as needed
-      }
-    }
+    margin-left: 10px; // Reduced margin for smaller screens
+    height: auto; // Allow height to adjust as needed
+    height: 180px;
 
     .fas {
-      width: 15px;
+      width: 20px;
       height: 15px;
-      margin-right: 15px;
-      margin-top: 0;
+      margin-top: 6px;
+      margin-right: 15px; // Reduced margin for smaller screens
     }
 
     .elewa-sdg-list-content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      gap: 10px;
 
       .elewa-sdg-list-title {
         font-size: 24px;
-        font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
-        white-space: nowrap;
+        font-family: "DMSans-Medium";
+        white-space: wrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 75%;
         display: flex; // Display flex to align icon and title
         align-items: center; // Center vertically
-
-        .fas {
-          margin-right: 10px; // Adjust spacing between icon and title
-        }
       }
 
       .elewa-sdg-list-description {
-        font-size: 20px;
-        font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+        font-size: 18px;
+        font-family: "DMSans-Regular";
         overflow: hidden;
-        margin: 20px 0;
+        text-overflow: ellipsis; // Add ellipsis to description text
+        width: 90%; // Allow description width to adjust
       }
     }
-
-    .empty-space {
-      flex: 1;
-    }
   }
-}*/
-
-.elewa-sdg-list{
-    display: flex;
-    border-radius: 40px;
-    flex-wrap: wrap;
-    background-color: var(--elewa-website-sdg-background-color);
-    color: var(--elewa-website-color-primary-white);
-
-    .elewa-sdg-list-card{
-        margin-left: 40px;
-        padding: 30px;
-        margin: 30px 20px;
-        text-align: left;
-        width: calc(35% - 30px);
-        align-items: flex-start;  // Align items to the top
-        display: flex;
-
-        @media (min-width: 768px) {
-            width: calc(33.33% - 20px); // Adjust for larger screens
-        }
-      
-        @media (min-width: 1024px) {
-            &:nth-child(4),
-            &:nth-child(5) {
-              width: calc(50% - 20px); // Adjust as needed
-            }
-        }
-
-        .fas{
-            font-size: 25px;
-            margin-right: 15px;
-        }
-
-        .elewa-sdg-list-content{
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 10px;
-
-            .elewa-sdg-list-title{
-                margin: 0px;
-                font-family: "DMSans-Medium";
-                font-size: 24px;
-            }
-
-            .elewa-sdg-list-description{
-                margin: 8px;
-                display: flex;
-                font-size: 18px;
-                
-            }
-        }
-    }
 }
