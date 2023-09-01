@@ -7,8 +7,15 @@ import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 @Component({
   selector: 'elewa-website-content-dev-hero-section',
   standalone: true,
-  imports: [CommonModule, AppHeaderModule, TextsModule, ButtonsModule], /**import modules to be reused*/
+  imports: [
+    CommonModule,
+    AppHeaderModule,
+    TextsModule,
+    ButtonsModule,
+  ] /**import modules to be reused*/,
   templateUrl: './content-dev-hero-section.component.html',
   styleUrls: ['./content-dev-hero-section.component.scss'],
 })
-export class ContentDevHeroSectionComponent {}
+export class ContentDevHeroSectionComponent {
+  
+}
