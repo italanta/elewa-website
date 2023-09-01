@@ -1,0 +1,17 @@
+
+    <div class="price-list">
+      <div class="price-item" *ngFor="let item of priceItem">
+        <h3 class="item-title">{{ item.title }}</h3>
+        <p class="item-description">${{ item.amount }}</p>
+        <p class="item-description">{{ item.subTitle }}</p>
+        <p class="item-description">{{ item.description }}</p>
+
+        <elewa-website-slider-button [buttonData]="item.sliderButton"></elewa-website-slider-button>
+
+
+      </div>
+     
+    </div>
+  
+
+ 
