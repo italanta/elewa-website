@@ -4,6 +4,8 @@
 :root {
   /** primary colors **/
   --elewa-website-color-primary-black: #000;
+  --elewa-website-image-background: rgba(249, 248, 244, 1);
+  --elewa-website-window-image-container-background: #DBC2F5E6;
   --elewa-website-color-primary-white: #ffffff;
 
   /** homepage colors **/
@@ -22,7 +24,7 @@
   --elewa-website-slider-btn-width: 200px;
   --elewa-website-slider-btn-height: 40px;
   --elewa-website-slider-btn-border-radius: 29px;
-  --elewa-website-slider-btn-padding: 5px 180px 5px 16px;
+  --elewa-website-slider-btn-padding: 5px 200px 5px 5px;
 
   /** slider button icon styles **/
   --elewa-website-slider-btn-icon-size: 32px;
@@ -32,14 +34,14 @@
   --elewa-website-slider-btn-icon-font-size: 1.2rem;
 
   /** elewa website header **/
-  --elewa-website-header-bg-height: 5rem;
-
-
-  /** elewa sdg list variable **/
-  --sdg-card-background-color: #032c9de3;
-
-  /** info card styles **/
-  --elewa-website-info-card-title-font-size: 18px;
-  --elewa-website-info-card-text-font-size: 13px;
-}
-
+  --elewa-website-header-bg-height: 5rem;;
+  /**elewa-website footer **/
+  --elewa-website-footer-background-color:#292A50;
+  --elewa-website-color-primary-white: #FFFFFF;
+  --elewa-website-footer-font-weight-title:500;
+  --elewa-website-footer-font-dmsans-medium:'DMSans-Medium';
+  --elewa-website-footer-font-weight-subtitle:300;
+  --elewa-website-dmsans-regular: 'DMSans-Regular';
+  --elewa-website-footer-font-size-heading: 30px;
+  --elewa-website-font-size-description-medium: 12px;
+  }
