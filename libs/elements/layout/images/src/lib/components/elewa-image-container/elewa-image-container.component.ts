@@ -18,7 +18,7 @@ export class ElewaImageContainerComponent {
    * Cases for Image visualisation to be used as classes in HTML and scss component files 
    * The Cases include pill, stacked, window and card
    */
-  imageVisualisation(imageConfig: ImageConfig): string {
+  getImageClass(imageConfig: ImageConfig): string {
     switch (imageConfig.visualisation) {
       case ImageVisualisation.Pill:
         return 'pill';

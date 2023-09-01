@@ -1,9 +1,9 @@
-<!-- Takes an imageConfig and sets classes dynamically from the data passed in.
-The image has an optional max-width
-The classes include pill, stacked, window and card -->
 <div class="elewa-image-container">
-  <div class="elewa-images" [id]="imageVisualisation(imageConfig) === 'window' ? 'window-card' : ''" >
-    <img [src]="imageConfig.imageSrc" alt="{{ imageConfig.title }}" [ngClass]="imageVisualisation(imageConfig)"
+  <div class="elewa-images">
+    <img 
+      [src]="imageConfig.imageSrc" 
+      alt="{{ imageConfig.title }}" 
+      [ngClass]="getImageClass(imageConfig)"
       [style.max-width]="imageConfig.maxWidth ? imageConfig.maxWidth : 'none'" />
   </div>
 </div>

@@ -59,6 +59,9 @@
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
+      "@elewa-website/libs/models/schema/ui/images": [
+        "libs/libs/models/schema/ui/images/src/index.ts"
+      ],
       "@elewa-website/features/pages/news-page": [
         "libs/features/pages/news-page/src/index.ts"
       ],
