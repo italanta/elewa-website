@@ -5,7 +5,7 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 
 @NgModule({
-  imports: [CommonModule, TranslocoModule, ButtonsModule, ButtonsModule ],
+  imports: [CommonModule, TranslocoModule, ButtonsModule ],
   declarations: [ FooterComponent, ],
   exports: [ FooterComponent ]
 })

@@ -5,5 +5,5 @@ export interface ButtonData {
   color?: string;
 
   hoverBgColor?: string;
-  hoverColor?: string;
+  hoverColor?: string; 
 }

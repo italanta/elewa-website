@@ -9,9 +9,10 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
 
 import { HomeRoutingModule } from './home.routing';
 import { ElementsLayoutFooterModule } from '@elewa-website/elements/layout/footer';
+import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule, ElementsLayoutFooterModule],
+  imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule, ElementsLayoutFooterModule, ButtonsModule],
   declarations: [HomePageComponent, NewsSectionComponent],
   exports: [HomePageComponent],
 })

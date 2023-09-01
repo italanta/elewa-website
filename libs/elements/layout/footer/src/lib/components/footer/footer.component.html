@@ -1,7 +1,6 @@
 <section>
-    <ng-content select="[footer]"></ng-content> 
-    <elewa-website-slider-button></elewa-website-slider-button>  
-    <hr class="item-separator" />
+    <ng-content select="[button], [head] "></ng-content> 
+    <hr class="item-separator"/>
 <div class="footer-container">
     <div class="footer-section">
         <h4>{{ 'ELEWA-WEBSITE-FOOTER.HADQUARTERS' | transloco }}</h4>
@@ -42,7 +41,6 @@
             <li><a routerLink="#">{{ 'ELEWA-WEBSITE-FOOTER.PRIVACYLINKS.COOKIE-PREFRENCES' | transloco }}</a></li>
         </ul>
     </div>
-    
 </div>
 <div class="social">
     <div class="footer-logo">
@@ -54,5 +52,4 @@
         <i class="fab fa-linkedin-in"></i>
     </div>
   </div>
-
 </section>
