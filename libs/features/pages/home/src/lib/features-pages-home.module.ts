@@ -13,6 +13,7 @@ import { ElementsLayoutFooterModule } from '@elewa-website/elements/layout/foote
 //import slider button module
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 
+
 @NgModule({
   imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule,ButtonsModule,ElementsLayoutFooterModule],
   declarations: [HomePageComponent, NewsSectionComponent],

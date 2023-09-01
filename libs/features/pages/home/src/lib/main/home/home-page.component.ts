@@ -6,8 +6,7 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent {
- buttonData: SliderButtonData={
-  text:'unlock your potential'
-
- }
+  buttonData: SliderButtonData = {
+    text: 'unlock your potential',
+  };
 }
