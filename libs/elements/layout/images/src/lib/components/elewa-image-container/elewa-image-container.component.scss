@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
     .windowed{
-        clip-path: ellipse(60% 80% at 50% 80%);
+        clip-path: ellipse(70% 80% at 50% 80%);
     }
   }
   .card{
@@ -42,7 +42,8 @@
     align-items: center;
     justify-content: center;
     .carded{
-        clip-path: inset(20px 50px);
+        // clip-path: inset(20px 50px);
+        clip-path: circle(15.8rem at center);
     }
   }
 }
