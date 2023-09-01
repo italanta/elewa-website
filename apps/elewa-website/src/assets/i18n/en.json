@@ -6,5 +6,20 @@
       "NEWS": "News",
       "CONTACT-US": "Contact Us",
       "LOGO-ALT": "Elewa Company Logo"
-    }
+    },
+    "ELEWA_WEBSITE-FOOTER": {
+      "CONTACT": "Contact",
+      "NAVIGATION": "Navigation",
+      "PRIVACY": "Privacy",
+      "LOGO-ALT": "Elewa Company Logo",
+      "NEWS": "News",
+      "SOCIAL IMPACT": "Social Impact",
+      "ABOUT US": "About Us",
+      "INVEST": "Investments",
+      "BRANDS": "Brands",
+      "HEADQUARTERS": "Headquarters",
+      "COOKIE PREFERENCES": "Cookie Preferences",
+      "TERMS AND CONDITIONS": "Terms and Conditions",
+      "VENTURE LABS": "Venture Labs"
   }
+}
