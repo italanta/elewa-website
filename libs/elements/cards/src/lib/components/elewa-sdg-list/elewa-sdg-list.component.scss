@@ -1,28 +1,3 @@
-// .sdg-section {
-//   background-color: var(--elewa-website-SDG-list-background-color);
-//   color: var(--elewa-website-color-primary-white);
-//   border-radius: 50px;
-//   padding: 5rem;
-//   display: flex;
-//   flex-wrap: wrap;
-//   column-gap: 3rem;
-//   justify-content: space-around;
-//   align-items: center;
-//   margin: 3rem;
-// }
-
-// .sdg-list-container {
-//   flex: 1;
-//   margin-inline: auto;
-// }
-
-// .btn-container {
-//   flex: 1;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 .sdg-section {
   background-color: var(--elewa-website-SDG-list-background-color);
   color: var(--elewa-website-color-primary-white);
@@ -37,10 +12,6 @@
 }
 
 @media (max-width: 1100px) {
-  // .sdg-section {
-  //   padding: 3em;
-  // }
-
   .sdg-section {
     padding: 2rem;
   }
