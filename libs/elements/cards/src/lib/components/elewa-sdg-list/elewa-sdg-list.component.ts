@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { InfoCard } from '@elewa-website/models/schema/ui/cards';
 import { __highlightedSDGList } from '@elewa-website/data/sections';
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
-import { __mockSliderButtonData } from '@elewa-website/data/ui/slider-button';
+import { __mockSliderButtonData } from '@elewa-website/data/ui/content-text';
 
 @Component({
   selector: 'elewa-website-elewa-sdg-list',
