@@ -1,0 +1,7 @@
+<div class="image" >
+    <div class="inlineimg" *ngFor="let imageconfig of imageconfigs">
+        <div>
+            <img [src]="imageconfig.imageSrc" [style.maxWidth]="imageconfig.maxWidth" [ngClass]="getImageClass(imageconfig.visualisation)"/>
+        </div>
+    </div>
+</div>
