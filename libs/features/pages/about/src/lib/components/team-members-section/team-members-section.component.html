@@ -1,8 +1,14 @@
-<elewa-website-project-carousel>
-    <ng-container carouselItems *ngFor="let item of highlightedTeamMembers">
-        <elewa-website-team-member-card 
-            
-            [teamMemberData]="item"
-        ></elewa-website-team-member-card>
-    </ng-container>
-</elewa-website-project-carousel>
+<div class="team-section">
+    <div>
+    <p class="heading">These people make it happen</p>
+    <div>
+        <elewa-website-project-carousel>
+            <ng-container carouselItems *ngFor="let item of highlightedTeamMembers">
+                <elewa-website-team-member-card 
+                    [teamMemberData]="item"
+                ></elewa-website-team-member-card>
+            </ng-container>
+        </elewa-website-project-carousel>
+    </div>
+    </div>
+</div>
