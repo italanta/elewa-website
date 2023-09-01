@@ -8,15 +8,14 @@
 
   /** homepage colors **/
   --elewa-website-homepage-background-color: #dbc2f5;
-  --elewa-website-news-section-bg-color: #F9F8F4;
+  --elewa-website-news-section-bg-color: #f9f8f4;
   --elewa-website-news-item-primary-color: #404040;
-
 
   /** Resusable Components Variables **/
   /** card CSS variables **/
   --elewa-website-card-font-style: 'DMSans-Regular';
   --elewa-website-card-background-color: rgba(255, 255, 255, 1);
-  --elewa-website-card-color: rgba(0, 0, 0, 1)
+  --elewa-website-card-color: rgba(0, 0, 0, 1);
 
   /** slider button styles **/
   --elewa-website-slider-btn-width: 200px;
@@ -34,7 +33,6 @@
   /** elewa website header **/
   --elewa-website-header-bg-height: 5rem;
 
-
-    /** SDG List Component **/
-    --elewa-website-SDG-list-background-color: #292A50;
+  /** SDG List Component **/
+  --elewa-website-SDG-list-background-color: #292a50;
 }

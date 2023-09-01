@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { InfoCard } from '@elewa-website/models/schema/ui/cards';
 import { __highlightedSDGList } from '@elewa-website/data/sections';
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
+import { __mockSliderButtonData } from '@elewa-website/data/ui/slider-button';
 
 @Component({
   selector: 'elewa-website-elewa-sdg-list',
@@ -9,8 +11,10 @@ import { __highlightedSDGList } from '@elewa-website/data/sections';
 })
 export class ElewaSdgListComponent implements OnInit {
   @Input() sdgList!: InfoCard[];
+  @Input() buttonData!: SliderButtonData;
 
   ngOnInit(): void {
     this.sdgList = __highlightedSDGList;
+    this.buttonData = __mockSliderButtonData;
   }
 }
