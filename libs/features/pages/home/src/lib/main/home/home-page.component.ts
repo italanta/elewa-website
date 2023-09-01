@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-//import the slider button
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 @Component({
   selector: 'elewa-website-home',
@@ -9,5 +8,6 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 export class HomePageComponent {
  buttonData: SliderButtonData={
   text:'unlock your potential'
+
  }
 }
