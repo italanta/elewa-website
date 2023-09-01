@@ -27,4 +27,13 @@
         clip-path: url(#clip);
     }
   }
+  .window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .windowed{
+        clip-path: ellipse(60% 80% at 50% 80%);
+    }
+  }
 }
