@@ -11,4 +11,10 @@ import { TextsModule } from '@elewa-website/elements/layout/texts';
   templateUrl: './conv-hero-section.component.html',
   styleUrls: ['./conv-hero-section.component.scss'],
 })
-export class ConvHeroSectionComponent {}
+export class ConvHeroSectionComponent {
+  heroTextData = {
+    title: 'Welcome to My Angular App',
+    subtitle: 'Built with Angular',
+    description: 'This is a sample Angular app.'
+  };
+}
