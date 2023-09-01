@@ -11,6 +11,17 @@
   font-family: 'DMSans-Regular';
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
 @font-face {
   font-family: "DMSans-Bold";
   src: local("UtileDisplay-Regular"), url(./assets/fonts/DM_Sans/DMSans-Bold.ttf) format("truetype");
