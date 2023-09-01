@@ -5,24 +5,22 @@
     
 }
 
-img{
-    margin: 10px;
-    height: 340px;
-    width: 300px;
-}
 
-section{
-    margin-top: 100px;
-}
 button{
     background-color: transparent;
     border: 0;
 }
 .button-area{
-    margin-left: 1300px;
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 70px;
 }
 
 .stretched-icon {
     transform: scaleX(1.5);  /* 1.5 times the original width */
   }
+
+.prev{
+    margin-left: auto;
+}
   
