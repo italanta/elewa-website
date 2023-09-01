@@ -11,18 +11,20 @@
   --elewa-website-news-section-bg-color: #F9F8F4;
   --elewa-website-news-item-primary-color: #404040;
 
+  /** conversational-learning-colors */
+  --elewa-website-conversational-learning-bg-color: #FAE9E8;
+
 
   /** Resusable Components Variables **/
   /** card CSS variables **/
   --elewa-website-card-font-style: 'DMSans-Regular';
   --elewa-website-card-background-color: rgba(255, 255, 255, 1);
   --elewa-website-card-color: rgba(0, 0, 0, 1)
-
-  /** slider button styles **/
-  --elewa-website-slider-btn-width: 200px;
+    /** slider button styles **/
+    --elewa-website-slider-btn-width: 200px;
   --elewa-website-slider-btn-height: 40px;
   --elewa-website-slider-btn-border-radius: 29px;
-  --elewa-website-slider-btn-padding: 5px 5px 5px 16px;
+  --elewa-website-slider-btn-padding: 5px 200px 5px 16px;
 
   /** slider button icon styles **/
   --elewa-website-slider-btn-icon-size: 32px;
