@@ -36,4 +36,13 @@
         clip-path: ellipse(60% 80% at 50% 80%);
     }
   }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .carded{
+        clip-path: inset(20px 50px);
+    }
+  }
 }
