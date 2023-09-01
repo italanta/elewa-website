@@ -1,0 +1,20 @@
+.outer-list{
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    background-color: var(--elewa-website-news-section-bg-color);
+    width: 100%;
+    padding: 30px;
+    
+}
+
+.price-list{
+   list-style: none;
+  
+ 
+}
+
+.price-cards{
+    width: 350px;
+  
+}
