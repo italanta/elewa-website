@@ -8,9 +8,10 @@ import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { ElementsLayoutImagesModule } from '@elewa-website/elements/layout/images';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule],
+  imports: [CommonModule, HomeRoutingModule, CardsModule, AppHeaderModule, ElementsLayoutImagesModule],
   declarations: [HomePageComponent, NewsSectionComponent],
   exports: [HomePageComponent],
 })
