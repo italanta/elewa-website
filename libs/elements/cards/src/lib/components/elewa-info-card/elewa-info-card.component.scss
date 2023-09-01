@@ -3,20 +3,16 @@
     flex-direction: row;
 }
 
-.icon {
-    width: 52px;
-    height: 54px;
-    margin-right: 57px;
-}
-
 .info-card-title {
     font-size: var(--elewa-website-info-card-title-font-size);
     font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
 }
 
 .info-card-text {
     font-size: var(--elewa-website-info-card-text-font-size);
     font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
+    margin-top: 6px;
 }
 
 .icon {
@@ -24,13 +20,14 @@
     padding-right: 15px;
     margin-top: 0.2em;
     margin-right: 30px;
+    display: inline-block;
 }
 
 .info-card-content {
     display: flex;
     flex-direction: column;
-    margin-top: 0.1px; /* Adjust margin-top value as needed */
-    margin-left: -20px; /* Adjust margin-left value as needed */
+    margin-top: 0.1px; 
+    margin-left: -20px; 
 }
 
 /* Media Queries for Responsive Design */
@@ -38,31 +35,52 @@
 /* For screens with a maximum width of 768px */
 @media (max-width: 768px) {
     .inner-info-card {
-        flex-direction: row;
-    }
-
-    .info-card {
-        width: 100%; /* Occupy full width */
-    }
-    .info-card-title {
-        font-size: 14px;
-        font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
+        flex-direction: column; 
+        margin-left: 0; 
     }
     
+    .icon {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+    
+    .info-card-content {
+        margin-left: 0; 
+    }
+    
+    .info-card-title {
+        font-size: 16px; 
+    }
+
     .info-card-text {
-        font-size: 14px;
-        font-family: "DMSans-Regular", Arial, Helvetica, sans-serif;
-    }
-
-    .icon-img {
-        margin-right: 0; /* Remove margin for smaller screens */
-        margin-bottom: 15px; /* Add margin to separate from text */
-        width: 32px;
-        height: 34px;
-    }
-
-    .info-card-icon {
-        flex-direction: row; /* Align icon and content side by side */
-        padding-right: 0; /* Remove padding */
+        font-size: 14px; 
     }
 }
+
+/* For screens with a maximum width of 360px */
+@media (max-width: 360px) {
+
+
+    .inner-info-card {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 5px;
+    }
+
+    .info-card-content {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .info-card-title {
+        font-size: 15px; 
+        margin-bottom: 2px; 
+    }
+
+    .info-card-text {
+        font-size: 12px; 
+        margin-top: 2px; 
+    }
+}
+
+
