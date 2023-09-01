@@ -1,0 +1,58 @@
+.conv-main {
+    background-color: var(--elewa-website-conversational-learning-bg-color);
+    height: 100vh;
+}
+
+.conv-hero-section {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 60%;
+    margin-left: 160px;
+    flex-direction: column;
+    z-index: 1000;
+
+}
+
+.back {
+    z-index: 1;
+
+}
+
+.block1 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%) matrix(0, 1, -1, 0, 0, 0);
+    /* Combine translation and matrix transformation */
+
+    width: 300px;
+    height: 600px;
+
+    /* UI Properties */
+    background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+    border-radius: 600px;
+    opacity: 1;
+}
+
+.block2 {
+    position: fixed;
+    bottom: -50%;
+    right: 10%;
+    margin: 20px;
+
+    transform: translate(-50%, -50%) matrix(0, -1, 1, 0, 0, 0);
+    /* Combine translation and matrix transformation */
+
+    width: 300px;
+    height: 600px;
+
+    /* UI Properties */
+    background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+    border-radius: 600px;
+    opacity: 1;
+}
+
+.conv-button {
+    margin-top: 30px;
+}
