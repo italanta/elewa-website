@@ -9,11 +9,20 @@
 button{
     background-color: transparent;
     border: 0;
+    font-size: 25px;
+    
 }
+
+
 .button-area{
     display: flex; 
     justify-content: flex-end;
     margin-right: 70px;
+    gap: 50px;
+
+    i{
+        width: 40px;
+    }
 }
 
 .stretched-icon {
