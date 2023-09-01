@@ -1,0 +1,57 @@
+/* Default styles for screens wider than 768px */
+.hero-section {
+    // background-image: url('path-to-your-hero-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #000000; /* Text color */
+    padding: 100px 0; /* Adjust the padding as needed */
+    margin-left: 50px;
+  }
+  
+  /* Container for h1, p, and slider button */
+  .hero-content-wrapper {
+    text-align: center;
+  }
+  
+  .hero-content {
+    display: inline-block; /* Keep the elements together */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    text-align: left; /* Left-align the content within the wrapper */
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Media query for screens up to 768px wide */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 60px 0;
+    }
+  
+    .hero-content-wrapper {
+      text-align: center;
+    }
+  
+    .hero-content {
+      display: block; /* Stack the elements for smaller screens */
+      max-width: none; /* Remove maximum width */
+      text-align: center; /* Center-align the content */
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  }
+  
