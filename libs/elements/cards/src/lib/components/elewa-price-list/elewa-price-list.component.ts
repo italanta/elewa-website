@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { __highlightedPricingList } from '@elewa-website/data/sections';
 import { PriceItem } from '@elewa-website/models/schema/ui/cards';
 
@@ -8,8 +8,7 @@ import { PriceItem } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-price-list.component.scss'],
 })
 export class ElewaPriceListComponent {
-  pricingList: PriceItem [];
-  constructor(){
-    this.pricingList =__highlightedPricingList;
-  }
+  @Input () pricingList: PriceItem[]= __highlightedPricingList;
+
+  
 }
