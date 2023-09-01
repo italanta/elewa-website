@@ -31,7 +31,7 @@
     height: 700px;
 
     /* UI Properties */
-    background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, var(--elewa-website-conversational-learning-bg-color-1) 0%, var(--elewa-website-conversational-learning-bg-color-2) 100%) 0% 0% no-repeat padding-box;
     border-radius: 600px;
     opacity: 1;
 }
@@ -50,7 +50,7 @@
 
 
     /* UI Properties */
-    background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, var(--elewa-website-conversational-learning-bg-color-1) 0%, var(--elewa-website-conversational-learning-bg-color-2) 100%) 0% 0% no-repeat padding-box;
     border-radius: 600px;
     opacity: 1;
 }
