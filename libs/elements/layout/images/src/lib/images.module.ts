@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ImageContainerComponent } from './components/image-container/image-container.component';
+
+import { ElewaImageContainerComponent } from './components/elewa-image-container/elewa-image-container.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ImageContainerComponent],
-  exports: [ImageContainerComponent]
+  declarations: [ElewaImageContainerComponent],
+  exports: [ElewaImageContainerComponent]
 })
 export class ImagesModule {}

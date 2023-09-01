@@ -1,1 +1,1 @@
-export * from './lib/image-config.interface';
+export * from './lib/image-config'
