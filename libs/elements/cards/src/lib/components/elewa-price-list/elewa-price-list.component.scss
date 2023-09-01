@@ -1,50 +1,18 @@
 .price-list {
-    display: flex;
-    width: 920px;
-    height: auto;
-    margin: 30px auto;
-    opacity: 1;
+    display: flex;/*arrange child elements horizontally.*/
 
-    .price-item {
-      width: 32%;
-      height: auto;
-      border: 1px solid #ccc;
-      margin-right: 1%;
-      background: white;
-      border-radius: 10px;
-      transition: 0.9s;
-  
-      &:hover {
-        background-color: var(--hoverBgColor, #292A50);
-        color: var(--hoverColor, #000);
-        cursor: pointer;
-      }
-  
-    }
-    
-  
-    h3, p {
-      text-align: center;
-      color: rgb(104, 92, 92);
-  
-      p {
-        font-size: 15px;
-        padding: 0 5px;
-      }
-    }
-  
+    /*  Media queries are applied to adjust the container's width and display properties
+  based on different screen sizes:
+*/
     @media (max-width: 800px) {
-      width: 100%;
-    }
-  
-    @media (max-width: 600px) {
-      width: 85%;
-      display: block;
-  
-      .price-item {
-        width: 100%;
-        margin-bottom: 4%;
-      }
-    }
-  }
-  
+                width: 100%;
+            }
+        
+            @media (max-width: 600px) {
+                width: 85%;
+                display: block;
+        
+               margin:  auto; /* Center the container horizontally */
+            }
+
+}
