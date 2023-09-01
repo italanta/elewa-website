@@ -39,7 +39,7 @@
 .block2 {
     position: fixed;
     bottom: -80%;
-    right: 5%;
+    right: 10%;
     margin: 20px;
 
     transform: translate(-50%, -50%) matrix(0, -1, 1, 0, 0, 0);
@@ -55,21 +55,18 @@
     opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
 
     .block1 {
 
-        width: 150px;
-        height: 300px;
+        top: 50%;
+        left: 45%;
 
     }
 
     .block2 {
-        bottom: 10%;
-        right: 7%;
-        width: 150px;
-        height: 300px;
-
+        bottom: -80%;
+        right: -30%;
     }
 }
 
