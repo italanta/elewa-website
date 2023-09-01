@@ -1,0 +1,9 @@
+<div class="elewa-image-container">
+  <div class="elewa-images">
+    <img 
+      [src]="imageConfig.imageSrc" 
+      alt="{{ imageConfig.title }}" 
+      [ngClass]="getImageClass(imageConfig)"
+      [style.max-width]="imageConfig.maxWidth ? imageConfig.maxWidth : 'none'" />
+  </div>
+</div>
