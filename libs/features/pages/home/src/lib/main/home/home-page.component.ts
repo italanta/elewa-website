@@ -1,7 +1,6 @@
 import { Component, OnDestroy } from '@angular/core';
 
 import { SubSink } from 'subsink';
-import { filter } from 'rxjs';
 import { TranslocoService } from '@ngneat/transloco';
 
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
@@ -33,14 +32,9 @@ export class HomePageComponent implements OnDestroy {
   };
 
   constructor(private _translocoServ: TranslocoService) {
-    this._sBs.sink = this._translocoServ.load('en').subscribe();
-    this._sBs.sink = this._translocoServ.events$
-      .pipe(filter((event) => event.type === 'translationLoadSuccess'))
-      .subscribe(() => {
-        this.buttonData.text = this._translocoServ.translate(
-          'ELEWA.PAGES.HOME.HERO-SECTION.BUTTON-TEXT'
-        );
-      });
+    this._sBs.sink = this._translocoServ
+      .selectTranslate('ELEWA.PAGES.HOME.HERO-SECTION.BUTTON-TEXT')
+      .subscribe((val: string) => (this.buttonData.text = val));
   }
 
   ngOnDestroy() {
