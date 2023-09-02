@@ -1,4 +1,13 @@
 {
+  "ELEWA": {
+    "PAGES": {
+      "HOME": {
+        "HERO-SECTION": {
+          "BUTTON-TEXT": "unlock your potential"
+        }
+      }
+    }
+  },
   "ELEWA-WEBSITE-HEADER": {
     "SOLUTIONS": "Solutions",
     "PROJECTS": "Projects",
