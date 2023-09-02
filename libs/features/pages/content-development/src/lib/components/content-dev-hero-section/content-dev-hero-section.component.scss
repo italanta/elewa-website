@@ -1,0 +1,58 @@
+.content-dev {
+    height: 100vh;
+    background-color: #FCF6E4;;
+    width: 100vw;
+    overflow: hidden; /* Hides the overflowing content */
+    position: relative; 
+    
+}
+
+
+.dev-hero-section{
+    position: absolute;
+    width:50%;
+    margin-left: 100px;
+    z-index: 5999999999;
+    
+}
+
+.slider-button{
+    margin-top: 50px;
+    z-index: 5999999999090999999999999999;
+}
+
+.cont-one{
+    background-color: #F2CF73;
+    position: absolute;
+    z-index: 2;
+    height: 250px;
+    margin-left: 150px;
+    bottom: -120px;
+    width: 250px;
+    clip-path: inset(0 0 0 round 30vh);
+    background: linear-gradient(to bottom, rgba(242, 207, 115, 1), rgba(242, 207, 115, 0));
+}
+
+.cont-two{
+    background-color: #F2CF73;
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    margin-left: 550px;
+    bottom: -120px;
+    width: 300px;
+    clip-path: inset(0 0 0 round 30vh);
+    background: linear-gradient(to bottom, rgba(242, 207, 115, 1), rgba(242, 207, 115, 0));
+}
+
+.cont-three{
+    background-color: #F2CF73;
+    position: absolute;
+    z-index: 2;
+    height: 600px;
+    margin-left: 950px;
+    bottom: -120px;
+    width: 300px;
+    clip-path: inset(0 0 0 round 30vh);
+    background: linear-gradient(to bottom, rgba(242, 207, 115, 1), rgba(242, 207, 115, 0));
+}
