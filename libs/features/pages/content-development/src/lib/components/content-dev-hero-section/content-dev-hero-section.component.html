@@ -1,1 +1,24 @@
-<p>content-dev-hero-section works!</p>
+<div class="content-dev">
+    <elewa-website-header></elewa-website-header>
+    <div class="dev-hero-section"> 
+        <div>
+            <elewa-website-elewa-text-section
+                [herotexts]="heroTexts"
+                class="hero-text"
+            >
+            </elewa-website-elewa-text-section>
+        </div>
+        <div class="slider-button">
+            <elewa-website-slider-button
+                [buttonData]="buttonData"
+                class="slider-button"
+            >    
+            </elewa-website-slider-button>
+        </div>
+    </div>
+    <div class="designs">
+        <div class="cont-one"></div>
+        <div class="cont-two"></div>
+        <div class="cont-three"></div>
+    </div>
+</div>
