@@ -1,11 +1,28 @@
 {
+    "ELEWA-WEBSITE-HEADER": {
+      "SOLUTIONS": "Solutions",
+      "PROJECTS": "Projects",
+      "COMPANY": "Company",
+      "NEWS": "News",
+      "CONTACT-US": "Contact Us",
+      "LOGO-ALT": "Elewa Company Logo"
+    },
+
+    "TEAM-MEMBER-SECTION":{
+      "HEADING": "These people make it happen"
+    }
   "ELEWA": {
     "PAGES": {
       "HOME": {
         "HERO-SECTION": {
           "BUTTON-TEXT": "unlock your potential"
         }
-      }
+      },
+      "ABOUT": {
+        "TEAM-MEMBER-SECTION": {
+            "HEADING": "These people make it happen"
+          }
+        }
     }
   },
   "ELEWA-WEBSITE-HEADER": {
