@@ -1,10 +1,47 @@
 {
-    "ELEWA-WEBSITE-HEADER": {
-      "SOLUTIONS": "Solutions",
-      "PROJECTS": "Projects",
-      "COMPANY": "Company",
-      "NEWS": "News",
-      "CONTACT-US": "Contact Us",
-      "LOGO-ALT": "Elewa Company Logo"
+  "ELEWA": {
+    "PAGES": {
+      "HOME": {
+        "HERO-SECTION": {
+          "BUTTON-TEXT": "unlock your potential"
+        }
+      }
     }
+  },
+  "ELEWA-WEBSITE-HEADER": {
+    "SOLUTIONS": "Solutions",
+    "PROJECTS": "Projects",
+    "COMPANY": "Company",
+    "NEWS": "News",
+    "CONTACT-US": "Contact Us",
+    "LOGO-ALT": "Elewa Company Logo"
+  },
+  "ELEWA_WEBSITE-FOOTER": {
+    "HEADQUARTERS": {
+      "TITLE": "Headquarters"
+    },
+    "CONTACT": {
+      "TITLE": "Contact"
+    },
+    "ACTIVITIES": {
+      "NAVIGATION": "Navigation",
+      "ABOUT-US": "About Us",
+      "SOCIAL-IMPACT": "Social Impact",
+      "INVEST": "Investments",
+      "NEWS": "News",
+      "CONTACT": "Contact"
+    },
+    "BRANDS": {
+      "TITLE": "Brands",
+      "ELEWA": "Elewa",
+      "ITALANTA": "Italanta",
+      "VENTURE-LABS": "Venture Labs"
+    },
+    "PRIVACY": {
+      "TITLE": "Privacy",
+      "TERMS-AND-CONDITIONS": "Terms and Conditions",
+      "COOKIE-PREFERENCES": "Cookie Preferences"
+    },
+    "LOGO-ALT": "Elewa Company Logo"
   }
+}
