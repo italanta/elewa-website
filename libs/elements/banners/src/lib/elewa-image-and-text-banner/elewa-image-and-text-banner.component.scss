@@ -10,10 +10,8 @@
     margin-inline: 200px;
     margin-block: 24px;
     max-width: 100%;
-    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
-  
   
     @media (max-width:768px) {
       display: flex;
@@ -27,8 +25,6 @@
     
   }
   
-  
-    
     &:hover {
       transform: translateY(-5px);
     }
@@ -57,7 +53,7 @@
         max-width: 300px;
       }
      
-      
+
       // image-position
 
       /* normal order order for the left alignment */
