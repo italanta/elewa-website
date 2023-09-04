@@ -69,8 +69,19 @@
         position: relative;
         font: var(--font-familiy,DMSans-Medium, Arial, Helvetica, sans-serif);
       }
-  
+      // image-position
+
+      /* normal order order for the left alignment */
+      &.left-image {
+        flex-direction: row; 
+      }
       
+      /* Reverse the order for the right alignment */
+      &.right-image {
+        flex-direction: row-reverse; 
+        
+        
+      }
     }
   }
   
