@@ -1,0 +1,74 @@
+.booklets-hero{
+    background: var(--elewa-website-booklets-page-hero-section-background-color);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Hides the overflowing content */
+    position: relative; 
+}
+
+.hero-section{
+    width: 50%;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 5999999999;
+}
+
+.slider-button{
+    margin-top: 15px;
+}
+
+.designs{
+    position: absolute;
+    z-index: 2;
+    width:80%;
+    height: 60%;
+    right: 0px;
+    bottom: 0;
+}
+
+.block-cont{
+    background: var(--elewa-website-booklets-page-hero-section-design-block-background-color);
+    clip-path: inset(0 0 0 round 30vh);
+    position: absolute;
+    right: -100px;
+    bottom: -140px;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-19deg);
+}
+
+@media (max-width: 480px){
+    .hero-section{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .slider-button{
+        margin-top: 10px;
+    }
+
+    .block-cont{
+        background: transparent linear-gradient(289deg, #F2AD69 0%, #F2AD6900 100%) 0% 0% no-repeat padding-box;
+        clip-path: inset(0 0 0 round 30vh);
+        position: absolute;
+        right: -1px;
+        bottom: -190px;
+        height: 100%;
+        width: 100%;
+        transform: rotate(19deg);
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+
+    .hero-section{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .slider-button{
+        margin-top: 15px;
+    }
+
+}
