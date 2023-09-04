@@ -8,7 +8,7 @@ import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 import { ConversationalLearningRoutingModule } from './conversational-learning-routing.module';
 
 import { ConversationalLearningPageComponent } from './main/conversational-learning-page/conversational-learning-page.component';
-import { ConvHeroSectionComponent } from './conv-hero-section/conv-hero-section.component';
+import { ConvHeroSectionComponent } from './components/conv-hero-section/conv-hero-section.component';
 
 
 
