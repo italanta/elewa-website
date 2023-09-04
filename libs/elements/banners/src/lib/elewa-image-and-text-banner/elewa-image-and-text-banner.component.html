@@ -4,13 +4,15 @@
     <!-- Container for the image -->
     <div class="image-container">
 
-         <!-- Display the image with binding -->
-      <img [src]="ImageAndText.image.imageSrc" [alt]="ImageAndText.image.title"
-      ngSrcset="100w, 200w, 300w"
-      sizes="(max-width: 640px) 100vw,
-      (max-width: 768px) 50vw,
-      33.3vw"
-      />
+      <!-- Display image container be re-using image-container component -->
+      <elewa-website-image-container [imageConfig]="ImageAndText.image" class="image-container"
+
+        ngSrcset="100w, 200w, 300w"
+        sizes="(max-width: 640px) 100vw,
+       (max-width: 768px) 50vw,
+        33.3vw"
+      >
+      </elewa-website-image-container>
     </div>
 
     <!-- Container for the text content -->
