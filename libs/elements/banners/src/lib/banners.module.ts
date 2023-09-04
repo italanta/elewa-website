@@ -9,5 +9,6 @@ import { ElewaImageAndTextBannerComponent } from './components/elewa-image-and-t
 @NgModule({
   imports: [CommonModule, ImagesModule, TextsModule],
   declarations: [ElewaImageAndTextBannerComponent],
+  exports:[ElewaImageAndTextBannerComponent]
 })
-export class ElementsBannersModule {}
+export class BannersModule {}
