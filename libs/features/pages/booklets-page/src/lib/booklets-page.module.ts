@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { BookletsPageComponent } from './main/booklets-page/booklets-page.component';
 import { BookletsHeroSectionComponent } from './components/booklets-hero-section/booklets-hero-section.component';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header';
+import { TextsModule } from '@elewa-website/elements/layout/texts';
+
 import { BookletsRoutingModule } from './booklets.routing';
 
 @NgModule({
-  imports: [CommonModule, BookletsRoutingModule, AppHeaderModule],
+  imports: [CommonModule, BookletsRoutingModule, AppHeaderModule, TextsModule],
   declarations: [BookletsPageComponent, BookletsHeroSectionComponent],
 })
 export class BookletsPageModule {}
