@@ -1,1 +1,51 @@
-<p>contact-page-form-section works!</p>
+<div class="contact-page">
+    <div class="left-side">
+        <div class="content">
+            <h1>Contact</h1>
+            <p>Looking for a quick answer to your question? Checkout our <span>FAQs.</span></p>
+            <p>For everything else, drop us a line <br> and we'll get back to you</p>
+        </div>
+        <div class="icons">
+            <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg" alt="">
+            <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg" alt="">
+            <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg" alt="">
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="form">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your name"
+                formControlName="name"
+            />
+            <input
+                type="text"
+                id="company"
+                placeholder="Company name"
+                formControlName="company"
+            />
+            <input
+                type="text"
+                id="email"
+                placeholder="E-mail"
+                formControlName="email"
+            />
+            <select id="reason" formControlName="reason">
+                <option value="general">Select option</option>
+            </select>
+            <input
+                type="text"
+                id="message"
+                placeholder="Message"
+                formControlName="message"
+            />
+        </form>
+        </div>
+        <div class="button">
+            <p>By clicking the Submit button you agree to <br>our <span>Privacy Policy</span> terms</p>
+            <elewa-website-slider-button [buttonData]="sendButtonData"></elewa-website-slider-button>
+        </div>
+    </div>
+</div>
