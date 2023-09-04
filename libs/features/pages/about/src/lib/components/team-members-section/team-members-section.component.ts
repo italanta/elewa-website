@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { __highlightedTeamMembers } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-team-members-section',
@@ -6,6 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./team-members-section.component.scss'],
 })
 export class TeamMembersSectionComponent {
-  @Input() teamMember!: []
-
+  teamMember = __highlightedTeamMembers;
 }

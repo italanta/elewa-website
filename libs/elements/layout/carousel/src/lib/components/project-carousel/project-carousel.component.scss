@@ -1,35 +1,30 @@
-.slider-main{
-    display: flex;
-    overflow: hidden;
-    transition: transform 0.5s;
-    
+.slider-main {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s;
 }
 
-
-button{
-    background-color: transparent;
-    border: 0;
-    font-size: 25px;
-    
+button {
+  background-color: transparent;
+  border: 0;
+  font-size: 25px;
 }
 
+.button-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  gap: 50px;
 
-.button-area{
-    display: flex; 
-    justify-content: flex-end;
-    margin-right: 70px;
-    gap: 50px;
-
-    i{
-        width: 40px;
-    }
+  i {
+    width: 40px;
+  }
 }
 
 .stretched-icon {
-    transform: scaleX(1.5);  /* 1.5 times the original width */
-  }
-
-.prev{
-    margin-left: auto;
+  transform: scaleX(1.5); /* 1.5 times the original width */
 }
-  
+
+.prev {
+  margin-left: auto;
+}

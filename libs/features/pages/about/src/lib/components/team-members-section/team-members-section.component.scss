@@ -1,13 +1,13 @@
 .team-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.heading{
-    // text-align: left;
-    font-size: 62px;
-    font: normal normal medium 62px/80px DM Sans;
+.heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font: normal normal medium 62px/80px DM Sans;
 }
