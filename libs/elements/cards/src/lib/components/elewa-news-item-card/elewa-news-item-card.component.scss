@@ -2,13 +2,10 @@
   list-style-type: none;
 
   .list-section {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-
     .content {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 3rem;
       padding: 2rem 0;
 
@@ -27,14 +24,14 @@
         font-weight: bold;
         text-align: center;
       }
-    }
 
-    .read-more {
-      font-weight: bold;
-      font-size: 16px;
-      color: var(--elewa-website-news-item-primary-color);
-      border: none;
-      background: none;
+      .read-more {
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--elewa-website-news-item-primary-color);
+        border: none;
+        background: none;
+      }
     }
   }
 }
