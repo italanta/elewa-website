@@ -1,0 +1,73 @@
+/* Styling for the content-main container */
+.content-main {
+top: 0px;
+left: 0px;
+width: 1920px;
+height: 1082px;
+background: #FCF6E4 0% 0% no-repeat padding-box;
+opacity: 1;
+font-size: medium;
+margin-left: 100px;
+}
+
+/* Styling for the hero-content */
+.hero-content {
+  text-align: start;
+  margin: 100px; /* Add margin as needed */
+}
+/* Styling for the text-section container */
+.text-section {
+width: 1200px;
+  /* Add additional styles for the text section as needed */
+}
+
+/* Styling for the rectangles container */
+.rectangles {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for individual feat-one, feat-two, and feat-three divs */
+.feat-one {
+  top: 737px;
+  left: 291px;
+  width: 462px;
+  height:461px;
+  /**UI Properties*/
+  background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 600px;
+  opacity: 1;
+  margin-top: 350px;
+}
+.feat-two {
+top: 504px;
+left: 830px;
+width: 462px;
+height: 694px;
+background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: multiply;
+border-radius: 600px;
+opacity: 1;
+margin-top: 150px;
+
+}
+.feat-three {
+top: 276px;
+left: 1369px;
+width: 462px;
+height: 922px;
+background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: multiply;
+border-radius: 600px;
+opacity: 1;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .content-main {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  /* Add additional styles for smaller screens as needed */
+}
