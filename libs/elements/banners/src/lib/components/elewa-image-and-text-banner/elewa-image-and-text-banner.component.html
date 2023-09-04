@@ -1,1 +1,23 @@
-<p>elewa-image-and-text-banner works!</p>
+<div class="banner-container">
+    <div class="banner">
+
+    <div class="banner-left" [ngStyle]="getPositionStyle(imageAndText.imagePosition)">
+        <div class="banner-image">
+        <elewa-website-image-container
+            [imageConfig]="imageAndText.image"
+        >
+        </elewa-website-image-container>
+        </div>
+    </div>
+
+    <div class="banner-right">
+        <div class="banner-content">
+            <elewa-website-elewa-text-content-item
+                [content]="imageAndText.content"
+            >
+            </elewa-website-elewa-text-content-item>
+        </div>
+    </div>
+    </div>
+
+</div>

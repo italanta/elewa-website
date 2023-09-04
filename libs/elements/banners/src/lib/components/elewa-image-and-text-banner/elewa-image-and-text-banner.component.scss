@@ -1,0 +1,36 @@
+.banner-container{
+    
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the body take up the entire viewport height */
+    margin: 0;
+    padding: 50px;
+    
+}
+
+.banner{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    height:100%;
+
+}
+
+
+
+.banner-left{
+    width:50%;
+}
+
+.banner-image{
+    width: 100%;    
+   margin-left: auto;
+}
+
+.banner-right{
+    width:50%;
+}
+
+.banner-content{
+    width:100%;
+}
