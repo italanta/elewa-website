@@ -1,8 +1,9 @@
+<elewa-website-header></elewa-website-header>
 <section class="contact-form">
     <div class="contact-text">
         <h2>Contact</h2>
-        <p>Looking for a quick answer to your question? Check out our <strong>FAQs.</strong></p>
-        <p>For everything else, drop us a line and we'll get back to you.</p>
+        <p>Looking for a quick answer to your <br>question? Check out our <strong>FAQs.</strong></p>
+        <p>For everything else, drop us a line <br>and we'll get back to you.</p>
     </div>
     <div class="social-icons">
         <a href="#" class="fa-brands fa-facebook"></a>
@@ -12,8 +13,8 @@
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <label for="name">Your name</label>
         <input type="text" id="name" formControlName="name" />
-        <label for="name">Company name</label>
-        <input type="text" id="name" formControlName="name" />   
+        <label for="company">Company name</label>
+        <input type="text" id="company" formControlName="company" />   
         <label for="email">E-mail</label>
         <input type="email" id="email" formControlName="email" />
         <select id="reason" formControlName="reason">
@@ -21,8 +22,8 @@
         </select>
         <label for="message">Message</label>
         <textarea id="message" formControlName="message"></textarea>
+        <div class="privacy-policy">
+            <p>By clicking the Submit button you agree to <br>our <strong>Privacy Policy</strong> terms</p>
+        </div>
     </form>
-    <div class="privacy-policy">
-        <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms</p>
-    </div>
 </section>
