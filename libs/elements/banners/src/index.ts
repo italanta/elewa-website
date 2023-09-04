@@ -1,1 +1,1 @@
-export * from './lib/elements-banners.module';
+export * from './lib/banners.module';
