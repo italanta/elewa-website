@@ -22,7 +22,7 @@
     margin-right: 500px;
     margin-top: 60px;
     font-family: Arial, sans-serif;
-}
+  }
 
 label {
     display: block;
@@ -46,8 +46,12 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus,
 select:focus {
-    border-bottom: 2px solid #007bff; /* Change the color to your preference */
+    border-bottom: 2px solid var(--elewa-website-contact-focus-color); 
     outline: none;
+}
+
+#reason {
+  font-size: 15px;
 }
 
 .privacy-policy {
@@ -65,10 +69,17 @@ select:focus {
       a {
         font-size: 24px;
         margin-top: 440px;
-        color: black;
-        margin-right: 320px; /* Add margin to create space between links */
-        margin-left: -300px; /* Move links to the left */
+        color: var(--elewa-website-color-primary-black);
+        margin-right: 310px; 
+        margin-left: -280px;
+        text-decoration: none;
     }    
   }
+  .send-slider-button {
+    position: absolute;
+    top: 525px;
+    right: 206px; 
+}
+
 }
 

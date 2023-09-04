@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
+
 @Component({
   selector: 'elewa-website-contact-page-form-section',
   templateUrl: './contact-page-form-section.component.html',
@@ -18,11 +20,12 @@ export class ContactPageFormSectionComponent {
       message: ['', Validators.required],
     });
   }
-
   onSubmit() {
-    // Add logic to handle form submission here
-    // You can access form values using this.contactForm.value
-    // Don't forget to unsubscribe from any observables if needed.
+    /**Form submission functionality */
+  }
+
+  sendButtonData: SliderButtonData = {
+    text: "Send message"
   }
 }
 
