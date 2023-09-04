@@ -5,10 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './home-hero-section.component.html',
   styleUrls: ['./home-hero-section.component.scss'],
 })
-export class HomeHeroSectionComponent {
+export class HomeHeroSectionComponent{
+
   //Wording of the button
   buttonData = {
-    text: 'Unlock your potential ',
+    text: 'Unlock your potential ', 
   }
 
   // Wording of the text section
@@ -16,4 +17,5 @@ export class HomeHeroSectionComponent {
     title: "Training at scale",
     subtitle: `Human-centered, meaningful and enjoyable`
   }
+
 }
