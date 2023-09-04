@@ -4,7 +4,7 @@
     <!-- Container for the image -->
     <div class="image-container">
 
-      <!-- Display image container be re-using image-container component -->
+      <!-- Display image container by re-using image-container component -->
       <elewa-website-image-container [imageConfig]="ImageAndText.image" class="image-container"
 
         ngSrcset="100w, 200w, 300w"
@@ -17,9 +17,11 @@
 
     <!-- Container for the text content -->
     <div class="text-container">
-      <h2>{{ ImageAndText.content.title }}</h2>
-      
-      <!-- Angular *ngFor directive to iterate through and display multiple descriptions -->
-      <p *ngFor="let description of ImageAndText.content.descriptions">{{ description }}</p>
+
+      <!-- Render text content by re-using text-content-item component and pass its input -->
+      <elewa-website-elewa-text-content-item 
+        [content]="ImageAndText.content"
+      >
+    </elewa-website-elewa-text-content-item>
     </div>
   </div>
