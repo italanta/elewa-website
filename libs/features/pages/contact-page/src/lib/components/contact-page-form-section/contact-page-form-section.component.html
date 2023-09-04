@@ -1,1 +1,28 @@
-<p>contact-page-form-section works!</p>
+<section class="contact-form">
+    <div class="contact-text">
+        <h2>Contact</h2>
+        <p>Looking for a quick answer to your question? Check out our <strong>FAQs.</strong></p>
+        <p>For everything else, drop us a line and we'll get back to you.</p>
+    </div>
+    <div class="social-icons">
+        <a href="#" class="fa-brands fa-facebook"></a>
+        <a href="#" class="fa-brands fa-instagram"></a>
+        <a href="#" class="fa-brands fa-linkedin"></a>
+    </div>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label for="name">Your name</label>
+        <input type="text" id="name" formControlName="name" />
+        <label for="name">Company name</label>
+        <input type="text" id="name" formControlName="name" />   
+        <label for="email">E-mail</label>
+        <input type="email" id="email" formControlName="email" />
+        <select id="reason" formControlName="reason">
+            <option value="general">Select option</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" formControlName="message"></textarea>
+    </form>
+    <div class="privacy-policy">
+        <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms</p>
+    </div>
+</section>
