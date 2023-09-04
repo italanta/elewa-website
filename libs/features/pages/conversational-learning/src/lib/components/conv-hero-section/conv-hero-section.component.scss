@@ -1,0 +1,70 @@
+.conv-hero-section {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 60%;
+    margin-left: 160px;
+    flex-direction: column;
+    z-index: 1000;
+
+}
+
+.back {
+    z-index: 1;
+
+}
+
+.block1 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%) matrix(0, 1, -1, 0, 0, 0);
+    /* Combine translation and matrix transformation */
+
+    width: 380px;
+    height: 700px;
+
+    /* UI Properties */
+    background: transparent linear-gradient(180deg, var(--elewa-website-conversational-learning-bg-color-1) 0%, var(--elewa-website-conversational-learning-bg-color-2) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 600px;
+    opacity: 1;
+}
+
+.block2 {
+    position: fixed;
+    bottom: -80%;
+    right: 10%;
+    margin: 20px;
+
+    transform: translate(-50%, -50%) matrix(0, -1, 1, 0, 0, 0);
+    /* Combine translation and matrix transformation */
+
+    width: 380px;
+    height: 700px;
+
+
+    /* UI Properties */
+    background: transparent linear-gradient(180deg, var(--elewa-website-conversational-learning-bg-color-1) 0%, var(--elewa-website-conversational-learning-bg-color-2) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 600px;
+    opacity: 1;
+}
+
+@media (max-width: 1040px) {
+
+    .block1 {
+
+        top: 50%;
+        left: 45%;
+
+    }
+
+    .block2 {
+        bottom: -80%;
+        right: -30%;
+    }
+}
+
+
+.conv-button {
+    margin-top: 30px;
+}
