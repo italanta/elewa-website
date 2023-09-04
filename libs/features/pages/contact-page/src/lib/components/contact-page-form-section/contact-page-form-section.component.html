@@ -8,7 +8,7 @@
     <div class="social-icons">
         <a href="#" class="fa-brands fa-facebook"></a>
         <a href="#" class="fa-brands fa-instagram"></a>
-        <a href="#" class="fa-brands fa-linkedin"></a>
+        <a href="#" class="fa-brands fa-linkedin-in"></a>
     </div>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <label for="name">Your name</label>
@@ -17,7 +17,7 @@
         <input type="text" id="company" formControlName="company" />   
         <label for="email">E-mail</label>
         <input type="email" id="email" formControlName="email" />
-        <select id="reason" formControlName="reason">
+        <select id="selection" formControlName="reason">
             <option value="general">Select option</option>
         </select>
         <label for="message">Message</label>
@@ -26,7 +26,9 @@
             <p>By clicking the Submit button you agree to <br>our <strong>Privacy Policy</strong> terms</p>
         </div>
         <div class="send-slider-button">
-            <elewa-website-slider-button [buttonData]="sendButtonData" class="slider-button"></elewa-website-slider-button>
+            <elewa-website-slider-button [buttonData]="sendButtonData" class="slider-button">
+                {{ isMessageSent ? 'Message sent' : sendButtonData.text }}
+            </elewa-website-slider-button>
         </div>
     </form>
 </section>

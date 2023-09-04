@@ -3,83 +3,132 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-
+  
   .contact-text {
-      flex: 1.9;
-      margin-left: 65px;
-      margin-top: 60px;
+    flex: 1.9;
+    margin-left: 65px;
+    margin-top: 60px;
 
-      h2 {
-          font-size: 35px;
-      }
+    h2 {
+      font-size: 35px;
+    }
 
-      p {
-          margin: 10px 0;
-      }
+    p {
+      margin: 10px 0;
+    }
   }
-
+  
   form {
     margin-right: 500px;
     margin-top: 60px;
-    font-family: Arial, sans-serif;
   }
-
-label {
+  
+  label {
     display: block;
     margin-bottom: 1px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
     width: 200%;
-    padding: 5px;
+    padding: 2px;
     margin-bottom: 20px;
     border: none;
     border-bottom: 2px solid #ccc;
     background-color: transparent;
     transition: border-bottom 0.3s ease;
-}
+  }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus,
-select:focus {
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus,
+  select:focus {
     border-bottom: 2px solid var(--elewa-website-contact-focus-color); 
     outline: none;
-}
+  }
 
-#reason {
-  font-size: 15px;
-}
+  #selection {
+    font-size: 15px;
+    padding: 2px;
+  }
 
-.privacy-policy {
+  .privacy-policy {
     margin-top: 20px;
     font-size: 12px;
-}
-
+  }
 
   .social-icons {
+    flex: 1;
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+
+    a {
+      font-size: 24px;
+      margin-top: 418px;
+      color: var(--elewa-website-color-primary-black);
+      margin-right: 310px; 
+      margin-left: -280px;
+      text-decoration: none;
+    }    
+  }
+  
+  .send-slider-button {
+    position: absolute;
+    top: 495px;
+    right: 220px; 
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-form {
+    flex-direction: row;
+    align-items: center;
+
+    .contact-text {
+      flex: 2;
+      margin-left: 50px;
+
+      h2{
+        font-size: 30px;
+      }
+    }
+
+    form {
+      margin-right: 50px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+    }
+
+    .social-icons {
       flex: 1;
       display: flex;
       flex-direction: row; 
       align-items: flex-start;
 
       a {
-        font-size: 24px;
-        margin-top: 440px;
-        color: var(--elewa-website-color-primary-black);
-        margin-right: 310px; 
-        margin-left: -280px;
-        text-decoration: none;
-    }    
+        margin-top: 350px;
+        margin-right: 300px;
+        margin-left: -290px;
+      }
+    }
+
+    .privacy-policy {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    .send-slider-button {
+      position: absolute;
+      top: 525px;
+      left: 440px; 
+    }
   }
-  .send-slider-button {
-    position: absolute;
-    top: 525px;
-    right: 206px; 
 }
-
-}
-

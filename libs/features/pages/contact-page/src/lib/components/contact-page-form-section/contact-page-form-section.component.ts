@@ -10,6 +10,7 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 })
 export class ContactPageFormSectionComponent {
   contactForm: FormGroup;
+  isMessageSent = false; /**Property to track button state */ 
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -22,6 +23,7 @@ export class ContactPageFormSectionComponent {
   }
   onSubmit() {
     /**Form submission functionality */
+    this.isMessageSent = true;
   }
 
   sendButtonData: SliderButtonData = {
