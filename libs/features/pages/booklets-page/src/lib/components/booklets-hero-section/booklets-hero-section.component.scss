@@ -24,7 +24,7 @@
         right: 0;
         max-width: 70%;
         height: 400px; 
-        background: transparent linear-gradient(111deg, var(--elewa-website-booklets-hero-section-curve-color) 0%, transparent 100%) 0% 0% no-repeat padding-box; /* Set the background color to the desired color */
+        background: transparent linear-gradient(111deg, var(--elewa-website-booklets-hero-section-curve-color) 0%, transparent 100%) 0% 0% no-repeat padding-box;
         opacity: 0.87;
         clip-path: polygon(
             0% 100%, 100% 100%, 100% 20%, 97% 16%, 94% 12%, 92% 10%, 90% 8%, 88% 6%, 86% 4%, 84% 3%, 82% 2%, 80% 1%, 78% 1%, 76% 0%, 74% 1%, 72% 1%, 70% 2%, 68% 3%, 66% 4%, 64% 6%, 62% 8%, 60% 10%, 58% 12%, 56% 16%, 54% 20%, 52% 22%, 50% 26%, 48% 30%, 46% 34%, 44% 38%, 42% 42%, 40% 46%, 38% 50%, 36% 54%, 34% 58%, 32% 62%, 30% 66%, 28% 70%, 26% 74%, 24% 78%, 22% 80%, 20% 84%, 18% 88%, 16% 92%, 14% 94%, 12% 96%, 10% 97%, 8% 98%, 6% 99%, 4% 99%, 2% 100%, 0% 100%
@@ -32,5 +32,40 @@
         shape-outside: polygon(
             0% 100%, 100% 100%, 100% 20%, 97% 16%, 94% 12%, 92% 10%, 90% 8%, 88% 6%, 86% 4%, 84% 3%, 82% 2%, 80% 1%, 78% 1%, 76% 0%, 74% 1%, 72% 1%, 70% 2%, 68% 3%, 66% 4%, 64% 6%, 62% 8%, 60% 10%, 58% 12%, 56% 16%, 54% 20%, 52% 22%, 50% 26%, 48% 30%, 46% 34%, 44% 38%, 42% 42%, 40% 46%, 38% 50%, 36% 54%, 34% 58%, 32% 62%, 30% 66%, 28% 70%, 26% 74%, 24% 78%, 22% 80%, 20% 84%, 18% 88%, 16% 92%, 14% 94%, 12% 96%, 10% 97%, 8% 98%, 6% 99%, 4% 99%, 2% 100%, 0% 100%
         );
+    }
+    
+    @media (max-width: 768px) {
+        .booklets-text {
+            width: 70%;
+            top: 20px;
+            margin-left: 30px;
+            z-index: 1;
+        }
+
+        .booklets-button {
+            margin-top: 430px;
+            margin-left: 40px;
+        }
+
+        .curved-shape {
+            height: 300px;
+        }  
+    }
+
+    @media (max-width: 480px) {
+        .booklets-text {
+            width: 90%;
+            margin-left: 30px;
+            z-index: 2;
+        }
+
+        .booklets-button {
+            margin-top: 430px; 
+            margin-left: 45px;
+        }
+
+        .curved-shape {
+            height: 100px;
+        }
     }
 }
