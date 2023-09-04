@@ -10,6 +10,11 @@ import { ImageAndText} from '@elewa-website/models/schema/ui/image-and-text';
 export class ElewaImageAndTextBannerComponent {
 
   /* input property now is ImageAndText */
-  @Input() imageAndText!: ImageAndText;
+  @Input() ImageAndText!: ImageAndText;
+
+    // / *Function to determine layout order 
+   getLayoutClass(): string {
+    return this.ImageAndText.imagePosition === 'left' ? 'left-image' : 'right-image';
+  }
   
 }
