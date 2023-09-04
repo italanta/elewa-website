@@ -10,9 +10,20 @@ import { AboutPageComponent } from './main/about-page/about-page.component';
 
 import { AboutRoutingModule } from './about.routing';
 import { TeamMembersSectionComponent } from './components/team-members-section/team-members-section.component';
+import { AboutHeroSectionComponent } from './components/about-hero-section/about-hero-section.component';
 
 @NgModule({
-  imports: [CommonModule, AboutRoutingModule, ElementsLayoutCarouselModule, CardsModule, TranslocoModule],
-  declarations: [AboutPageComponent, TeamMembersSectionComponent],
+  imports: [
+    CommonModule,
+    AboutRoutingModule,
+    ElementsLayoutCarouselModule,
+    CardsModule,
+    TranslocoModule,
+  ],
+  declarations: [
+    AboutPageComponent,
+    TeamMembersSectionComponent,
+    AboutHeroSectionComponent,
+  ],
 })
 export class FeaturesPagesAboutModule {}
