@@ -55,7 +55,7 @@ form
 input, select
 {
     border: none;
-    border-bottom: solid #ccc thin;
+    border-bottom: solid var(--elewa-website-contact-form-border-color) 2px;
     margin-bottom: 35px;
     background-color: transparent;
     padding-bottom: 1rem;
@@ -63,7 +63,7 @@ input, select
 }
 
 input::placeholder{
-    color: black;
+    color: var(--elewa-website-color-primary-black);
 }
 
 .button
