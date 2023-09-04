@@ -1,6 +1,6 @@
 .content-dev {
     height: 100vh;
-    background-color: #FCF6E4;;
+    background-color: var(--elewa-website-hero-section-background-color);
     width: 100vw;
     overflow: hidden; /* Hides the overflowing content */
     position: relative; 
@@ -9,37 +9,68 @@
 
 .dev-hero-section{
     position: absolute;
-    z-index: 5999999999;
-    
+    z-index: 5999999999;    
+}
+
+
+.hero-text{
+
+    h1{
+        font: normal normal medium 82px/110px DM Sans;
+    }
+
+    p{
+        font: normal normal normal 32px/42px DM Sans;
+    }
+}
+
+
+.designs {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width:100%;
+    height: 100%;
+
+}
+
+.designs-cont{
+    display: flex;
+    position: absolute;
+    bottom:0;
+
 }
 
 .slider-button{
-    margin-top: 30px;
+    margin-top: 57px;
     z-index: 5999999999090999999999999999;
 }
 
 .cont-one{
     background-color: #F2CF73;
-    position: absolute;
+    margin-top: auto;
+    mix-blend-mode: multiply;   
     z-index: 2;
     clip-path: inset(0 0 0 round 30vh);
-    background: linear-gradient(to bottom, rgba(242, 207, 115, 1), rgba(242, 207, 115, 0));
+    background: var(--elewa-website-hero-section-cont-designs-background)
 }
 
 .cont-two{
     background-color: #F2CF73;
-    position: absolute;
+    margin-top: auto;
+    mix-blend-mode: multiply;    
     z-index: 2;
     clip-path: inset(0 0 0 round 30vh);
-    background: linear-gradient(to bottom, rgba(242, 207, 115, 1), rgba(242, 207, 115, 0));
+    background: var(--elewa-website-hero-section-cont-designs-background)
 }
 
 .cont-three{
     background-color: #F2CF73;
-    position: absolute;
+    margin-top: auto;
+    mix-blend-mode: multiply;  
     z-index: 2;
     clip-path: inset(0 0 0 round 30vh);
-    background: linear-gradient(to bottom, rgba(242, 207, 115, 1), rgba(242, 207, 115, 0));
+    background: var(--elewa-website-hero-section-cont-designs-background)
 }
 
 @media (max-width: 479px) {
@@ -50,26 +81,34 @@
         
     }
 
+    .designs {
+        margin-left: 10px;    
+    }
+
+    .designs-cont{
+        gap: 50px;
+    }
+
     .slider-button{
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .cont-one{
-        display:none;
-
+        height: 250px;
+        bottom: -80px;
+        width: 250px;
     }
 
     .cont-two{
-        display:none;
-
+        height: 400px;
+        bottom: -80px;
+        width: 250px;
     }
 
     .cont-three{
-        height: 450px;
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 600px;
         bottom: -80px;
-        width: 100%;     
+        width: 250px;       
     }
 
 }
@@ -83,31 +122,34 @@
         
     }
 
+    .designs {
+        margin-left: 10px;    
+    }
+
+    .designs-cont{
+        gap: 100px;
+    }
+
     .slider-button{
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .cont-one{
-        // display:none;
-        height: 230px;
-        margin-left: 70px;
+        height: 250px;
         bottom: -80px;
-        width: 230px;
-
+        width: 250px;
     }
 
     .cont-two{
-       
         height: 400px;
-        margin-left: 400px;
         bottom: -80px;
-        width: 300px;
-
+        width: 250px;
     }
 
     .cont-three{
-        display:none;
-    
+        height: 600px;
+        bottom: -80px;
+        width: 250px;       
     }
 
 }
@@ -123,29 +165,34 @@
         
     }
 
+    .designs {
+        margin-left: 150px;    
+    }
+
+    .designs-cont{
+        gap: 200px;    
+    }
+
     .slider-button{
         margin-top: 30px;
         z-index: 5999999999090999999999999999;
     }
 
     .cont-one{
-        height: 230px;
-        margin-left: 150px;
+        height: 250px;
         bottom: -80px;
-        width: 230px;
+        width: 250px;
     }
 
     .cont-two{
         height: 400px;
-        margin-left: 550px;
         bottom: -80px;
-        width: 300px;
+        width: 250px;
     }
 
     .cont-three{
         height: 600px;
-        margin-left: 950px;
         bottom: -80px;
-        width: 300px;       
+        width: 250px;       
     }
 }
