@@ -20,9 +20,9 @@ export class ElewaImageAndTextBannerComponent {
   getPositionStyle(imagePosition: string): { [key: string]: string } {
     switch (imagePosition) {
       case 'left':
-        return { 'order': '1' };
+        return { 'order': '0' };
       case 'right':
-        return { 'order': '2' };
+        return { 'order': '1' };
       default:
         return { 'order': '0' }; // default value
     }
