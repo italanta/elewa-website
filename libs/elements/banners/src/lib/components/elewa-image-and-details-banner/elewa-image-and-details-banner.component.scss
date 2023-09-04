@@ -1,0 +1,28 @@
+.image-details-container{
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the body take up the entire viewport height */
+    margin: 0;
+    padding: 100px;
+}
+
+.info-card-image{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    height:100%;
+}
+
+.icons-info-cards{
+    
+}
+
+.info-cards{
+    width: 100%;
+    // display: block;
+    margin-left: auto;
+}
+
+.image{
+    width:100%;
+}
