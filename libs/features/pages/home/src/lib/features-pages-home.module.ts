@@ -6,12 +6,11 @@ import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 
 import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
-import { FeaturesPagesAboutModule } from '@elewa-website/features/pages/about';
 
 import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, CardsModule, MainPageModule, FeaturesPagesAboutModule],
+  imports: [CommonModule, HomeRoutingModule, CardsModule, MainPageModule],
   declarations: [HomePageComponent, NewsSectionComponent],
   exports: [HomePageComponent],
 })

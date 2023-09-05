@@ -9,4 +9,9 @@ import { __highlightedSDGList } from '@elewa-website/data/sections';
 })
 export class SdgSectionComponent {
   @Input() sdgList: InfoCard[] = __highlightedSDGList;
+  
+  buttonData = {
+    text: 'Unlock your potential',
+    bgColor: 'transparent'
+  }
 }
