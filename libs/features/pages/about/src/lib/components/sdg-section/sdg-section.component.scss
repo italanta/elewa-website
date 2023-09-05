@@ -7,7 +7,7 @@
         display: flex;
         justify-content: space-between;
         
-        h1, p {
+        h1, span {
             display: block;
             text-align: left;
         }
@@ -16,8 +16,8 @@
             margin-right: 300px;
         }
 
-        p {
-            flex: 4;
+        span{
+            line-height: 1.5;
         }
     }
 } 
