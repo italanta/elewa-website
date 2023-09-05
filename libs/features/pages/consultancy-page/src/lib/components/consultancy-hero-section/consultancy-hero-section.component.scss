@@ -1,0 +1,29 @@
+.consult-section {
+    height: 100vh;
+    background-color: var(--elewa-website-consult-section-background-color );
+    width: 100vw;
+    overflow: hidden; /* Hides the overflowing content */
+    position: relative;
+}
+
+.hero-section{
+    position: absolute;
+    z-index: 5999999999; 
+    margin-top: 5rem;
+    // margin-left: 20rem; 
+}
+
+
+.eclipses {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+}
+
+
+.slider-button{
+    margin-top: 57px;
+    z-index: 5999999999090999999999999999;
+}
