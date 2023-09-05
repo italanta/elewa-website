@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+
+import { SubSink } from 'subsink';
+import { TranslocoService } from '@ngneat/transloco';
 
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
@@ -7,7 +10,9 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
 })
-export class MainPageComponent {
+export class MainPageComponent implements OnDestroy {
+  private _sBs = new SubSink();
+
   buttonData: SliderButtonData = {
     text: '',
 
@@ -25,4 +30,14 @@ export class MainPageComponent {
     hoverBorderColor: '',
     hoverIconBackgroundColor: '',
   };
+
+  constructor(private _translocoServ: TranslocoService) {
+    this._sBs.sink = this._translocoServ
+      .selectTranslate('ELEWA.PAGES.HOME.HERO-SECTION.BUTTON-TEXT')
+      .subscribe((val: string) => (this.buttonData.text = val));
+  }
+
+  ngOnDestroy() {
+    this._sBs.unsubscribe();
+  }
 }
