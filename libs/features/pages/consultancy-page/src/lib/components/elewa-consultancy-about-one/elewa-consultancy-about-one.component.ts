@@ -7,10 +7,9 @@ import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
   styleUrls: ['./elewa-consultancy-about-one.component.scss'],
 })
 export class ElewaConsultancyAboutOneComponent {
-  ImageAndText: ImageAndText = {
-    content: '', 
-    image: '',   
+  ImageAndText: ImageAndText ={
+    content: "",
+    image: "undefined",
     imagePosition: 'left'
   }
 }
-
