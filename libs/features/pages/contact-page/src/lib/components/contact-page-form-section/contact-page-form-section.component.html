@@ -12,29 +12,29 @@
         </section>
     </section>
 
-    <form class="contact-form" >
+    <form class="contact-form" [formGroup]="formData" (ngSubmit)="handleSubmit()" >
         <section class="form_section">
             <label for="name">Your name</label>
-            <input type="text" >
+            <input type="text" formControlName="name">
         </section>
         <section class="form_section">
             <label for="name">Company name</label>
-            <input type="text" >
+            <input type="text" formControlName="companyName" >
         </section>
         <section class="form_section">
             <label for="email">E-mail</label>
-            <input type="email" >
+            <input type="email" formControlName="email" >
         </section>    
         <section class="form_section form_select">
             <label for="option">Select option</label>
-            <select name="option" id="">
+            <select name="option" id="" formControlName="option">
                 <option>chose one </option>
                 <option>chose two</option>
             </select>
         </section>
         <section class="form_section">
             <label for="name">Message</label>
-            <input name="" id=""  />
+            <input name="" id="" formControlName="Message"  />
         </section>
         <section class="form__bottom-section">
             <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms.</p>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl,FormGroup } from '@angular/forms';
 @Component({
   selector: 'elewa-website-contact-page-form-section',
   templateUrl: './contact-page-form-section.component.html',
@@ -7,7 +8,6 @@ import { Component } from '@angular/core';
 export class ContactPageFormSectionComponent {
   buttonData = {
     text: 'Send message',
-
     /** base colors on button */
     color: '#ffffff',
     bgColor: '#292A50',
@@ -22,4 +22,18 @@ export class ContactPageFormSectionComponent {
     hoverBorderColor: '#00000',
     hoverIconBackgroundColor: '#000000',
   };
+  formData!: FormGroup;
+  
+   handleSubmit(){
+    console.log(this.formData.value)
+   }
+   buildContactForm(){
+    this.formData =new FormGroup({
+      name: new FormControl(''),
+      companyName: new FormControl(''),
+      email: new FormControl(''),
+      option: new FormControl(''),
+      message: new FormControl(''),
+    })
+   }
 }
