@@ -25,6 +25,7 @@
       "@elewa-website/data/ui/content-text": [
         "libs/data/ui/content-text/src/index.ts"
       ],
+      "@elewa-website/elements/banners": ["libs/elements/banners/src/index.ts"],
       "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
@@ -40,6 +41,9 @@
       ],
       "@elewa-website/elements/layout/images": [
         "libs/elements/layout/images/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/pages/main-page": [
+        "libs/elements/layout/pages/main-page/src/index.ts"
       ],
       "@elewa-website/elements/layout/texts": [
         "libs/elements/layout/texts/src/index.ts"
@@ -80,6 +84,9 @@
       ],
       "@elewa-website/models/schema/ui/cards": [
         "libs/models/schema/ui/cards/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/image-and-text": [
+        "libs/models/schema/ui/image-and-text/src/index.ts"
       ],
       "@elewa-website/models/schema/ui/images": [
         "libs/models/schema/ui/images/src/index.ts"
