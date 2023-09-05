@@ -27,3 +27,29 @@
     margin-top: 57px;
     z-index: 5999999999090999999999999999;
 }
+
+.circle {
+    position: absolute;
+    top: 150px;
+    left: 219px;
+    width: 1065px;
+    height: 1056px;
+    border-radius: 50%;
+    background: var(--elewa-website-consult-background);
+    mix-blend-mode: multiply;
+    opacity: 1;
+    z-index: 1;
+}
+
+.circle2 {
+    position: absolute;
+    top: 150px;
+    left: 846px;
+    width: 1065px;
+    height: 1056px;
+    border-radius: 50%;
+    background:var(--elewa-website-consult-background);
+    mix-blend-mode: multiply;
+    opacity: 1;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
