@@ -1,1 +1,45 @@
-<p>contact-page-form-section works!</p>
+<main id="container">
+    <section class="contact-left">
+        <section class="left-text">
+            <h1>Contact</h1>
+            <p>Looking for  a quick answer to your question? Check out our <strong>FAQs</strong></p>
+            <p>For everything else, drop us a line and we'll get back to you</p>
+        </section> 
+        <section class="social-icons">
+            <a class="fa-brands fa-facebook-f"></a>
+            <a class="fa-brands fa-instagram"></a>
+            <a class="fa-brands fa-linkedin"></a>
+        </section>
+    </section>
+
+    <form class="contact-form" >
+        <section class="form_section">
+            <label for="name">Your name</label>
+            <input type="text" >
+        </section>
+        <section class="form_section">
+            <label for="name">Company name</label>
+            <input type="text" >
+        </section>
+        <section class="form_section">
+            <label for="email">E-mail</label>
+            <input type="email" >
+        </section>    
+        <section class="form_section form_select">
+            <label for="option">Select option</label>
+            <select name="option" id="">
+                <option>chose one </option>
+                <option>chose two</option>
+            </select>
+        </section>
+        <section class="form_section">
+            <label for="name">Message</label>
+            <input name="" id=""  />
+        </section>
+        <section class="form__bottom-section">
+            <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms.</p>
+           <elewa-website-slider-button  class="button" [buttonData]="buttonData"></elewa-website-slider-button>
+        </section>
+    </form>
+
+</main>
