@@ -1,1 +1,20 @@
-<p>consultancy-hero-section works!</p>
+<div class="consultancy-main">
+  <div class="hero-section">
+    <elewa-website-header></elewa-website-header>
+
+    <div class="text-section">
+      <elewa-website-elewa-text-section
+        [herotexts]="heroTextData"
+      ></elewa-website-elewa-text-section>
+      <!-- Circular background elements -->
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+
+      <div class="button-container">
+        <elewa-website-slider-button
+          [buttonData]="sliderButtonData"
+        ></elewa-website-slider-button>
+      </div>
+    </div>
+  </div>
+</div>
