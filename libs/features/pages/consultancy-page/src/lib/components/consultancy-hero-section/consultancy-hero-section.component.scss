@@ -1,0 +1,88 @@
+// Style the consultancy element
+.container {
+  position: relative;
+  justify-content: center;
+  background: rgba(219, 194, 245, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  overflow-y: auto;
+}
+
+.constant-hero-section {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%; // full-width on smaller screens
+  margin-left: 0; // Remove the left margin
+  flex-direction: column;
+  z-index: 1000;
+  margin-top: 0;
+
+  @media (min-width: 768px) {
+    width: 50%; // Adjust the width for larger screens
+    margin-left: 160px; // Add back the left margin for larger screens
+  }
+}
+
+
+.constant-button {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  /* Adjust the distance from the bottom as needed */
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+
+  }
+}
+
+.bg-blocks {
+  z-index: -1;
+}
+
+.block1,
+.block2 {
+  position: fixed;
+  overflow: hidden;
+  background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  opacity: 1;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  &.block1 {
+    top: 70%;
+    left: 45%;
+    // Adjust the rotation angle as needed
+    transform: translate(-50%, -50%) rotate(-30deg);
+
+    @media screen and (max-width: 768px) {
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%) rotate(-15deg);
+    }
+  }
+
+  &.block2 {
+    top: 23%;
+    bottom: -1%;
+    right: 10%;
+    margin: 20px;
+    // Adjust the rotation angle as needed
+    transform: matrix(0, -1, 1, 0, 0, 0);
+
+    @media screen and (max-width: 768px) {
+      top: 50%;
+      right: -60%;
+      transform: translate(-50%, -50%) rotate(-60deg);
+    }
+  }
+}
