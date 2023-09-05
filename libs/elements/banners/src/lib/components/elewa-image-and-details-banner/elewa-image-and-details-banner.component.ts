@@ -17,14 +17,14 @@ export class ElewaImageAndDetailsBannerComponent {
    * @returns {{ [key: string]: string }} - An object representing CSS styles.
    */
 
-  getPositionStyle(imagePosition: string): { [key: string]: string } {
+  getPositionStyle(imagePosition: string) :string  {
     switch (imagePosition) {
       case 'left':
-        return { 'order': '0' };
+        return "info-card-image-left";
       case 'right':
-        return { 'order': '1' };
+        return "info-card-image-right";
       default:
-        return { 'order': '0' }; // default value
+        return ""; // default value
     }
   }
   

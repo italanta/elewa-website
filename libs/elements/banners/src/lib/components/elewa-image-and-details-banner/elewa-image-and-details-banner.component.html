@@ -1,7 +1,7 @@
 <div class="image-details-container">
-    <div class="info-card-image">
+    <div class="info-card-image"[ngClass]="getPositionStyle(imageAnddetails.imagePosition)">
 
-        <div class="image" [ngStyle]="getPositionStyle(imageAnddetails.imagePosition)">
+        <div class="image" >
             <elewa-website-image-container
                 [imageConfig]="imageAnddetails.image"
             >            

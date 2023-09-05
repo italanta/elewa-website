@@ -6,8 +6,18 @@
     padding: 100px;
 }
 
-.info-card-image{
+.info-card-image-left{
     display: flex;
+    flex-direction: row; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    height:100%;
+
+}
+
+.info-card-image-right{
+    display: flex;
+    flex-direction: row-reverse; 
     justify-content: center; /* Center horizontally */
     align-items: center; 
     height:100%;
@@ -25,4 +35,24 @@
 
 .image{
     width:100%;
+}
+
+@media (max-width:481px){
+    .info-card-image-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center horizontally */
+
+    }
+    
+    .info-card-image-right{
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .image-details-container{
+        margin: 0;
+        padding: 20px;
+    }
+
 }
