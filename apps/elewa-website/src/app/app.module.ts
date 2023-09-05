@@ -7,6 +7,8 @@ import { TranslocoRootModule } from './transloco-root.module';
 
 import { AppRoutingModule } from './app.routing';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -14,6 +16,7 @@ import { AppRoutingModule } from './app.routing';
     AppRoutingModule,
     HttpClientModule,
     TranslocoRootModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
