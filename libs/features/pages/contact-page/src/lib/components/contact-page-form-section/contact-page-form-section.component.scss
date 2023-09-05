@@ -4,6 +4,10 @@
     display: flex;
     height: 100vh;
     justify-content: center;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
 .left-side,
@@ -13,11 +17,15 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
+    
 }
 
 .left-side
 {
     width: 30%;
+    @media screen and (max-width:768px) {
+        width: auto;
+    }
 }
 
 
@@ -43,6 +51,9 @@ img
 {
     padding-right: 30px;
     filter: invert(1);
+    @media screen and (max-width:768px) {
+        padding-top: 50px;
+    }
 }
 
 form
@@ -71,9 +82,16 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+    }
 }
 
 .button p
 {
     padding-right: 10rem;
+    @media screen and (max-width:768px) {
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
 }
