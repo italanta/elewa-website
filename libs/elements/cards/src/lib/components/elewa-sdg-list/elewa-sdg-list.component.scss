@@ -1,0 +1,62 @@
+.elewa-sdg-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px; // Increase gap for better spacing
+  max-width: 100%;
+  border-radius: 40px;
+  background-color: var(--elewa-website-sdg-background-color);
+  color: var(--elewa-website-color-primary-white);
+  margin: 70px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); // Change to two columns on screens <= 1024px
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr); // Change to one column on screens <= 768px
+  }
+
+  .elewa-sdg-list-card {
+    width: 100%; // Occupy full width by default
+    margin: 10px 5px;
+    padding: 20px; // Reduced padding for smaller screens
+    text-align: left;
+    display: flex;
+    align-items: flex-start; // Align items to the top
+    margin-left: 10px; // Reduced margin for smaller screens
+    height: auto; // Allow height to adjust as needed
+    height: 180px;
+
+    .fas {
+      width: 20px;
+      height: 15px;
+      margin-top: 6px;
+      margin-right: 15px; // Reduced margin for smaller screens
+    }
+
+    .elewa-sdg-list-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .elewa-sdg-list-title {
+        font-size: 24px;
+        font-family: "DMSans-Medium";
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex; // Display flex to align icon and title
+        align-items: center; // Center vertically
+      }
+
+      .elewa-sdg-list-description {
+        font-size: 18px;
+        font-family: "DMSans-Regular";
+        overflow: hidden;
+        text-overflow: ellipsis; // Add ellipsis to description text
+        width: 90%; // Allow description width to adjust
+      }
+    }
+  }
+}
