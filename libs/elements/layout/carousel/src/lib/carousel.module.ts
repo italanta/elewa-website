@@ -12,4 +12,4 @@ import { NextDirective } from './directives/next.directive';
   declarations: [CarouselComponent, NextDirective, PrevDirective],
   exports: [CarouselComponent],
 })
-export class ElementsLayoutCarouselModule {}
+export class CarouselModule {}
