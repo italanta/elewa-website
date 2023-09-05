@@ -1,0 +1,11 @@
+<div class="sdg-section">
+  <div class="sdg-list-container" *ngFor="let item of sdgList">
+    <elewa-website-info-card [cardsData]="item"></elewa-website-info-card>
+  </div>
+
+  <div class="btn-container">
+    <elewa-website-slider-button
+      [buttonData]="buttonData"
+    ></elewa-website-slider-button>
+  </div>
+</div>
