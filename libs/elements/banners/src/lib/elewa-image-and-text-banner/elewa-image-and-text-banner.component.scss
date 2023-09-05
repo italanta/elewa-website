@@ -6,7 +6,6 @@
     align-items: center;
     background-color: var(--backgroundColor, #F4EDFD);
     padding: 24px;
-    gap: 16px;
     margin-inline: 200px;
     margin-block: 24px;
     max-width: 100%;
@@ -28,15 +27,41 @@
     &:hover {
       transform: translateY(-5px);
     }
+
+    /* image-position for the main container */
+
+      /* normal row-order for the left alignment */
+      &.left-image {
+        flex-direction: row; 
+
+        //Rensponse
+        @media (max-width:768px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      
+      /* Reverse the raw-order for the right alignment */
+      &.right-image {
+       flex-direction: row-reverse; 
+
+       //Responsiveness at righted image
+       @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      }
+      
+      }
   
+    // image-container + its responsivenss
     .image-container {
       img {
         display: block;
-        max-width: 300px;
+        max-width: 500px;
         height: auto;
         
       }
-  
       @media (max-width:768px) 
       {
         max-width: 300px;
@@ -44,28 +69,15 @@
       }
     }
   
+    //Text container + its responsivenss
     .text-container {
-      max-width: 300px;
-      height: auto;
-  
+      max-width: 400px;
+      height: auto; 
+      text-align: auto;
+
       @media (max-width:768px) {
         text-align: center;
-        max-width: 300px;
-      }
-     
-
-      // image-position
-
-      /* normal order order for the left alignment */
-      &.left-image {
-        flex-direction: row; 
-      }
-      
-      /* Reverse the order for the right alignment */
-      &.right-image {
-        flex-direction: row-reverse; 
-        
-        
+        max-width: auto;
       }
     }
   }
