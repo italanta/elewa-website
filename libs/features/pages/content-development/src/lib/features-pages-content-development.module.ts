@@ -5,9 +5,10 @@ import { ContentDevelopmentPageComponent } from './main/content-development-page
 
 import { ContentDevelopmentPageRoutingModule } from './content-development.routing';
 import { ElewaContentDevAboutOneComponent } from './main/elewa-content-dev-about-one/elewa-content-dev-about-one.component';
+import { BannersModule } from '@elewa-website/elements/banners';
 
 @NgModule({
-  imports: [CommonModule, ContentDevelopmentPageRoutingModule],
+  imports: [CommonModule, ContentDevelopmentPageRoutingModule, BannersModule],
   declarations: [
     ContentDevelopmentPageComponent,
     ElewaContentDevAboutOneComponent,
