@@ -10,7 +10,9 @@ export class ConsultancyHeroSectionComponent {
   herotexts ={
     title: 'Learning design',
     description: `
-      lorem ipsum
+      Your organisation has the potential to turn every task into an oportunity to learn.
+      From growing crop, to nursing someone to good health, to developing the next-generation technology.
+      Let's work together to make the magic happen.
     `
   }
 
@@ -18,12 +20,7 @@ export class ConsultancyHeroSectionComponent {
     text: 'Unlock your potential ', // Fill the require
     bgColor: 'black',
     color: 'white',
-    // iconBackgroundColor: 'white',
-    // hoverIconColor: 'black',
-    // hoverIconackgroundColor: 'black',
     hoverBgColor: 'transparent',
-    // hoverColor: 'black',
-    // iconColor: 'black'
   }
 
 
