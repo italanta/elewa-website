@@ -1,1 +1,19 @@
-<p>elewa-consultancy-about-one works!</p>
+<div class="image-text-banner" [ngClass]="getLayoutClass()">
+  <div class="image-container">
+    <!-- Check if ImageAndText.image is defined -->
+    <img
+      *ngIf="ImageAndText?.image"
+      [src]="ImageAndText.image.imageSrc"
+      [alt]="ImageAndText.image.title"
+      [style.max-width.px]="
+        ImageAndText.image.maxWidth ? ImageAndText.image.maxWidth : undefined
+      "
+    />
+  </div>
+  <div class="text-container">
+    <!-- Use content -->
+    <elewa-website-elewa-text-content-item
+      [content]="content"
+    ></elewa-website-elewa-text-content-item>
+  </div>
+</div>
