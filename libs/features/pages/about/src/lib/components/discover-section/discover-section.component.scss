@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  place-content: center;
+  min-height: 90vh;
+  line-height: 1.1;
+  letter-spacing: 1.1;
+  background-color: var(--elewa-website-homepage-background-color);
+
+  p {
+    margin: 0;
+    font-size: 6.2rem;
+    text-align: center;
+    color: var(--elewa-website-color-primary-purple);
+  }
+
+  .text-bold {
+    font-weight: bold;
+  }
+}
