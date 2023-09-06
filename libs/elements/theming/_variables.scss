@@ -4,31 +4,33 @@
 :root {
   /** primary colors **/
   --elewa-website-color-primary-black: #000;
+  --elewa-website-color-primary-purple: #292a50;
   --elewa-website-image-background: rgba(249, 248, 244, 1);
-  --elewa-website-window-image-container-background: #DBC2F5E6;
+  --elewa-website-window-image-container-background: #dbc2f5e6;
   --elewa-website-color-primary-white: #ffffff;
 
   /** homepage colors **/
   --elewa-website-homepage-background-color: #dbc2f5;
-  --elewa-website-news-section-bg-color: #F9F8F4;
+  --elewa-website-news-section-bg-color: #f9f8f4;
   --elewa-website-news-item-primary-color: #404040;
 
   /** conversational-learning-colors */
-  --elewa-website-conversational-learning-bg-color: #FAE9E8;
-  --elewa-website-conversational-learning-bg-color-1: #E69083;
-  --elewa-website-conversational-learning-bg-color-2: #E6908300;
+  --elewa-website-conversational-learning-bg-color: #fae9e8;
+  --elewa-website-conversational-learning-bg-color-1: #e69083;
+  --elewa-website-conversational-learning-bg-color-2: #e6908300;
+
   /** Resusable Components Variables **/
   /** card CSS variables **/
   --elewa-website-card-font-style: 'DMSans-Regular';
   --elewa-website-card-background-color: rgba(255, 255, 255, 1);
   --elewa-website-card-color: rgba(0, 0, 0, 1);
-    /** slider button styles **/
-    --elewa-website-slider-btn-width: 200px;
+
+  /** slider button styles **/
+  --elewa-website-slider-btn-width: 200px;
   --elewa-website-slider-btn-height: 40px;
   --elewa-website-slider-btn-border-radius: 29px;
 
   --elewa-website-slider-btn-padding: 5px 200px 5px 5px;
-
 
   /** slider button icon styles **/
   --elewa-website-slider-btn-icon-size: 32px;
@@ -38,13 +40,17 @@
   --elewa-website-slider-btn-icon-font-size: 1.2rem;
 
   /** elewa website header **/
-
-
   --elewa-website-header-bg-height: 5rem;
 
-  /** elewa-website footer **/
+  /** SDG List Component **/
+  --elewa-website-SDG-list-background-color: #292a50;
+  --elewa-website-info-card-max-width: 30rem;
+  --elewa-website-info-card-title-font-size: 2rem;
+  --elewa-website-info-card-text-font-size: 1.25rem;
+  --elewa-website-info-card-icon-font-size: 1.4rem;
 
-  --elewa-website-footer-background-color: #292A50;
+  /** elewa-website footer **/
+  --elewa-website-footer-background-color: #292a50;
   --elewa-website-color-footer-nav-child-items-white: rgba(255, 255, 255, 0.76);
   --elewa-website-footer-font-weight-title: 500;
   --elewa-website-footer-font-dmsans-medium: 'DMSans-Medium';
@@ -60,3 +66,4 @@
 
 
 }
+
