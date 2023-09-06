@@ -9,4 +9,4 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [FooterComponent],
   exports: [FooterComponent],
 })
-export class ElementsLayoutFooterModule {}
+export class AppFooterModule {}

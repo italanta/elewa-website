@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CardsModule } from '@elewa-website/elements/cards';
-import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
-import { AppHeaderModule } from '@elewa-website/elements/layout/header';
-import { ElementsLayoutFooterModule } from '@elewa-website/elements/layout/footer';
+import { CarouselModule } from '@elewa-website/elements/layout/carousel';
+import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 
 import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
+import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 
 import { HomeRoutingModule } from './home.routing';
 
@@ -16,11 +16,14 @@ import { HomeRoutingModule } from './home.routing';
     CommonModule,
     HomeRoutingModule,
     CardsModule,
-    AppHeaderModule,
-    ButtonsModule,
-    ElementsLayoutFooterModule,
+    CarouselModule,
+    MainPageModule,
   ],
-  declarations: [HomePageComponent, NewsSectionComponent],
+  declarations: [
+    HomePageComponent,
+    NewsSectionComponent,
+    ProjectsSectionComponent,
+  ],
   exports: [HomePageComponent],
 })
 export class FeaturesPagesHomeModule {}
