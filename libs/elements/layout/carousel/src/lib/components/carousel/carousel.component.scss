@@ -6,20 +6,27 @@
   transition: transform 0.5s;
 }
 
-button {
-  background-color: transparent;
-  border: 0;
-  font-size: 25px;
-}
-
 .button-area {
   display: flex;
   justify-content: flex-end;
   margin-right: 70px;
-  gap: 50px;
+  margin-top: 50px;
+  gap: 20px;
+
+  button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    transition: transform 1s ease;
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
 
   i {
-    width: 40px;
+    width: 20px;
   }
 }
 
