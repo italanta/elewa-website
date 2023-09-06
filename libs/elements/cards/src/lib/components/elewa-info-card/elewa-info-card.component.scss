@@ -5,6 +5,19 @@
 }
 
 .info-card {
+    height: 120px;
+    width: 630px;
+}
+
+.icon-img {
+    width: 52px;
+    height: 54px;
+    margin-right: 37px;
+}
+
+.info-card-title {
+    font-size: 24px;
+    font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
   max-width: var(--elewa-website-info-card-max-width);
 }
 

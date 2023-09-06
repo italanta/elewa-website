@@ -1,21 +1,10 @@
-<div class="card-container">
-  <div class="card">
-    <div class="card-image">
-      <img
-        [src]="project.imgSrc"
-        ngSrcset="100w, 200w, 300w"
-        sizes="(max-width: 480px) 100vw,
-        (max-width: 768px) 50vw,
-        33.3vw"
-        alt="{{ project.title }}"
-      />
-    </div>
-    <div class="card-tag">
-      <p class="card-tag-info">{{ project.tag }}</p>
-    </div>
-    <p class="card-title">{{ project.title }}</p>
-    <p class="card-description">
-      {{ project.description }}
-    </p>
+<div class="card">
+  <div class="card-image">
+    <img [src]="project.imgSrc" ngSrcset="100w, 200w, 300w" alt="{{ project.title }}" />
   </div>
+  <div class="card-tag">
+    <p class="card-tag-info">{{ project.tag }}</p>
+  </div>
+  <h3 class="card-title">{{ project.title }}</h3>
+  <p class="card-description">{{ project.description }}</p>
 </div>
