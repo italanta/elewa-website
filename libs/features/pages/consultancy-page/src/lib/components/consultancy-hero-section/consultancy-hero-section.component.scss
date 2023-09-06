@@ -1,19 +1,93 @@
-// .container{
-//   top: 0px;
-//   left: 0px;
-//   width: 1920px;
-//   height: 1082px;
-//   background: #DBC2F5 0% 0% no-repeat padding-box;
-//   opacity: 1;
+.container {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: #DBC2F5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: 1;
 
-//   .left-section{
-//     top: 229px;
-//     left: 219px;
-//     width: 1065px;
-//     height: 1056px;
-//     background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
-//     mix-blend-mode: multiply;
-//     opacity: 1;
-    
-//   }
-// }
+  .left-section {
+    top: 229px;
+    left: 219px;
+    width: 50%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 1;
+
+    .hero {
+      font-size: x-small;
+    }
+
+    .button {
+      padding-top: 50px;
+    }
+
+    @media (max-width: 1024px) {
+      /* For tablets, reduce the width and adjust positioning */
+      width: 100%;
+      left: 0;
+      top: 50px;
+      /* Adjust as needed */
+    }
+
+    @media (max-width: 768px) {
+      /* For mobile, further reduce the width and adjust positioning */
+      width: 100%;
+      left: 0;
+      top: 0;
+      /* Adjust as needed */
+    }
+  }
+
+  .art {
+    width: 1065px;
+    height: 1056px;
+
+    .circ-1,
+    .circ-2 {
+      height: 700px;
+      width: 700px;
+      border-radius: 50%;
+      position: absolute;
+      mix-blend-mode: multiply;
+      opacity: 1;
+      transform: matrix(-1, 0, 0, -1, 0, 0);
+
+      @media (max-width: 1024px) {
+        /* For tablets, reduce the size of the circles */
+        height: 400px;
+        width: 400px;
+      }
+
+      @media (max-width: 768px) {
+        /* For mobile, further reduce the size of the circles */
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    .circ-1 {
+      top: 229px;
+      left: 219px;
+      background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .circ-2 {
+      top: 229px;
+      left: 846px;
+      background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+    }
+  }
+
+  .left-section {
+    background-color: transparent;
+    padding-left: 100px;
+
+    @media (max-width: 768px) {
+      /* For mobile, remove padding and adjust positioning */
+      padding: 0;
+      left: 0;
+    }
+  }
+}
