@@ -6,7 +6,7 @@
     padding: 100px;
 }
 
-.info-card-image-left{
+.left{
     display: flex;
     flex-direction: row; 
     justify-content: center; /* Center horizontally */
@@ -15,7 +15,7 @@
 
 }
 
-.info-card-image-right{
+.right{
     display: flex;
     flex-direction: row-reverse; 
     justify-content: center; /* Center horizontally */
@@ -38,14 +38,14 @@
 }
 
 @media (max-width:481px){
-    .info-card-image-left{
+    .left{
         display: flex;
         flex-direction: column;
         justify-content: center; /* Center horizontally */
 
     }
     
-    .info-card-image-right{
+    .right{
         display: flex;
         flex-direction: column-reverse; 
     }
