@@ -1,6 +1,8 @@
 .slider-main {
   display: flex;
+  gap: 1.5rem;
   overflow: hidden;
+  width: calc(100vw - var(--elewa-website-page-padding));
   transition: transform 0.5s;
 }
 

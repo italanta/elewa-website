@@ -1,1 +1,9 @@
-<p>projects-section works!</p>
+<section class="projects-container">
+  <h2 class="title">Projects</h2>
+
+  <elewa-website-carousel>
+    <div class="item" carouselItems *ngFor="let project of projectItems">
+      <elewa-website-project-item-card [project]="project"></elewa-website-project-item-card>
+    </div>
+  </elewa-website-carousel>
+</section>

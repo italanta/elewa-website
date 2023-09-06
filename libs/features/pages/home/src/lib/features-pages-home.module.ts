@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CardsModule } from '@elewa-website/elements/cards';
+import { CarouselModule } from '@elewa-website/elements/layout/carousel';
 import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 
 import { HomePageComponent } from './main/home/home-page.component';
@@ -11,7 +12,13 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
 import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, CardsModule, MainPageModule],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    CardsModule,
+    CarouselModule,
+    MainPageModule,
+  ],
   declarations: [
     HomePageComponent,
     NewsSectionComponent,
