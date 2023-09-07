@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { __highlightedPricingList } from '@elewa-website/data/sections';
 
 import { PriceItem } from '@elewa-website/models/schema/ui/cards';
@@ -14,7 +14,9 @@ export class ElewaPriceListComponent {
   * This variable represents a list of PriceItem objects
   * that are highlighted or featured in a pricing list.
  */
-  highlightedPricingList:PriceItem[] = __highlightedPricingList;
+  @Input() highlightedPricingList: PriceItem[] = __highlightedPricingList;
+
+  // highlightedPricingList:PriceItem[] = __highlightedPricingList;
 
 
 
