@@ -13,7 +13,7 @@ export class ElewaConsultancyAboutOneComponent {
   InputData : ImageAndText = {
 
     // content Data
-    content: _imageAndTextData.contentData[1],
+    content: _imageAndTextData.contentData,
 
     // our image
     image: _imageAndTextData.imageData, 
