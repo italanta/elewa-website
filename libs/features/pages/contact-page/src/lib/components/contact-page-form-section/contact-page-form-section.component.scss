@@ -63,17 +63,30 @@ form
     padding-top: 2rem;
 }
 
-input, select
+input
 {
     border: none;
     border-bottom: solid var(--elewa-website-contact-form-border-color) 2px;
     margin-bottom: 35px;
     background-color: transparent;
     padding-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
-input::placeholder{
+select
+{
+    border: none;
+    border-bottom: solid var(--elewa-website-contact-form-border-color) 2px;
+    margin-bottom: 35px;
+    background-color: transparent;
+}
+
+label
+{
+    font-size: 1.2rem;
+}
+
+input::placeholder, select{
     color: var(--elewa-website-color-primary-black);
 }
 

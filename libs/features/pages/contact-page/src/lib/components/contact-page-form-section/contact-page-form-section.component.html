@@ -13,31 +13,28 @@
     </div>
     <div class="right-side">
         <div class="form">
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <form [formGroup]="contactForm" (ngSubmit)="handleSubmit()">
             <input
                 type="text"
-                id="name"
                 placeholder="Your name"
                 formControlName="name"
             />
             <input
                 type="text"
-                id="company"
                 placeholder="Company name"
                 formControlName="company"
             />
             <input
                 type="text"
-                id="email"
                 placeholder="E-mail"
                 formControlName="email"
             />
-            <select id="reason" formControlName="reason">
+            <label for="option">Select option</label>
+            <select formControlName="option">
                 <option value="general">Select option</option>
             </select>
             <input
                 type="text"
-                id="message"
                 placeholder="Message"
                 formControlName="message"
             />
@@ -45,7 +42,7 @@
         </div>
         <div class="button">
             <p>By clicking the Submit button you agree to <br>our <span>Privacy Policy</span> terms</p>
-            <elewa-website-slider-button [buttonData]="sendButtonData"></elewa-website-slider-button>
+            <elewa-website-slider-button [buttonData]="buttonData"></elewa-website-slider-button>
         </div>
     </div>
 </div>
