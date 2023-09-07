@@ -1,0 +1,96 @@
+.booklets-design{
+    width: 24px;
+    height: 36px;
+    margin-top: 5px;
+    border-radius: 110px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    background: transparent linear-gradient(307deg, #F2AD69 0%, #F2AD6900 100%) 0% 0% no-repeat padding-box;
+}
+
+.conversational-Learning-design{
+
+    display: flex;
+
+    .conversational-Learning-one{
+        width: 24px;
+        height: 36px;
+        margin-top: 5px;
+        transform: matrix(0, -1, 1, 0, 0, 0);
+        background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+        border-radius: 110px;
+        opacity: 1;
+    }
+    .conversational-Learning-two{
+        width: 24px;
+        height: 36px;
+        transform: matrix(0, 1, -1, 0, 0, 0);
+        background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+        border-radius: 110px;
+        opacity: 1;
+    }
+
+}
+
+.content-development-design{
+
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+
+    .content-development-one{
+        width: 17px;
+        margin-top: auto;
+        height: 16px;
+        background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 110px;
+    }
+
+    .content-development-two{
+        width: 17px;
+        margin-top: auto;
+        height: 25px;
+        background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 110px;
+        opacity: 1;
+    }
+
+    .content-development-three{
+        width: 16px;
+        height: 33px;
+        margin-top: auto;
+        background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 110px;
+        opacity: 1;
+    }
+}
+
+.cosultancy-design{
+    display: flex;
+    height: 33px;
+    margin-top: 5px;
+
+    .cosultancy-one{
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        opacity: 1;
+        border-radius: 50%;
+
+    }
+    .cosultancy-two{
+        position: absolute;
+        width: 32px;
+        margin-left: 20px;
+        height: 32px;
+        transform: matrix(-1, 0, 0, -1, 0, 0);
+        background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        opacity: 1;
+        border-radius: 50%;
+    }
+}
