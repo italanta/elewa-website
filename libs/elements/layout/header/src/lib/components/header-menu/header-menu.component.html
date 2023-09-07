@@ -1,1 +1,29 @@
-<p>header-menu works!</p>
+<div class="menu-items">
+    <div class="grid-item" [ngClass]="'active'">
+        <elewa-website-menu-item
+            [menuItem]="consultancyItem"
+        >
+        </elewa-website-menu-item>
+    </div>
+
+    <div class="grid-item">
+        <elewa-website-menu-item
+            [menuItem]="contentDevelopmentItem"
+        >
+        </elewa-website-menu-item>
+    </div>
+
+    <div class="grid-item">
+        <elewa-website-menu-item
+            [menuItem]="bookletsItem"
+        >
+        </elewa-website-menu-item>
+    </div>
+
+    <div class="grid-item">
+        <elewa-website-menu-item
+            [menuItem]="conversationalLearningItem"
+        >
+        </elewa-website-menu-item>
+    </div>
+</div>

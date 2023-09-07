@@ -1,0 +1,16 @@
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-inline: auto;
+
+
+    .grid-item {
+        padding: 20px;
+    }
+
+    .active{
+        background-color: #eaeaea;
+    }
+}
