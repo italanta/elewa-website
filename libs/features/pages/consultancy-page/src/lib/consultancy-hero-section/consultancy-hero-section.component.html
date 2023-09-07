@@ -1,18 +1,27 @@
 <div class="consultancy-main">
   <div class="hero-section">
+    <!-- Header component -->
     <elewa-website-header></elewa-website-header>
 
     <div class="text-section">
+      <!-- Custom Elewa Text Section Component -->
       <elewa-website-elewa-text-section
-        [herotexts]="heroTextData"
+        [herotexts]="heroTextData[0]"
       ></elewa-website-elewa-text-section>
+
+      <!-- Display descriptions from heroTextData -->
+      <ng-container *ngFor="let description of heroTextData[0].descriptions">
+        <p class="description-text">{{ description }}</p>
+      </ng-container>
+
       <!-- Circular background elements -->
       <div class="circle circle-1"></div>
       <div class="circle circle-2"></div>
 
+      <!-- Slider Button component with custom text -->
       <div class="button-container">
         <elewa-website-slider-button
-          [buttonData]="sliderButtonData"
+          [buttonData]="{ text: 'Unlock Your Potential' }"
         ></elewa-website-slider-button>
       </div>
     </div>
