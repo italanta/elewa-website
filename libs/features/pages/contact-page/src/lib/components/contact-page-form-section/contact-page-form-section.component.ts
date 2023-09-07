@@ -1,18 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
+import { __buttonData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-contact-page-form-section',
   templateUrl: './contact-page-form-section.component.html',
   styleUrls: ['./contact-page-form-section.component.scss'],
 })
-export class ContactPageFormSectionComponent {
-  contactForm: FormGroup;
-  isMessageSent = false; /**Property to track button state */ 
+export class ContactPageFormSectionComponent implements OnInit {
+  contactForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  isMessageSent = false; /** Property to track button state */
+
+  buttonData = __buttonData;
+
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.createContactForm();
+  }
+
+  createContactForm() {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       company: [''],
@@ -21,13 +30,11 @@ export class ContactPageFormSectionComponent {
       message: ['', Validators.required],
     });
   }
+
   onSubmit() {
-    /**Form submission functionality */
+    /** Form submission functionality */
     this.isMessageSent = true;
   }
-
-  sendButtonData: SliderButtonData = {
-    text: "Send message"
-  }
 }
+
 
