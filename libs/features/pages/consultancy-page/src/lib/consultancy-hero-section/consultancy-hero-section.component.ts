@@ -1,17 +1,17 @@
-
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ContentText } from '@elewa-website/models/schema/ui/texts';
+import { __highlightedContent as heroTextData } from '@elewa-website/models/data/sections';
 
 @Component({
   selector: 'elewa-website-consultancy-hero-section',
   templateUrl: './consultancy-hero-section.component.html',
   styleUrls: ['./consultancy-hero-section.component.scss'],
 })
-export class ConsultancyHeroSectionComponent {
-  heroTextData = {
-    title: 'Learning design',
-    description: 'Your organisation has the potential to turn every task into an opportunity to learn. From growing crops, to nursing someone to good health, to developing the next-generation technology. Let’s work together to make the magic happen.',
-  };
-  sliderButtonData = {
-    text: 'Unlock your potential',
-  };
+export class ConsultancyHeroSectionComponent implements OnInit {
+  @Input() heroTextData!: ContentText[];
+
+  ngOnInit() {
+    // Assign the imported data to heroTextData directly
+    this.heroTextData = heroTextData;
+  }
 }
