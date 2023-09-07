@@ -44,4 +44,7 @@ export class ConsultancyPageComponent {
       icon: "fas fa-chart-line",
     } 
   ];
+
+  leftCards: InfoCard[] = this.cardsData.slice(0, 4); 
+  rightCards: InfoCard[] = this.cardsData.slice(4, 7);
 }

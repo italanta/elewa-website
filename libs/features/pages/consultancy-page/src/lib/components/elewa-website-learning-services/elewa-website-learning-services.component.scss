@@ -1,0 +1,19 @@
+.learning-services{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+    h2{
+        align-items: center;
+    }
+
+    .cards { 
+        gap: 20px; 
+        padding: 12px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        //grid-template-rows: repeat(3, 2fr); 
+    }
+}
+
