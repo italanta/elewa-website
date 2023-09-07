@@ -1,46 +1,21 @@
-.inner-info-card {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-}
 
 .info-card {
-    height: 120px;
-    width: 630px;
+  display: flex;
+  gap: 3rem;
+
+  .icon-img {
+    height: 40px;
+  }
 }
 
-.icon-img {
-    width: 52px;
-    height: 54px;
-    margin-right: 37px;
-}
+.info-card-content {
+  max-width: 410px;
 
-.info-card-title {
-    font-size: 24px;
-    font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
-  max-width: var(--elewa-website-info-card-max-width);
-}
-
-i {
-  font-size: var(--elewa-website-info-card-icon-font-size);
-}
-
-.info-card-title {
-  font-size: var(--elewa-website-info-card-title-font-size);
-}
-
-.info-card-text {
-  font-size: var(--elewa-website-info-card-text-font-size);
-  opacity: 90%;
-}
-
-.info-card-icon {
-  margin-top: 0.5em;
-}
-
-@media (max-width: 1100px) {
-  .info-card {
-    max-width: none;
-    width: 100%; /* Occupy full width */
+  .info-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .info-card-text {
+    font-size: 1rem;
   }
 }
