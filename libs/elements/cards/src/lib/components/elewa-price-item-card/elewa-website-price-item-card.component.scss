@@ -1,11 +1,11 @@
 .card {
     margin: 20px; /* Add overall margin */
     border-radius: 10px;
-    // width: 40vw;
     background-color: var(--backgroundColor, #F4EDFD);
     color: var(--textColor, black);
     border: 1px solid #ccc;
     overflow: hidden; /* Prevent child overflow */
+    cursor: pointer;
 }
 
 .card-slider-button {
