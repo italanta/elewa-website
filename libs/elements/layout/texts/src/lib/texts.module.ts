@@ -12,6 +12,6 @@ import { AboutHeroSectionComponent } from './components/about-hero-section/about
     ElewaTextSectionComponent,
     AboutHeroSectionComponent,
   ],
-  exports: [ElewaTextSectionComponent],
+  exports: [ElewaTextSectionComponent,ElewaTextContentItemComponent],
 })
 export class TextsModule {}

@@ -4,9 +4,11 @@ import { CommonModule } from '@angular/common';
 import { TranslocoModule } from '@ngneat/transloco';
 
 import { CardsModule } from '@elewa-website/elements/cards';
-import { ElementsLayoutCarouselModule } from '@elewa-website/elements/layout/carousel';
+import { CarouselModule } from '@elewa-website/elements/layout/carousel';
+import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 
 import { AboutPageComponent } from './main/about-page/about-page.component';
+import { DiscoverSectionComponent } from './components/discover-section/discover-section.component';
 
 import { AboutRoutingModule } from './about.routing';
 import { TeamMembersSectionComponent } from './components/team-members-section/team-members-section.component';
@@ -15,15 +17,17 @@ import { AboutHeroSectionComponent } from './components/about-hero-section/about
 @NgModule({
   imports: [
     CommonModule,
-    AboutRoutingModule,
-    ElementsLayoutCarouselModule,
+    CarouselModule,
     CardsModule,
     TranslocoModule,
+    MainPageModule,
+    AboutRoutingModule,
   ],
   declarations: [
     AboutPageComponent,
     TeamMembersSectionComponent,
     AboutHeroSectionComponent,
+    DiscoverSectionComponent,
   ],
 })
 export class FeaturesPagesAboutModule {}
