@@ -1,8 +1,11 @@
 .consultancy-hero-section{
+    display: grid;
+    gap: 15px;
     .title {
         width: 915px;
         height: 106px;
         font-family: DMSans-Medium;
+        font-size: 82px;
         color: var(--elewa-website-color-primary-black);
     }
 
@@ -10,6 +13,7 @@
         width: 741px;
         height: 197px;
         font-family: DMSans-Regular;
+        font-size: 32px;
         color: var(--elewa-website-color-primary-black);
     }
 }
