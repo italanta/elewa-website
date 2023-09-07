@@ -1,0 +1,35 @@
+.about-hero-container {
+    display: flex;
+    // flex-direction: row;
+    /* This will place the items in a row */
+    justify-content: center;
+    /* Adjust as needed for spacing */
+    align-items: center;
+    padding: 0 100px;
+
+}
+
+
+.about-hero-text {
+    text-align: left;
+    // margin: 0 auto;
+    font: normal normal medium 82px/110px DM Sans;
+    padding: 0 10%;
+    opacity: 1;
+
+}
+
+.about-hero-image {
+    // max-width: 100%;
+    // float: left;
+
+    background: transparent no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    top: 181px;
+    left: 908px;
+    opacity: 0.85;
+    flex-direction: column;
+
+}
