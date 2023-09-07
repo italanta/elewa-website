@@ -88,6 +88,9 @@
       "@elewa-website/models/schema/ui/cards": [
         "libs/models/schema/ui/cards/src/index.ts"
       ],
+      "@elewa-website/models/schema/ui/header": [
+        "libs/models/schema/ui/header/src/index.ts"
+      ],
       "@elewa-website/models/schema/ui/image-and-text": [
         "libs/models/schema/ui/image-and-text/src/index.ts"
       ],
