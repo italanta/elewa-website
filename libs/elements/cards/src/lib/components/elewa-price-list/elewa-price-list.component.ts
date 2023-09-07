@@ -16,8 +16,4 @@ export class ElewaPriceListComponent {
  */
   @Input() highlightedPricingList: PriceItem[] = __highlightedPricingList;
 
-  // highlightedPricingList:PriceItem[] = __highlightedPricingList;
-
-
-
 }
