@@ -1,27 +1,25 @@
-.home-page {
-  height: 100vh;
-  background: var(--elewa-website-homepage-background-color);
-}
 .footer-content {
-  h4 {
-    margin: 0;
-    font-family: var( --elewa-website-footer-font-dmsans-medium);  
-    font-size: var(--elewa-website-footer-font-size-heading);
-    font-weight: var( --elewa-website-footer-font-weight-subtitle);
-    text-align: center;
-    margin-bottom: 1rem;
-  }
   .footer-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }  
-.first-line {
-  display: inline-block;
-}
-.second-line {
-  display: block;
-}
+    display: grid;
+    gap: 3rem;
+
+    h4 {
+      margin: 0;
+      font-family: var(--elewa-website-footer-font-dmsans-medium);
+      font-size: var(--elewa-website-footer-font-size-heading);
+      font-weight: var(--elewa-website-footer-font-weight-subtitle);
+      text-align: center;
+    }
+  }
+
+  .first-line {
+    display: inline-block;
+  }
+
+  .second-line {
+    display: block;
+  }
+
   .mission {
     display: flex;
     justify-content: center;
@@ -39,5 +37,4 @@
       margin-bottom: 2rem;
     }
   }
-
 }
