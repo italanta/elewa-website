@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
-import { __heroTexts } from '@elewa-website/data/sections';
-import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
+import { __heroTexts, __buttonData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-content-dev-hero-section',
@@ -10,10 +9,5 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 })
 export class ContentDevHeroSectionComponent {
   heroTexts = __heroTexts
-
-  buttonData: SliderButtonData = {
-    text: "unlock your potential"
-  }
-
-
+  buttonData = __buttonData
 }
