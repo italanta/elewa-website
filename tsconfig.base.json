@@ -15,10 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@elewa-website/-libs/elements/layout/footer": [
+        "libs/-libs/elements/layout/footer/src/index.ts"
+      ],
+      "@elewa-website/data/schema/ui/images": [
+        "libs/data/schema/ui/images/src/index.ts"
+      ],
       "@elewa-website/data/sections": ["libs/data/sections/src/index.ts"],
       "@elewa-website/data/ui/content-text": [
         "libs/data/ui/content-text/src/index.ts"
       ],
+      "@elewa-website/elements/banners": ["libs/elements/banners/src/index.ts"],
       "@elewa-website/elements/cards": ["libs/elements/cards/src/index.ts"],
       "@elewa-website/elements/layout/buttons": [
         "libs/elements/layout/buttons/src/index.ts"
@@ -26,8 +33,17 @@
       "@elewa-website/elements/layout/carousel": [
         "libs/elements/layout/carousel/src/index.ts"
       ],
+      "@elewa-website/elements/layout/footer": [
+        "libs/elements/layout/footer/src/index.ts"
+      ],
       "@elewa-website/elements/layout/header": [
         "libs/elements/layout/header/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/images": [
+        "libs/elements/layout/images/src/index.ts"
+      ],
+      "@elewa-website/elements/layout/pages/main-page": [
+        "libs/elements/layout/pages/main-page/src/index.ts"
       ],
       "@elewa-website/elements/layout/texts": [
         "libs/elements/layout/texts/src/index.ts"
@@ -56,15 +72,27 @@
       "@elewa-website/features/pages/news-page": [
         "libs/features/pages/news-page/src/index.ts"
       ],
+      "@elewa-website/libs/models/schema/ui/images": [
+        "libs/libs/models/schema/ui/images/src/index.ts"
+      ],
       "@elewa-website/models/data/sections": [
         "libs/models/data/sections/src/index.ts"
       ],
       "@elewa-website/models/data/ui": ["libs/models/data/ui/src/index.ts"],
+      "@elewa-website/models/schema/ui/banners": [
+        "libs/models/schema/ui/banners/src/index.ts"
+      ],
       "@elewa-website/models/schema/ui/buttons": [
         "libs/models/schema/ui/buttons/src/index.ts"
       ],
       "@elewa-website/models/schema/ui/cards": [
         "libs/models/schema/ui/cards/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/image-and-text": [
+        "libs/models/schema/ui/image-and-text/src/index.ts"
+      ],
+      "@elewa-website/models/schema/ui/images": [
+        "libs/models/schema/ui/images/src/index.ts"
       ],
       "@elewa-website/models/schema/ui/texts": [
         "libs/models/schema/ui/texts/src/index.ts"

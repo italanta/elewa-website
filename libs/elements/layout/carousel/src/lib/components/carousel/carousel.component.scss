@@ -1,0 +1,39 @@
+.slider-main {
+  display: flex;
+  gap: 1.5rem;
+  overflow: hidden;
+  width: calc(100vw - var(--elewa-website-page-padding));
+  transition: transform 0.5s;
+}
+
+.button-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: 50px;
+  gap: 20px;
+
+  button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+    transition: transform 1s ease;
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  i {
+    width: 20px;
+  }
+}
+
+.stretched-icon {
+  transform: scaleX(1.5); /* 1.5 times the original width */
+}
+
+.prev {
+  margin-left: auto;
+}
