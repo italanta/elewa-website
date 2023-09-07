@@ -11,8 +11,14 @@ export class ElewaConsultancyAboutOneComponent {
 
   /* an object(InputData) to input data using type ImageAndText from re-usable component */
   InputData : ImageAndText = {
+
+    // content Data
     content: _imageAndTextData.contentData[1],
+
+    // our image
     image: _imageAndTextData.imageData, 
+
+    // positioning
     imagePosition: 'left', 
   };
 }
