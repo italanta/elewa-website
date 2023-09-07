@@ -11,12 +11,12 @@ export const __contentDevelopmentItem: MenuItem = {
     description: "Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam"
 }
 
-export const __bookletsItem: MenuItem = {
+export const __conversationalLearningItem: MenuItem = {
     title: "conversational Learning",
     description: "Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam"
 }
 
-export const __conversationalLearningItem: MenuItem = {
+export const __bookletsItem: MenuItem = {
     title: "booklets",
     description: "Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam"
 }
