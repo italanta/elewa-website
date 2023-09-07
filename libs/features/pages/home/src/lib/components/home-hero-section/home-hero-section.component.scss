@@ -1,37 +1,63 @@
+
 .container {
-  height: 100vh;
-}
-.box{
+  background: #F9F8F4 0% 0% no-repeat padding-box;
+  opacity: 1;
   display: flex;
-  align-items: center;
-  padding: 20px;
-  justify-content: space-between;
-}
-.left-column {
-  flex: 1;
-  /* Grow to take available space */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* Align content to the left within the left column */
-  padding-left: 80px;
-}
 
-.right-column {
-  flex: 1;
-  /* Grow to take available space */
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 150px;
-  /* Align content to the right within the right column */
-}
+  .left-column {
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    padding-left: 40px;
 
-.text,
-.button,
-.image {
-  width: 100%;
-  /* Make text, button, and image divs the same width */
-  padding: 10px;
-  /* Add padding for spacing */
-  height: auto;
+    .text {
+      display: flex;
+      padding-left: 80px;
+      text-align: left;
+      color: #000000;
+      opacity: 1;
+      font-size: x-small;
+      // align-items: flex-start;
+    }
+
+    .button {
+      display: flex;
+      padding-left: 95px;
+      padding-top: 20px;
+    }
+  }
+
+  .image {
+    width: 803px;
+    height: 796px;
+    background: transparent no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    top: 181px;
+    left: 908px;
+    opacity: 0.85;
+    padding-left: 300px;
+    flex-direction: column;
+
+    @media (max-width: 1024px) {
+      /* For tablets, adjust image size and position */
+      width: 60%;
+      height: auto;
+      top: 0;
+      left: 0;
+      padding-left: 0;
+      flex: 1;
+      gap: 10px;
+      padding-top: 9rem;
+      padding-left: 0rem;
+      padding-right: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      /* For mobile, further adjust image size and position */
+      width: 90%;
+    }
+  }
 }
