@@ -1,19 +1,65 @@
-.consultancy-hero-section{
-    display: grid;
-    gap: 15px;
-    .title {
+.consultancy-hero-section {
+    background-color: var(--elewa-website-homepage-background-color);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+  
+    .consultancy-hero-section-content {
+      display: grid;
+      gap: 20px;
+      margin-left: 260px;
+      margin-top: 200px;
+      
+  
+      .title {
         width: 915px;
         height: 106px;
         font-family: DMSans-Medium;
         font-size: 82px;
         color: var(--elewa-website-color-primary-black);
-    }
-
-    .description{
+      }
+  
+      .description {
         width: 741px;
         height: 197px;
         font-family: DMSans-Regular;
         font-size: 32px;
         color: var(--elewa-website-color-primary-black);
+      }
+    }
+    .slider-button {
+        z-index: 100;
+      }
+    
+    
+    .circle-container {
+        .circle-1{
+            width: 1065px;
+            height: 1056px;
+            border-radius: 50%;
+            position: absolute;
+            top: 150px;
+            left: 219px;
+            mix-blend-mode: multiply;
+            opacity: 1;
+            z-index: 1;
+            background: linear-gradient(to left, var(--elewa-website-homepage-background-color), var(--elewa-website-consultancy-hero-section-rgba));
+        }
+
+        .circle-2 {
+            width: 1065px;
+            height: 1056px;
+            border-radius: 50%;
+            position: absolute;
+            top: 150px;
+            left: 846px;
+            mix-blend-mode: multiply;
+            opacity: 1;
+            transform: matrix(-1, 0, 0, -1, 0, 0);
+            background: linear-gradient(to left, var(--elewa-website-homepage-background-color), var(--elewa-website-consultancy-hero-section-rgba));
+        }
     }
 }
+  
