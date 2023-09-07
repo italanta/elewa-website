@@ -1,10 +1,14 @@
 <div class="about-hero-container">
   <div class="about-hero-text">
-    <elewa-website-elewa-text-section
-      [herotexts]="heroAboutData"
-    ></elewa-website-elewa-text-section>
+    <div class="text">
+      <!-- import elewa-text section -->
+      <elewa-website-elewa-text-section
+        [herotexts]="heroAboutData"
+      ></elewa-website-elewa-text-section>
+    </div>
   </div>
-  <div class="about-hero-image">
+  <!-- Image -->
+  <div class="image">
     <elewa-website-image-container
       [imageConfig]="image"
     ></elewa-website-image-container>
