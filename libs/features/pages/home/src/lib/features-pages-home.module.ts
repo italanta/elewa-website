@@ -16,7 +16,7 @@ import { ConsultancyPageModule } from '@elewa-website/features/pages/consultancy
     HomeRoutingModule, 
     CardsModule, 
     MainPageModule, 
-    ConsultancyPageModule,
+    
   ],
   declarations: [HomePageComponent, NewsSectionComponent],
   exports: [HomePageComponent],

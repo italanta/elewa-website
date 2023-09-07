@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
+import { _consultancyPageAbout } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-elewa-consultancy-about-one',
@@ -7,9 +7,5 @@ import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
   styleUrls: ['./elewa-consultancy-about-one.component.scss'],
 })
 export class ElewaConsultancyAboutOneComponent {
-  ImageAndText: ImageAndText ={
-    content: "",
-    image: "undefined",
-    imagePosition: 'left'
-  }
+  consultancyPageAbout = _consultancyPageAbout
 }
