@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -9,7 +10,7 @@ import { HeaderMenuComponent } from './components/header-menu/header-menu.compon
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
 
 @NgModule({
-  imports: [CommonModule, TranslocoModule],
+  imports: [CommonModule, TranslocoModule, RouterModule],
   declarations: [
     HeaderComponent,
     ToggleMenuDirective,
