@@ -1,89 +1,89 @@
 /* Layout Properties for larger screens */
 .consultancy-main {
-    top: 0px;
-    left: 0px;
-    width: 1920px;
-    height: 1082px;
-    /**UI Properties*/
-    background: #dbc2f5 0% 0% no-repeat padding-box;
-    opacity: 1;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1920px;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1082px;
+  /**UI Properties*/
+  background: var(--elewa-website-consultancy-hero-section-background-color);
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1920px;
+}
+
+.text-section {
+  left: 209px;
+  width: 900px;
+  text-align: start;
+  letter-spacing: 0px;
+  opacity: 1;
+  position: relative; /* Needed for absolute positioning of circles */
+  padding: 80px; /* Increase the padding to increase the size */
+  margin-left: 80px; /* Adjust the right position as needed for rightward movement */
+}
+
+.description-text {
+  font-size: 32px; /* Adjust the font size as needed */
+  font-weight: normal; /* Adjust the font weight as needed */
+  /* Add any other font-related styles here */
+}
+
+/* Add margin to the button container to create space */
+.button-container {
+  margin-top: 20px; /* Adjust the value to control the spacing */
+}
+
+/* Circular background element */
+.circle {
+  position: absolute;
+  border-radius: 50%; /* Create a circle */
+  margin-top: -20px; /* Adjust the value to control how high you want to move them */
+  margin-bottom: 20px; /* Add a margin-bottom for spacing */
+  margin-right: 80px;
+}
+
+/* Styling for the first circle */
+.circle.circle-1 {
+  top: 229px;
+  left: 219px;
+  width: 1065px;
+  height: 1056px;
+  background: var(--elewa-website-consultancy-hero-section-gradient);
+  mix-blend-mode: var(--elewa-website-consultancy-hero-section-blend-mode);
+  opacity: 1;
+}
+
+/* Styling for the second circle */
+.circle.circle-2 {
+  top: 229px;
+  left: 846px;
+  width: 1065px;
+  height: 1056px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  background: var(--elewa-website-consultancy-hero-section-gradient);
+  mix-blend-mode: var(--elewa-website-consultancy-hero-section-blend-mode);
+  opacity: 1;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .consultancy-main {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Auto height to fit content */
+    padding: 20px; /* Add padding for spacing */
   }
-  
+
   .text-section {
-    left: 209px;
-    width: 839px;
-    height: 106px;
-    text-align: left;
-    font: normal normal medium 82px/110px DM Sans;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-    position: relative; /* Needed for absolute positioning of circles */
-    padding: 80px; /* Increase the padding to increase the size */
-    margin-left: 80px; /* Adjust the right position as needed for rightward movement */
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px; /* Add padding for spacing */
   }
-  
-  /* Add margin to the button container to create space */
+
   .button-container {
-    margin-top: 20px; /* Adjust the value to control the spacing */
+    margin-top: 10px; /* Adjust the value for spacing */
   }
-  
-  /* Circular background element */
+
   .circle {
-    position: absolute;
-    border-radius: 50%; /* Create a circle */
-    margin-top: -20px; /* Adjust the value to control how high you want to move them */
-    margin-bottom: 20px; /* Add a margin-bottom for spacing */
-    margin-right: 80px;
+    display: none; /* Hide the circles on smaller screens */
   }
-  
-  /* Styling for the first circle */
-  .circle.circle-1 {
-    top: 229px;
-    left: 219px;
-    width: 1065px;
-    height: 1056px;
-    background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
-      0% 0% no-repeat padding-box;
-    mix-blend-mode: multiply;
-    opacity: 1;
-  }
-  
-  /* Styling for the second circle */
-  .circle.circle-2 {
-    top: 229px;
-    left: 846px;
-    width: 1065px;
-    height: 1056px;
-    transform: matrix(-1, 0, 0, -1, 0, 0);
-    background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
-      0% 0% no-repeat padding-box;
-    mix-blend-mode: multiply;
-    opacity: 1;
-  }
-  
-  /* Media Query for screens smaller than 768px */
-  @media (max-width: 768px) {
-    .consultancy-main {
-      width: 100%; /* Full width for smaller screens */
-      height: auto; /* Auto height to fit content */
-      padding: 20px; /* Add padding for spacing */
-    }
-  
-    .text-section {
-      width: 100%; /* Full width for smaller screens */
-      font-size: 32px; /* Adjust font size */
-      padding: 20px; /* Add padding for spacing */
-    }
-  
-    .button-container {
-      margin-top: 10px; /* Adjust the value for spacing */
-    }
-  
-    .circle {
-      display: none; /* Hide the circles on smaller screens */
-    }
-  }
+}
