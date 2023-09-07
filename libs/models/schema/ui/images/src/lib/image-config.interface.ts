@@ -6,6 +6,7 @@ export interface ImageConfig {
   imageSrc: string
   visualisation: ImageVisualisation
   maxWidth?: string
+  maxHeight?: string
 }
 
 /**
