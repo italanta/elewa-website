@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { InfoCard } from '@elewa-website/models/schema/ui/cards';
+
+import { SDGCard } from '@elewa-website/models/schema/ui/cards';
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
 @Component({
@@ -8,6 +9,6 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
   styleUrls: ['./elewa-sdg-list.component.scss'],
 })
 export class ElewaSdgListComponent {
-  @Input({ required: true }) sdgList!: InfoCard[];
+  @Input({ required: true }) sdgList!: SDGCard[];
   @Input({ required: true }) buttonData!: SliderButtonData;
 }

@@ -1,0 +1,36 @@
+.image-text-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: inherit;
+  transition: transform 0.2s ease;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* normal row-order for the left alignment */
+  &.left-image {
+    flex-direction: row;
+  }
+
+  /* Reverse the raw-order for the right alignment */
+  &.right-image {
+    flex-direction: row-reverse;
+  }
+
+  //Text container + its responsivenss
+  .text-container {
+    max-width: 500px;
+    height: auto;
+    text-align: auto;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      max-width: auto;
+    }
+  }
+}
