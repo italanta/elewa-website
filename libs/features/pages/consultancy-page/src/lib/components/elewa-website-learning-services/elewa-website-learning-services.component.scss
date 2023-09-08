@@ -3,17 +3,33 @@
     flex-direction: column;
     display: flex;
 
-    h2{
-        align-items: center;
+    .container {
+        text-align: center; 
+        height: 100px; 
+        
+        h1 {
+            display: inline-block; 
+            vertical-align: middle; 
+        }
+    
+        span {
+            display: block;
+        }
     }
 
     .cards { 
+        position: relative;
         gap: 20px; 
         padding: 12px;
         max-width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        //grid-template-rows: repeat(3, 2fr); 
+    }
+
+    .evaluate{
+        position: absolute;
+        top: 494px;
+        right: 200px;
     }
 }
 

@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { InfoCard } from '@elewa-website/models/schema/ui/cards';
+import { __highlightedConsultancyItems } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-elewa-website-learning-services',
@@ -8,5 +9,5 @@ import { InfoCard } from '@elewa-website/models/schema/ui/cards';
   styleUrls: ['./elewa-website-learning-services.component.scss'],
 })
 export class ElewaWebsiteLearningServicesComponent {
-  @Input() cardsData: InfoCard[] = [];
+  cardsData: InfoCard[] = __highlightedConsultancyItems;
 }
