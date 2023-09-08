@@ -1,0 +1,160 @@
+/* styles.css */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+  flex-direction: column;
+}
+.row {
+  max-width: 1000px;
+  width: 100%;
+  display: block;
+}
+.column {
+  float: left;
+}
+.left {
+  width: 30%;
+   flex-grow: 1;
+}
+.right {
+  width: 70%;
+
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  transition: border-color 0.3s;
+  color: #000000;
+}
+input::placeholder {
+  color: #000000;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+h1{
+  padding-top: 10px;
+}
+p {
+  padding: 2em 2em 0 0;
+}
+.faq {
+  font-weight: bold;
+}
+.form-row {
+  width: 100%;
+  display: block;
+}
+.form-row .left {
+  width: 50%;
+}
+.form-row .right {
+  width: 50%;
+}
+.button-section {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  float: right;
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 25px;
+  padding-right: 2px;
+  font-size: 16px;
+  background-color: var(--elewa-website-color-primary-black);
+  color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+}
+button svg {
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: var(--elewa-website-color-primary-black);
+  border: 2px solid var(--elewa-website-color-primary-black);
+}
+.social-links {
+  float: inline-start;
+  padding-top: 180px;
+  gap: 8px;
+}
+.social-links svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/* Mobile styles */
+
+@media screen and (max-width: 768px) {
+  .contact-page {
+    padding-top: 2em; 
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+  }
+
+  .row {
+    flex-direction: column; 
+  }
+
+  .column {
+    float: none; 
+    width: 100%; 
+  }
+
+  .left,
+  .right {
+    width: 100%; 
+  }
+
+  .form-group {
+    margin-bottom: 1rem; 
+  }
+
+  .social-links {
+    padding-top: 20px;
+  }
+  .form-row {
+    width: 100%;
+    display: block;
+  }
+  .form-row .left {
+    width: 100%;
+  }
+  .form-row .right {
+    width: 100%;
+  }
+  .button-section {
+    float:none;
+  }
+
+}
