@@ -9,6 +9,7 @@ import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 
 import { AboutPageComponent } from './main/about-page/about-page.component';
 import { TeamMembersSectionComponent } from './components/team-members-section/team-members-section.component';
+import { DiscoverSectionComponent } from './components/discover-section/discover-section.component';
 
 import { AboutRoutingModule } from './about.routing';
 
@@ -21,6 +22,10 @@ import { AboutRoutingModule } from './about.routing';
     MainPageModule,
     AboutRoutingModule,
   ],
-  declarations: [AboutPageComponent, TeamMembersSectionComponent],
+  declarations: [
+    AboutPageComponent,
+    TeamMembersSectionComponent,
+    DiscoverSectionComponent,
+  ],
 })
 export class FeaturesPagesAboutModule {}
