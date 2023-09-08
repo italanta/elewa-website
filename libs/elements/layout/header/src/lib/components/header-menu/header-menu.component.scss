@@ -5,7 +5,7 @@
     max-width: 1200px;
     margin-inline: auto;
     z-index: 50000000000000;
-    background-color: white;
+    background-color: var(--elewa-website-color-primary-white);
 
 
     .grid-item {
@@ -20,6 +20,6 @@
 }
 
 .active{
-    background-color: #eaeaea;
+    background: var(--elewa-website-header-active-link-background)
 }
 
