@@ -8,6 +8,8 @@ import { ElewaProjectItemCardComponent } from './components/elewa-project-item-c
 import { ElewaNewsItemCardComponent } from './components/elewa-news-item-card/elewa-news-item-card.component';
 import { ElewaWebsitePriceItemCardComponent } from './components/elewa-price-item-card/elewa-website-price-item-card.component';
 import { ElewaTeamMemberCardComponent } from './components/elewa-team-member-card/team-member-card.component';
+import { ElewaSdgListComponent } from './components/elewa-sdg-list/elewa-sdg-list.component';
+import { ElewaSdgCardComponent } from './components/elewa-sdg-card/elewa-sdg-card.component';
 
 @NgModule({
   imports: [CommonModule, ButtonsModule],
@@ -17,6 +19,8 @@ import { ElewaTeamMemberCardComponent } from './components/elewa-team-member-car
     ElewaNewsItemCardComponent,
     ElewaProjectItemCardComponent,
     ElewaTeamMemberCardComponent,
+    ElewaSdgListComponent,
+    ElewaSdgCardComponent,
   ],
   exports: [
     ElewaInfoCardComponent,
@@ -24,6 +28,8 @@ import { ElewaTeamMemberCardComponent } from './components/elewa-team-member-car
     ElewaNewsItemCardComponent,
     ElewaProjectItemCardComponent,
     ElewaTeamMemberCardComponent,
+    ElewaSdgListComponent,
+    ElewaSdgCardComponent
   ],
 })
 export class CardsModule {}

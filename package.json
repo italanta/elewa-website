@@ -2,7 +2,6 @@
   "name": "elewa-website",
   "version": "0.0.0",
   "license": "MIT",
-  
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
@@ -30,6 +29,7 @@
     "@nrwl/angular": "16.6.0",
     "express": "^4.15.2",
     "rxjs": "7.8.1",
+    "subsink": "^1.0.2",
     "tslib": "^2.3.0",
     "zone.js": "0.13.1"
   },
