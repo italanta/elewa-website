@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    /* Stack items vertically for tablets */
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    /* Stack items vertically for mobile devices */
+  }
+
+  .hero-text {
+    flex: 1;
+    padding: 20px;
+    font-size: x-small;
+
+    @media (max-width: 1024px) {
+      padding: 10px;
+    }
+  }
+
+  .image {
+    flex: 1;
+    padding: 20px;
+    transform: rotate(90deg);
+    /* Rotate the image 90 degrees clockwise */
+
+    @media (max-width: 1024px) {
+      padding: 80px;
+      transform: rotate(90deg);
+      
+      /* Remove the rotation for tablets */
+    }
+
+    @media (max-width: 768px) {
+      padding: 80px;
+      transform: rotate(90deg);
+      /* Remove the rotation for mobile devices */
+    }
+  }
+}
