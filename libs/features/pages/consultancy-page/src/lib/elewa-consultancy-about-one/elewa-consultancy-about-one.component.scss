@@ -1,44 +1,10 @@
-/* Default styles for larger screens */
+/* styles */
 .image-text-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: #dbc2f5 0% 0% no-repeat padding-box;
-}
-
-.image-container {
-  top: 1194px;
-  left: 240px;
-  width: 700px;
-  height: 750px;
-  flex: 1;
-  padding: 20px;
-  background: transparent
-    url('https://tellyspotting.kera.org/wp-content/uploads/2015/09/Mr.-Bean-at-Buckingham-Palace-for-his-25th-birthday.jpg')
-    0% 0% no-repeat padding-box;
-  margin-left: 100px;
-  border-radius: 50%; /* Create a vertical oval shape */
-}
-
-.text-container {
-  flex: 1;
-  padding: 20px;
-  width: 300px;
-  height: 200px;
-  text-align: left;
-  font: normal normal normal 32px/42px DM Sans;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
-  margin-right: 50px;
-  margin-bottom: 350px;
-}
-
-elewa-website-elewa-text-content-item {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #333;
+  background: var(--elewa-consultancy-about-one-background-color); 
 }
 
 /* Media query for screens up to 768px wide (tablets) */
@@ -46,18 +12,5 @@ elewa-website-elewa-text-content-item {
   .image-text-banner {
     flex-direction: column; /* Stack elements vertically */
     text-align: center; /* Center align text */
-  }
-
-  .image-container,
-  .text-container {
-    max-width: 100%; /* Full width for smaller screens */
-    padding: 10px; /* Reduce padding for smaller screens */
-  }
-}
-
-/* Media query for screens up to 640px wide (phones) */
-@media (max-width: 640px) {
-  elewa-website-elewa-text-content-item {
-    font-size: 16px; /* Decrease font size for smaller screens */
   }
 }
