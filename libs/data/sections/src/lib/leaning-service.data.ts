@@ -31,6 +31,6 @@ export const __learningDevicesData: InfoCard[] = [
     },
     {
       title: 'Evaluation',
-      description: 'Evaluation of eLearning programs. Monitoring of effectiveness. Todo',
+      description: 'Evaluation of eLearning programs. Monitoring of effectiveness....Todo',
     },
   ];
