@@ -13,17 +13,20 @@
       <ng-container *ngFor="let description of heroTextData[0].descriptions">
         <p class="description-text">{{ description }}</p>
       </ng-container>
+       <!-- Slider Button component with custom text -->
+    <div class="button-container">
+      <elewa-website-slider-button
+        [buttonData]="{ text: 'Unlock Your Potential' }"
+      ></elewa-website-slider-button>
+    </div>
+    </div>
+    
 
-      <!-- Circular background elements -->
+    <!-- Circular background elements -->
+    <div class="circle-container">
       <div class="circle circle-1"></div>
       <div class="circle circle-2"></div>
-
-      <!-- Slider Button component with custom text -->
-      <div class="button-container">
-        <elewa-website-slider-button
-          [buttonData]="{ text: 'Unlock Your Potential' }"
-        ></elewa-website-slider-button>
-      </div>
     </div>
+   
   </div>
 </div>
