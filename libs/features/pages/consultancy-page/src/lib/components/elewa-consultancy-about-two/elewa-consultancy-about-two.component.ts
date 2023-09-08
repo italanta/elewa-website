@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { __consultancyAboutTwo, __consultancyImageConfig } from '@elewa-website/data/sections';
+import { __consultancyImageAndTextData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-elewa-consultancy-about-two',
@@ -8,7 +8,6 @@ import { __consultancyAboutTwo, __consultancyImageConfig } from '@elewa-website/
 })
 export class ElewaConsultancyAboutTwoComponent {
 
-  consultancyHeroTwo = __consultancyAboutTwo;
-  consultancyImageTwo = __consultancyImageConfig;
-  
+  imageAndTextData = __consultancyImageAndTextData
+
 }
