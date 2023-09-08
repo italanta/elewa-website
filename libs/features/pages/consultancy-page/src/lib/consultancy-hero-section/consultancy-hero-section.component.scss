@@ -13,19 +13,18 @@
 }
 
 .text-section {
-  left: 209px;
-  width: 900px;
   text-align: start;
   letter-spacing: 0px;
   opacity: 1;
   position: relative; /* Needed for absolute positioning of circles */
-  padding: 80px; /* Increase the padding to increase the size */
-  margin-left: 80px; /* Adjust the right position as needed for rightward movement */
+  padding: 10px; /* Increase the padding to increase the size */
+  margin-left: 350px; /* Adjust the right position as needed for rightward movement */
 }
 
 .description-text {
   font-size: 32px; /* Adjust the font size as needed */
   font-weight: normal; /* Adjust the font weight as needed */
+  width: 800px;
   /* Add any other font-related styles here */
 }
 
@@ -41,6 +40,22 @@
   margin-top: -20px; /* Adjust the value to control how high you want to move them */
   margin-bottom: 20px; /* Add a margin-bottom for spacing */
   margin-right: 80px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Makes the container take up the full viewport height */
+  margin-right: 400px;
+}
+
+.circle {
+  width: 100px; /* Adjust the width and height as needed */
+  height: 100px;
+  background-color: #007bff; /* Set your desired circle background color */
+  border-radius: 50%; /* Makes it a circle */
+  margin: 10px; /* Adjust margin as needed */
 }
 
 /* Styling for the first circle */
@@ -76,7 +91,7 @@
 
   .text-section {
     width: 100%; /* Full width for smaller screens */
-    padding: 20px; /* Add padding for spacing */
+    padding: 1px; /* Add padding for spacing */
   }
 
   .button-container {
@@ -84,6 +99,6 @@
   }
 
   .circle {
-    display: none; /* Hide the circles on smaller screens */
+    display: row; /* Hide the circles on smaller screens */
   }
 }
