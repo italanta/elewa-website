@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
+import { __homeButtonData, __homeHerotexts, __homeImageConfig } from '@elewa-website/models/data/sections';
 
 
 @Component({
@@ -9,23 +9,8 @@ import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui
 })
 export class HomeHeroSectionComponent {
 
-  //Wording of the button
-  buttonData = {
-    text: 'Unlock your potential ',
-  }
+  buttonData = __homeButtonData
+  herotexts = __homeHerotexts
+  imageConfig = __homeImageConfig
 
-  // Wording of the text section
-  herotexts = {
-    title: "Training at scale",
-    subtitle: `Human-centered, meaningful and enjoyable`
-  }
-
-  // Add the imageConfig property
-  imageConfig: ImageConfig = {
-    imageSrc: '',   // Add image URL
-    title: '',      // Add image title
-    visualisation: ImageVisualisation.Stacked, // You can set this to Stacked or any other value as needed
-    maxWidth: '803px',
-    maxHeight: '796px',
-  };
 }
