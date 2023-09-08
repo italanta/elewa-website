@@ -1,1 +1,67 @@
-<p>contact-page-form-section works!</p>
+<div class="contact-form">
+    <div class="inner-contact-form">
+      <div class="contact-form-left">
+        <div class="contact-form-left-top-sec">
+          <h1>Contact</h1>
+          <p>Looking for a quick answer to your <br> question? Check out our <span><strong>FAQs</strong></span> </p>
+          <p>For everything else, drop us a line <br> and we'll get back to you</p>
+        </div>
+        <div class="social-media-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="contact-form-right">
+          <!-- bind contactForm in the model with the form element -->
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <!-- bind each input and select fields to the form control using formControlName input -->
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              formControlName="name"
+              placeholder="Your name"
+            />
+            <br>
+            <input
+              type="text"
+              id="companyName"
+              formControlName="companyName"
+              placeholder="Company name"
+            />
+            <br>
+            <input
+              type="email"
+              id="email"
+              formControlName="email"
+              placeholder="E-mail"
+            />
+            <br>
+            <select id="options" formControlName="selectOption">
+              <option value="">Select option</option>
+            </select>
+            <br>
+            <input
+              type="text"
+              id="message"
+              formControlName="message"
+              placeholder="Message"
+            />
+          </div>
+        </form>
+  
+        <div class="slider-button-container">
+          <p>
+            By clicking the Submit button you agree to <br />
+            our <b>Privacy Policy</b> terms
+          </p>
+          <!-- reuse imported elewa-website-slider-button component -->
+          <elewa-website-slider-button
+            [buttonData]="{ text: 'Send message' }"
+          ></elewa-website-slider-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
