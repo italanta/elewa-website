@@ -15,7 +15,7 @@
     .title {
       width: 915px;
       height: 106px;
-      font-family: DMSans-Medium;
+      font-family: var(--elewa-website-consultancy-hero-section-title-font-family);
       font-size: 82px;
       color: var(--elewa-website-color-primary-black);
     }
@@ -23,7 +23,7 @@
     .description {
       width: 741px;
       height: 197px;
-      font-family: DMSans-Regular;
+      font-family: var(--elewa-website-consultancy-hero-section-description-font-family);
       font-size: 32px;
       color: var(--elewa-website-color-primary-black);
     }
