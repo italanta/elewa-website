@@ -6,7 +6,6 @@ import { CarouselModule } from '@elewa-website/elements/layout/carousel';
 import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header';
-import { ElementsLayoutFooterModule } from '@elewa-website/elements/layout/footer';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
 import { ImagesModule } from '@elewa-website/elements/layout/images';
 
@@ -15,8 +14,8 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 
-import { HomeRoutingModule } from './home.routing';
 
+import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
   imports: [
@@ -25,23 +24,17 @@ import { HomeRoutingModule } from './home.routing';
     CardsModule,
     CarouselModule,
     MainPageModule,
-  ],
-  declarations: [
-    HomePageComponent,
-    NewsSectionComponent,
-    ProjectsSectionComponent,
-    AppHeaderModule,
     ButtonsModule,
-    ElementsLayoutFooterModule,
+    AppHeaderModule,
     TextsModule,
     ImagesModule
   ],
   declarations: [
     HomePageComponent,
     NewsSectionComponent,
-    HomeHeroSectionComponent,
+    ProjectsSectionComponent,
+    HomeHeroSectionComponent
   ],
-  exports: [HomePageComponent],
+  exports: [ HomePageComponent, HomeHeroSectionComponent ],
 })
-export class FeaturesPagesHomeModule {}
-
+export class FeaturesPagesHomeModule { }
