@@ -1,1 +1,7 @@
-<p>elewa-price-list works!</p>
+<div class="outer-list">
+    <ul class="price-list" *ngFor="let item of priceitem">
+        <li class="price-cards">
+            <elewa-website-price-item-card [priceItem]="item"></elewa-website-price-item-card>
+        </li>
+    </ul>
+</div>
