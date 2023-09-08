@@ -1,6 +1,6 @@
 .booklets-page{
     position: relative;
-    background-color: var(--elewa-website-booklets-hero-section-background-color);
+    background: var(--elewa-website-booklets-hero-section-background-color);
     height: 100vh;
     overflow: hidden; 
 
@@ -10,6 +10,7 @@
         justify-content: center;
         width: 60%;
         margin-left: 50px;
+        z-index: 2;
     }
 
     .booklets-button{
@@ -17,21 +18,23 @@
         margin-left: 60px;
     }
     
-    .curved-shape {
+    .container{
         position: absolute;
+        width:80%;
+        height: 60%;
+        right: 0px;
         bottom: 0;
-        left: 35%; 
-        right: 0;
-        max-width: 70%;
-        height: 400px; 
-        background: transparent linear-gradient(111deg, var(--elewa-website-booklets-hero-section-curve-color) 0%, transparent 100%) 0% 0% no-repeat padding-box;
-        opacity: 0.87;
-        clip-path: polygon(
-            0% 100%, 100% 100%, 100% 20%, 97% 16%, 94% 12%, 92% 10%, 90% 8%, 88% 6%, 86% 4%, 84% 3%, 82% 2%, 80% 1%, 78% 1%, 76% 0%, 74% 1%, 72% 1%, 70% 2%, 68% 3%, 66% 4%, 64% 6%, 62% 8%, 60% 10%, 58% 12%, 56% 16%, 54% 20%, 52% 22%, 50% 26%, 48% 30%, 46% 34%, 44% 38%, 42% 42%, 40% 46%, 38% 50%, 36% 54%, 34% 58%, 32% 62%, 30% 66%, 28% 70%, 26% 74%, 24% 78%, 22% 80%, 20% 84%, 18% 88%, 16% 92%, 14% 94%, 12% 96%, 10% 97%, 8% 98%, 6% 99%, 4% 99%, 2% 100%, 0% 100%
-        );
-        shape-outside: polygon(
-            0% 100%, 100% 100%, 100% 20%, 97% 16%, 94% 12%, 92% 10%, 90% 8%, 88% 6%, 86% 4%, 84% 3%, 82% 2%, 80% 1%, 78% 1%, 76% 0%, 74% 1%, 72% 1%, 70% 2%, 68% 3%, 66% 4%, 64% 6%, 62% 8%, 60% 10%, 58% 12%, 56% 16%, 54% 20%, 52% 22%, 50% 26%, 48% 30%, 46% 34%, 44% 38%, 42% 42%, 40% 46%, 38% 50%, 36% 54%, 34% 58%, 32% 62%, 30% 66%, 28% 70%, 26% 74%, 24% 78%, 22% 80%, 20% 84%, 18% 88%, 16% 92%, 14% 94%, 12% 96%, 10% 97%, 8% 98%, 6% 99%, 4% 99%, 2% 100%, 0% 100%
-        );
+        
+        .curved-shape{
+            position: absolute;
+            background: transparent linear-gradient(289deg, var(--elewa-website-booklets-hero-section-curve-color) 0%, var(--elewa-website-booklets-hero-section-curve-color-fade-out) 100%) 0% 0% no-repeat padding-box;
+            transform: rotateZ(-19deg);
+            border-radius: 30vh;
+            left: 70px;
+            top: 170px;
+            height: 100%;
+            width: 100%;
+        }
     }
     
     @media (max-width: 768px) {
@@ -62,6 +65,7 @@
         .booklets-button {
             margin-top: 430px; 
             margin-left: 45px;
+            z-index: 1;
         }
 
         .curved-shape {
