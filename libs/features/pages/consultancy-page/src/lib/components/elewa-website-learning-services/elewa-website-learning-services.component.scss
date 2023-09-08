@@ -29,11 +29,11 @@
     @media (max-width: 768px) {
     .container {
         h1 {
-            font-size: 24px; /* Adjust font size for tablet screens */
+            font-size: 24px;
         }
     
         span {
-            font-size: 24px; /* Adjust font size for tablet screens */
+            font-size: 24px;
         }
     }
 
@@ -42,13 +42,8 @@
             bottom: 30px;
             height: auto;
             display: grid;
-            grid-template-columns: repeat(2, 2fr); /* Two columns instead of three */
-            grid-gap: 20px; /* Adjust the gap between cards as needed */
-        }
-
-        .evaluate {
-            right: -62px;
-            top: 600px; /* Adjust right position for tablet screens */
+            grid-template-columns: repeat(2, 2fr); 
+            grid-gap: 20px; 
         }
     }
 }
