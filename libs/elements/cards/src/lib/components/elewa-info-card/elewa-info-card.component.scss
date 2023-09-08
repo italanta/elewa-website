@@ -1,33 +1,21 @@
-.inner-info-card {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-}
 
 .info-card {
-  max-width: var(--elewa-website-info-card-max-width);
+  display: flex;
+  gap: 3rem;
+
+  .icon-img {
+    height: 40px;
+  }
 }
 
-i {
-  font-size: var(--elewa-website-info-card-icon-font-size);
-}
+.info-card-content {
+  max-width: 410px;
 
-.info-card-title {
-  font-size: var(--elewa-website-info-card-title-font-size);
-}
-
-.info-card-text {
-  font-size: var(--elewa-website-info-card-text-font-size);
-  opacity: 90%;
-}
-
-.info-card-icon {
-  margin-top: 0.5em;
-}
-
-@media (max-width: 1100px) {
-  .info-card {
-    max-width: none;
-    width: 100%; /* Occupy full width */
+  .info-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .info-card-text {
+    font-size: 1rem;
   }
 }
