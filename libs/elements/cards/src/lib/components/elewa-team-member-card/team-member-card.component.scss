@@ -1,0 +1,32 @@
+.team-member-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 13px;
+}
+.team-member-image {
+    border-radius: 150px 150px 150px 150px;
+    width:  200px;
+    height: 270px;
+}
+.team-member-full-name {
+    margin-top: 24px;
+    font-size: 16px;
+    font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
+}
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    
+    .team-member-image {
+        border-radius: 180px 180px 180px 180px;
+    width: 155px;
+height: 234px;
+    }
+    .team-member-full-name {
+        margin-top: 36px;
+        font-size: 18px;
+        font-family: "DMSans-Medium", Arial, Helvetica, sans-serif;
+    }
+}

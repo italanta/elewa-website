@@ -1,0 +1,37 @@
+.ulist {
+  list-style-type: none;
+
+  .list-section {
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 2rem 0;
+
+      .heading {
+        color: var(--elewa-website-news-item-primary-color);
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: -0.54px;
+      }
+
+      .description {
+        letter-spacing: -0.33px;
+        color: var(--elewa-website-news-item-primary-color);
+        opacity: 0.52;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .read-more {
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--elewa-website-news-item-primary-color);
+        border: none;
+        background: none;
+      }
+    }
+  }
+}

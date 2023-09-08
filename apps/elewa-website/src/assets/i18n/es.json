@@ -1,1 +1,29 @@
-{}
+{
+    "ELEWA-WEBSITE-HEADER": {
+      "SOLUTIONS": "Soluciones",
+      "PROJECTS": "Proyectos",
+      "COMPANY": "Compañía",
+      "NEWS": "Noticias",
+      "CONTACT-US": "Contáctenos",
+      "LOGO-ALT": "Logotipo de la empresa Elewa"
+    },
+
+    
+    "ELEWA_WEBSITE-FOOTER": {
+      "CONTACT": "Contacto",
+      "NAVIGATION": "Navegación",
+      "PRIVACY": "Privacidad",
+      "LOGO-ALT": "Logotipo de la empresa Elewa",
+      "NEWS": "Noticias",
+      "SOCIAL IMPACT": "Impacto Social",
+      "ABOUT US": "Acerca de Nosotros",
+      "INVEST": "Inversiones",
+      "BRANDS": "Marcas",
+      "HEADQUARTERS": "Sede Central",
+      "COOKIE PREFERENCES": "Preferencias de Cookies",
+      "TERMS AND CONDITIONS": "Términos y Condiciones",
+      "VENTURE LABS": "Laboratorios de Emprendimiento"
+  }
+  
+    
+  }

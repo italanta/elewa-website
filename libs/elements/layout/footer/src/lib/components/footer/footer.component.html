@@ -1,0 +1,71 @@
+<div [style.backgroundColor]="backgroundColor">
+  <footer class="footer">
+    <ng-content select="[footer]"></ng-content>
+
+    <div class="footer-navigations">
+      <div class="footer-nav-wrapper headquarters">
+        <h4>{{ 'ELEWA_WEBSITE-FOOTER.HEADQUARTERS.TITLE' | transloco }}</h4>
+        <div class="content">
+          <p>The Promenade, 19 General</p>
+          <p>Mathenge Rd</p>
+          <p>Nairobi, Kenya</p>
+        </div>
+      </div>
+
+      <div class="footer-nav-wrapper contact">
+        <h4>{{ 'ELEWA_WEBSITE-FOOTER.CONTACT.TITLE' | transloco }}</h4>
+        <div class="content">
+          <p>T +254 78 92 27 755</p>
+          <p>E info@elewa.co.ke</p>
+        </div>
+      </div>
+
+      <div class="footer-nav-wrapper activities">
+        <h4>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.NAVIGATION' | transloco }}</h4>
+        <div class="content">
+          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.ABOUT-US' | transloco }}</a>
+          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.SOCIAL-IMPACT' | transloco }}</a>
+          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.INVEST' | transloco }}</a>
+          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.NEWS' | transloco }}</a>
+          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONTACT' | transloco }}</a>
+        </div>
+      </div>
+
+      <div class="footer-nav-wrapper brands">
+        <h4>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.TITLE' | transloco }}</h4>
+        <div class="content">
+          <p>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.ELEWA' | transloco }}</p>
+          <p>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.ITALANTA' | transloco }}</p>
+          <p>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.VENTURE-LABS' | transloco }}</p>
+        </div>
+      </div>
+
+      <div class="footer-nav-wrapper privacy">
+        <h4>{{ 'ELEWA_WEBSITE-FOOTER.PRIVACY.TITLE' | transloco }}</h4>
+        <div class="content">
+          <a>{{ 'ELEWA_WEBSITE-FOOTER.PRIVACY.TERMS-AND-CONDITIONS' | transloco }}</a>
+          <a>{{ 'ELEWA_WEBSITE-FOOTER.PRIVACY.COOKIE-PREFERENCES' | transloco }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-last">
+      <div class="footer-imgs">
+        <img src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png"
+          alt="elewa-website logo" class="logo" />
+
+        <div class="icons">
+          <img
+            src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg"
+            alt="" />
+          <img
+            src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg"
+            alt="" />
+          <img
+            src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg"
+            alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

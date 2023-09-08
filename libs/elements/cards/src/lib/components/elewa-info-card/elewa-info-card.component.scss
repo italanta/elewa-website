@@ -1,0 +1,21 @@
+
+.info-card {
+  display: flex;
+  gap: 3rem;
+
+  .icon-img {
+    height: 40px;
+  }
+}
+
+.info-card-content {
+  max-width: 410px;
+
+  .info-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .info-card-text {
+    font-size: 1rem;
+  }
+}

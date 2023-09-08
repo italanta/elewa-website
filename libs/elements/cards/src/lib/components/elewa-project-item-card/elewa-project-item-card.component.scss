@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 300px;
+}
+
+.card-image img {
+  border-radius: 10px;
+  max-width: 300px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-tag {
+  display: flex;
+}
+
+.card-tag-info {
+  padding: 8px 15px; 
+  border-radius: 50px;
+  border: 1px solid #707070;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.card-title {
+  letter-spacing: 1.3;
+  line-height: 1.4;
+}
+
+.card-description {
+  font-size: 11px;
+}
