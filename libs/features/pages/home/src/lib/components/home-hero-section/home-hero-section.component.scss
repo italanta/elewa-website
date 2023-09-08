@@ -1,6 +1,6 @@
 
 .container {
-  background: #F9F8F4 0% 0% no-repeat padding-box;
+  background: var(--elewa-website-home-hero-color-1) 0% 0% no-repeat padding-box;
   opacity: 1;
   display: flex;
 
@@ -15,7 +15,7 @@
       display: flex;
       padding-left: 80px;
       text-align: left;
-      color: #000000;
+      color: var(--elewa-website-home-hero-color-2);
       opacity: 1;
       font-size: x-small;
       // align-items: flex-start;
