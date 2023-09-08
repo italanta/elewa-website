@@ -18,6 +18,9 @@
       "@elewa-website/features/pages/about": [
         "libs/features/pages/about/src/index.ts"
       ],
+      "@elewa-website/features/pages/contact-page": [
+        "libs/features/pages/contact-page/src/index.ts"
+      ],
       "@elewa-website/features/pages/home": [
         "libs/features/pages/home/src/index.ts"
       ],
