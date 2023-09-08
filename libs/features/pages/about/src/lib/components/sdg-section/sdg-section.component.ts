@@ -1,6 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+
 import { InfoCard } from '@elewa-website/models/schema/ui/cards';
 import { __highlightedSDGList } from '@elewa-website/data/sections';
+import { __buttonData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-sdg-section',
@@ -8,10 +10,6 @@ import { __highlightedSDGList } from '@elewa-website/data/sections';
   styleUrls: ['./sdg-section.component.scss'],
 })
 export class SdgSectionComponent {
-  @Input() sdgList: InfoCard[] = __highlightedSDGList;
-  
-  buttonData = {
-    text: 'Unlock your potential',
-    bgColor: 'transparent'
-  }
+  sdgList: InfoCard[] = __highlightedSDGList;
+  buttonData = __buttonData;
 }
