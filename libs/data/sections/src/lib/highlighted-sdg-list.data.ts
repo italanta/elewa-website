@@ -1,4 +1,5 @@
 import { SDGCard } from '@elewa-website/models/schema/ui/cards';
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
 export const __highlightedSDGList: SDGCard[] = [
   {

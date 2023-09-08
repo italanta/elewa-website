@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 
-import { InfoCard } from '@elewa-website/models/schema/ui/cards';
-import { __highlightedSDGList } from '@elewa-website/data/sections';
-import { __buttonData } from '@elewa-website/data/sections';
+import { SDGCard } from '@elewa-website/models/schema/ui/cards';
+import { __highlightedSDGList, __buttonData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-sdg-section',
@@ -10,6 +9,6 @@ import { __buttonData } from '@elewa-website/data/sections';
   styleUrls: ['./sdg-section.component.scss'],
 })
 export class SdgSectionComponent {
-  sdgList: InfoCard[] = __highlightedSDGList;
+  sdgCard: SDGCard[] = __highlightedSDGList;
   buttonData = __buttonData;
 }
