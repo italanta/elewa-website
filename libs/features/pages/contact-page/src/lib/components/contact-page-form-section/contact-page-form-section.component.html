@@ -1,5 +1,6 @@
 <elewa-website-header></elewa-website-header>
 <section class="contact-form">
+    <div class="text-icon">
     <div class="contact-text">
         <h2>Contact</h2>
         <p>Looking for a quick answer to your <br>question? Check out our <strong>FAQs.</strong></p>
@@ -9,6 +10,7 @@
         <a href="https://www.facebook.com" class="fa-brands fa-facebook"></a>
         <a href="https://www.instagram.com" class="fa-brands fa-instagram"></a>
         <a href="https://www.linkedin.com" class="fa-brands fa-linkedin-in"></a>
+    </div>
     </div>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <label for="name">Your name</label>
