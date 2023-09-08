@@ -1,7 +1,6 @@
-import { InfoCard } from '@elewa-website/models/schema/ui/cards';
-import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
+import { SDGCard } from '@elewa-website/models/schema/ui/cards';
 
-export const __highlightedSDGList: InfoCard[] = [
+export const __highlightedSDGList: SDGCard[] = [
   {
     title: 'Quality Education',
     description:

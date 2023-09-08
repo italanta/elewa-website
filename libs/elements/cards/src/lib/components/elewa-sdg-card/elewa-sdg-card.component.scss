@@ -1,0 +1,46 @@
+.inner-sdg-card {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.sdg-card {
+  height: 120px;
+  width: 630px;
+}
+
+.icon-img {
+  width: 52px;
+  height: 54px;
+  margin-right: 37px;
+}
+
+.sdg-card-title {
+  font-size: 24px;
+  font-family: 'DMSans-Medium', Arial, Helvetica, sans-serif;
+  max-width: var(--elewa-website-info-card-max-width);
+}
+
+i {
+  font-size: var(--elewa-website-info-card-icon-font-size);
+}
+
+.sdg-card-title {
+  font-size: var(--elewa-website-info-card-title-font-size);
+}
+
+.sdg-card-text {
+  font-size: var(--elewa-website-info-card-text-font-size);
+  opacity: 90%;
+}
+
+.sdg-card-icon {
+  margin-top: 0.5em;
+}
+
+@media (max-width: 1100px) {
+  .sdg-card {
+    max-width: none;
+    width: 100%; /* Occupy full width */
+  }
+}
