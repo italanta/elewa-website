@@ -1,9 +1,9 @@
 <div class="about-hero-container">
   <div class="about-hero-text">
-    <div class="text">
-      <!-- import elewa-text section -->
+    <!-- import elewa-text section -->
+    <div class="text" *ngFor="let herotext of highlightedAboutItems">
       <elewa-website-elewa-text-section
-        [herotexts]="heroAboutData"
+        [herotexts]="herotext"
       ></elewa-website-elewa-text-section>
     </div>
   </div>

@@ -16,7 +16,7 @@
     align-items: flex-start;
     padding-left: 40px;
     text-align: left;
-    color: #000000;
+    color: var(--textColor, black);
     opacity: 1;
     font-size: x-small;
 
