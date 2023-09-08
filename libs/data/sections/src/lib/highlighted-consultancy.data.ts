@@ -28,5 +28,9 @@ export const __highlightedConsultancyItems: InfoCard[] = [
     {
         title: "Agriculture & Environment",
         description: "The foundation of society, we designed programs from sustainable land management, to climate change, to pollution management and more.",
+    },
+    {
+        title: "Evaluation",
+        description: "Evaluation of eLearning programs. Monitoring of effectiveness …. Todo",
     }
 ]

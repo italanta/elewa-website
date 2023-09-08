@@ -26,22 +26,16 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .evaluate{
-        position: absolute;
-        top: 494px;
-        right: 200px;
-    }
-
     @media (max-width: 768px) {
-        .container {
-          h1 {
+    .container {
+        h1 {
             font-size: 24px; /* Adjust font size for tablet screens */
-          }
-    
-          span {
-            font-size: 24px; /* Adjust font size for tablet screens */
-          }
         }
+    
+        span {
+            font-size: 24px; /* Adjust font size for tablet screens */
+        }
+    }
 
         .cards {
             max-width: 800px;
@@ -50,12 +44,11 @@
             display: grid;
             grid-template-columns: repeat(2, 2fr); /* Two columns instead of three */
             grid-gap: 20px; /* Adjust the gap between cards as needed */
-          }
-          
-        .evaluate {
-          right: -62px;
-          top: 600px; /* Adjust right position for tablet screens */
         }
-      }
-}
 
+        .evaluate {
+            right: -62px;
+            top: 600px; /* Adjust right position for tablet screens */
+        }
+    }
+}
