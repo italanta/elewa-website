@@ -1,8 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BannersModule } from '@elewa-website/elements/banners';
 import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 import { ElewaConsultancyAboutOneComponent } from './components/elewa-consultancy-about-one/elewa-consultancy-about-one.component';
-import { CommonModule } from '@angular/common';
 import { ConsultancyRoutingModule } from './consultancy.routing';
 import { ConsultancyPageComponent } from './main/consultancy-page/consultancy-page.component';
 
