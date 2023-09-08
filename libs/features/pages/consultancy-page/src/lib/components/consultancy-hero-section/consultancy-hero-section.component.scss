@@ -3,7 +3,7 @@
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background: #DBC2F5 0% 0% no-repeat padding-box;
+  background: var(--elewa-website-background-hero-bgcolor) 0% 0% no-repeat padding-box;
   opacity: 1;
   z-index: 1;
 
@@ -70,13 +70,14 @@
     .circ-1 {
       top: 229px;
       left: 219px;
-      background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+      background: transparent linear-gradient(90deg, var(--elewa-website-background-hero-bgcolor-3) 0%, varvar(--elewa-website-background-hero-bgcolor-2) 100%) 0% 0% no-repeat padding-box;
+      
     }
 
     .circ-2 {
       top: 229px;
       left: 846px;
-      background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+      background: transparent linear-gradient(90deg, var(--elewa-website-background-hero-bgcolor-3) 0%, var(--elewa-website-background-hero-bgcolor-2) 100%) 0% 0% no-repeat padding-box;
     }
   }
 
