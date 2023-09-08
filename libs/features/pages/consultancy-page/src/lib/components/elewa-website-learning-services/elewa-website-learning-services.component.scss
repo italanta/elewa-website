@@ -1,7 +1,64 @@
-.container{
-    background-color: var( --elewa-website-card-background-color);
-}
+// .learning-services{
+//     align-items: center;
+//     flex-direction: column;
+//     display: flex;
 
-.section{
-    padding: 16px;
+//     .container {
+//         text-align: center; 
+//         height: 100px; 
+
+//         h1 {
+//             display: inline-block; 
+//             vertical-align: middle; 
+//         }
+
+//         span {
+//             display: block;
+//         }
+//     }
+
+//     .cards { 
+//         position: relative;
+//         gap: 20px; 
+//         padding: 12px;
+//         max-width: 100%;
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+
+//     .evaluate{
+//         position: absolute;
+//         top: 494px;
+//         right: 200px;
+//     }
+// }
+.services {
+    align-items: flex-start; 
+    flex-direction: column; 
+    display: flex;
+    font-size: medium;
+    
+    .container {
+        text-align: center;
+        height: 100px;
+        
+        h1 {
+            display: inline-block;
+            vertical-align: middle; 
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    .section {
+        position: relative;
+        gap: 20px; 
+        padding: 15px; 
+        max-width: 100%; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }

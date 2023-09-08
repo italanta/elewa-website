@@ -39,6 +39,6 @@ export const __highlightedServices: InfoCard[] = [
     {
         title: 'Evaluation',
         description: 'Evaluation of eLearning programs. Monitoring of effectiveness …. Todo',    
-        icon: '',
+        icon: 'fas fa-chart-line',
     },
 ];
