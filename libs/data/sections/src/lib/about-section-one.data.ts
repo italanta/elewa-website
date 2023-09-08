@@ -6,8 +6,8 @@ export const _section1Content: ContentText =
   {
     title: 'People at the center',
     descriptions: [
-      'People are the secret to successful education programs.',
-      'Through in-depth research, we work with your organization at different levels to understand how people live and learn. Based on decades of research, this understanding allows us to co-create strong learning networks within your organization. Networks that can be reused every time a training need arises; At a fraction of the cost of current solutions.',
+      'People are the secret to successful education programs. Through in-depth research, we work with your organization at different levels to understand ("elewa") how people live and learn.',
+      'Based on decades of research, this understanding allows us to co-create strong learning networks within your organization. Networks that can be reused every time a training need arises; At a fraction of the cost of current solutions.',
     ],
   }
 
