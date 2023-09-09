@@ -6,7 +6,7 @@ import {
 
 export const _consultancyPageAbout: ImageAndText = {
   content: {
-    title: 'our approach to content development',
+    title: 'people at the center',
     descriptions: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae, porro aliquam soluta blanditiis ', 'quia animi voluptates doloremque magnam quis quibusdam, assumenda, cupiditate recusandae aut et! Esse facere hic iusto!'],
   },
   
