@@ -1,23 +1,23 @@
 import { ContentText } from '@elewa-website/models/schema/ui/texts';
 import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
-export const _section1Content: ContentText = 
+
+export const _section1Content: ContentText =
 
   {
-    title: 'People at the center',
+    title: 'our approach to content development',
     descriptions: [
-      'People are the secret to successful education programs. Through in-depth research, we work with your organization at different levels to understand ("elewa") how people live and learn.',
-      'Based on decades of research, this understanding allows us to co-create strong learning networks within your organization. Networks that can be reused every time a training need arises; At a fraction of the cost of current solutions.',
+     ' The secret to succesfull education sequi nesciunt. Neque porro quisquam dolorem ipsum quia dolor sit Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam dolorem ipsum quia dolor sit Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam dolorem ipsum quia dolor.'
     ],
   }
-  export const _section1ImageData: ImageConfig = {
-    title: 'Image 1',
-    imageSrc:
-      'https://images.pexels.com/photos/1876790/pexels-photo-1876790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    visualisation: ImageVisualisation.Pill,
-    maxWidth: '100%',
-  };
-  
-  export const _imageAndTextData = {
-    contentData: _section1Content,
-    imageData: _section1ImageData,
-  };  
+export const _section1ImageData: ImageConfig = {
+  title: 'Image 1',
+  imageSrc:
+  'https://media.gettyimages.com/id/1357935536/photo/happy-businesswoman-sitting-on-her-desk-using-her-tablet.jpg?s=612x612&w=0&k=20&c=XISUq0dPqYqpfL1wnUX0L0AHTngKJ9JS8zFSoODvvTc=',
+  visualisation: ImageVisualisation.Pill,
+  maxWidth: '100%',
+};
+
+export const _imageAndTextData = {
+  contentData: _section1Content,
+  imageData: _section1ImageData,
+};  
