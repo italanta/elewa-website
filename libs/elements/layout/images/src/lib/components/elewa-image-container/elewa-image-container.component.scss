@@ -6,9 +6,9 @@
 
 /* Round the top and the bottom of the image to make it oval-shaped */
 .pill {
-  clip-path: inset(0 0 0 round 30vh);
-  width: 450px;
-  max-height: 550px;
+  clip-path: inset(0 23% 0 round 40vh);
+  width: 664px;
+  max-height: 849px;
 }
 
 /* Forms a figure-like 8: Two pills placed on top of each other horizontally */
@@ -94,16 +94,80 @@
   max-height: 500px;
 }
 
-/* Add responsiveness to screens between 481 px and 768 px  */
-@media (min-width: 481px) and (max-width: 768px) {
-  .pill, .stacked, .window, .card {
-    // width: 240px;
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+
+  /* Round the top and the bottom of the image to make it oval-shaped */
+  .pill {
+    clip-path: inset(0 23% 0 round 40vh);
+    width: 664px;
+    max-height: 849px;
+  }
+
+  /* Forms a figure-like 8: Two pills placed on top of each other horizontally */
+  .stacked {
+    height: 450px;
+    width: 450px;
+    clip-path: polygon(
+        /* ... Your polygon points ... */
+      );
+  }
+
+  /* Round the top of the image at 30% of vertical height */
+  .window {
+    clip-path: inset(0 0 0 round 40vh 40vh 0 0);
+    width: 450px;
+    max-height: 500px;
+  }
+
+  /* Round the corners of the card image (10px) */
+  .card {
+    clip-path: inset(0 0 0 round 10px);
+    width: 400px;
+    max-height: 500px;
   }
 }
 
-/* Add responsiveness to screens above 768 px */
-@media (min-width: 769px) {
-  .pill, .stacked, .window, .card {
-    // width: 280px;
+/* For mobile screens */
+@media (max-width: 767px) {
+
+  /* Adjust the styles for mobile screens here */
+  .pill {
+    clip-path: inset(0 5% 0 round 40vh);
+    width: 100%;
+    /* Full width for mobile */
+    max-height: auto;
+    /* Let it scale with width */
+  }
+
+  /* Adjust the styles for mobile screens here */
+  .stacked {
+    height: 250px;
+    /* Adjust the height for mobile */
+    width: 250px;
+    /* Adjust the width for mobile */
+    clip-path: polygon(
+        /* ... Your polygon points adjusted for mobile ... */
+      );
+  }
+
+  /* Adjust the styles for mobile screens here */
+  .window {
+    clip-path: inset(0 0 0 round 40vh 40vh 0 0);
+    width: 100%;
+    /* Full width for mobile */
+    max-height: auto;
+    /* Let it scale with width */
+  }
+
+  /* Adjust the styles for mobile screens here */
+  .card {
+    clip-path: inset(0 0 0 round 5px);
+    /* Smaller corner radius for mobile */
+    width: 100%;
+    /* Full width for mobile */
+    max-height: auto;
+    /* Let it scale with width */
   }
 }
