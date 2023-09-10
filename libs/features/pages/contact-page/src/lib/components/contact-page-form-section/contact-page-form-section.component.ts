@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms'
+import { FormGroup, FormBuilder, Validators } from '@angular/forms'
 
 @Component({
   selector: 'elewa-website-contact-page-form-section',
@@ -8,16 +8,24 @@ import { FormGroup, FormBuilder } from '@angular/forms'
 })
 export class ContactPageFormSectionComponent {
 
-  //generate form controls
+  /*generate form controls*/
   data = {}
   contactForm = this.fb.group({
-    name: [''],
-    companyName: [''],
-    selectOption: [''],
-    message: [''],
+    name: ['', Validators.required],
+    companyName: ['', Validators.required],
+    selectOption: ['', Validators.required],
+    message: ['', Validators.required],
   })
 
-  //inject the FormBuilder service
+ /* Submit form */
+ onSubmit() {
+  if (this.contactForm.valid) {
+    const formData = this.contactForm.value;
+    this.contactForm.reset();
+}
+}
+
+  /*inject the FormBuilder service */
   constructor( private fb: FormBuilder) {
 
   }
