@@ -1,4 +1,4 @@
-<div class="image-text-banner" [ngClass]="getLayoutClass()">
+<!-- <div class="image-text-banner" [ngClass]="getLayoutClass()">
   <div class="image-container">
     <elewa-website-image-container [imageConfig]="ImageAndText.image" class="image-container">
     </elewa-website-image-container>
@@ -7,5 +7,23 @@
   <div class="text-container">
     <elewa-website-elewa-text-content-item [content]="ImageAndText.content">
     </elewa-website-elewa-text-content-item>
+  </div>
+</div> -->
+
+<div class="image-text-banner" [ngClass]="getLayoutClass()">
+  <div class="image-container" *ngIf="ImageAndText.imagePosition === 'left'">
+    <elewa-website-image-container [imageConfig]="ImageAndText.image" class="image-container"></elewa-website-image-container>
+  </div>
+
+  <div class="text-container" *ngIf="ImageAndText.imagePosition === 'right'">
+    <elewa-website-elewa-text-content-item [content]="ImageAndText.content"></elewa-website-elewa-text-content-item>
+  </div>
+
+  <div class="text-container" *ngIf="ImageAndText.imagePosition === 'left'">
+    <elewa-website-elewa-text-content-item [content]="ImageAndText.content"></elewa-website-elewa-text-content-item>
+  </div>
+
+  <div class="image-container" *ngIf="ImageAndText.imagePosition === 'right'">
+    <elewa-website-image-container [imageConfig]="ImageAndText.image" class="image-container"></elewa-website-image-container>
   </div>
 </div>

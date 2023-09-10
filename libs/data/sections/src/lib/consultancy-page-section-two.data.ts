@@ -29,5 +29,5 @@ export const __consultancyImageAndTextData: ImageAndText =
   {
     content: __consultancyContentText,
     image: __consultancyImageConfig,
-    imagePosition: 'right',
+    imagePosition: 'left',
   }
