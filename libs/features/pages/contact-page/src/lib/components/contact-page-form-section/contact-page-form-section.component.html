@@ -6,15 +6,11 @@
           <p>Looking for a quick answer to your <br> question? Check out our <span><strong>FAQs</strong></span> </p>
           <p>For everything else, drop us a line <br> and we'll get back to you</p>
         </div>
-        <div class="social-media-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-        </div>
+       
       </div>
       <div class="contact-form-right">
           <!-- bind contactForm in the model with the form element -->
-        <form [formGroup]="contactForm" >
+        <form [formGroup]="contactForm">
             <!-- bind each input and select fields to the form control using formControlName input -->
           <div class="form-group">
             <input
@@ -50,17 +46,23 @@
             />
           </div>
         </form>
-  
-        <div class="slider-button-container">
-          <p>
-            By clicking the Submit button you agree to <br />
-            our <b>Privacy Policy</b> terms
-          </p>
-          <!-- reuse imported elewa-website-slider-button component -->
-          <elewa-website-slider-button
-            [buttonData]="{ text: 'Send message' }"
-          ></elewa-website-slider-button>
-        </div>
+      </div>
+    </div>
+    <div class="form-footer">
+      <div class="social-media-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <div class="slider-button-container">
+        <p>
+          By clicking the Submit button you agree to <br />
+          our <b>Privacy Policy</b> terms
+        </p>
+        <!-- reuse imported elewa-website-slider-button component -->
+        <elewa-website-slider-button
+          [buttonData]="{ text: 'Send message' }"
+        ></elewa-website-slider-button>
       </div>
     </div>
   </div>

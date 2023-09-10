@@ -9,6 +9,7 @@ import { FormGroup, FormBuilder } from '@angular/forms'
 export class ContactPageFormSectionComponent {
 
   //generate form controls
+  data = {}
   contactForm = this.fb.group({
     name: [''],
     companyName: [''],
