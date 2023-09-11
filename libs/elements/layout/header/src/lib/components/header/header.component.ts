@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'elewa-website-header',
@@ -6,11 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  // This 'isActive' value combined with the ngClass directive adds/removes the 'active' class to the hambuger and nav-menu elements, which will then determine how they will be displayed on screen. //
+  backgroundColor!: string;
   isActive = false;
 
-  // a custom event listener which updates the isActive value
+  constructor(private _route: Router) {
+    this.backgroundColor = this.getBackgroundColor();
+  }
+
   toggleActiveClass(isActive: boolean) {
     this.isActive = isActive;
+  }
+
+  getBackgroundColor() {
+    const url = this._route.url.slice(1);
+
+    switch (url) {
+      case 'home':
+        return '#f9f8f4';
+      case 'about':
+        return '#f9f8f4';
+      default:
+        return '#f9f8f4';
+    }
   }
 }
