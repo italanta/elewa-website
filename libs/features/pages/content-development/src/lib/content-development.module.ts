@@ -14,6 +14,7 @@ import { ContentDevAboutTwoComponent } from './components/elewa-content-dev-abou
 import { ContentDevPricingSectionComponent } from './components/content-dev-pricing-section/content-dev-pricing-section.component';
 
 import { ContentDevPageRoutingModule } from './content-development.routing';
+import { ContentDevProjectsSectionComponent } from './components/content-dev-projects-section/content-dev-projects-section.component';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { ContentDevPageRoutingModule } from './content-development.routing';
     ContentDevelopmentPageComponent,
     ContentDevHeroSectionComponent,
     ContentDevPricingSectionComponent,
+    ContentDevProjectsSectionComponent,
   ],
   exports: [ContentDevelopmentPageComponent],
 })
