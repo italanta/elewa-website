@@ -7,6 +7,6 @@ import { __contentDevAboutOne } from '@elewa-website/data/sections';
   templateUrl: './elewa-content-dev-about-one.component.html',
   styleUrls: ['./elewa-content-dev-about-one.component.scss'],
 })
-export class ElewaContentDevAboutOneComponent {
+export class ContentDevAboutOneComponent {
   InputData: ImageAndText = __contentDevAboutOne;
 }

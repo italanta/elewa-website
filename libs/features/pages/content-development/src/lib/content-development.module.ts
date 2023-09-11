@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 import { BannersModule } from '@elewa-website/elements/banners';
@@ -9,16 +8,16 @@ import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 
 import { ContentDevelopmentPageComponent } from './main/content-development-page/content-development-page.component';
 import { ContentDevHeroSectionComponent } from './components/content-dev-hero-section/content-dev-hero-section.component';
-import { ElewaContentDevAboutOneComponent } from './components/elewa-content-dev-about-one/elewa-content-dev-about-one.component';
+import { ContentDevAboutOneComponent } from './components/elewa-content-dev-about-one/elewa-content-dev-about-one.component';
+import { ContentDevAboutTwoComponent } from './components/elewa-content-dev-about-two/elewa-content-dev-about-two.component';
+import { ContentDevPricingSectionComponent } from './components/content-dev-pricing-section/content-dev-pricing-section.component';
 
-import { ContentDevelopmentPageRoutingModule } from './content-development.routing';
-import { ElewaContentDevAboutTwoComponent } from './components/elewa-content-dev-about-two/elewa-content-dev-about-two.component';
+import { ContentDevPageRoutingModule } from './content-development.routing';
 
 @NgModule({
   imports: [
     CommonModule,
-    ContentDevelopmentPageRoutingModule,
-    AppHeaderModule,
+    ContentDevPageRoutingModule,
     TextsModule,
     ButtonsModule,
     BannersModule,
@@ -26,10 +25,11 @@ import { ElewaContentDevAboutTwoComponent } from './components/elewa-content-dev
   ],
   declarations: [
     ContentDevelopmentPageComponent,
-    ElewaContentDevAboutOneComponent,
-    ElewaContentDevAboutTwoComponent,
+    ContentDevAboutOneComponent,
+    ContentDevAboutTwoComponent,
     ContentDevelopmentPageComponent,
     ContentDevHeroSectionComponent,
+    ContentDevPricingSectionComponent,
   ],
   exports: [ContentDevelopmentPageComponent],
 })

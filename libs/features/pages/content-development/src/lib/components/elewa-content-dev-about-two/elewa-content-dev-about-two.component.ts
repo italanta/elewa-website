@@ -6,6 +6,6 @@ import { __imageAndDetails } from '@elewa-website/data/sections';
   templateUrl: './elewa-content-dev-about-two.component.html',
   styleUrls: ['./elewa-content-dev-about-two.component.scss'],
 })
-export class ElewaContentDevAboutTwoComponent {
+export class ContentDevAboutTwoComponent {
   imageAndDetails = __imageAndDetails
 }

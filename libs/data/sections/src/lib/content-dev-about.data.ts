@@ -11,7 +11,7 @@ export const __contentDevAboutOne: ImageAndText = {
   },
   image: {
     imageSrc:
-      'https://i.pinimg.com/564x/51/63/be/5163beead1ce8cd8c0b238ec6aa9430e.jpg',
+      'https://images.unsplash.com/photo-1522896736962-5f80685ea3e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
