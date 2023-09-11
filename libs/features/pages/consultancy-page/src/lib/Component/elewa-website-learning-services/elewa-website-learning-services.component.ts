@@ -6,6 +6,6 @@ import { __learningDevicesData } from '@elewa-website/data/sections';
   templateUrl: './elewa-website-learning-services.component.html',
   styleUrls: ['./elewa-website-learning-services.component.scss'],
 })
-export class ElewaWebsiteLearningServicesComponent {
+export class ConsultancyLearningServicesComponent {
   learningDevicesData = __learningDevicesData
 }

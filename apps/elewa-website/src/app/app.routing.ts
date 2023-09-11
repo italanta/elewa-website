@@ -60,7 +60,7 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.ConsultancyPageModule
       ),
   },  {
-    path: 'booklets-page',
+    path: 'booklets',
     loadChildren: () =>
       import('@elewa-website/features/pages/booklets-page').then(
         (m) => m.BookletsPageModule
