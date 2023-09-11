@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { __highlightedImage } from '@elewa-website/models/data/sections';
+import { __contentDevAboutOne } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-consultancy-page',
@@ -7,5 +7,5 @@ import { __highlightedImage } from '@elewa-website/models/data/sections';
   styleUrls: ['./consultancy-page.component.scss'],
 })
 export class ConsultancyPageComponent {
-  content = __highlightedImage
+  content = __contentDevAboutOne
 }
