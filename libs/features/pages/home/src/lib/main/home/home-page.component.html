@@ -1,6 +1,14 @@
-<elewa-website-main-page>
-  <div mainPage class="home-page">
-    <elewa-website-projects-section></elewa-website-projects-section>
-    <elewa-website-news-section></elewa-website-news-section>
+<div class="elewa-images">
+  <div *ngFor="let item of imageData" class="image-and-text">
+    <div class="image">
+      <elewa-website-image-container
+        [imageConfig]="mapImageAndTextToImageConfig(item)"
+      ></elewa-website-image-container>
+    </div>
+    <div class="text">
+      <elewa-website-elewa-text-content-item
+        [content]="item.content"
+      ></elewa-website-elewa-text-content-item>
+    </div>
   </div>
-</elewa-website-main-page>
+</div>
