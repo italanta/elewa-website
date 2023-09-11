@@ -1,9 +1,3 @@
-<div
-  *ngFor="let item of imageData"
-  class="image-text-banner"
-  [ngClass]="getLayoutClass(item)"
->
-  <elewa-website-image-and-text-banner
-    [ImageAndText]="item"
-  ></elewa-website-image-and-text-banner>
+<div *ngFor="let item of imageData" class="image-text-banner" [ngClass]="getLayoutClass(item)">
+  <elewa-website-image-and-text-banner [ImageAndText]="item"></elewa-website-image-and-text-banner>
 </div>
