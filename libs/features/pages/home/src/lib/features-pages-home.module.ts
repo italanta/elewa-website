@@ -21,7 +21,7 @@ import { ImagesModule } from '@elewa-website/elements/layout/images';
     CarouselModule,
     MainPageModule,
     TextsModule,
-    ImagesModule, /**import modules*/
+    ImagesModule /**import modules*/,
   ],
   declarations: [
     HomePageComponent,
