@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
 import { BannersModule } from '@elewa-website/elements/banners';
@@ -20,6 +21,7 @@ import { ConsultancyRoutingModule } from './consultancy.routing';
     TextsModule,
     ButtonsModule,
     BannersModule,
+    MainPageModule
   ],
   declarations: [
     ConsultancyPageComponent,
