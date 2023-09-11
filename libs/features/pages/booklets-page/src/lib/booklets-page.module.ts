@@ -8,9 +8,9 @@ import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 
 import { BookletsPageComponent } from './main/booklets-page/booklets-page.component';
 import { BookletsHeroSectionComponent } from './components/booklets-hero-section/booklets-hero-section.component';
+import { BookletsAboutSectionOneComponent } from './components/booklets-about-one-section/booklets-about-section.component';
 
 import { BookletsRoutingModule } from './booklets.routing';
-import { BookletsPageTextImageBannerSectionComponent } from './main/booklets-page-text-image-banner-section/booklets-page-text-image-banner-section.component';
 
 @NgModule({
   imports: [
@@ -24,7 +24,7 @@ import { BookletsPageTextImageBannerSectionComponent } from './main/booklets-pag
   declarations: [
     BookletsPageComponent,
     BookletsHeroSectionComponent,
-    BookletsPageTextImageBannerSectionComponent,
+    BookletsAboutSectionOneComponent,
   ],
 })
 export class BookletsPageModule {}

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BookletsPageTextImageBannerSectionComponent } from './booklets-page-text-image-banner-section.component';
+import { BookletsAboutSectionOneComponent } from './booklets-about-section.component';
 
 describe('BookletsPageTextImageBannerSectionComponent', () => {
-  let component: BookletsPageTextImageBannerSectionComponent;
-  let fixture: ComponentFixture<BookletsPageTextImageBannerSectionComponent>;
+  let component: BookletsAboutSectionOneComponent;
+  let fixture: ComponentFixture<BookletsAboutSectionOneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BookletsPageTextImageBannerSectionComponent],
+      imports: [BookletsAboutSectionOneComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(
-      BookletsPageTextImageBannerSectionComponent
+      BookletsAboutSectionOneComponent
     );
     component = fixture.componentInstance;
     fixture.detectChanges();

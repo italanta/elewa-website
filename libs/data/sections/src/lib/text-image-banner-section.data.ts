@@ -1,15 +1,13 @@
 import { ContentText } from '@elewa-website/models/schema/ui/texts';
 import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
+import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 
-export const _section: ContentText = 
-
-  {
-    title: 'Development of educational manuals and booklets',
-    descriptions: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    ],
-  }
-
+export const _section: ContentText = {
+  title: 'Development of educational manuals and booklets',
+  descriptions: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  ],
+};
 
 export const _imageData: ImageConfig = {
   title: 'Image 1',
@@ -19,7 +17,8 @@ export const _imageData: ImageConfig = {
   maxWidth: '100%',
 };
 
-export const _imageAndTextData = {
-  contentData: _section,
-  imageData: _imageData,
+export const _imageAndTextData: ImageAndText = {
+  content: _section,
+  image: _imageData,
+  imagePosition: 'left',
 };
