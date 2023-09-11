@@ -1,0 +1,44 @@
+.learning-services {
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  background: var(--elewa-website-learning-services-background);
+    
+
+  
+    .learning-services-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+      grid-gap: 10px;
+      padding: 0 100px 100px 100px;/* Adjust the gap between items as needed */
+
+     
+  
+      /* Styling for the info cards within ngFor loop */
+      .info-card {
+        /* Common styles for info cards */
+        padding: 20px;
+        
+  
+      }
+    }
+  }
+  
+/* Styling for the <h6> element */
+h1 {
+  text-align: center;
+  font-size: 52px;
+  font-family: var(--elewa-website-learning-services-familyfont);
+  letter-spacing: 0px;
+  color:var(--elewa-website-color-primary-black);
+  opacity: 1;
+  padding: 5px;
+}
+
+.line-break::before {
+  content: "\a";
+  white-space: pre;
+}
+  
