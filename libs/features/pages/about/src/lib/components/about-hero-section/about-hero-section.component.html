@@ -1,1 +1,17 @@
-<p>about-hero-section works!</p>
+<div class="about-section">
+    <div *ngFor="let herotext of herotexts" class="text-section">
+        <elewa-website-elewa-text-section [herotexts] ="herotext"></elewa-website-elewa-text-section>
+    </div>
+    <div class="image-section">
+        <elewa-website-image-container>
+            <img
+                [src]="image.imageSrc"
+                [alt]="image.title"
+                [ngClass]="{
+                    'stacked': image.visualisation === ImageVisualisation.Stacked
+                }"
+            />
+/>
+        </elewa-website-image-container>
+    </div>
+</div>
