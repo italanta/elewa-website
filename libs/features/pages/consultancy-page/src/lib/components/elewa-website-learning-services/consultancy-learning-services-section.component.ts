@@ -3,8 +3,8 @@ import { __learningDevicesData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-learning-services',
-  templateUrl: './elewa-website-learning-services.component.html',
-  styleUrls: ['./elewa-website-learning-services.component.scss'],
+  templateUrl: './consultancy-learning-services-section.component.html',
+  styleUrls: ['./consultancy-learning-services-section.component.scss'],
 })
 export class ConsultancyLearningServicesComponent {
   learningDevicesData = __learningDevicesData
