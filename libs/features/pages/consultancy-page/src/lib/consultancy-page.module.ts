@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
-import { BannersModule } from '@elewa-website/elements/banners';
 import { CardsModule } from '@elewa-website/elements/cards';
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 import { BannersModule } from '@elewa-website/elements/banners';
@@ -19,32 +18,30 @@ import { ElewaConsultancyAboutTwoComponent } from './components/elewa-consultanc
 
 @NgModule({
   imports: [
-    
+
     CommonModule,
-   
+
     ConsultancyRoutingModule,
-   
+
     AppHeaderModule,
-   
+
     TextsModule,
-   
+
     ButtonsModule,
     BannersModule,
     CardsModule,
     MainPageModule,
-  ,
+
     BannersModule,
   ],
   declarations: [
-    
     ConsultancyPageComponent,
-   
+
     ConsultancyHeroSectionComponent,
     ConsultancyAboutOneComponent,
     ConsultancyLearningServicesComponent,
-  ,
     ElewaConsultancyAboutTwoComponent,
   ],
-  exports: [ConsultancyPageComponent, ElewaConsultancyAboutTwoComponent],,
+  exports: [ ConsultancyPageComponent, ElewaConsultancyAboutTwoComponent ],,
 })
-export class ConsultancyPageModule {}
+export class ConsultancyPageModule { }

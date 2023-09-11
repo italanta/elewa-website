@@ -31,7 +31,6 @@ import { ElewaContentDevAboutOneComponent } from './components/elewa-content-dev
     ButtonsModule,
     BannersModule,
     MainPageModule,
-  ,
     ContentDevelopmentPageRoutingModule,
     BannersModule, 
   ],
