@@ -9,6 +9,6 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
   styleUrls: ['./elewa-sdg-list.component.scss'],
 })
 export class ElewaSdgListComponent {
-  @Input({ required: true }) sdgList!: SDGCard[];
-  @Input({ required: true }) buttonData!: SliderButtonData;
+  @Input() sdgList!: SDGCard[];
+  @Input() buttonData!: SliderButtonData;
 }

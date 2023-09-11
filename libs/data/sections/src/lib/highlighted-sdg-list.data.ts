@@ -1,4 +1,5 @@
 import { SDGCard } from '@elewa-website/models/schema/ui/cards';
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
 export const __highlightedSDGList: SDGCard[] = [
   {
@@ -32,3 +33,7 @@ export const __highlightedSDGList: SDGCard[] = [
     icon: 'fa-solid fa-check-double',
   },
 ];
+export const __buttonData: SliderButtonData = {
+  text: "Unlock your Potential", 
+  bgColor: "transparent"
+}

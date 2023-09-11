@@ -22,7 +22,7 @@ import { ElewaSdgCardComponent } from './components/elewa-sdg-card/elewa-sdg-car
     ElewaTeamMemberCardComponent,
     ElewaPriceListComponent,
     ElewaSdgListComponent,
-    ElewaSdgCardComponent,
+    ElewaSdgCardComponent
   ],
   exports: [
     ElewaInfoCardComponent,
