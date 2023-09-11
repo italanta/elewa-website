@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 10rem;
+  justify-content: left;
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
