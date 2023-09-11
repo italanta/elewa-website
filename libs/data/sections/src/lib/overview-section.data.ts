@@ -20,7 +20,7 @@ const __overviewImageConfig: ImageConfig =
 {
   imageSrc: 'https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',   // Add image URL
   title: '',      // Add image title
-  visualisation: ImageVisualisation.Pill, // You can set this to Stacked or any other value as needed
+  visualisation: ImageVisualisation.Window, // You can set this to Stacked or any other value as needed
   maxWidth: '803px',
 }
 
