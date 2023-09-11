@@ -8,7 +8,7 @@ import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 
 import { ConsultancyPageComponent } from './main/consultancy-page/consultancy-page.component';
 import { ConsultancyHeroSectionComponent } from './components/consultancy-hero-section/consultancy-hero-section.component';
-import { ConsultancyAboutOneComponent } from './elewa-consultancy-about-one/elewa-consultancy-about-one.component';
+import { ConsultancyAboutOneComponent } from './components/consultancy-about-one/consultancy-about-one.component';
 
 import { ConsultancyRoutingModule } from './consultancy.routing';
 
