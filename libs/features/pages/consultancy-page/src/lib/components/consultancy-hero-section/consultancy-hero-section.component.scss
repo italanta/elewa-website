@@ -1,111 +1,111 @@
 .consult-section {
-    background-color: var(--elewa-website-consult-section-background-color);
-    width: 100vw;
-    height: calc(100vh - var(--elewa-website-header-height));
-    overflow: hidden;
-    position: relative;
+  background-color: var(--elewa-website-consult-section-background-color);
+  width: 100vw;
+  height: calc(100vh - var(--elewa-website-header-height));
+  overflow: hidden;
+  position: relative;
 }
 
 .hero-section {
-    position: absolute;
-    z-index: 5999999999;
-    margin-top: 3rem;
-    margin-left: 2rem;
+  position: absolute;
+  z-index: 5999999999;
+  margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 .eclipses {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .slider-button {
-    margin-top: 57px;
-    z-index: 5999999999090999999999999999;
+  margin-top: 57px;
+  z-index: 5999999999090999999999999999;
 }
 
 .circle {
-    position: absolute;
-    top: 150px;
-    left: 219px;
-    width: 1065px;
-    height: 1056px;
-    border-radius: 50%;
-    background: var(--elewa-website-consult-background);
-    mix-blend-mode: multiply;
-    opacity: 1;
-    z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 219px;
+  width: 1065px;
+  height: 1056px;
+  border-radius: 50%;
+  background: var(--elewa-website-consult-background);
+  mix-blend-mode: multiply;
+  opacity: 1;
+  z-index: 1;
 }
 
 .circle2 {
-    position: absolute;
-    top: 150px;
-    left: 846px;
-    width: 1065px;
-    height: 1056px;
-    border-radius: 50%;
-    background: var(--elewa-website-consult-background);
-    mix-blend-mode: multiply;
-    opacity: 1;
-    transform: matrix(-1, 0, 0, -1, 0, 0);
+  position: absolute;
+  top: 150px;
+  left: 846px;
+  width: 1065px;
+  height: 1056px;
+  border-radius: 50%;
+  background: var(--elewa-website-consult-background);
+  mix-blend-mode: multiply;
+  opacity: 1;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
 }
 
 @media screen and (min-width: 1300px) {
-    .hero-text {
-        width: 50%;
-    }
-    .hero-section {
-        margin-left: 20rem; /* Adjust the left margin for larger screens */
-    }
+  .hero-text {
+    width: 50%;
+  }
+  .hero-section {
+    margin-left: 20rem; /* Adjust the left margin for larger screens */
+  }
 }
 
 @media (max-width: 479px) {
-    .hero-section {
-        width: 100%;
-        margin-left: 1rem; /* Adjust the left margin for smaller screens */
-        z-index: 5999999999;
-    }
+  .hero-section {
+    width: 100%;
+    margin-left: 1rem; /* Adjust the left margin for smaller screens */
+    z-index: 5999999999;
+  }
 
-    .eclipses {
-        margin-left: 1rem; /* Adjust the left margin for smaller screens */
-    }
+  .eclipses {
+    margin-left: 1rem; /* Adjust the left margin for smaller screens */
+  }
 
-    .slider-button {
-        margin-top: 1rem; /* Adjust the top margin for smaller screens */
-    }
+  .slider-button {
+    margin-top: 1rem; /* Adjust the top margin for smaller screens */
+  }
 }
 
 @media (min-width: 480px) and (max-width: 1024px) {
-    .hero-section {
-        width: 100%;
-        margin-left: 1rem; /* Adjust the left margin for medium screens */
-        z-index: 5999999999;
-    }
+  .hero-section {
+    width: 100%;
+    margin-left: 1rem; /* Adjust the left margin for medium screens */
+    z-index: 5999999999;
+  }
 
-    .eclipses {
-        margin-left: 1rem; /* Adjust the left margin for medium screens */
-    }
+  .eclipses {
+    margin-left: 1rem; /* Adjust the left margin for medium screens */
+  }
 
-    .slider-button {
-        margin-top: 1rem; /* Adjust the top margin for medium screens */
-    }
+  .slider-button {
+    margin-top: 1rem; /* Adjust the top margin for medium screens */
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
-    .hero-section {
-        width: 50%;
-        margin-left: 2rem; /* Adjust the left margin for larger medium screens */
-        z-index: 5999999999;
-    }
+  .hero-section {
+    width: 50%;
+    margin-left: 2rem; /* Adjust the left margin for larger medium screens */
+    z-index: 5999999999;
+  }
 
-    .eclipses {
-        margin-left: 3rem; /* Adjust the left margin for larger medium screens */
-    }
+  .eclipses {
+    margin-left: 3rem; /* Adjust the left margin for larger medium screens */
+  }
 
-    .slider-button {
-        margin-top: 1rem; /* Adjust the top margin for larger medium screens */
-        z-index: 5999999999090999999999999999;
-    }
+  .slider-button {
+    margin-top: 1rem; /* Adjust the top margin for larger medium screens */
+    z-index: 5999999999090999999999999999;
+  }
 }
