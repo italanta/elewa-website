@@ -10,6 +10,8 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { TextsModule } from '@elewa-website/elements/layout/texts';
+import { ImagesModule } from '@elewa-website/elements/layout/images';
 
 @NgModule({
   imports: [
@@ -18,6 +20,8 @@ import { HomeRoutingModule } from './home.routing';
     CardsModule,
     CarouselModule,
     MainPageModule,
+    TextsModule,
+    ImagesModule, /**import modules*/
   ],
   declarations: [
     HomePageComponent,
