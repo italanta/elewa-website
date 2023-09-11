@@ -11,6 +11,7 @@ import { ConsultancyHeroSectionComponent } from './components/consultancy-hero-s
 import { ConsultancyAboutOneComponent } from './components/consultancy-about-one/consultancy-about-one.component';
 
 import { ConsultancyRoutingModule } from './consultancy.routing';
+import { ElewaConsultancyAboutTwoComponent } from './components/elewa-consultancy-about-two/elewa-consultancy-about-two.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { ConsultancyRoutingModule } from './consultancy.routing';
     ConsultancyPageComponent,
     ConsultancyHeroSectionComponent,
     ConsultancyAboutOneComponent,
+    ElewaConsultancyAboutTwoComponent,
   ],
   exports: [ConsultancyPageComponent],
 })
