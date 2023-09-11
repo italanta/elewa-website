@@ -13,7 +13,7 @@ export const __highlightedImageData: ImageAndText[] = [
     image: {
       imageSrc: 'https://www.securitymagazine.com/ext/resources/Default-images/Responsive-Defaults/keyboard.jpg?1566398203',
       title: 'Image 2',
-      maxWidth: '500',
+      maxWidth: '600',
       visualisation: ImageVisualisation.Pill,
     },
     imagePosition: 'right',

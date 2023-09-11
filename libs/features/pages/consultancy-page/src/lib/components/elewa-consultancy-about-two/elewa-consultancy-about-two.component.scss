@@ -1,0 +1,14 @@
+.content-banner{
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background: var(--elewa-consultancy-about-one-background-color); 
+}
+
+@media (max-width: 768px) {
+    .image-text-banner {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  }
