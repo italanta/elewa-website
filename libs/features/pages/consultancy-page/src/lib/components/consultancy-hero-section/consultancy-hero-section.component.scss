@@ -1,7 +1,7 @@
 .consult-section {
-    height: 100vh;
     background-color: var(--elewa-website-consult-section-background-color);
     width: 100vw;
+    height: calc(100vh - var(--elewa-website-header-height));
     overflow: hidden;
     position: relative;
 }

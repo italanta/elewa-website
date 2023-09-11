@@ -30,6 +30,10 @@ export class HeaderComponent {
         return '#dbc2f5';
       case 'booklets':
         return '#FBE8D7';
+      case 'content-development':
+        return '#FCF6E4';
+      case 'conversational-learning':
+        return '#FAE9E8';
       default:
         return '#f9f8f4';
     }
