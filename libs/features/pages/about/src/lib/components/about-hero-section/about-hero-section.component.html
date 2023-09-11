@@ -1,9 +1,14 @@
 <div class="about-section">
+    <!-- This is a custom Angular component "elewa-website-elewa-text-section". -->
+    <!-- It receives an input property "herotexts" with the value of "herotext". -->
     <div *ngFor="let herotext of herotexts" class="text-section">
         <elewa-website-elewa-text-section [herotexts] ="herotext"></elewa-website-elewa-text-section>
     </div>
     <div class="image-section">
+        <!-- This is a custom Angular component "elewa-website-image-container". -->
         <elewa-website-image-container>
+            <!-- The img uses Angular binding to set its attributes dynamically. -->
+            <!-- [ngClass] conditionally adds the "stacked" class based on a condition. -->
             <img
                 [src]="image.imageSrc"
                 [alt]="image.title"

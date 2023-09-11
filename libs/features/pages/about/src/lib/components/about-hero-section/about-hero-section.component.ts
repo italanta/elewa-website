@@ -9,7 +9,8 @@ import { ImageVisualisation } from '@elewa-website/models/schema/ui/images';
   styleUrls: ['./about-hero-section.component.scss'],
 })
 export class AboutHeroSectionComponent {
-  herotexts = __highlightedAboutItems
-  image= __elewaImageData
+  herotexts = __highlightedAboutItems // Assigns data from the '__highlightedAboutItems' module.
+  image= __elewaImageData // Assigns data from the '__elewaImageData' module.
+  // Expose the 'ImageVisualisation' enum from the imported module for use in the template.
   ImageVisualisation = ImageVisualisation;
 }
