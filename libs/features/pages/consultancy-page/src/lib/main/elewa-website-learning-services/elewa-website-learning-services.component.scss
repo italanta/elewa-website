@@ -1,9 +1,35 @@
 
 .section-main-container{
     background-color: var( --elewa-website-card-background-color);
+/* cardsData is an array of 8 cards; the main reason I use grid. with 2 cols n 4 rows */   
+    .section{
+        max-width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+        grid-template-rows: repeat(4, 1fr); 
+        background-color: var(-elewa-website-card-background-color);
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* rensponsiveness at tab-screns + phone-screens */
+    @media (max-width: 768px) {
+        .section{
+            display: block;
+        }
+        
+    }
+      
 }
+    
+
+   
+
+   
 
 /** Actual re-used component, nothing much to add to original */
-.section{
-    padding: 16px;
-}
+
+
