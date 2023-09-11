@@ -1,1 +1,1 @@
-export * from './lib/elements-layout-carousel.module';
+export * from './lib/carousel.module';
