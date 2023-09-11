@@ -1,84 +1,36 @@
-
 .image-text-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: inherit;
+  transition: transform 0.2s ease;
+
+  @media (max-width: 768px) {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* normal row-order for the left alignment */
+  &.left-image {
     flex-direction: row;
-    align-items: center;
-    background-color: var(--backgroundColor, #F4EDFD);
-    padding: 24px;
-    margin-inline: 200px;
-    margin-block: 24px;
-    max-width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-  
-    @media (max-width:768px) {
-      display: flex;
-      flex-direction: column;
-      margin-inline: 100px;
-      
-    }
-  
-  @media (max-width:1024px) {
-    margin-inline: 50px;
-    
   }
-  
-    &:hover {
-      transform: translateY(-5px);
-    }
 
-    /* image-position for the main container */
+  /* Reverse the raw-order for the right alignment */
+  &.right-image {
+    flex-direction: row-reverse;
+  }
 
-      /* normal row-order for the left alignment */
-      &.left-image {
-        flex-direction: row; 
+  //Text container + its responsivenss
+  .text-container {
+    max-width: 500px;
+    height: auto;
+    text-align: auto;
 
-        //Rensponse
-        @media (max-width:768px) {
-          display: flex;
-          flex-direction: column;
-        }
-      }
-      
-      /* Reverse the raw-order for the right alignment */
-      &.right-image {
-       flex-direction: row-reverse; 
-
-       //Responsiveness at righted image
-       @media (max-width:768px) {
-        display: flex;
-        flex-direction: column;
-        text-align: right;
-      }
-      
-      }
-  
-    // image-container + its responsivenss
-    .image-container {
-      img {
-        display: block;
-        max-width: 500px;
-        height: auto;
-        
-      }
-      @media (max-width:768px) 
-      {
-        max-width: 300px;
-        
-      }
-    }
-  
-    //Text container + its responsivenss
-    .text-container {
-      max-width: 400px;
-      height: auto; 
-      text-align: auto;
-
-      @media (max-width:768px) {
-        text-align: center;
-        max-width: auto;
-      }
+    @media (max-width: 768px) {
+      text-align: center;
+      max-width: auto;
     }
   }
-  
+}
