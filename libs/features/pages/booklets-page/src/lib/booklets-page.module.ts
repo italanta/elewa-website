@@ -5,6 +5,7 @@ import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
 import { BannersModule } from '@elewa-website/elements/banners';
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
+import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 
 import { BookletsPageComponent } from './main/booklets-page/booklets-page.component';
 import { BookletsHeroSectionComponent } from './components/booklets-hero-section/booklets-hero-section.component';
@@ -19,7 +20,8 @@ import { BookletsRoutingModule } from './booklets.routing';
     AppHeaderModule,
     TextsModule,
     ButtonsModule,
-    BannersModule
+    BannersModule,
+    MainPageModule
   ],
   declarations: [
     BookletsPageComponent,

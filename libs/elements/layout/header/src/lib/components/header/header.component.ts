@@ -29,7 +29,7 @@ export class HeaderComponent {
       case 'consultancy':
         return '#dbc2f5';
       case 'booklets':
-        return '#FCF6E4';
+        return '#FBE8D7';
       default:
         return '#f9f8f4';
     }
