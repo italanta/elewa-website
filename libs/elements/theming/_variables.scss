@@ -66,9 +66,14 @@
   --elewa-website-dmsans-regular: 'DMSans-Regular';
   --elewa-website-footer-font-size-heading: 3.5rem;
   --elewa-website-font-size-description-medium: 12px;
+
+  /** elewa website booklets hero section styles **/
+  --elewa-website-booklets-hero-section-background-color:#FBE8D7;
+  --elewa-website-booklets-hero-section-curve-color:#F2AD69;
+  --elewa-website-booklets-hero-section-curve-color-fade-out: #F2AD6900;
   
-    // elewa website Consultancy hero section
-    --elewa-website-consult-section-background-color:#DBC2F5;
-    --elewa-website-consult-background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+   // elewa website Consultancy hero section
+   --elewa-website-consult-section-background-color:#DBC2F5;
+   --elewa-website-consult-background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
 
 }
