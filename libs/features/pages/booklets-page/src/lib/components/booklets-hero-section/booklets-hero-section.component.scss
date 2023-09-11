@@ -1,7 +1,7 @@
 .booklets-page{
     position: relative;
     background: var(--elewa-website-booklets-hero-section-background-color);
-    height: 100vh;
+    height: calc(100vh - var(--elewa-website-header-height));
     overflow: hidden; 
 
     .booklets-text {

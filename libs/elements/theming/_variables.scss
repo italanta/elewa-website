@@ -18,9 +18,10 @@
   --elewa-website-news-section-bg-color: #f9f8f4;
   --elewa-website-news-item-primary-color: #404040;
 
-   /** elewa website Content Development Hero Section **/
-   --elewa-website-hero-section-background-color:#FCF6E4;
-   --elewa-website-hero-section-cont-designs-background:transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+  /** elewa website Content Development Hero Section **/
+  --elewa-website-hero-section-background-color: #fcf6e4;
+  --elewa-website-hero-section-circles-color: #f2cf73;
+  --elewa-website-hero-section-cont-designs-background: transparent linear-gradient(180deg, --elewa-website-hero-section-circles-color 0%, #f2cf7300 100%) 0% 0% no-repeat padding-box;
 
   /** conversational-learning-colors */
   --elewa-website-conversational-learning-bg-color: #fae9e8;
@@ -47,21 +48,21 @@
   --elewa-website-slider-btn-icon-position: 2%;
   --elewa-website-slider-btn-icon-font-size: 1.2rem;
 
-    /** elewa website header **/
+  /** elewa website header **/
   --elewa-website-contact-form-border-color: #bebdbd;
   /** elewa website header **/
-  --elewa-website-header-bg-height: 5rem;
+  --elewa-website-header-height: 5rem;
 
   /* elewa-consultancy-about-one */
---elewa-consultancy-about-one-background-color: #F7F7F7 0% 0% no-repeat padding-box;
---elewa-consultancy-about-one-color-text: rgba(255, 255, 255, 0.76);
---elewa-consultancy-about-one-font-weight-title: 500;
---elewa-consultancy-about-one-font-weight-subtitle: 300;
---elewa-consultancy-about-one-font-medium: 'DMSans-Medium';
---elewa-consultancy-about-one-font-regular: 'DMSans-Regular';
---elewa-consultancy-about-one-font-size-heading: 3.5rem;
---elewa-consultancy-about-one-font-size-description: 12px;
-
+  --elewa-consultancy-about-one-background-color: #f7f7f7 0% 0% no-repeat
+    padding-box;
+  --elewa-consultancy-about-one-color-text: rgba(255, 255, 255, 0.76);
+  --elewa-consultancy-about-one-font-weight-title: 500;
+  --elewa-consultancy-about-one-font-weight-subtitle: 300;
+  --elewa-consultancy-about-one-font-medium: 'DMSans-Medium';
+  --elewa-consultancy-about-one-font-regular: 'DMSans-Regular';
+  --elewa-consultancy-about-one-font-size-heading: 3.5rem;
+  --elewa-consultancy-about-one-font-size-description: 12px;
 
   /** SDG List Component **/
   --elewa-website-SDG-list-background-color: #292a50;
@@ -81,12 +82,18 @@
   --elewa-website-font-size-description-medium: 12px;
 
   /** elewa website booklets hero section styles **/
-  --elewa-website-booklets-hero-section-background-color:#FBE8D7;
-  --elewa-website-booklets-hero-section-curve-color:#F2AD69;
-  --elewa-website-booklets-hero-section-curve-color-fade-out: #F2AD6900;
-  
-   // elewa website Consultancy hero section
-   --elewa-website-consult-section-background-color:#DBC2F5;
-   --elewa-website-consult-background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+  --elewa-website-booklets-hero-section-background-color: #fbe8d7;
+  --elewa-website-booklets-hero-section-curve-color: #f2ad69;
+  --elewa-website-booklets-hero-section-curve-color-fade-out: #f2ad6900;
 
+  /** elewa website content-dev hero section styles **/
+  --elewa-website-content-dev-hero-section-background-color: #fcf6e4;
+  --elewa-website-content-dev-hero-section-curve-color: #f2ad69;
+  --elewa-website-content-dev-hero-section-curve-color-fade-out: #f2ad6900;
+
+  // elewa website Consultancy hero section
+  --elewa-website-consult-section-background-color: #dbc2f5;
+  --elewa-website-consult-background: transparent
+    linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%) 0% 0% no-repeat
+    padding-box;
 }
