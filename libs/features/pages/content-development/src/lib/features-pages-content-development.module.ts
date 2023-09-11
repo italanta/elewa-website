@@ -12,6 +12,7 @@ import { ContentDevHeroSectionComponent } from './components/content-dev-hero-se
 import { ElewaContentDevAboutOneComponent } from './components/elewa-content-dev-about-one/elewa-content-dev-about-one.component';
 
 import { ContentDevelopmentPageRoutingModule } from './content-development.routing';
+import { ElewaContentDevAboutTwoComponent } from './component/elewa-content-dev-about-two/elewa-content-dev-about-two.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { ContentDevelopmentPageRoutingModule } from './content-development.routi
   declarations: [
     ContentDevelopmentPageComponent,
     ElewaContentDevAboutOneComponent,
+    ElewaContentDevAboutTwoComponent,
     ContentDevelopmentPageComponent,
     ContentDevHeroSectionComponent,
   ],
