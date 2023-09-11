@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CardsModule } from '@elewa-website/elements/cards';
 import { CarouselModule } from '@elewa-website/elements/layout/carousel';
 import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
+import { BannersModule } from '@elewa-website/elements/banners';
+
 
 import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
@@ -19,6 +21,7 @@ import { OverviewSectionComponent } from './components/overview-section/overview
     CardsModule,
     CarouselModule,
     MainPageModule,
+    BannersModule,
   ],
   declarations: [
     HomePageComponent,
