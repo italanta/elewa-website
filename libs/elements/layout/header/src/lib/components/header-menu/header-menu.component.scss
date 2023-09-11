@@ -29,10 +29,9 @@
     }
 }
 
-/* Standard styles for screens at and above 700px */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .menu-items {
-        grid-template-columns: repeat(2, 1fr); /* Restore the 4-column layout */
+        grid-template-columns: repeat(2, 1fr); /* Change to two columns layout on bigger screen */
     }
 }
 
