@@ -10,6 +10,7 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { OverviewSectionComponent } from './components/overview-section/overview-section.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { HomeRoutingModule } from './home.routing';
     HomePageComponent,
     NewsSectionComponent,
     ProjectsSectionComponent,
+    OverviewSectionComponent,
   ],
   exports: [HomePageComponent],
 })
