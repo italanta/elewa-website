@@ -1,0 +1,10 @@
+<div class="learning-services">
+  <div>
+    <h1>Our learning design<span class="line-break"></span> services</h1>
+    <div class="learning-services-container">
+      <div *ngFor="let card of learningDevicesData" class="info-card">
+        <elewa-website-info-card [cardsData]="card"></elewa-website-info-card>
+      </div>
+    </div>
+  </div>
+</div>

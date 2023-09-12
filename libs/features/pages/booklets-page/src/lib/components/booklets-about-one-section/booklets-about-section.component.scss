@@ -1,0 +1,8 @@
+.section-container{
+    background-color: var( --elewa-website-card-background-color);
+}
+
+/** Actual re-used component, since it had been styled everything dope including the responsivenss */
+.section{
+    padding: 16px;
+}

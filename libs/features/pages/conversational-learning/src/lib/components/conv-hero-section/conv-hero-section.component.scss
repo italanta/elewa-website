@@ -1,12 +1,11 @@
 .conv-hero-section {
     display: flex;
-    position: absolute;
     justify-content: center;
     width: 60%;
+    height: calc(100vh - var(--elewa-website-header-height));
     margin-left: 160px;
     flex-direction: column;
     z-index: 1000;
-
 }
 
 .back {

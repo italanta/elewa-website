@@ -2,19 +2,23 @@
     <div class="info-card-image" [ngClass]="imageAnddetails.imagePosition">
 
         <div class="image" >
+            <div>
             <elewa-website-image-container
                 [imageConfig]="imageAnddetails.image"
             >            
-            </elewa-website-image-container>            
+            </elewa-website-image-container>
+            </div>            
         </div>
 
         <div class="icons-info-cards">
+            <div>
             <div class="info-cards" *ngFor="let item of imageAnddetails.cards">
 
                 <elewa-website-info-card
                     [cardsData]="item"
                 >
                 </elewa-website-info-card>
+            </div>
             </div>
         </div>
         
