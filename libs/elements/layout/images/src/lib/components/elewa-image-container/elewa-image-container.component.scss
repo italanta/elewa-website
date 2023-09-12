@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: flex-end;
 
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+
   .image {
     width: 450px;
 
