@@ -1,72 +1,50 @@
-.image-details-container{
+.image-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+  padding: 2rem;
+
+  &.left-image {
+    flex-direction: row;
+  }
+
+  &.right-image {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+
+    &.left-image,
+    &.right-image {
+      flex-direction: column;
+    }
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width: 481px) {
+  .left {
+    display: flex;
+    flex-direction: column;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Make the body take up the entire viewport height */
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .image-details-container {
     margin: 0;
-    padding: 100px;
-}
-
-.left{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
-    height:100%;
-
-}
-
-.right{
-    display: flex;
-    flex-direction: row-reverse; 
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
-    height:100%;
-}
-
-.icons-info-cards{
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    width: 100%;
-    // display: block;
-    margin: auto;
-    height: 100%;
-   // background-color: aqua;
-    
-}
-
-.info-cards{
-    width: 100%;
     padding: 20px;
-    // display: block;
-    margin-left: auto;
+  }
 }
 
-.image{
-    display: flex;
-    justify-content: left; /* Center horizontally */
-    align-items: center;
-    width:100%;
-    height: 100%;
-    //background-color: aqua;
-}
-
-@media (max-width:481px){
-    .left{
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Center horizontally */
-
-    }
-    
-    .right{
-        display: flex;
-        flex-direction: column-reverse; 
-    }
-
-    .image-details-container{
-        margin: 0;
-        padding: 20px;
-    }
-
-}

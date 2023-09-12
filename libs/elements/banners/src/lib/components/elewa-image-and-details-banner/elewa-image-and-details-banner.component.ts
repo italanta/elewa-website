@@ -8,5 +8,11 @@ import { ImageAndDetails } from '@elewa-website/models/schema/ui/banners';
   styleUrls: ['./elewa-image-and-details-banner.component.scss'],
 })
 export class ElewaImageAndDetailsBannerComponent {
-  @Input() imageAnddetails!: ImageAndDetails;
+  @Input() imageAndDetails!: ImageAndDetails;
+
+  getLayoutClass(imagePosition: string): string {
+    const val =  imagePosition === 'left' ? 'left-image' : 'right-image';
+    console.log(val)
+    return val
+  }
 }
