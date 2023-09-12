@@ -7,7 +7,7 @@ import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
   styleUrls: ['./consultancy-about-one.component.scss'],
 })
 export class ConsultancyAboutOneComponent {
-  @Input() imageData!: ImageAndText[];
+  @Input() imageData!: ImageAndText;
 
   getLayoutClass(item: ImageAndText): string {
     return item.imagePosition === 'left' ? 'left-image' : 'right-image';
