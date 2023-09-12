@@ -13,6 +13,7 @@ import { SdgSectionComponent } from './components/sdg-section/sdg-section.compon
 import { DiscoverSectionComponent } from './components/discover-section/discover-section.component';
 
 import { AboutRoutingModule } from './about.routing';
+import { AboutHeroSectionComponent } from './about-hero-section/about-hero-section.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,13 @@ import { AboutRoutingModule } from './about.routing';
     MainPageModule,
     AboutRoutingModule,
   ],
-  declarations: [AboutPageComponent, TeamMembersSectionComponent, SdgSectionComponent, DiscoverSectionComponent],
-  exports: [SdgSectionComponent]
+  declarations: [
+    AboutPageComponent,
+    TeamMembersSectionComponent,
+    SdgSectionComponent,
+    DiscoverSectionComponent,
+    AboutHeroSectionComponent,
+  ],
+  exports: [SdgSectionComponent],
 })
 export class FeaturesPagesAboutModule {}
