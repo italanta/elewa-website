@@ -4,6 +4,14 @@
   width: 100vw;
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 550px) {
+    height: 85vh;
+  }
+
+  @media (max-width: 493px) {
+    height: 70vh;
+  }
 }
 
 .dev-hero-section {
@@ -44,10 +52,16 @@
     height: 360px;
     width: 360px;
 
-    @media (max-width: 630px) {
+    @media (max-width: 490px) {
+      left: 3vw;
+      width: 120px;
+      height: 180px;
+    }
+
+    @media (min-width: 490px) and (max-width: 630px) {
       left: 3vw;
       width: 150px;
-      height: 200px;
+      height: 220px;
     }
 
     @media (min-width: 631px) and (max-width: 770px) {
@@ -68,7 +82,13 @@
     left: 38.85vw;
     height: 600px;
 
-    @media (max-width: 630px) {
+    @media (max-width: 490px) {
+      left: 34.5vw;
+      width: 120px;
+      height: 260px;
+    }
+
+    @media (min-width: 490px) and (max-width: 630px) {
       left: 34.55vw;
       width: 150px;
       height: 300px;
@@ -92,7 +112,13 @@
     left: 70vw;
     height: 762px;
 
-    @media (max-width: 630px) {
+    @media (max-width: 490px) {
+      left: 66vw;
+      width: 120px;
+      height: 350px;
+    }
+
+    @media (min-width: 490px) and (max-width: 630px) {
       left: 66vw;
       width: 150px;
       height: 460px;

@@ -1,6 +1,6 @@
 header {
   background-color: transparent;
-  min-height: var(--elewa-website-header-bg-height);
+  height: var(--elewa-website-header-bg-height);
   padding: 0 10rem;
 
   @media (max-width: 1100px) {
@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1rem 0;
   max-width: 1200px;
   margin-inline: auto;
 }
