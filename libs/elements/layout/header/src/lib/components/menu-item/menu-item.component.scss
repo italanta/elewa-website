@@ -1,9 +1,12 @@
 .menu-item {
   background: #fff;
   position: fixed;
-  top: 90px;
-  left: 400px;
+  width: 100%;
+  top: 70px;
+  left: 20%;
+  overflow: hidden;
   display: flex;
+  line-height: 25px;
   @font-face {
     font-family: 'DMSans-Bold';
     src: local('UtileDisplay-Regular'),
@@ -14,13 +17,12 @@
     font-weight: normal;
   }
   .consultancy {
-    width: 390px;
+    width: 20%;
     height: 200px;
     padding: 32px;
     background: #e6ddf8 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
-    line-height: 25px;
     .c1 {
       width: 32px;
       height: 32px;
@@ -45,11 +47,10 @@
     }
   }
   .contdev {
-    width: 390px;
+    width: 20%;
     height: 200px;
     padding: 32px;
     opacity: 1;
-    line-height: 25px;
     .curve1 {
       width: 17px;
       height: 16px;
@@ -86,11 +87,10 @@
     }
   }
   .convlearn {
-    width: 390px;
+    width: 20%;
     height: 200px;
     padding: 32px;
     opacity: 1;
-    line-height: 25px;
     .prism1 {
       width: 20px;
       height: 30px;
@@ -116,11 +116,10 @@
     }
   }
   .booklets {
-    width: 390px;
+    width: 20%;
     height: 200px;
     padding: 32px;
     opacity: 1;
-    line-height: 25px;
     .booklet {
       width: 30px;
       height: 58px;
@@ -130,5 +129,26 @@
         linear-gradient(307deg, #f2ad69 0%, #f2ad6900 100%) 0% 0% no-repeat
         padding-box;
     }
+  }
+}
+@media (max-width: 1160px) {
+  .menu-item {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .menu-item {
+    font-size: 12px;
+    line-height: 11px;
   }
 }
