@@ -1,0 +1,54 @@
+/** style hero section */
+.about-hero-section {
+  width: 1920px;
+  height: 6440px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+/* Shared styles for "Play" button */
+.play-button {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: #0f0f0f;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Make it circular */
+  margin-left: 525px;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  margin-top: 200px;
+}
+
+/* Shared styles for image container */
+.image-container {
+  position: relative;
+}
+
+/* Styles for text content on the left */
+.text-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px; /* Add padding as needed */
+  color: #0f0f0f;
+  font-size: 18px;
+  width: 300px; /* Adjust width as needed */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* Styles for the container of each image and text item */
+.image-text-item {
+  width: 803px;
+  height: 796px;
+  margin-top: 20px; /* Adjust the margin to control spacing between items */
+  position: relative;
+}
