@@ -7,7 +7,7 @@
   padding: 8rem 4rem 2rem 4rem;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  max-width: 100%;
+  max-width: 100vw;
 
   .footer-navigations {
     display: grid;
@@ -79,15 +79,15 @@
       justify-content: space-between;
 
       .logo {
-        width: 10rem;
+        width: 8rem;
         filter: brightness(0) invert(1) grayscale(1) contrast(10000%);
 
         @media (max-width: 493px) {
-          width: 5rem;
+          width: 4rem;
         }
 
         @media (max-width: 768px) {
-          width: 8rem;
+          width: 6rem;
         }
       }
 
