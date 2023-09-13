@@ -1,54 +1,105 @@
-/** style hero section */
-.about-hero-section {
-  width: 1920px;
-  height: 6440px;
-  margin-left: 100px;
-  margin-top: 40px;
-}
-/* Shared styles for "Play" button */
-.play-button {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  color: #0f0f0f;
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%; /* Make it circular */
-  margin-left: 525px;
-  opacity: 1;
-  position: absolute;
-  z-index: 1;
-  margin-top: 200px;
-}
-
-/* Shared styles for image container */
-.image-container {
-  position: relative;
-}
-
-/* Styles for text content on the left */
-.text-content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 20px; /* Add padding as needed */
-  color: #0f0f0f;
-  font-size: 18px;
-  width: 300px; /* Adjust width as needed */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 80px;
-}
-
 /* Styles for the container of each image and text item */
 .image-text-item {
-  width: 803px;
-  height: 796px;
-  margin-top: 20px; /* Adjust the margin to control spacing between items */
-  position: relative;
-}
+    width: 803px;
+    height: 796px;
+    margin-top: 40px; /* Adjust the margin to control spacing between items */
+    position: relative;
+    margin-left: 50px;
+  }
+  
+  /* Shared styles for "Play" button */
+  .play-button {
+    width: 100px;
+    height: 100px;
+    background: var(--elewa-website-about-hero-section-background);
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Make it circular */
+    margin-left: 525px;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    margin-top: 200px;
+  }
+  
+  /* Shared styles for image container */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background:var(--elewa-website-about-hero-section-background); /* Add a background color to the image container */
+  }
+  
+  /* Styles for text content on the left */
+  .text-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px; /* Add padding as needed */
+    font-size: 18px;
+    width: 300px; /* Adjust width as needed */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  /* Media query for medium-sized screens (Tablet) */
+  @media (max-width: 992px) {
+    .image-text-item {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .play-button {
+      /* Adjust play button styles for tablets */
+      width: 80px;
+      height: 80px;
+      font-size: 20px;
+      margin-left: 25%; /* Adjust the margin for centering */
+    }
+  
+    .text-content {
+      /* Adjust text content styles for tablets */
+      width: 100%; /* Let it adapt to the available width */
+      padding: 10px;
+      text-align: center; /* Center text for tablets */
+      font-size: 16px;
+    }
+  }
+  
+  /* Media query for small screens (Mobile) */
+  @media (max-width: 576px) {
+    .image-text-item {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+    }
+  
+    .play-button {
+      /* Adjust play button styles for mobile */
+      width: 60px;
+      height: 60px;
+      font-size: 16px;
+      margin-left: 160px; /* Adjust the margin for centering */
+    }
+  
+    .text-content {
+      /* Adjust text content styles for mobile */
+      width: 100%; /* Let it adapt to the available width */
+      padding: 8px; /* Reduce padding for smaller screens */
+      text-align: start; /* start text for mobile */
+      font-size: 14px; /* Reduce font size for smaller screens */
+      margin-top: 400px;
+      flex-direction: column;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    }
+  }
+  
