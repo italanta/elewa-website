@@ -1,9 +1,8 @@
 .menu-item {
   background: #fff;
-  width: 100%;
-  position: absolute;
+  position: fixed;
   top: 90px;
-  left: 370px;
+  left: 400px;
   display: flex;
   @font-face {
     font-family: 'DMSans-Bold';

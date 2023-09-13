@@ -28,7 +28,6 @@ header {
   display: inline-block;
   margin-right: 35px;
 }
-
 .nav-menu li:nth-child(4) {
   margin-right: 0;
 }
@@ -42,10 +41,16 @@ header {
 .nav-item a:hover {
   color: blue;
 }
-
+elewa-website-header-menu{
+  visibility: hidden;
+  transition:visibility 0.3s ease-in-out,opacity 0.3s ease-in-out;
+}
 .nav-menu li:nth-child(1) {
   font-weight: 700;
   text-decoration: underline;
+}
+.nav-menu li:nth-child(1):hover > elewa-website-header-menu{
+  visibility: visible;
 }
 
 .hambuger {
