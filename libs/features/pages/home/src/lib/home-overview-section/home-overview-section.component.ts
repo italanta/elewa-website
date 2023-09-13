@@ -20,7 +20,7 @@ export class HomeOverviewSectionComponent implements OnInit {
   getImageVisualisation(): typeof ImageVisualisation {
     return ImageVisualisation;
   }
-  // Define the getLayoutClass function 
+  // Define the getLayoutClass function
   getLayoutClass(item: ImageAndText): string {
     // Implement your logic to determine the layout class based on the item
     // For example, you can access item.imagePosition and return a class name accordingly.
@@ -31,4 +31,3 @@ export class HomeOverviewSectionComponent implements OnInit {
     return 'default-layout';
   }
 }
-Define the getLayoutClass function within the component
