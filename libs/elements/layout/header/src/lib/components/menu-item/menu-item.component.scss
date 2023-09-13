@@ -1,5 +1,6 @@
 .menu-item {
   background: #fff;
+  width: 100%;
   position: absolute;
   top: 90px;
   left: 370px;
@@ -20,6 +21,7 @@
     background: #e6ddf8 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
+    line-height: 25px;
     .c1 {
       width: 32px;
       height: 32px;
@@ -48,6 +50,7 @@
     height: 200px;
     padding: 32px;
     opacity: 1;
+    line-height: 25px;
     .curve1 {
       width: 17px;
       height: 16px;
@@ -56,11 +59,12 @@
         padding-box;
       mix-blend-mode: multiply;
       border-radius: 110px;
+      margin-bottom: -12px;
     }
     .curve2 {
       position: relative;
       left: 20px;
-      top: -24px;
+      top: -12px;
       width: 17px;
       height: 25px;
       background: transparent
@@ -72,7 +76,7 @@
     .curve3 {
       position: relative;
       left: 40px;
-      top: -54px;
+      top: -44px;
       width: 16px;
       height: 33px;
       background: transparent
@@ -87,6 +91,7 @@
     height: 200px;
     padding: 32px;
     opacity: 1;
+    line-height: 25px;
     .prism1 {
       width: 20px;
       height: 30px;
@@ -116,9 +121,10 @@
     height: 200px;
     padding: 32px;
     opacity: 1;
+    line-height: 25px;
     .booklet {
       width: 30px;
-      height: 50px;
+      height: 58px;
       transform: matrix(0, -1, -1, 0, 0, 0);
       border-radius: 40%;
       background: transparent
