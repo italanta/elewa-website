@@ -12,6 +12,7 @@ import { ConvHeroSectionComponent } from './components/conv-hero-section/conv-he
 import { ConvAboutSectionOneComponent } from './components/conv-about-section-one/conv-about-section-one.component';
 import { ConvAboutSectionTwoComponent } from './components/conv-about-section-two/conv-about-section-two.component';
 import { ConvPricingSectionComponent } from './components/conv-pricing-section/conv-pricing-section.component';
+import { ConvProjectsSectionComponent } from './components/conv-projects-section/conv-projects-section.component';
 
 import { ConversationalLearningRoutingModule } from './conversational-learning-routing.module';
 
@@ -31,6 +32,7 @@ import { ConversationalLearningRoutingModule } from './conversational-learning-r
     ConvAboutSectionOneComponent,
     ConvAboutSectionTwoComponent,
     ConvPricingSectionComponent,
+    ConvProjectsSectionComponent,
   ],
 })
 export class ConversationalLearningModule {}
