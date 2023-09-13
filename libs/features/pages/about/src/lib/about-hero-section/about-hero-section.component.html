@@ -1,1 +1,17 @@
-<p>about-hero-section works!</p>
+<div class="about-hero-section">
+  <div *ngFor="let item of imageData" class="image-text-item">
+    <div class="play-button">Play</div>
+
+    <div class="image-container">
+      <elewa-website-image-container
+        [imageConfig]="mapImageAndTextToImageConfig(item)"
+      >
+      </elewa-website-image-container>
+      <!-- Display title and descriptions on the left without the list -->
+      <div class="text-content">
+        <h2>{{ item.content.title }}</h2>
+        <p>{{ item.content.descriptions }}</p>
+      </div>
+    </div>
+  </div>
+</div>
