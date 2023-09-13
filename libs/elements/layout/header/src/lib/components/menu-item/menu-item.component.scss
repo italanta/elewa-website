@@ -1,8 +1,14 @@
 .menu-item {
+    background: #fff;
   position: absolute;
   top: 90px;
   left: 370px;
   display: flex;
+  @font-face {
+    font-family: 'DMSans-Bold';
+    src: local('UtileDisplay-Regular'),
+      url(../../../../../../../../apps/elewa-website/src/assets/fonts/DM_Sans/DMSans-Regular.ttf) format('truetype');
+  }
   h3 {
     font-weight: normal;
   }
@@ -39,5 +45,11 @@
         transform: matrix(-1, 0, 0, -1, 0, 0);
       }
     }
+  }
+  .contdev{
+    width: 390px;
+    height: 200px;
+    padding: 32px;
+    opacity: 1;
   }
 }
