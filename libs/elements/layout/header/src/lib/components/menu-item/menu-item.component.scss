@@ -1,0 +1,43 @@
+.menu-item {
+  position: absolute;
+  top: 90px;
+  left: 370px;
+  display: flex;
+  h3 {
+    font-weight: normal;
+  }
+  .consultancy {
+    width: 390px;
+    height: 200px;
+    padding: 32px;
+    background: #e6ddf8 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    .circles {
+      .c1 {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: transparent
+          linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%) 0% 0% no-repeat
+          padding-box;
+        mix-blend-mode: multiply;
+        opacity: 1;
+      }
+      .c2 {
+        position: relative;
+        left: 20px;
+        top: -32px;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        background: transparent
+          linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%) 0% 0% no-repeat
+          padding-box;
+        mix-blend-mode: multiply;
+        opacity: 1;
+        transform: matrix(-1, 0, 0, -1, 0, 0);
+      }
+    }
+  }
+}
