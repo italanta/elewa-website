@@ -111,4 +111,19 @@
       border-radius: 110px;
     }
   }
+  .booklets {
+    width: 390px;
+    height: 200px;
+    padding: 32px;
+    opacity: 1;
+    .booklet {
+      width: 30px;
+      height: 50px;
+      transform: matrix(0, -1, -1, 0, 0, 0);
+      border-radius: 40%;
+      background: transparent
+        linear-gradient(307deg, #f2ad69 0%, #f2ad6900 100%) 0% 0% no-repeat
+        padding-box;
+    }
+  }
 }
