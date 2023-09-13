@@ -22,14 +22,3 @@ export const __highlightedImage: ImageAndText[] = [
 
   // Add more image and text configurations as needed
 ];
-
-// Define a separate function for the getLayoutClass method
-export function getLayoutClass(item: ImageAndText): string {
-  // Implement your logic to determine the layout class based on the item
-  // For example, you can access item.imagePosition and return a class name accordingly.
-  if (item && item.imagePosition) {
-    return item.imagePosition === 'left' ? 'left-image' : 'right-image';
-  }
-  // Return a default layout class if needed
-  return 'default-layout';
-}
