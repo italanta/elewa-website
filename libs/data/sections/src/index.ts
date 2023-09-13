@@ -15,3 +15,4 @@ export * from './lib/highlighted-sdg-list.data';
 export * from './lib/consultancy-hero.data';
 export * from './lib/content-dev-about.data';
 export * from './lib/highlighted-about.data';
+export * from './lib/consultancy-about-two.data'
