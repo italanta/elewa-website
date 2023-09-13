@@ -6,6 +6,10 @@
   gap: 2rem;
   padding: 2rem;
 
+  @media (max-width: 490px) {
+    min-height: 70vh;
+  }
+
   &.left-image {
     flex-direction: row;
   }

@@ -5,6 +5,10 @@
   padding: 5rem 0;
   background: var(--elewa-website-learning-services-background);
 
+  @media (max-width: 490px) {
+    padding: 3rem 0;
+  }
+
   .title {
     display: flex;
     flex-direction: column;
