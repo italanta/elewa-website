@@ -9,6 +9,7 @@ import { BannersModule } from '@elewa-website/elements/banners';
 import { ConversationalLearningPageComponent } from './main/conversational-learning-page/conversational-learning-page.component';
 import { ConvHeroSectionComponent } from './components/conv-hero-section/conv-hero-section.component';
 import { ConvAboutSectionOneComponent } from './components/conv-about-section-one/conv-about-section-one.component';
+import { ConvAboutSectionTwoComponent } from './components/conv-about-section-two/conv-about-section-two.component';
 
 import { ConversationalLearningRoutingModule } from './conversational-learning-routing.module';
 
@@ -25,6 +26,7 @@ import { ConversationalLearningRoutingModule } from './conversational-learning-r
     ConversationalLearningPageComponent,
     ConvHeroSectionComponent,
     ConvAboutSectionOneComponent,
+    ConvAboutSectionTwoComponent,
   ],
 })
 export class ConversationalLearningModule {}
