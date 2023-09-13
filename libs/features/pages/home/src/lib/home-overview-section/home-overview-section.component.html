@@ -1,0 +1,19 @@
+<div class="elewa-images">
+  <div *ngFor="let item of imageData" class="image-and-text">
+    <div class="image">
+      <elewa-website-image-container
+        [imageConfig]="{
+          title: item.content.title,
+          imageSrc: item.image.imageSrc,
+          visualisation:
+            item.image.visualisation || getImageVisualisation().Window
+        }"
+      ></elewa-website-image-container>
+    </div>
+    <div class="text">
+      <elewa-website-elewa-text-content-item
+        [content]="item.content"
+      ></elewa-website-elewa-text-content-item>
+    </div>
+  </div>
+</div>
