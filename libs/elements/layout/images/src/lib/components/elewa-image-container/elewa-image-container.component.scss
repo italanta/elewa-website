@@ -8,7 +8,9 @@
   }
 
   .image {
-    width: 450px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 
     @media (max-width: 1300px) {
       width: 350px;
@@ -32,7 +34,9 @@
 
 /* Forms a figure-like 8: Two pills placed on top of each other horizontally */
 .stacked {
-  height: 450px;
+  position: relative;
+  height: 550px !important;
+  width: 550px !important;
   clip-path: polygon(
     0% 0%,
     80% 0,

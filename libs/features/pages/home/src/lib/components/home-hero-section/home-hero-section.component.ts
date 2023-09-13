@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { homeHeroText, buttonData } from '@elewa-website/data/sections';
+import { homeHeroText, buttonData, homeHeroImg } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-home-hero-section',
@@ -9,4 +9,5 @@ import { homeHeroText, buttonData } from '@elewa-website/data/sections';
 export class HomeHeroSectionComponent {
   textData = homeHeroText;
   buttonData = buttonData;
+  heroImage = homeHeroImg;
 }

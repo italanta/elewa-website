@@ -7,6 +7,7 @@ import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
+import { ImagesModule } from '@elewa-website/elements/layout/images';
 
 import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
@@ -24,7 +25,8 @@ import { HomeRoutingModule } from './home.routing';
     MainPageModule,
     TextsModule,
     AppHeaderModule, 
-    ButtonsModule
+    ButtonsModule,
+    ImagesModule
   ],
   declarations: [
     HomePageComponent,

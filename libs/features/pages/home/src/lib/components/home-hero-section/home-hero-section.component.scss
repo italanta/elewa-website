@@ -1,0 +1,27 @@
+.home-hero{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column; 
+        
+        .hero-text {
+            display: flex;
+            margin-left: 50px; 
+            margin-top: 50px;
+        }
+
+        .hero-button{
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+    }
+
+    .hero-img{
+        position: relative;
+        bottom: 400px;
+        left: -100px;
+    }
+}
