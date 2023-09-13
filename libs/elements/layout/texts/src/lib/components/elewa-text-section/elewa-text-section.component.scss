@@ -1,45 +1,20 @@
-.text
-{
-    flex: 1;
-    gap: 10px;
-    padding-top: 9rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
 }
-h1
-{
-    font-size: 50px;
 
-    @media (min-width: 640px) {
-        font-size: 64px;
-    }
-
-    @media (min-width: 1536px) {
-        font-size: 72px;
-    }
-
-    font-weight: bold;
+h1 {
+  font-size: clamp(1.5625rem, 0.8745rem + 2.572vw, 3.125rem);
+  font-weight: bold;
 }
-h5
-{
-    font-size: 30px; 
-    @media (min-width: 640px) {
-        font-size: 31px;
-    }
 
-    @media (min-width: 1536px) {
-        font-size: 32px;
-    }
+h5 {
+  font-size: clamp(1.5625rem, 1.4249rem + 0.5144vw, 1.875rem);
 }
-p
-{
-    font-size: 27px; 
-    font-weight: lighter;
-    @media (min-width: 640px) {
-        font-size: 28px;
-    }
 
-    @media (min-width: 1536px) {
-        font-size: 29px;
-    }
+p {
+  font-size: clamp(1.1875rem, 0.9673rem + 0.823vw, 1.6875rem);
+  font-weight: lighter;
 }
