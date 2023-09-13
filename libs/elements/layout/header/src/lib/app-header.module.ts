@@ -6,10 +6,16 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { HeaderComponent } from './components/header/header.component';
 import { ToggleMenuDirective } from './directives/toggle-menu.directive';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
+import { MenuItemComponent } from './components/menu-item/menu-item.component';
 
 @NgModule({
   imports: [CommonModule, TranslocoModule],
-  declarations: [HeaderComponent, ToggleMenuDirective, HeaderMenuComponent],
+  declarations: [
+    HeaderComponent,
+    ToggleMenuDirective,
+    HeaderMenuComponent,
+    MenuItemComponent,
+  ],
   exports: [HeaderComponent],
 })
 export class AppHeaderModule {}
