@@ -2,19 +2,37 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+
+  .image {
+    width: 450px;
+
+    @media (max-width: 1300px) {
+      width: 350px;
+    }
+
+    @media (max-width: 900px) {
+      width: 300px;
+    }
+
+    @media (max-width: 481px) {
+      width: 200px;
+    }
+  }
 }
 
 /* Round the top and the bottom of the image to make it oval-shaped */
 .pill {
   clip-path: inset(0 0 0 round 30vh);
-  width: 450px;
   max-height: 550px;
 }
 
 /* Forms a figure-like 8: Two pills placed on top of each other horizontally */
 .stacked {
   height: 450px;
-  width: 450px;
   clip-path: polygon(
     0% 0%,
     80% 0,
@@ -46,7 +64,7 @@
     95% 90%,
     90% 95%,
     85% 98%,
-    80% 100%,        
+    80% 100%,
     20% 100%,
     15% 98%,
     10% 95%,
@@ -76,34 +94,18 @@
     5% 10%,
     10% 5%,
     15% 2%,
-    20% 0%,
+    20% 0%
   );
 }
 
 /* Round the top of the image at 30% of vertical height */
 .window {
   clip-path: inset(0 0 0 round 40vh 40vh 0 0);
-  width: 450px;
   max-height: 500px;
 }
 
 /* Round the corners of the card image (10px) */
 .card {
   clip-path: inset(0 0 0 round 10px);
-  width: 400px;
   max-height: 500px;
-}
-
-/* Add responsiveness to screens between 481 px and 768 px  */
-@media (min-width: 481px) and (max-width: 768px) {
-  .pill, .stacked, .window, .card {
-    // width: 240px;
-  }
-}
-
-/* Add responsiveness to screens above 768 px */
-@media (min-width: 769px) {
-  .pill, .stacked, .window, .card {
-    // width: 280px;
-  }
 }
