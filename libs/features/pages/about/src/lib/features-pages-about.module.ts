@@ -14,6 +14,9 @@ import { DiscoverSectionComponent } from './components/discover-section/discover
 
 import { AboutRoutingModule } from './about.routing';
 import { AboutHeroSectionComponent } from './about-hero-section/about-hero-section.component';
+import { TextsModule } from '@elewa-website/elements/layout/texts';
+import { ImagesModule } from '@elewa-website/elements/layout/images';
+import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 
 @NgModule({
   imports: [
@@ -23,6 +26,9 @@ import { AboutHeroSectionComponent } from './about-hero-section/about-hero-secti
     TranslocoModule,
     MainPageModule,
     AboutRoutingModule,
+    TextsModule,
+    ImagesModule, 
+    AppHeaderModule,/**import modules*/
   ],
   declarations: [
     AboutPageComponent,
