@@ -1,6 +1,7 @@
 .image-text-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -12,20 +13,28 @@
     min-height: 70vh;
   }
 
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   &.left-image {
-    flex-direction: row;
+    .image-container {
+      grid-column: 1 / 2;
+    }
+
+    .text-container {
+      grid-column: 2 / 3;
+    }
   }
 
   &.right-image {
-    flex-direction: row-reverse;
-  }
+    .image-container {
+      grid-column: 2 / 3;
+    }
 
-  @media (max-width: 768px) {
-    display: flex;
-
-    &.left-image,
-    &.right-image {
-      flex-direction: column;
+    .text-container {
+      grid-column: 1 / 2;
     }
   }
 
