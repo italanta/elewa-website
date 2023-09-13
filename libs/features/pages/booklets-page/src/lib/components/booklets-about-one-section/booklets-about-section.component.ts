@@ -4,7 +4,7 @@ import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 import { __bookletsPageAboutOneData } from '@elewa-website/data/sections';
 
 @Component({
-  selector: 'elewa-website-about-one-section',
+  selector: 'elewa-website-booklets-about-one-section',
   templateUrl: './booklets-about-section.component.html',
   styleUrls: ['./booklets-about-section.component.scss'],
 })
