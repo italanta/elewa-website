@@ -1,5 +1,5 @@
 .menu-item {
-    background: #fff;
+  background: #fff;
   position: absolute;
   top: 90px;
   left: 370px;
@@ -7,7 +7,8 @@
   @font-face {
     font-family: 'DMSans-Bold';
     src: local('UtileDisplay-Regular'),
-      url(../../../../../../../../apps/elewa-website/src/assets/fonts/DM_Sans/DMSans-Regular.ttf) format('truetype');
+      url(../../../../../../../../apps/elewa-website/src/assets/fonts/DM_Sans/DMSans-Regular.ttf)
+        format('truetype');
   }
   h3 {
     font-weight: normal;
@@ -19,37 +20,66 @@
     background: #e6ddf8 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
-    .circles {
-      .c1 {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        background: transparent
-          linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%) 0% 0% no-repeat
-          padding-box;
-        mix-blend-mode: multiply;
-        opacity: 1;
-      }
-      .c2 {
-        position: relative;
-        left: 20px;
-        top: -32px;
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
-        background: transparent
-          linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%) 0% 0% no-repeat
-          padding-box;
-        mix-blend-mode: multiply;
-        opacity: 1;
-        transform: matrix(-1, 0, 0, -1, 0, 0);
-      }
+    .c1 {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: transparent
+        linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%) 0% 0% no-repeat
+        padding-box;
+      mix-blend-mode: multiply;
+    }
+    .c2 {
+      position: relative;
+      left: 20px;
+      top: -32px;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      background: transparent
+        linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%) 0% 0% no-repeat
+        padding-box;
+      mix-blend-mode: multiply;
+      transform: matrix(-1, 0, 0, -1, 0, 0);
     }
   }
-  .contdev{
+  .contdev {
     width: 390px;
     height: 200px;
     padding: 32px;
     opacity: 1;
+    .curve1 {
+      width: 17px;
+      height: 16px;
+      background: transparent
+        linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0% 0% no-repeat
+        padding-box;
+      mix-blend-mode: multiply;
+      border-radius: 110px;
+    }
+    .curve2 {
+      position: relative;
+      left: 20px;
+      top: -24px;
+      width: 17px;
+      height: 25px;
+      background: transparent
+        linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0% 0% no-repeat
+        padding-box;
+      mix-blend-mode: multiply;
+      border-radius: 110px;
+    }
+    .curve3 {
+      position: relative;
+      left: 40px;
+      top: -54px;
+      width: 16px;
+      height: 33px;
+      background: transparent
+        linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0% 0% no-repeat
+        padding-box;
+      mix-blend-mode: multiply;
+      border-radius: 110px;
+    }
   }
 }
