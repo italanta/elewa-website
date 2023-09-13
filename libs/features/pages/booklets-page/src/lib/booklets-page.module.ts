@@ -12,6 +12,7 @@ import { BookletsHeroSectionComponent } from './components/booklets-hero-section
 import { BookletsAboutSectionOneComponent } from './components/booklets-about-one-section/booklets-about-section.component';
 
 import { BookletsRoutingModule } from './booklets.routing';
+import { BookletsAboutTwoSectionComponent } from './components/booklets-about-two-section/booklets-about-two-section.component';
 
 @NgModule({
   imports: [
@@ -21,12 +22,13 @@ import { BookletsRoutingModule } from './booklets.routing';
     TextsModule,
     ButtonsModule,
     BannersModule,
-    MainPageModule
+    MainPageModule,
   ],
   declarations: [
     BookletsPageComponent,
     BookletsHeroSectionComponent,
     BookletsAboutSectionOneComponent,
+    BookletsAboutTwoSectionComponent,
   ],
 })
 export class BookletsPageModule {}
