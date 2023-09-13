@@ -14,6 +14,7 @@ import { BookletsAboutTwoSectionComponent } from './components/booklets-about-tw
 import { BookletsPricingListSectionComponent } from './components/booklets-pricing-list-section/booklets-pricing-list-section.component';
 
 import { BookletsRoutingModule } from './booklets.routing';
+import { BookletsProjectsSectionComponent } from './components/booklets-projects-section/booklets-projects-section.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { BookletsRoutingModule } from './booklets.routing';
     BookletsAboutSectionOneComponent,
     BookletsAboutTwoSectionComponent,
     BookletsPricingListSectionComponent,
+    BookletsProjectsSectionComponent,
   ],
 })
 export class BookletsPageModule {}

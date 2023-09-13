@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { __imageAndDetails } from '@elewa-website/data/sections';
 
 @Component({

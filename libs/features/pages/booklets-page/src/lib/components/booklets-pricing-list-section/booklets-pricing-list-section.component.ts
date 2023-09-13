@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { __highlightedPricingList } from '@elewa-website/data/sections';
 
 @Component({
