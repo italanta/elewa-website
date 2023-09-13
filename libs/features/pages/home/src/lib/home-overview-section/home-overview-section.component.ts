@@ -1,8 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {
-  __highlightedImage as imageData,
-  getLayoutClass,
-} from '@elewa-website/data/sections';
+import { __highlightedImage as imageData } from '@elewa-website/data/sections';
 import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 import { ImageVisualisation } from '@elewa-website/models/schema/ui/images';
 
@@ -23,8 +20,15 @@ export class HomeOverviewSectionComponent implements OnInit {
   getImageVisualisation(): typeof ImageVisualisation {
     return ImageVisualisation;
   }
-  // Reference the imported getLayoutClass function
+  // Define the getLayoutClass function 
   getLayoutClass(item: ImageAndText): string {
-    return getLayoutClass(item);
+    // Implement your logic to determine the layout class based on the item
+    // For example, you can access item.imagePosition and return a class name accordingly.
+    if (item && item.imagePosition) {
+      return item.imagePosition === 'left' ? 'left-image' : 'right-image';
+    }
+    // Return a default layout class if needed
+    return 'default-layout';
   }
 }
+Define the getLayoutClass function within the component
