@@ -91,11 +91,11 @@
   
     .text-content {
       /* Adjust text content styles for mobile */
-      width: 100%; /* Let it adapt to the available width */
+      width: 300px; /* Let it adapt to the available width */
       padding: 8px; /* Reduce padding for smaller screens */
       text-align: start; /* start text for mobile */
       font-size: 14px; /* Reduce font size for smaller screens */
-      margin-top: 400px;
+      margin-top: 300px;
       flex-direction: column;
       margin-left: 20px;
       margin-right: 20px;
