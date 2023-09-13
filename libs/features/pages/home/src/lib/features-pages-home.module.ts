@@ -12,6 +12,7 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
 import { HomeRoutingModule } from './home.routing';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
 import { ImagesModule } from '@elewa-website/elements/layout/images';
+import { HomeOverviewSectionComponent } from './home-overview-section/home-overview-section.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import { ImagesModule } from '@elewa-website/elements/layout/images';
     HomePageComponent,
     NewsSectionComponent,
     ProjectsSectionComponent,
+    HomeOverviewSectionComponent, /**import component */
   ],
   exports: [HomePageComponent],
 })
