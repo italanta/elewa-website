@@ -2,19 +2,31 @@
   background-color: var(--elewa-website-SDG-list-background-color);
   color: var(--elewa-website-color-primary-white);
   border-radius: 50px;
-  padding: 3rem;
+  padding: 6rem;
   display: grid;
-  place-items: center;
-  place-content: center;
-  grid-template-columns: repeat(3, 2fr); 
-  grid-template-rows: repeat(2, 2fr);  
-  grid-gap: 12px;                       
-  gap: 3rem;
-  margin: 3%;
-}
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4rem;
 
-@media (max-width: 1100px) {
-  .sdg-section {
+  .btn-container {
+    justify-self: center;
+    align-self: flex-end;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem;
+    gap: 2rem;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
     padding: 2rem;
   }
 }
