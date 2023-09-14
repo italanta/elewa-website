@@ -1,23 +1,35 @@
 .sdg-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .text-content {
-        display: flex;
-        justify-content: space-between;
-        
-        h1, span {
-            display: block;
-            text-align: left;
-        }
-        
-        h1 {
-            margin-right: 300px;
-        }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--elewa-website-color-primary-offwhite-bg);
 
-        span{
-            line-height: 1.5;
-        }
+  .text-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0rem;
+
+    span {
+      line-height: 1.5;
     }
-} 
+  }
+
+  .list-wrapper {
+    background: linear-gradient(
+      to top,
+      var(--elewa-website-consult-section-background-color) 50%,
+      var(--elewa-website-color-primary-offwhite-bg) 50%
+    );
+    padding: 6rem;
+    width: 100vw;
+
+    @media (max-width: 1200px) {
+      padding: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+  }
+}

@@ -9,6 +9,6 @@ import { __highlightedSDGList, __buttonData } from '@elewa-website/data/sections
   styleUrls: ['./sdg-section.component.scss'],
 })
 export class SdgSectionComponent {
-  sdgCard: SDGCard[] = __highlightedSDGList;
+  sdgList: SDGCard[] = __highlightedSDGList;
   buttonData = __buttonData;
 }
