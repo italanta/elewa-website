@@ -1,30 +1,46 @@
 .image-text-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  background: inherit;
   transition: transform 0.2s ease;
+  min-height: 100vh;
+
+  @media (max-width: 490px) {
+    min-height: 70vh;
+  }
 
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
 
-  /* normal row-order for the left alignment */
   &.left-image {
-    flex-direction: row;
+    .image-container {
+      grid-column: 1 / 2;
+    }
+
+    .text-container {
+      grid-column: 2 / 3;
+    }
   }
 
-  /* Reverse the raw-order for the right alignment */
   &.right-image {
-    flex-direction: row-reverse;
+    .image-container {
+      grid-column: 2 / 3;
+    }
+
+    .text-container {
+      grid-column: 1 / 2;
+    }
   }
 
-  //Text container + its responsivenss
   .text-container {
-    max-width: 500px;
+    max-width: 550px;
+    min-width: 400px;
     height: auto;
     text-align: auto;
 

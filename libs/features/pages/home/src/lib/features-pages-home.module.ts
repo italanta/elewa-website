@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CardsModule } from '@elewa-website/elements/cards';
 import { CarouselModule } from '@elewa-website/elements/layout/carousel';
 import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
+import { BannersModule } from '@elewa-website/elements/banners';
+
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 import { AppHeaderModule } from '@elewa-website/elements/layout/header';
 import { TextsModule } from '@elewa-website/elements/layout/texts';
@@ -16,6 +18,7 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 
 
 import { HomeRoutingModule } from './home.routing';
+import { OverviewSectionComponent } from './components/overview-section/overview-section.component';
 
 @NgModule({
   imports: [
@@ -24,6 +27,7 @@ import { HomeRoutingModule } from './home.routing';
     CardsModule,
     CarouselModule,
     MainPageModule,
+    BannersModule,
     ButtonsModule,
     AppHeaderModule,
     TextsModule,
@@ -33,6 +37,7 @@ import { HomeRoutingModule } from './home.routing';
     HomePageComponent,
     NewsSectionComponent,
     ProjectsSectionComponent,
+    OverviewSectionComponent,
     HomeHeroSectionComponent
   ],
   exports: [ HomePageComponent, HomeHeroSectionComponent ],
