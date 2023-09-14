@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { __homeButtonData, __homeHerotexts, __homeImageConfig } from '@elewa-website/models/data/sections';
+import { __homeButtonData, __homeHerotexts, __homeImageConfig } from '@elewa-website/data/sections';
 
 
 @Component({
