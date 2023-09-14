@@ -1,36 +1,24 @@
-.container{
-    display: flex;
-    justify-content: center;
+.container {
+  display: flex;
 }
-.price-list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 70vw;
-}
-@media only screen and (max-width: 768px) {
-    .price-list{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-  }
 
-@media only screen and (min-width: 768px) {
-    .price-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+.price-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 90vw;
 }
 
 @media only screen and (min-width: 992px) {
-    .price-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
+  .price-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .price-list {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
+  .price-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

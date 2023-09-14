@@ -6,7 +6,10 @@ import { ElewaTextContentItemComponent } from './components/elewa-text-content-i
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ElewaTextContentItemComponent, ElewaTextSectionComponent],
-  exports: [ElewaTextSectionComponent, ElewaTextContentItemComponent]
+  declarations: [
+    ElewaTextContentItemComponent,
+    ElewaTextSectionComponent,
+  ],
+  exports: [ElewaTextSectionComponent,ElewaTextContentItemComponent],
 })
 export class TextsModule {}
