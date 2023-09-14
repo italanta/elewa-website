@@ -1,0 +1,32 @@
+.learning-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  background: var(--elewa-website-learning-services-background);
+
+  @media (max-width: 490px) {
+    padding: 3rem 0;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: clamp(1.875rem, 1.4565rem + 1.913vw, 3.25rem);
+    font-family: var(--elewa-website-learning-services-familyfont);
+    color: var(--elewa-website-color-primary-black);
+    padding: 5px;
+  }
+
+  .learning-services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
