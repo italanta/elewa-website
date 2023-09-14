@@ -14,8 +14,8 @@ export class HeaderComponent {
     this.backgroundColor = this.getBackgroundColor();
   }
 
-  toggleActiveClass(isActive: boolean) {
-    this.isActive = isActive;
+  toggleActiveClass() {
+    this.isActive = !this.isActive;
   }
 
   getBackgroundColor() {
