@@ -1,50 +1,48 @@
-.elewa-images {
-    display: flex;
-    flex-direction: column; /* Display items vertically */
-    background: var(--elewa-website-homepage-background-color);
-    width: 1920px;
-    height: 1082px;
+.overview-section {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  background: var(--elewa-website-homepage-background-color);
+  width: 1920px;
+  height: 1082px;
+}
+
+.image-and-text {
+  display: flex;
+  flex-direction: row; /* Display items horizontally */
+  margin-bottom: 20px; /* Add margin between items */
+  margin-top: 5rem;
+  margin-right: 180px;
+}
+
+.image {
+  flex: 1; /* Make the image take up 50% of the container */
+  padding: 0 10px; /* Add spacing around the image */
+  padding-right: 40px; /* Add right padding for space between image and text */
+}
+
+.text {
+  flex: 1; /* Make the text take up 50% of the container */
+  padding: 0 10px; /* Add spacing around the text */
+  margin-top: 10rem;
+  margin-right: 140px;
+}
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .overview-section {
+    width: 100%; /* Set the width to 100% for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
   }
-  
+
   .image-and-text {
-    display: flex;
-    flex-direction: row; /* Display items horizontally */
-    margin-bottom: 20px; /* Add margin between items */
-    margin-top: 5rem;
-    margin-right: 180px;
+    flex-direction: column; /* Display items vertically on smaller screens */
+    margin-right: 2rem; /* Remove right margin for stacking items */
+    margin-top: 2rem; /* Adjust top margin for spacing */
   }
-  
-  .image {
-    flex: 1; /* Make the image take up 50% of the container */
-    padding: 0 10px; /* Add spacing around the image */
-    padding-right: 40px; /* Add right padding for space between image and text */
-  }
-  
+
+  .image,
   .text {
-    flex: 1; /* Make the text take up 50% of the container */
-    padding: 0 10px; /* Add spacing around the text */
-    margin-top: 10rem;
-    margin-right: 140px;
+    flex: none; /* Reset flex values to their default */
+    padding: 10px 0; /* Add padding to top and bottom */
+    margin: 0; /* Reset margins */
   }
-  /* Media query for smaller screens (e.g., mobile devices) */
-  @media screen and (max-width: 768px) {
-    .elewa-images {
-      width: 100%; /* Set the width to 100% for smaller screens */
-      height: auto; /* Allow height to adjust based on content */
-    }
-  
-    .image-and-text {
-      flex-direction: column; /* Display items vertically on smaller screens */
-      margin-right: 2rem; /* Remove right margin for stacking items */
-      margin-top: 2rem; /* Adjust top margin for spacing */
-    }
-  
-    .image,
-    .text {
-      flex: none; /* Reset flex values to their default */
-      padding: 10px 0; /* Add padding to top and bottom */
-      margin: 0; /* Reset margins */
-    }
-  }
-  
- 
+}
