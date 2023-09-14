@@ -1,7 +1,7 @@
 import { Component, Input, OnInit} from '@angular/core';
 
 import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
-import { __highlightedImageData as highlightedImageData, getLayoutClass } from '@elewa-website/data/sections';
+import { __highlightedImageData as highlightedImageData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-elewa-consultancy-about-two',
@@ -15,7 +15,6 @@ export class ElewaConsultancyAboutTwoComponent implements OnInit {
     this.imageContent = highlightedImageData;
   }
 
-  getLayoutClass(content: ImageAndText): string {
-    return getLayoutClass(content);
+ 
   }
-}
+

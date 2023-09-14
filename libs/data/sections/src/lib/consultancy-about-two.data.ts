@@ -21,11 +21,3 @@ export const __highlightedImageData: ImageAndText[] = [
 
   
 ];
-
-export function getLayoutClass(item: ImageAndText): string {
-  
-  if (item && item.imagePosition) {
-    return item.imagePosition === 'right' ? 'right-image' : 'left-image';
-  }
-  return 'default-layout';
-}
