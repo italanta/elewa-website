@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
-import { __contentDevAboutOne } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-elewa-content-dev-about-one',

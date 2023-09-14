@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { heroTexts, __buttonData } from '@elewa-website/data/sections';
+import { heroTexts, buttonData } from '@elewa-website/data/sections';
 
 
 @Component({
@@ -9,5 +9,5 @@ import { heroTexts, __buttonData } from '@elewa-website/data/sections';
 })
 export class ConsultancyHeroSectionComponent {
   heroTexts = heroTexts;
-  buttonData = __buttonData;
+  buttonData = buttonData;
 }

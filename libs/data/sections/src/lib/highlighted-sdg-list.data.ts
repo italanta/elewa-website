@@ -1,6 +1,7 @@
 import { SDGCard } from '@elewa-website/models/schema/ui/cards';
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
-export const __highlightedSDGList: SDGCard[] = [
+const __highlightedSDGList: SDGCard[] = [
   {
     title: 'Quality Education',
     description:
@@ -26,9 +27,17 @@ export const __highlightedSDGList: SDGCard[] = [
     icon: 'fa-solid fa-arrow-up-right-dots',
   },
   {
-    title: 'Partnership for the goals',
+    title: 'Partnership For The Goals',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
     icon: 'fa-solid fa-check-double',
   },
 ];
+
+const __sdgSliderButton: SliderButtonData = {
+  text: 'Learn More About SDG',
+  bgColor: 'var(--elewa-website-color-primary-purple)',
+  hoverBorderColor: 'var(--elewa-website-card-color)',
+};
+
+export { __highlightedSDGList, __sdgSliderButton };

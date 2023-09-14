@@ -1,4 +1,5 @@
 .sdg-section {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,3 +22,39 @@
         }
     }
 } 
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--elewa-website-color-primary-offwhite-bg);
+
+  .text-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0rem;
+
+    span {
+      line-height: 1.5;
+    }
+  }
+
+  .list-wrapper {
+    background: linear-gradient(
+      to top,
+      var(--elewa-website-consult-section-background-color) 50%,
+      var(--elewa-website-color-primary-offwhite-bg) 50%
+    );
+    padding: 6rem;
+    width: 100vw;
+
+    @media (max-width: 1200px) {
+      padding: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+  }
+}
+>>>>>>> 8aba9427e54db3742dd86f1196054c7cf0497e77
