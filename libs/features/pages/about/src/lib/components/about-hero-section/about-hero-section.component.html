@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="about-section">
     <!-- This is a custom Angular component "elewa-website-elewa-text-section". -->
     <!-- It receives an input property "herotexts" with the value of "herotext". -->
@@ -20,3 +21,21 @@
         </elewa-website-image-container>
     </div>
 </div>
+=======
+<div class="about-hero-container">
+  <div class="about-hero-text">
+    <!-- import elewa-text section -->
+    <div class="text" *ngFor="let herotext of highlightedAboutItems">
+      <elewa-website-elewa-text-section
+        [herotexts]="herotext"
+      ></elewa-website-elewa-text-section>
+    </div>
+  </div>
+  <!-- Image -->
+  <div class="image">
+    <elewa-website-image-container
+      [imageConfig]="image"
+    ></elewa-website-image-container>
+  </div>
+</div>
+>>>>>>> b580ec0a7e2d82f3ac92a31485816a0f30a0f53b

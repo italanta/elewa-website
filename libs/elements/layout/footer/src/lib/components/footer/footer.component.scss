@@ -7,27 +7,41 @@
   padding: 8rem 4rem 2rem 4rem;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  max-width: 100%;
+  max-width: 100vw;
 
   .footer-navigations {
     display: grid;
     grid-template-columns: repeat(5, minmax(100px, 1fr));
+    justify-content: space-between;
     gap: 20px;
     width: 75vw;
     margin: auto;
     padding: 1rem 0.5rem 0 0.5rem;
     border-top: 2px solid var(--elewa-website-color-footer-nav-child-items-white);
 
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    @media (max-width: 493px) {
+      grid-template-columns: 1fr;
+    }
+
     .footer-nav-wrapper {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
 
+      @media (max-width: 493px) {
+        gap: 0.8rem;
+      }
+
       .content {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        font-family: "DMSans-Regular";
+        font-family: 'DMSans-Regular';
 
         * {
           color: var(--elewa-website-color-primary-white);
@@ -63,58 +77,29 @@
     .footer-imgs {
       display: flex;
       justify-content: space-between;
-  
+
       .logo {
-        width: 10rem;
+        width: 8rem;
         filter: brightness(0) invert(1) grayscale(1) contrast(10000%);
+
+        @media (max-width: 493px) {
+          width: 4rem;
+        }
+
+        @media (max-width: 768px) {
+          width: 6rem;
+        }
       }
-  
+
       .icons {
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        @media (max-width: 493px) {
+          gap: 1rem;
+        }
       }
     }
   }
 }
-
-// @media only screen and (min-width: 850px) {
-//   .footer {
-//     h4 {
-//       font-size: var(--elewa-website-footer-font-size-heading);
-//       max-width: 45%;
-//       margin-left: auto;
-//       margin-right: auto;
-//       margin-bottom: 2rem;
-//     }
-
-//     .headquarters,
-//     .contact,
-//     .brands {
-//       display: block;
-//     }
-
-//     .footer-navigations {
-//       margin-inline: 4rem;
-//       margin-top: 4rem;
-//       border-top: 1px solid var( --elewa-website-color-primary-white);
-
-//       h4 {
-//         margin-left: 0;
-//         margin-bottom: 1rem;
-//       }
-//     }
-
-//     .footer-imgs {
-//       padding: 1.5rem 5rem;
-
-//       .icons {
-//         bottom: 30%;
-//       }
-
-//       img {
-//         margin-right: 1.5rem;
-//       }
-//     }
-//   }
-// }

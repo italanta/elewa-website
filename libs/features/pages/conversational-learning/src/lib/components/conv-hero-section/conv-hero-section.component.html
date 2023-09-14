@@ -1,16 +1,14 @@
 <div class="conv-main">
-  <div class="conv-hero-section">
-    <elewa-website-elewa-text-section
-      [herotexts]="heroTextData"
-    ></elewa-website-elewa-text-section>
+  <div class="conv-text-section">
+    <div class="hero-text">
+      <elewa-website-elewa-text-section [herotexts]="heroTextData"></elewa-website-elewa-text-section>
+    </div>
     <div class="conv-button">
-      <elewa-website-slider-button
-        [buttonData]="sliderButtonData"
-      ></elewa-website-slider-button>
+      <elewa-website-slider-button [buttonData]="sliderButtonData"></elewa-website-slider-button>
     </div>
   </div>
-  <div class="back">
-    <div class="block1"></div>
-    <div class="block2"></div>
+  <div class="conv-blocks-section">
+    <div class="block block--one"></div>
+    <div class="block block--two"></div>
   </div>
 </div>
