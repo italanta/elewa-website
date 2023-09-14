@@ -23,3 +23,18 @@
         left: -100px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .home-hero .hero-content .hero-text {
+        padding: 10px 0 0 30px;
+    }
+
+    .home-hero .hero-content .hero-button {
+        padding: 10px 0 0 35px;
+    }
+
+    .home-hero .hero-img {
+        bottom: 230px;
+        left: 200px;
+    }
+}

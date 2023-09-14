@@ -20,6 +20,7 @@ h1
 
     font-weight: bold;
 }
+
 h5
 {
     font-size: 30px; 
@@ -43,6 +44,18 @@ p
         font-size: 29px;
     }
 }
+
 .description {
     white-space: pre-line;
+}
+
+/** tablet responsiveness **/
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 24px;
+    }
 }
