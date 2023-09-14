@@ -2,15 +2,15 @@
   display: flex;
   gap: 1.5rem;
   overflow: hidden;
-  width: calc(100vw - 10rem); // we minus the padding set on the carousel at specific width
   transition: transform 0.5s;
+  width: calc(100vw - 10rem); // we minus the padding set on the carousel at specific width
 
   @media (max-width: 1100px) {
-    width: calc(100vw - 4rem);
+    width: calc(100vw - 4rem); // we minus the padding set on the carousel at specific width
   }
 
   @media (max-width: 900px) {
-    width: calc(100vw - 2rem);
+    width: calc(100vw - 2rem); // we minus the padding set on the carousel at specific width
   }
 
   @media (max-width: 490px) {
@@ -29,23 +29,18 @@
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    font-size: 25px;
     transition: transform 1s ease;
 
-    &:active {
-      transform: scale(0.98);
+    img {
+      width: 3rem;
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      @media (max-width: 768px) {
+        width: 2rem;
+      }
     }
   }
-
-  i {
-    width: 20px;
-  }
-}
-
-.stretched-icon {
-  transform: scaleX(1.5); /* 1.5 times the original width */
-}
-
-.prev {
-  margin-left: auto;
 }
