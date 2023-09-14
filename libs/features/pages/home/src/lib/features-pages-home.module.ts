@@ -8,17 +8,23 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { CarouselModule } from '@elewa-website/elements/layout/carousel';
 import { ConsultancyPageModule } from '@elewa-website/features/pages/consultancy-page';
+import { EducationSectionComponent } from './components/education-section/education-section.component';
 
 @NgModule({
   imports: [
-    CommonModule, 
-    HomeRoutingModule, 
-    CardsModule, 
-    MainPageModule, 
+    CommonModule,
+    HomeRoutingModule,
+    CardsModule,
+    MainPageModule,
     CarouselModule,
-    ConsultancyPageModule
+    ConsultancyPageModule,
   ],
-  declarations: [HomePageComponent, NewsSectionComponent, ProjectsSectionComponent],
+  declarations: [
+    HomePageComponent,
+    NewsSectionComponent,
+    ProjectsSectionComponent,
+    EducationSectionComponent,
+  ],
   exports: [HomePageComponent],
 })
 export class FeaturesPagesHomeModule {}

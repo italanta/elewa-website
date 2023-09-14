@@ -1,22 +1,11 @@
-<div class="image-details-container">
-    <div class="info-card-image" [ngClass]="imageAnddetails.imagePosition">
+<div class="image-details-container" [ngClass]="getLayoutClass(imageAndDetails.imagePosition)">
+  <div class="image">
+    <elewa-website-image-container [imageConfig]="imageAndDetails.image"></elewa-website-image-container>
+  </div>
 
-        <div class="image" >
-            <elewa-website-image-container
-                [imageConfig]="imageAnddetails.image"
-            >            
-            </elewa-website-image-container>            
-        </div>
-
-        <div class="icons-info-cards">
-            <div class="info-cards" *ngFor="let item of imageAnddetails.cards">
-
-                <elewa-website-info-card
-                    [cardsData]="item"
-                >
-                </elewa-website-info-card>
-            </div>
-        </div>
-        
-    </div>
+  <div class="cards-container">
+    <ng-container class="info-cards" *ngFor="let item of imageAndDetails.cards">
+      <elewa-website-info-card [cardsData]="item"></elewa-website-info-card>
+    </ng-container>
+  </div>
 </div>

@@ -1,0 +1,116 @@
+.section1{
+    background-color: #F4EDFD;
+    padding: 70px;
+    width: 800px;
+}
+
+h1{
+    top: 2880px;
+left: 259px;
+width: 435px;
+height: 47px;
+/* UI Properties */
+text-align: left;
+font: normal normal medium 36px/30px DM Sans;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+p{
+top: 2932px;
+left: 259px;
+width: 354px;
+height: 89px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 22px/30px DM Sans;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.learning-d2{
+    /* Layout Properties */
+top: 2917px;
+left: 391px;
+width: 272px;
+height: 270px;
+transform: matrix(1, 0, 0, 1, 0, 0);
+/* UI Properties */
+background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: multiply;
+opacity: 1;
+
+}
+
+.main1{
+    display: flex;
+    height: fit-content;
+}
+
+.section2{
+    background-color: #FCF6E4;
+    padding: 70px;
+    margin-left: 30px;
+}
+
+.p1{
+    top: 3011px;
+left: 1025px;
+width: 151px;
+height: 181px;
+/* UI Properties */
+background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: multiply;
+border-radius: 110px;
+opacity: 1;
+}
+
+.p2{
+top: 3011px;
+left: 1025px;
+width: 151px;
+height: 281px;
+/* UI Properties */
+background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: multiply;
+border-radius: 110px;
+opacity: 1;
+margin-left: 50px;
+margin-top: -100px;
+}
+
+.p3{
+    top: 3011px;
+left: 1025px;
+width: 151px;
+height: 381px;
+/* UI Properties */
+background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: multiply;
+border-radius: 110px;
+opacity: 1;
+margin-left: 50px;
+margin-top: -200px;
+}
+
+.displays{
+    display: flex;
+    margin: 20px;
+    margin-left: 200px;
+}
+
+.main2{
+    display: flex;
+  
+}
+
+.texts1{
+    background-color: #FAE9E8;   
+}
+
+.texts2{
+    background-color: #FBE8D7;
+    height: 300px;
+}

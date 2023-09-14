@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { __heroTexts, __buttonData } from '@elewa-website/data/sections';
+import { heroTexts, __buttonData } from '@elewa-website/data/sections';
 
 
 @Component({
@@ -8,6 +8,6 @@ import { __heroTexts, __buttonData } from '@elewa-website/data/sections';
   styleUrls: ['./consultancy-hero-section.component.scss'],
 })
 export class ConsultancyHeroSectionComponent {
-  heroTexts = __heroTexts;
+  heroTexts = heroTexts;
   buttonData = __buttonData;
 }

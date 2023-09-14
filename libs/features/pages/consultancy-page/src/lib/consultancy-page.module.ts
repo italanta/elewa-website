@@ -1,15 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
-import { ElewaConsultancyAboutOneComponent } from './components/elewa-consultancy-about-one/elewa-consultancy-about-one.component';
-import { ConsultancyRoutingModule } from './consultancy.routing';
-import { ConsultancyPageComponent } from './main/consultancy-page/consultancy-page.component';
-import { BannersModule } from '@elewa-website/elements/banners';
 
+import { AppHeaderModule } from '@elewa-website/elements/layout/header';
+import { TextsModule } from '@elewa-website/elements/layout/texts';
+import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
+
+import { ConsultancyRoutingModule } from './consultancy.routing';
+
+import { ConsultancyPageComponent } from './main/consultancy-page/consultancy-page.component';
+import { ConsultancyHeroSectionComponent } from './components/consultancy-hero-section/consultancy-hero-section.component';
+import { NgModule } from '@angular/core';
 
 @NgModule({
-  imports: [CommonModule, ConsultancyRoutingModule, BannersModule, MainPageModule ],
-  declarations: [ConsultancyPageComponent, ElewaConsultancyAboutOneComponent],
-  exports: [ElewaConsultancyAboutOneComponent,],
+  imports: [CommonModule, ConsultancyRoutingModule, AppHeaderModule, TextsModule, ButtonsModule],
+  declarations: [ConsultancyPageComponent, ConsultancyHeroSectionComponent],
+  exports: [ConsultancyPageComponent]
 })
 export class ConsultancyPageModule {}

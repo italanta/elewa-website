@@ -2,29 +2,32 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  background: inherit;
   transition: transform 0.2s ease;
+  min-height: 100vh;
 
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* normal row-order for the left alignment */
   &.left-image {
     flex-direction: row;
   }
 
-  /* Reverse the raw-order for the right alignment */
   &.right-image {
     flex-direction: row-reverse;
   }
 
-  //Text container + its responsivenss
+  @media (max-width: 768px) {
+    display: flex;
+
+    &.left-image,
+    &.right-image {
+      flex-direction: column;
+    }
+  }
+
   .text-container {
-    max-width: 500px;
+    max-width: 550px;
+    min-width: 400px;
     height: auto;
     text-align: auto;
 
