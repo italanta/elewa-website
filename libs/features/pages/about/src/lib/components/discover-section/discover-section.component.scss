@@ -6,9 +6,13 @@
   letter-spacing: 1.1;
   background-color: var(--elewa-website-homepage-background-color);
 
+  @media (max-width: 768px) {
+    min-height: 60vh;
+  }
+
   p {
     margin: 0;
-    font-size: 6.2rem;
+    font-size: clamp(3rem, 2.0261rem + 4.4522vw, 6.2rem);
     text-align: center;
     color: var(--elewa-website-color-primary-purple);
   }
