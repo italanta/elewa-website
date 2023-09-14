@@ -8,20 +8,30 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 2rem 0rem;
+    padding: 0rem 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 1.2957rem + 1.3913vw, 2.6rem);
+    }
 
     span {
-      line-height: 1.5;
+      font-size: clamp(1rem, 0.8478rem + 0.6957vw, 1.5rem);
     }
   }
 
   .list-wrapper {
     background: linear-gradient(
       to top,
-      var(--elewa-website-consult-section-background-color) 50%,
-      var(--elewa-website-color-primary-offwhite-bg) 50%
+      var(--elewa-website-consult-section-background-color) 53%,
+      var(--elewa-website-color-primary-offwhite-bg) 47%
     );
     padding: 6rem;
+    padding-top: 3rem;
     width: 100vw;
 
     @media (max-width: 1200px) {
