@@ -15,7 +15,7 @@ export const __highlightedImage: ImageAndText[] = [
       imageSrc: 'https://i.pinimg.com/564x/fb/e3/88/fbe388bd71911921de078cf763108cca.jpg',
       title: 'Image 1',
       maxWidth: '500',
-      visualisation: ImageVisualisation.Pill,
+      visualisation: ImageVisualisation.Window,
     },
     imagePosition: 'left',
   },
