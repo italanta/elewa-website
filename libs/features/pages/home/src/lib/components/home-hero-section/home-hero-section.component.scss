@@ -38,3 +38,21 @@
         left: 200px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .home-hero .hero-content .hero-text {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .home-hero .hero-content .hero-button {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .home-hero .hero-img {
+        position: relative;
+        bottom: 80px;
+        left: -70px;
+    }
+}
