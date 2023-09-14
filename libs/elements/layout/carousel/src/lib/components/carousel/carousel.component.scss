@@ -12,6 +12,10 @@
   @media (max-width: 900px) {
     width: calc(100vw - 2rem);
   }
+
+  @media (max-width: 490px) {
+    gap: 0.5rem;
+  }
 }
 
 .button-area {
