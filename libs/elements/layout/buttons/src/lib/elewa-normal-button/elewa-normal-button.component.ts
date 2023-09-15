@@ -1,26 +1,32 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ButtonData } from '@elewa-website/ui/buttons';
+import { Component, Input, OnInit } from '@angular/core';
+import { ButtonData } from '../../../../../../models/schema/ui/buttons/src/lib/button.interface';
 
 @Component({
-  selector: 'elewa-website-normal-button',
-  template: `
-    <button
-      [style.backgroundColor]="buttonData?.bgColor || defaultBgColor"
-      [style.color]="buttonData?.color || defaultColor"
-      (click)="handleClick()"
-    >
-      {{ buttonData?.text }}
-    </button>
-  `,
+  selector: 'elewa-website-elewa-normal-button',
+  templateUrl: './elewa-normal-button.component.html',
+  styleUrls: ['./elewa-normal-button.component.scss'],
 })
-export class ElewaNormalButtonComponent {
-  @Input() buttonData: ButtonData | undefined;
-  @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
+export class ElewaNormalButtonComponent implements OnInit {
+  @Input() buttonData!: ButtonData;
 
-  defaultBgColor = '#f0f0f0';
-  defaultColor = '#333';
+  ngOnInit(): void {
+    // Initialize properties here if needed
+    if (!this.buttonData) {
+      this.buttonData = {
+        text: 'Click me', 
+      };
+    }
+  }
 
-  handleClick(): void {
-    this.buttonClick.emit();
+  onMouseEnter() {
+    // Apply hover styles
+    this.buttonData.bgColor = this.buttonData.hoverBgColor;
+    this.buttonData.color = this.buttonData.hoverColor;
+  }
+
+  onMouseLeave() {
+    // Reset to original styles
+    this.buttonData.bgColor = this.buttonData.bgColor;
+    this.buttonData.color = this.buttonData.color;
   }
 }
