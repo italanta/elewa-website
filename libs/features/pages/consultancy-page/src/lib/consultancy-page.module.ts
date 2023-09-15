@@ -15,6 +15,7 @@ import { ConsultancyAboutTwoComponent } from './components/consultancy-about-two
 import { ConsultancyLearningServicesComponent } from './components/consultancy-learning-services-section/consultancy-learning-services-section.component';
 
 import { ConsultancyRoutingModule } from './consultancy.routing';
+import { ConsultancyProjectsSectionComponent } from './components/consultancy-projects-section/consultancy-projects-section.component';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { ConsultancyRoutingModule } from './consultancy.routing';
     ConsultancyAboutOneComponent,
     ConsultancyAboutTwoComponent,
     ConsultancyLearningServicesComponent,
+    ConsultancyProjectsSectionComponent,
   ],
   exports: [ConsultancyPageComponent],
 })

@@ -1,13 +1,27 @@
 .team-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
+  padding: 2rem 0 2rem 10rem;
+  background-color: var(--elewa-website-color-primary-offwhite-bg);
+  gap: 3rem;
 
-.heading {
-  font-size: 2.5rem;
-  font-weight: 300;
-  font: normal normal medium 62px/80px DM Sans;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: clamp(2rem, 1.1957rem + 1.3913vw, 3.5rem);
+    font-weight: bold;
+  }
+
+  @media (max-width: 1100px) {
+    min-height: 80vh;
+    padding: 2rem 0 2rem 4rem;
+  }
+
+  @media (max-width: 900px) {
+    min-height: 60vh;
+    padding: 2rem 0 2rem 2rem;
+  }
 }
