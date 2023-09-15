@@ -7,6 +7,11 @@
   gap: 2rem;
   padding: 2rem;
   transition: transform 0.2s ease;
+  min-height: 100vh;
+
+  @media (max-width: 490px) {
+    min-height: 70vh;
+  }
 
   @media (max-width: 768px) {
     display: flex;
@@ -33,7 +38,6 @@
     }
   }
 
-  //Text container + its responsivenss
   .text-container {
     max-width: 550px;
     min-width: 400px;

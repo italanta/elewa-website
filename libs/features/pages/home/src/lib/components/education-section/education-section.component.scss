@@ -4,6 +4,34 @@
     width: 800px;
 }
 
+.circles{
+    display: flex;
+    position: relative;
+    top: -200px;
+}
+
+.circle1{
+  width: 205px;
+  height: 200;
+  border-radius: 50%;
+  background: var(--elewa-website-consult-background);
+  mix-blend-mode: multiply;
+  opacity: 1;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.circle2 {
+    position: relative;
+    left: -80px;
+    width: 105px;
+    height: 206px;
+    width: 206px;
+    border-radius: 50%;
+    background: var(--elewa-website-consult-background);
+    mix-blend-mode: multiply;
+    opacity: 1;
+    transform: matrix(-1, 0, 0, -1, 0, 0);;
+}
+
 h1{
     top: 2880px;
 left: 259px;
@@ -31,22 +59,21 @@ opacity: 1;
 }
 
 .learning-d2{
-    /* Layout Properties */
+    /* Layout */
 top: 2917px;
 left: 391px;
 width: 272px;
 height: 270px;
-transform: matrix(1, 0, 0, 1, 0, 0);
-/* UI Properties */
-background: transparent linear-gradient(90deg, #DBC2F500 0%, #DBC2F5E6 100%) 0% 0% no-repeat padding-box;
 mix-blend-mode: multiply;
 opacity: 1;
 
 }
 
 .main1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
     height: fit-content;
+    height: 450px;
 }
 
 .section2{
@@ -56,11 +83,10 @@ opacity: 1;
 }
 
 .p1{
-    top: 3011px;
+top: 3011px;
 left: 1025px;
 width: 151px;
 height: 181px;
-/* UI Properties */
 background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
 mix-blend-mode: multiply;
 border-radius: 110px;
@@ -72,7 +98,6 @@ top: 3011px;
 left: 1025px;
 width: 151px;
 height: 281px;
-/* UI Properties */
 background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
 mix-blend-mode: multiply;
 border-radius: 110px;
@@ -86,7 +111,7 @@ margin-top: -100px;
 left: 1025px;
 width: 151px;
 height: 381px;
-/* UI Properties */
+
 background: transparent linear-gradient(180deg, #F2CF73 0%, #F2CF7300 100%) 0% 0% no-repeat padding-box;
 mix-blend-mode: multiply;
 border-radius: 110px;
@@ -102,15 +127,51 @@ margin-top: -200px;
 }
 
 .main2{
-    display: flex;
-  
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
 .texts1{
-    background-color: #FAE9E8;   
+    background-color: #FAE9E8; 
+    
+    
+    height: 400px;
+    padding-top: 100px;
 }
 
 .texts2{
     background-color: #FBE8D7;
-    height: 300px;
+}
+
+.oval1{
+position: relative;
+width: 158px;
+height: 250px;
+transform: matrix(0, 1, -1, 0, 0, 0);
+background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+border-radius: 110px;
+opacity: 1;
+}
+.oval2{
+    position: relative;
+    top: 80px;
+    left: -30px;
+    width: 158px;
+    height: 230px;
+    transform: matrix(0, 1, 1, 0, 0, 0);
+    background: transparent linear-gradient(180deg, #E69083 0%, #E6908300 100%) 0% 0% no-repeat padding-box;
+    border-radius: 110px;
+    opacity: 1;
+}
+
+.ovals{
+    display: flex;
+    position: relative;
+    left: 400px;
+    top: -150px;
+}
+@media only screen and (max-width: 1150px) {
+    .main{
+        display: block;
+    }
 }

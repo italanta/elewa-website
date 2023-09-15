@@ -1,22 +1,14 @@
-<div class="consult-section">
-    <elewa-website-header></elewa-website-header>
-    <div class="hero-section"> 
-        <div class="hero-text">
-            <elewa-website-elewa-text-section
-                [herotexts]="heroTexts"
-            >
-            </elewa-website-elewa-text-section>
-        </div>
-        <div class="slider-button">
-            <elewa-website-slider-button
-                [buttonData]="buttonData"
-                class="slider-button"
-            >    
-            </elewa-website-slider-button>
-        </div>
+<section class="consult-section">
+  <div class="consult-text-section">
+    <div class="hero-text">
+      <elewa-website-elewa-text-section [herotexts]="heroTexts"></elewa-website-elewa-text-section>
     </div>
-    <div class="eclipses">
-            <div class="circle"></div>
-            <div class="circle2"></div>
+    <div class="consult-button">
+      <elewa-website-slider-button [buttonData]="buttonData"></elewa-website-slider-button>
     </div>
-</div>
+  </div>
+  <div class="consult-eclipses">
+    <div class="circle circle--one"></div>
+    <div class="circle circle--two"></div>
+  </div>
+</section>

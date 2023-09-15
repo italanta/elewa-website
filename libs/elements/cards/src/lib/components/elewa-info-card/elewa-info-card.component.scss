@@ -2,8 +2,11 @@
   display: flex;
   gap: 3rem;
 
-  .icon-img {
-    height: 40px;
+  .info-card-icon {
+    .icon-img {
+      height: 40px;
+      width: 40px;
+    }
   }
 
 }
