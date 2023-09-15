@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./stacked-svg-component.component.scss'],
 })
 export class StackedSvgComponentComponent {
-  @Input() imageInput!: string;
+  @Input({ required: true }) imageSrc!: string;
 }
