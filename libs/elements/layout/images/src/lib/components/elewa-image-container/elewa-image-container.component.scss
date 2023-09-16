@@ -8,7 +8,9 @@
   }
 
   .image {
-    width: 450px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 
     @media (max-width: 1300px) {
       width: 350px;
@@ -32,7 +34,9 @@
 
 /* Forms a figure-like 8: Two pills placed on top of each other horizontally */
 .stacked {
-  height: 450px;
+  position: relative;
+  height: 500px !important;
+  width: 500px !important;
   clip-path: polygon(
     0% 0%,
     80% 0,
@@ -108,4 +112,12 @@
 .card {
   clip-path: inset(0 0 0 round 10px);
   max-height: 500px;
+}
+
+/** tablet responsiveness for home hero section */
+@media screen and (max-width: 768px) {
+  .stacked {
+    height: 280px !important;
+    width: 280px !important;
+  }
 }
