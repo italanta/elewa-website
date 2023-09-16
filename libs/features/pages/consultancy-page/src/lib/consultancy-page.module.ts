@@ -9,11 +9,13 @@ import { CardsModule } from '@elewa-website/elements/cards';
 import { ButtonsModule } from '@elewa-website/elements/layout/buttons';
 
 import { ConsultancyPageComponent } from './main/consultancy-page/consultancy-page.component';
-import { ConsultancyLearningServicesComponent } from './components/consultancy-learning-services-section/consultancy-learning-services-section.component';
 import { ConsultancyHeroSectionComponent } from './components/consultancy-hero-section/consultancy-hero-section.component';
 import { ConsultancyAboutOneComponent } from './components/consultancy-about-one/consultancy-about-one.component';
+import { ConsultancyAboutTwoComponent } from './components/consultancy-about-two/consultancy-about-two.component';
+import { ConsultancyLearningServicesComponent } from './components/consultancy-learning-services-section/consultancy-learning-services-section.component';
 
 import { ConsultancyRoutingModule } from './consultancy.routing';
+import { ConsultancyProjectsSectionComponent } from './components/consultancy-projects-section/consultancy-projects-section.component';
 
 @NgModule({
   imports: [
@@ -30,7 +32,9 @@ import { ConsultancyRoutingModule } from './consultancy.routing';
     ConsultancyPageComponent,
     ConsultancyHeroSectionComponent,
     ConsultancyAboutOneComponent,
+    ConsultancyAboutTwoComponent,
     ConsultancyLearningServicesComponent,
+    ConsultancyProjectsSectionComponent,
   ],
   exports: [ConsultancyPageComponent],
 })

@@ -1,6 +1,7 @@
 .image-text-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -8,20 +9,32 @@
   transition: transform 0.2s ease;
   min-height: 100vh;
 
-  &.left-image {
-    flex-direction: row;
-  }
-
-  &.right-image {
-    flex-direction: row-reverse;
+  @media (max-width: 490px) {
+    min-height: 70vh;
   }
 
   @media (max-width: 768px) {
     display: flex;
+    flex-direction: column;
+  }
 
-    &.left-image,
-    &.right-image {
-      flex-direction: column;
+  &.left-image {
+    .image-container {
+      grid-column: 1 / 2;
+    }
+
+    .text-container {
+      grid-column: 2 / 3;
+    }
+  }
+
+  &.right-image {
+    .image-container {
+      grid-column: 2 / 3;
+    }
+
+    .text-container {
+      grid-column: 1 / 2;
     }
   }
 
