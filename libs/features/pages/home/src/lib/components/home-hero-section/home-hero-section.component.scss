@@ -1,0 +1,58 @@
+.home-hero{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column; 
+        
+        .hero-text {
+            display: flex;
+            padding: 50px 0 0 50px;
+        }
+
+        .hero-button{
+            padding: 20px 0 0 60px;
+        }
+    }
+
+    .hero-img{
+        position: relative;
+        bottom: 400px;
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-hero .hero-content .hero-text {
+        padding: 10px 0 0 30px;
+    }
+
+    .home-hero .hero-content .hero-button {
+        padding: 10px 0 0 35px;
+    }
+
+    .home-hero .hero-img {
+        bottom: 230px;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-hero .hero-content .hero-text {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .home-hero .hero-content .hero-button {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .home-hero .hero-img {
+        position: relative;
+        bottom: 80px;
+        left: -70px;
+    }
+}

@@ -1,6 +1,8 @@
 export * from './lib/highlighted-project.data';
 export * from './lib/highlighted-news.data';
 export * from './lib/highlighted-sdg-list.data';
+export * from './lib/team-members-list.data'
+export * from './lib/menu-item.data'
 export * from './lib/team-members-list.data';
 export * from './lib/content-dev-about-section-second.data';
 export * from './lib/about-section-one.data';
@@ -14,5 +16,6 @@ export * from './lib/content-development-hero-section.data';
 export * from './lib/highlighted-sdg-list.data';
 export * from './lib/consultancy-hero.data';
 export * from './lib/content-dev-about.data';
+export * from './lib/home-hero-section.data'
 export * from './lib/home-overview-section.data';
 export * from './lib/highlighted-about.data';

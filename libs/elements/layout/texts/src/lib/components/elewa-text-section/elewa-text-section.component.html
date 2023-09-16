@@ -2,5 +2,6 @@
 <div class="text">
     <h1>{{ herotexts.title }}</h1>
     <h5>{{ herotexts.subtitle }}</h5>
-    <p>{{ herotexts.description }}</p>
+    <!-- create a break to match design for the text style  -->
+    <p class="description" [innerHTML]="herotexts.description"></p>
 </div>

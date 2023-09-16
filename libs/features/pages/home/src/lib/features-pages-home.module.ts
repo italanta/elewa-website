@@ -10,6 +10,7 @@ import { BannersModule } from '@elewa-website/elements/banners';
 import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
+import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 
 import { HomeRoutingModule } from './home.routing';
 import { OverviewSectionComponent } from './components/overview-section/overview-section.component';
@@ -28,6 +29,7 @@ import { OverviewSectionComponent } from './components/overview-section/overview
     NewsSectionComponent,
     ProjectsSectionComponent,
     OverviewSectionComponent,
+    HomeHeroSectionComponent
   ],
   exports: [HomePageComponent],
 })
