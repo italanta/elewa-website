@@ -1,21 +1,31 @@
 import { HeroText } from '@elewa-website/models/schema/ui/texts';
 import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
-import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
+import {
+  ImageConfig,
+  ImageVisualisation,
+} from '@elewa-website/models/schema/ui/images';
 
-export const homeHeroText: HeroText = {
-    title: 'Training at scale',
-    description: `Human-centered, meaningful and 
+const __homeHeroText: HeroText = {
+  title: 'Training at scale',
+  subtitle: `Human-centered, meaningful and 
     enjoyable`,
 };
 
-export const buttonData: SliderButtonData = {
-    text: "Unlock your Potential"
+const __homebuttonData: SliderButtonData = {
+  text: 'Unlock your Potential',
 };
 
-export const homeHeroImg: ImageConfig = {
-    imageSrc: 'https://i.pinimg.com/564x/d0/f4/f9/d0f4f9ccf345f6d8862c506c0b3a6378.jpg',
-    title: '',
-    visualisation: ImageVisualisation.Stacked,
-    maxWidth: ''
-}
+const __homeHeroImg: ImageConfig = {
+  imageSrc:
+    'https://images.unsplash.com/photo-1693924614710-fb0a4865cffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+  title: '',
+  visualisation: ImageVisualisation.Stacked,
+  maxWidth: '',
+};
+
+export const __homeImageAndTextData = {
+  heroText: __homeHeroText,
+  buttonData: __homebuttonData,
+  image: __homeHeroImg,
+};
