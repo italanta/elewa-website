@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./window-svg-component.component.scss'],
 })
 export class WindowSvgComponentComponent {
-  @Input({ required: true}) imageSrc!: string;
+  @Input({ required: true }) imageSrc!: string;
 }
