@@ -10,6 +10,18 @@ export class HeaderComponent {
   backgroundColor!: string;
   isActive = false;
 
+  isMenuActive = false;
+
+  /**
+ * Toggles the active state of the menu.
+ * @param {Event} event - The event object.
+ */
+
+  toggleMenuActiveClass(event: any) {
+    event.preventDefault();
+    this.isMenuActive = !this.isMenuActive;
+  }
+
   constructor(private _route: Router) {
     this.backgroundColor = this.getBackgroundColor();
   }
