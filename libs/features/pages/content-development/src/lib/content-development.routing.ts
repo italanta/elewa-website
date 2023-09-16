@@ -13,4 +13,4 @@ export const ELEWA_CONTENT_DEVELOPMENT_ROUTES: Route[] = [
   imports: [RouterModule.forChild(ELEWA_CONTENT_DEVELOPMENT_ROUTES)],
   exports: [RouterModule]
 })
-export class ContentDevelopmentPageRoutingModule { }
+export class ContentDevPageRoutingModule { }

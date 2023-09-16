@@ -1,11 +1,11 @@
 <div class="sdg-card">
   <div class="inner-sdg-card">
     <div class="sdg-card-icon">
-      <i ngClass="{{cardsData.icon}}"></i>
+      <img src="{{ cardsData.icon }}" alt="{{ cardsData.title }}" />
     </div>
     <div class="sdg-card-content">
-      <h2 class="sdg-card-title">{{ cardsData.title }}</h2>
-      <p class="sdg-card-text">{{ cardsData.description }}</p>
+      <h4 class="sdg-card-title">{{ cardsData.title }}</h4>
+      <span class="sdg-card-text">{{ cardsData.description }}</span>
     </div>
   </div>
 </div>

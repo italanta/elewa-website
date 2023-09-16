@@ -1,12 +1,10 @@
 <div class="team-section">
+  <p class="heading">{{ 'ELEWA.PAGES.ABOUT.TEAM-MEMBER-SECTION.HEADING' | transloco }}</p>
   <div>
-    <p class="heading">{{ 'ELEWA.PAGES.ABOUT.TEAM-MEMBER-SECTION.HEADING' | transloco }}</p>
-    <div>
-      <elewa-website-carousel>
-        <div class="item" carouselItems *ngFor="let item of teamMember">
-          <elewa-website-team-member-card [teamMemberData]="item"></elewa-website-team-member-card>
-        </div>
-      </elewa-website-carousel>
-    </div>
+    <elewa-website-carousel>
+      <div class="item" carouselItems *ngFor="let item of teamMember">
+        <elewa-website-team-member-card [teamMemberData]="item"></elewa-website-team-member-card>
+      </div>
+    </elewa-website-carousel>
   </div>
 </div>

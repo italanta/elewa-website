@@ -1,10 +1,12 @@
-
 .info-card {
   display: flex;
   gap: 3rem;
 
-  .icon-img {
-    height: 40px;
+  .info-card-icon {
+    .icon-img {
+      height: 40px;
+      width: 40px;
+    }
   }
 }
 
@@ -12,10 +14,10 @@
   max-width: 410px;
 
   .info-card-title {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.1087rem + 0.4174vw, 1.5rem);
   }
-  
+
   .info-card-text {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1rem + 0vw, 1rem);
   }
 }
