@@ -6,20 +6,4 @@
   @media (max-width: 1200px) {
     justify-content: center;
   }
-
-  .image {
-    width: 450px;
-
-    @media (max-width: 1300px) {
-      width: 350px;
-    }
-
-    @media (max-width: 900px) {
-      width: 300px;
-    }
-
-    @media (max-width: 481px) {
-      width: 200px;
-    }
-  }
 }
