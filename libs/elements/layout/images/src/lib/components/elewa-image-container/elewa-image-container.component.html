@@ -1,5 +1,5 @@
 <div class="elewa-images">
-  <div [ngSwitch]="imageConfig.visualisation">
+  <div class="image" [ngSwitch]="imageConfig.visualisation">
     <ng-container *ngSwitchCase="imgVisualisation.Stacked">
       <elewa-website-stacked-svg-component [imageSrc]="imageConfig.imageSrc"></elewa-website-stacked-svg-component>
     </ng-container>
@@ -9,7 +9,7 @@
     </ng-container>
 
     <ng-container *ngSwitchCase="imgVisualisation.Card">
-      <elewa-website-stacked-svg-component [imageSrc]="imageConfig.imageSrc"></elewa-website-stacked-svg-component>
+      <elewa-website-card-svg-component [imageSrc]="imageConfig.imageSrc"></elewa-website-card-svg-component>
     </ng-container>
 
     <ng-container *ngSwitchCase="imgVisualisation.Window">
