@@ -53,13 +53,16 @@ export const ELEWA_WEBSITE_ROUTES: Route[] = [
         (m) => m.ConversationalLearningModule
       ),
   },
+
   {
     path: 'consultancy',
     loadChildren: () =>
       import('@elewa-website/features/pages/consultancy-page').then(
         (m) => m.ConsultancyPageModule
       ),
-  },  {
+  },
+
+  {
     path: 'booklets',
     loadChildren: () =>
       import('@elewa-website/features/pages/booklets-page').then(
