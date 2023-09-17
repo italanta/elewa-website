@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 
-import { HeaderComponent } from './components/header/header.component';
-import { HeaderMenuComponent } from './components/solutions/header-menu/header-menu.component';
-import { MenuItemComponent } from './components/solutions/menu-item/menu-item.component';
+import { HeaderComponent } from './main/header/header.component';
+import { HeaderMenuComponent } from './solutions/header-menu/header-menu.component';
+import { MenuItemComponent } from './solutions/menu-item/menu-item.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.component';
 
