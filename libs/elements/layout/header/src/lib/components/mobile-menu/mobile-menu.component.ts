@@ -11,10 +11,12 @@ export class MobileMenuComponent {
 
   isMobileMenuActive = false;
 
+  /** toggle the solutions menu state */
   toggleSolutionsMenu() {
     this.solutionsMenuStatus.emit(!this.isMenuActive);
   }
 
+  /** toggle the mobile menu state */
   toogleMobileMenu() {
     this.isMobileMenuActive = !this.isMobileMenuActive;
   }
