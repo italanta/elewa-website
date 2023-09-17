@@ -1,0 +1,107 @@
+.mobile-main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100vw;
+  position: absolute;
+  top: 2rem;
+  z-index: 4100;
+  cursor: pointer;
+
+  .hambuger {
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: var(--elewa-website-color-primary-black);
+      margin: 5px auto;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    &.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+
+.mobile-navbar {
+  position: absolute;
+  top: -200%;
+  z-index: 4000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+  min-width: 100vw;
+  transition: 0.5s ease;
+  background-color: var(--elewa-website-color-primary-mildwhite-bg);
+
+  &.active {
+    top: 0;
+  }
+}
+
+.logo img {
+  width: 7.5rem;
+  filter: brightness(0);
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    color: var(--elewa-website-color-primary-black);
+    font-family: 'DM Sans', sans-serif;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 30px;
+
+  &.active-menu {
+    .nav-links {
+      text-decoration: underline;
+    }
+  }
+
+  .nav-links {
+    i {
+      transition: 0.5s ease;
+    }
+
+    i.rotate {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.btn {
+  background: #2d2e52;
+  border-radius: 22px;
+  color: #ffffff;
+  width: 8.375rem;
+  padding: 0.7em;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}

@@ -23,6 +23,10 @@ export class HeaderComponent {
     this.isMenuActive = !this.isMenuActive;
   }
 
+  toggleMenuState(menuState: boolean) {
+    this.isMenuActive = menuState; 
+  }
+
   getBackgroundColor() {
     const url = this._route.url.slice(1);
 

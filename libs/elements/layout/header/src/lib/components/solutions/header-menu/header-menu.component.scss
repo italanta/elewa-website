@@ -4,9 +4,9 @@
   border-radius: 10px;
   top: -100%;
   left: 10rem;
-  z-index: 3000;
   width: calc(100vw - 20rem);
   transition: 0.5s ease;
+  z-index: 5000;
 
   &.menu-active {
     top: 6rem;

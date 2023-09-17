@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ToggleMenuDirective } from './directives/toggle-menu.directive';
 import { HeaderMenuComponent } from './components/solutions/header-menu/header-menu.component';
 import { MenuItemComponent } from './components/solutions/menu-item/menu-item.component';
+import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 
 @NgModule({
   imports: [CommonModule, TranslocoModule, RouterModule],
@@ -16,6 +17,7 @@ import { MenuItemComponent } from './components/solutions/menu-item/menu-item.co
     ToggleMenuDirective,
     HeaderMenuComponent,
     MenuItemComponent,
+    MobileMenuComponent,
   ],
   exports: [HeaderComponent],
 })

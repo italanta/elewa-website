@@ -10,6 +10,10 @@ header {
   @media (max-width: 900px) {
     padding: 0 2rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 0 0;
+  }
 }
 
 .navbar {
@@ -88,75 +92,4 @@ header {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
-}
-
-.btn-small-screen {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    max-width: 728px;
-  }
-
-  .hambuger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .btn-big-screen {
-    display: none;
-  }
-
-  .btn-small-screen {
-    display: inline-block;
-  }
-
-  .hambuger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hambuger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hambuger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-menu {
-    position: absolute;
-    left: -100%;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .nav-menu.active {
-    left: 0;
-    top: 5rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-item {
-    display: block;
-    margin: 0 0 2em 0;
-  }
-
-  .logo img {
-    width: 6.25rem;
-  }
-
-  .btn {
-    width: 7.188rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .navbar {
-    max-width: 320px;
-  }
-
-  .logo img {
-    width: 5rem;
-  }
 }

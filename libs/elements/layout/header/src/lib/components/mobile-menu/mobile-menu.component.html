@@ -1,0 +1,42 @@
+<div class="mobile-main-nav">
+  <div class="logo">
+    <a routerLink="/home">
+      <img src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png"
+        [alt]="'ELEWA-WEBSITE-HEADER.LOGO-ALT' | transloco" />
+    </a>
+  </div>
+
+  <div class="hambuger" [ngClass]="isMobileMenuActive ? 'active' : ''" (click)="toogleMobileMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</div>
+
+<div class="mobile-navbar" [ngClass]="isMobileMenuActive ? 'active' : ''">
+  <nav>
+    <ul class="nav-menu">
+      <li class="nav-item" [routerLinkActive]="'active-menu'">
+        <div class="nav-links" (click)="toggleSolutionsMenu()">{{ 'ELEWA-WEBSITE-HEADER.SOLUTIONS' | transloco }}
+          <i class="fa fa-chevron-down fa-xs" [ngClass]="isMenuActive ? 'rotate' : ''"></i>
+        </div>
+      </li>
+      <li class="nav-item" [routerLinkActive]="'active-menu'">
+        <a class="nav-links">{{ 'ELEWA-WEBSITE-HEADER.PROJECTS' | transloco }}</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="'active-menu'">
+        <a class="nav-links">{{ 'ELEWA-WEBSITE-HEADER.COMPANY' | transloco }}</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="'active-menu'">
+        <a class="nav-links">{{ 'ELEWA-WEBSITE-HEADER.NEWS' | transloco }}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <a routerLink="/contact">
+    <button class="btn btn-big-screen">
+      {{ 'ELEWA-WEBSITE-HEADER.CONTACT-US' | transloco }}
+    </button>
+  </a>
+
+</div>
