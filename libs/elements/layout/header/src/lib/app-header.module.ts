@@ -9,6 +9,7 @@ import { ToggleMenuDirective } from './directives/toggle-menu.directive';
 import { HeaderMenuComponent } from './components/solutions/header-menu/header-menu.component';
 import { MenuItemComponent } from './components/solutions/menu-item/menu-item.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
+import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.component';
 
 @NgModule({
   imports: [CommonModule, TranslocoModule, RouterModule],
@@ -18,6 +19,7 @@ import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.compon
     HeaderMenuComponent,
     MenuItemComponent,
     MobileMenuComponent,
+    DesktopMenuComponent,
   ],
   exports: [HeaderComponent],
 })
