@@ -27,33 +27,42 @@ header {
 }
 
 .nav-menu {
+  display: flex;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  a {
+    text-decoration: none;
+    color: var(--elewa-website-color-primary-black);
+    font-family: 'DM Sans', sans-serif;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .nav-item {
-  display: inline-block;
-  margin-right: 35px;
-}
+  cursor: pointer;
+  font-size: 13px;
 
-.nav-menu li:nth-child(4) {
-  margin-right: 0;
-}
+  &.active-menu {
+    .nav-links {
+      text-decoration: underline;
+    }
+  }
 
-.nav-menu a {
-  text-decoration: none;
-  color: var(--elewa-website-color-primary-black);
-  font-family: 'DM Sans', sans-serif;
-}
+  .nav-links {
+    i {
+      transition: 0.5s ease;
+    }
 
-.nav-item a:hover {
-  color: blue;
-}
-
-.nav-menu li:nth-child(1) {
-  font-weight: 700;
-  text-decoration: underline;
+    i.rotate {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .hambuger {

@@ -8,9 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   backgroundColor!: string;
-  isActive = false;
-
   isMenuActive = false;
+
+  constructor(private _route: Router) {
+    this.backgroundColor = this.getBackgroundColor();
+  }
 
   /**
    * Toggles the active state of the menu.
@@ -19,14 +21,6 @@ export class HeaderComponent {
   toggleMenuActiveClass(event: any) {
     event.preventDefault();
     this.isMenuActive = !this.isMenuActive;
-  }
-
-  constructor(private _route: Router) {
-    this.backgroundColor = this.getBackgroundColor();
-  }
-
-  toggleActiveClass(isActive: boolean) {
-    this.isActive = isActive;
   }
 
   getBackgroundColor() {
