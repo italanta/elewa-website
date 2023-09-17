@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-import { MenuItem } from '@elewa-website/models/schema/ui/header';
-import { __consultancyItem, __contentDevelopmentItem, __bookletsItem, __conversationalLearningItem } from '@elewa-website/data/sections';
+import {
+  __consultancyItem,
+  __contentDevelopmentItem,
+  __bookletsItem,
+  __conversationalLearningItem,
+} from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-header-menu',
@@ -9,10 +13,10 @@ import { __consultancyItem, __contentDevelopmentItem, __bookletsItem, __conversa
   styleUrls: ['./header-menu.component.scss'],
 })
 export class HeaderMenuComponent {
+  @Input({ required: true }) isMenuActive!: boolean;
 
-  consultancyItem = __consultancyItem
-  contentDevelopmentItem = __contentDevelopmentItem
-  bookletsItem = __bookletsItem
-  conversationalLearningItem = __conversationalLearningItem
-  
+  consultancyItem = __consultancyItem;
+  contentDevelopmentItem = __contentDevelopmentItem;
+  bookletsItem = __bookletsItem;
+  conversationalLearningItem = __conversationalLearningItem;
 }

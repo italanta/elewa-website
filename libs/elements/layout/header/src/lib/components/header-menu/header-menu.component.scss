@@ -1,37 +1,54 @@
-.menu-items{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1200px;
-    margin-inline: auto;
-    z-index: 50000000000000;
-    background-color: var(--elewa-website-color-primary-white);
+.menu-wrapper {
+  position: absolute;
+  background-color: var(--elewa-website-color-primary-white);
+  border-radius: 10px;
+  top: -100%;
+  left: 10rem;
+  z-index: 3000;
+  width: calc(100vw - 20rem);
+  transition: 0.5s ease;
 
+  &.menu-active {
+    top: 6rem;
+  }
 
-    .grid-item {
-        padding: 10px;
-    
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+  @media (max-width: 1100px) {
+    left: 4rem;
+    width: calc(100vw - 8rem);
+  }
+
+  @media (max-width: 900px) {
+    left: 2rem;
+    width: calc(100vw - 4rem);
+  }
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem;
+
+  @media (max-width: 481px) {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+
+  @media (min-width: 482px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item {
+    padding: 10px;
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
-
+  }
 }
 
-.active{
-    background: var(--elewa-website-header-active-link-background)
+.active {
+  background: var(--elewa-website-header-active-link-background);
+  border-radius: 10px;
 }
-
-/* Responsive styles for screens up to 481px */
-@media (max-width: 481px) {
-    .menu-items {
-        grid-template-columns: 1fr; /* Change to a single column layout */
-    }
-}
-
-@media (min-width: 482px) and (max-width: 768px) {
-    .menu-items {
-        grid-template-columns: repeat(2, 1fr); /* Change to two columns layout on bigger screen */
-    }
-}
-
