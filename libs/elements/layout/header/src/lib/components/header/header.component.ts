@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,22 +9,26 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   backgroundColor!: string;
   isMenuActive = false;
+  isSmallScreen = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(): void {
+    this.checkWindowSize();
+  }
 
   constructor(private _route: Router) {
     this.backgroundColor = this.getBackgroundColor();
+    this.checkWindowSize();
   }
 
-  /**
-   * Toggles the active state of the menu.
-   * @param {Event} event - The event object.
-   */
-  toggleMenuActiveClass(event: any) {
-    event.preventDefault();
-    this.isMenuActive = !this.isMenuActive;
+  /** check the window size */
+  checkWindowSize() {
+    this.isSmallScreen = window.innerWidth <= 768;
   }
 
-  toggleMenuState(menuState: boolean) {
-    this.isMenuActive = menuState; 
+  /** toggle the solutions menu state, called from child components*/
+  toggleSolutionsMenuState(menuState: boolean) {
+    this.isMenuActive = menuState;
   }
 
   getBackgroundColor() {
