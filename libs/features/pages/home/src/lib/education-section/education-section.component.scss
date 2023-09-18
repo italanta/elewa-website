@@ -1,0 +1,29 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 12px;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+.row-2 {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .row-1 {
+    display: block;
+  }
+  .row-2 {
+    display: block;
+  }
+}

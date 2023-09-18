@@ -1,0 +1,68 @@
+.education-background {
+  width: 756px;
+  height: 530px;
+  /* UI Properties */
+  background: #fae9e8 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+}
+
+.spheres {
+  //   display: flex;
+  //   gap: 30px;
+}
+
+.sphere-1 {
+  /* Layout Properties */
+  position: absolute;
+  top: 144px;
+  left: 367px;
+  width: 210px;
+  height: 161px;
+  //   transform: matrix(0, 1, -1, 0, 0, 0);
+  background: transparent linear-gradient(180deg, #e69083 0%, #e6908300 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 110px;
+  opacity: 1;
+}
+
+.sphere-2 {
+  position: absolute;
+  top: 247px;
+  left: 441px;
+  width: 298px;
+  height: 146px;
+  //   transform: matrix(0, -1, 1, 0, 0, 0);
+  background: transparent linear-gradient(180deg, #e69083 0%, #e6908300 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 110px;
+  opacity: 1;
+}
+
+.title {
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 36px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding: 195px 0px 0px 49px;
+}
+
+.description {
+  text-align: left;
+  font: normal normal normal 22px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  width: 441px;
+  padding-left: 49px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .education-background {
+    margin-top: 10px;
+  }
+}

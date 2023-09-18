@@ -1,0 +1,60 @@
+.education-background {
+  width: 486px;
+  height: 530px;
+  /* UI Properties */
+  background: #f4edfd 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+}
+
+.sphere-1 {
+  width: 272px;
+  height: 270px;
+  /* UI Properties */
+  background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
+    0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 232px;
+  left: 22px;
+  bottom: 28px;
+}
+
+.sphere-2 {
+  width: 272px;
+  height: 270px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
+    0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 232px;
+  right: 32px;
+  bottom: 28px;
+}
+
+.title {
+  width: 435px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 36px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding: 195px 0px 0px 50px;
+}
+
+.description {
+  text-align: left;
+  font: normal normal normal 22px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding-left: 50px;
+  width: 354px;
+}

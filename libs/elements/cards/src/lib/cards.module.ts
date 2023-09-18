@@ -13,6 +13,10 @@ import { ElewaPriceListComponent } from './components/elewa-price-list/elewa-pri
 import { ElewaSdgListComponent } from './components/elewa-sdg-list/elewa-sdg-list.component';
 import { ElewaSdgCardComponent } from './components/elewa-sdg-card/elewa-sdg-card.component';
 import { ProjectsListCarouselComponent } from './components/projects-list-carousel/projects-list-carousel.component';
+import { EducationCard1Component } from './components/elewa-education-section-card/education-card-1/education-card-1.component';
+import { EducationCard2Component } from './components/elewa-education-section-card/education-card-2/education-card-2.component';
+import { EducationCard3Component } from './components/elewa-education-section-card/education-card-3/education-card-3.component';
+import { EducationCard4Component } from './components/elewa-education-section-card/education-card-4/education-card-4.component';
 
 @NgModule({
   imports: [CommonModule, ButtonsModule, CarouselModule],
@@ -26,6 +30,10 @@ import { ProjectsListCarouselComponent } from './components/projects-list-carous
     ElewaSdgListComponent,
     ElewaSdgCardComponent,
     ProjectsListCarouselComponent,
+    EducationCard1Component,
+    EducationCard2Component,
+    EducationCard3Component,
+    EducationCard4Component,
   ],
   exports: [
     ElewaInfoCardComponent,
@@ -36,7 +44,11 @@ import { ProjectsListCarouselComponent } from './components/projects-list-carous
     ElewaPriceListComponent,
     ElewaSdgListComponent,
     ElewaSdgCardComponent,
-    ProjectsListCarouselComponent
+    ProjectsListCarouselComponent,
+    EducationCard1Component,
+    EducationCard2Component,
+    EducationCard3Component,
+    EducationCard4Component,
   ],
 })
 export class CardsModule {}

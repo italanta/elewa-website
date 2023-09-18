@@ -13,10 +13,12 @@ import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { OverviewSectionComponent } from './components/overview-section/overview-section.component';
+import { EducationSectionComponent } from './education-section/education-section.component';
+import { ReferenceImagesSectionComponent } from './components/reference-images-section/reference-images-section.component';
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 
 import { HomeRoutingModule } from './home.routing';
-import { ReferenceImagesSectionComponent } from './components/reference-images-section/reference-images-section.component';
+
 
 @NgModule({
   imports: [
@@ -35,6 +37,7 @@ import { ReferenceImagesSectionComponent } from './components/reference-images-s
     NewsSectionComponent,
     ProjectsSectionComponent,
     OverviewSectionComponent,
+    EducationSectionComponent,
     HomeHeroSectionComponent,
     ReferenceImagesSectionComponent,
   ],

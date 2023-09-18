@@ -1,0 +1,51 @@
+.education-background {
+  width: 486px;
+  height: 530px;
+  /* UI Properties */
+  background: #fbe8d7 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+}
+
+.sphere-1 {
+  width: 448px;
+  height: 196px;
+  /* UI Properties */
+  background: transparent linear-gradient(289deg, #f2ad69 0%, #f2ad6900 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 1;
+  position: absolute;
+  top: 333px;
+  left: 37px;
+  bottom: 0;
+  border-top-right-radius: 60px;
+}
+
+.title {
+  width: 435px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 36px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding: 195px 0px 0px 50px;
+}
+
+.description {
+  text-align: left;
+  font: normal normal normal 22px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding-left: 50px;
+  width: 354px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .education-background {
+    margin-top: 10px;
+  }
+}
