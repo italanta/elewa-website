@@ -45,6 +45,10 @@ import { EducationCard4Component } from './components/elewa-education-section-ca
     ElewaSdgListComponent,
     ElewaSdgCardComponent,
     ProjectsListCarouselComponent,
+    EducationCard1Component,
+    EducationCard2Component,
+    EducationCard3Component,
+    EducationCard4Component,
   ],
 })
 export class CardsModule {}

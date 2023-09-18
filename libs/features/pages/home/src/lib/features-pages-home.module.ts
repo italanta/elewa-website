@@ -5,7 +5,7 @@ import { CardsModule } from '@elewa-website/elements/cards';
 import { CarouselModule } from '@elewa-website/elements/layout/carousel';
 import { MainPageModule } from '@elewa-website/elements/layout/pages/main-page';
 import { BannersModule } from '@elewa-website/elements/banners';
-
+import { TextsModule } from '@elewa-website/elements/layout/texts';
 
 import { HomePageComponent } from './main/home/home-page.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
@@ -13,6 +13,8 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
 
 import { HomeRoutingModule } from './home.routing';
 import { OverviewSectionComponent } from './components/overview-section/overview-section.component';
+import { EducationSectionComponent } from './education-section/education-section.component';
+
 
 @NgModule({
   imports: [
@@ -22,12 +24,14 @@ import { OverviewSectionComponent } from './components/overview-section/overview
     CarouselModule,
     MainPageModule,
     BannersModule,
+    TextsModule,
   ],
   declarations: [
     HomePageComponent,
     NewsSectionComponent,
     ProjectsSectionComponent,
     OverviewSectionComponent,
+    EducationSectionComponent,
   ],
   exports: [HomePageComponent],
 })
