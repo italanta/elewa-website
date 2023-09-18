@@ -1,0 +1,84 @@
+.education-background {
+  width: 756px;
+  height: 530px;
+  /* UI Properties */
+  background: #fcf6e4 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+}
+
+.spheres {
+  display: flex;
+  gap: 30px;
+}
+
+.sphere-1 {
+  /* Layout Properties */
+  position: absolute;
+  top: 326px;
+  left: 310px;
+  width: 120px;
+  height: 120px;
+  /* UI Properties */
+  background: transparent linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 110px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.sphere-2 {
+  position: absolute;
+  top: 235px;
+  left: 441px;
+  width: 120px;
+  height: 272px;
+  background: transparent linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 110px;
+  opacity: 1;
+}
+
+.sphere-3 {
+  position: absolute;
+  top: 146px;
+  left: 592px;
+  width: 120px;
+  height: 361px;
+  /* UI Properties */
+  background: transparent linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 110px;
+  opacity: 1;
+}
+
+.title {
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 36px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding: 195px 0px 0px 49px;
+}
+
+.description {
+  text-align: left;
+  font: normal normal normal 22px/30px DM Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  width: 441px;
+  padding-left: 49px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .education-background {
+    margin-top: 10px;
+  }
+}
