@@ -6,31 +6,31 @@ const __highlightedSDGList: SDGCard[] = [
     title: 'Quality Education',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-book-open',
+    icon: 'assets/svgs/Quality education.svg',
   },
   {
     title: 'Reduced Inequalities',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-arrows-up-down-left-right',
+    icon: 'assets/svgs/Reduced inequalities.svg',
   },
   {
     title: 'Gender Equality',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-arrows-to-circle',
+    icon: 'assets/svgs/Gender equality.svg',
   },
   {
     title: 'Economic Growth',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-arrow-up-right-dots',
+    icon: 'assets/svgs/Economic growth.svg',
   },
   {
     title: 'Partnership For The Goals',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-check-double',
+    icon: 'assets/svgs/Partnership for the goals.svg',
   },
 ];
 

@@ -1,0 +1,42 @@
+.home-section {
+  display: grid;
+  justify-content: center;
+  background: var(--elewa-website-color-primary-offwhite-bg);
+  min-height: calc(100vh - 6rem);
+  padding: 4rem;
+
+  @media (max-width: 1200px) {
+    min-height: 70vh;
+  }
+
+  @media (max-width: 550px) {
+    padding: 2rem;
+  }
+}
+
+.home-hero-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem;
+  width: 80vw;
+
+  @media (max-width: 768px) {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.home-hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

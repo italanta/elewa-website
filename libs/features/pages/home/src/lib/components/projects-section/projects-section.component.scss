@@ -1,10 +1,18 @@
 .projects-container {
   background-color: var(--elewa-website-color-primary-offwhite-bg);
-  padding: 2rem 10rem;
+  padding: 2rem 0 2rem 10rem;
   display: grid;
   gap: 5rem;
 
   .title {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 1.1957rem + 1.3913vw, 2.5rem);
+  }
+
+  @media (max-width: 1100px) {
+    padding: 2rem 0 2rem  4rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 2rem 0 2rem  2rem;
   }
 }

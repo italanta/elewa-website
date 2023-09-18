@@ -1,0 +1,38 @@
+<div class="menu-items" [ngSwitch]="menuItem.title">
+
+    <div class="grid-item" *ngSwitchCase="'consultancy'">
+        <div class="cosultancy-design">
+            <div class="cosultancy-one"></div>
+            <div class="cosultancy-two"></div>
+        </div>
+        <h6>{{menuItem.title}}</h6>
+        <p>{{menuItem.description}}</p>
+    </div>
+
+    <div class="grid-item" *ngSwitchCase="'content development'">
+        <div class="content-development-design">
+            <div class="content-development-one"></div>
+            <div class="content-development-two"></div>
+            <div class="content-development-three"></div>
+        </div>
+        <h6>{{menuItem.title}}</h6>
+        <p>{{menuItem.description}}</p>
+    </div>
+
+    <div class="grid-item" *ngSwitchCase="'conversational Learning'">
+        <div class="conversational-Learning-design">
+            <div class="conversational-Learning-two"></div>
+            <div class="conversational-Learning-one"></div>
+        </div>
+        <h6>{{menuItem.title}}</h6>
+        <p>{{menuItem.description}}</p>
+    </div>
+
+    <div class="grid-item" *ngSwitchCase="'booklets'">
+        <div>
+            <div class="booklets-design"></div>
+        </div>
+        <h6>{{menuItem.title}}</h6>
+        <p>{{menuItem.description}}</p>
+    </div>
+</div>

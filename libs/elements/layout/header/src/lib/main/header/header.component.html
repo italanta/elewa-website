@@ -1,0 +1,13 @@
+<header [style.backgroundColor]="backgroundColor">
+  <div *ngIf="!isSmallScreen; else smallScreen">
+    <elewa-website-desktop-menu [isMenuActive]="isMenuActive" (solutionsMenuStatus)="toggleSolutionsMenuState($event)">
+    </elewa-website-desktop-menu>
+  </div>
+
+  <ng-template #smallScreen>
+    <elewa-website-mobile-menu [isMenuActive]="isMenuActive" (solutionsMenuStatus)="toggleSolutionsMenuState($event)">
+    </elewa-website-mobile-menu>
+  </ng-template>
+</header>
+
+<elewa-website-header-menu [isMenuActive]="isMenuActive"></elewa-website-header-menu>

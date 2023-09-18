@@ -1,8 +1,19 @@
 <div class="elewa-images">
-  <img 
-    class="image"
-    [src]="imageConfig.imageSrc"
-    [alt]="imageConfig.title" 
-    [ngClass]="getImageClass(imageConfig)"
-    />
+  <div [ngSwitch]="imageConfig.visualisation">
+    <ng-container *ngSwitchCase="imgVisualisation.Stacked">
+      <elewa-website-stacked-svg-component [imageSrc]="imageConfig.imageSrc"></elewa-website-stacked-svg-component>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="imgVisualisation.Pill">
+      <elewa-website-pill-svg-component [imageSrc]="imageConfig.imageSrc"></elewa-website-pill-svg-component>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="imgVisualisation.Card">
+      <elewa-website-card-svg-component [imageSrc]="imageConfig.imageSrc"></elewa-website-card-svg-component>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="imgVisualisation.Window">
+      <elewa-website-window-svg-component [imageSrc]="imageConfig.imageSrc"></elewa-website-window-svg-component>
+    </ng-container>
+  </div>
 </div>

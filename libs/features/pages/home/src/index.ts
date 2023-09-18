@@ -1,1 +1,1 @@
-export * from './lib/features-pages-home.module';
+export * from './lib/home.module';

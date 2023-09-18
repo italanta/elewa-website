@@ -12,6 +12,7 @@ export class ElewaImageContainerComponent {
    * It accepts one image input
    */
   @Input() imageConfig!: ImageConfig;
+  imgVisualisation = ImageVisualisation
 
   /**
    * Cases for Image visualisation to be used as classes in HTML and scss component files 

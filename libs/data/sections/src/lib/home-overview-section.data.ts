@@ -1,33 +1,25 @@
-import { ContentText } from "@elewa-website/models/schema/ui/texts";
-import { ImageConfig, ImageVisualisation } from "@elewa-website/models/schema/ui/images";
-import { ImageAndText } from "@elewa-website/models/schema/ui/image-and-text";
+import { ContentText } from '@elewa-website/models/schema/ui/texts';
+import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
+import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 
-// Content text data
-const __overviewContentText: ContentText =
-{
-  title: 'Firstline Training',
+const __overviewContentText: ContentText = {
+  title: 'From here to the world',
   descriptions: [
-    `
-      Our core expertise lies in training of first-line workers
-      We identify the "first-line" as any group of professionals that are
-      geographically spread...
-      `
-  ]
-}
+    'Getting thousands of people up to speed can be hard and expensive. But, it doesn’t have to be.',
+    'Elewa is an education partner which develops the kind of training that work at scale. This without losing track of what matters most, people!',
+    'Personalised, enjoyable and effective training solutions at scale. Technology enabled; Human powered.',
+  ],
+};
 
-// Image data
-const __overviewImageConfig: ImageConfig =
-{
-  imageSrc: 'https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',   // Add image URL
-  title: '',      // Add image title
-  visualisation: ImageVisualisation.Window, // You can set this to Stacked or any other value as needed
-  maxWidth: '803px',
-}
+const __overviewImageConfig: ImageConfig = {
+  title: '',
+  imageSrc:
+    'https://images.unsplash.com/photo-1602867741746-6df80f40b3f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80',
+  visualisation: ImageVisualisation.Window,
+};
 
-// Image and text data
-export const __overviewImageAndTextData: ImageAndText =
-{
+export const __overviewImageAndTextData: ImageAndText = {
   content: __overviewContentText,
   image: __overviewImageConfig,
   imagePosition: 'left',
-}
+};

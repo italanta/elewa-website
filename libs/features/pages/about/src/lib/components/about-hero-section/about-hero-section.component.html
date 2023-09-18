@@ -1,16 +1,10 @@
-<div class="about-hero-container">
-  <div class="about-hero-text">
-    <!-- import elewa-text section -->
-    <div class="text" *ngFor="let herotext of highlightedAboutItems">
-      <elewa-website-elewa-text-section
-        [herotexts]="herotext"
-      ></elewa-website-elewa-text-section>
+<section class="about-section">
+  <div class="about-hero-container">
+    <div class="about-hero-text">
+      <elewa-website-elewa-text-section [herotexts]="heroText"></elewa-website-elewa-text-section>
+    </div>
+    <div class="about-image">
+      <elewa-website-image-container [imageConfig]="image"></elewa-website-image-container>
     </div>
   </div>
-  <!-- Image -->
-  <div class="image">
-    <elewa-website-image-container
-      [imageConfig]="image"
-    ></elewa-website-image-container>
-  </div>
-</div>
+</section>

@@ -2,9 +2,8 @@
   <div class="news-section">
     <h2 class="section-title">News</h2>
 
-    <div *ngFor="let item of highlightedNews; let last = last">
+    <div class="item" *ngFor="let item of highlightedNews; let last = last">
       <elewa-website-elewa-news-item-card [item]="item"></elewa-website-elewa-news-item-card>
-      <hr class="news-item-separator" /> <!-- Separator is displayed after each item -->
     </div>
   </div>
 </section>

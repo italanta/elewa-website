@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,14 +8,27 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   backgroundColor!: string;
-  isActive = false;
+  isMenuActive = false;
+  isSmallScreen = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(): void {
+    this.checkWindowSize();
+  }
 
   constructor(private _route: Router) {
     this.backgroundColor = this.getBackgroundColor();
+    this.checkWindowSize();
   }
 
-  toggleActiveClass(isActive: boolean) {
-    this.isActive = isActive;
+  /** check the window size */
+  checkWindowSize() {
+    this.isSmallScreen = window.innerWidth <= 768;
+  }
+
+  /** toggle the solutions menu state, called from child components*/
+  toggleSolutionsMenuState(menuState: boolean) {
+    this.isMenuActive = menuState;
   }
 
   getBackgroundColor() {

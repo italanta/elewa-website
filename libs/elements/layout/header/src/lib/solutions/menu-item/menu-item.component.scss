@@ -1,0 +1,115 @@
+.grid-item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  h6 {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.booklets-design {
+  width: 24px;
+  height: 36px;
+  border-radius: 110px;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+  background: var(--elewa-website-header-item-booklets-design-background);
+}
+
+.conversational-Learning-design {
+  display: flex;
+
+  .conversational-Learning-one {
+    width: 24px;
+    height: 36px;
+    margin-top: 5px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    background: var(
+      --elewa-website-header-conversational-Learning-design-background
+    );
+    border-radius: 110px;
+    opacity: 1;
+  }
+  .conversational-Learning-two {
+    width: 24px;
+    height: 36px;
+    transform: matrix(0, 1, -1, 0, 0, 0);
+    background: var(
+      --elewa-website-header-conversational-Learning-design-background
+    );
+    border-radius: 110px;
+    opacity: 1;
+  }
+}
+
+.content-development-design {
+  display: flex;
+  gap: 5px;
+
+  .content-development-one {
+    width: 17px;
+    margin-top: auto;
+    height: 16px;
+    background: var(
+      --elewa-website-header-content-development-design-background
+    );
+    mix-blend-mode: multiply;
+    border-radius: 110px;
+  }
+
+  .content-development-two {
+    width: 17px;
+    margin-top: auto;
+    height: 25px;
+    background: var(
+      --elewa-website-header-content-development-design-background
+    );
+    mix-blend-mode: multiply;
+    border-radius: 110px;
+    opacity: 1;
+  }
+
+  .content-development-three {
+    width: 16px;
+    height: 33px;
+    margin-top: auto;
+    background: var(
+      --elewa-website-header-content-development-design-background
+    );
+    mix-blend-mode: multiply;
+    border-radius: 110px;
+    opacity: 1;
+  }
+}
+
+.cosultancy-design {
+  display: flex;
+  height: 33px;
+
+  .cosultancy-one {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: var(--elewa-website-header-cosultancy-design-background);
+    mix-blend-mode: multiply;
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .cosultancy-two {
+    position: absolute;
+    width: 32px;
+    margin-left: 20px;
+    height: 32px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    background: var(--elewa-website-header-cosultancy-design-background);
+    mix-blend-mode: multiply;
+    opacity: 1;
+    border-radius: 50%;
+  }
+}

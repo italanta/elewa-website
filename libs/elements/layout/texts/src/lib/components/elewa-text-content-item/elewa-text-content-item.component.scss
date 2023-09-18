@@ -1,8 +1,7 @@
 .elewa-content {
-  padding: 20px;
 
   h3 {
-    font-size: 30px;
+    font-size: clamp(1.2rem, 1.1087rem + 0.4174vw, 1.5rem);
     padding: 1.5rem 0;
   }
 
@@ -14,6 +13,10 @@
 
     li {
       font-size: 20px;
+
+      @media (max-width: 469px) {
+        font-size: 1rem;
+      }
     }
   }
 }

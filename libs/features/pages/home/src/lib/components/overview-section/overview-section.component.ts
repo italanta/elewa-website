@@ -8,7 +8,5 @@ import { __overviewImageAndTextData } from '@elewa-website/data/sections';
   styleUrls: ['./overview-section.component.scss'],
 })
 export class OverviewSectionComponent {
-  // imported data
   imageAndTextData = __overviewImageAndTextData;
-
 }
