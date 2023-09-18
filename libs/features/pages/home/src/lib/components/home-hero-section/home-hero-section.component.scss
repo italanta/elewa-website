@@ -5,13 +5,12 @@
   min-height: calc(100vh - 6rem);
   padding: 4rem;
 
-  @media (max-width: 550px) {
-    min-height: 85vh;
-    padding: 2rem;
+  @media (max-width: 1200px) {
+    min-height: 70vh;
   }
 
-  @media (max-width: 493px) {
-    min-height: 70vh;
+  @media (max-width: 550px) {
+    padding: 2rem;
   }
 }
 

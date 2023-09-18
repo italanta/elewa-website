@@ -16,6 +16,7 @@ import { OverviewSectionComponent } from './components/overview-section/overview
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { ReferenceImagesSectionComponent } from './components/reference-images-section/reference-images-section.component';
 
 @NgModule({
   imports: [
@@ -27,14 +28,15 @@ import { HomeRoutingModule } from './home.routing';
     BannersModule,
     ButtonsModule,
     ImagesModule,
-    TextsModule
+    TextsModule,
   ],
   declarations: [
     HomePageComponent,
     NewsSectionComponent,
     ProjectsSectionComponent,
     OverviewSectionComponent,
-    HomeHeroSectionComponent
+    HomeHeroSectionComponent,
+    ReferenceImagesSectionComponent,
   ],
   exports: [HomePageComponent],
 })
