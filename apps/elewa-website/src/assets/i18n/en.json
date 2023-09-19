@@ -30,10 +30,8 @@
     },
     "ACTIVITIES": {
       "NAVIGATION": "Navigation",
-      "ABOUT-US": "About Us",
-      "SOCIAL-IMPACT": "Social Impact",
-      "INVEST": "Investments",
-      "NEWS": "News",
+      "ABOUT": "About",
+      "BLOGS": "Blogs",
       "CONTACT": "Contact"
     },
     "BRANDS": {
