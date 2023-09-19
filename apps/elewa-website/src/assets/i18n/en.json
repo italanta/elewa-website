@@ -8,16 +8,17 @@
       },
       "ABOUT": {
         "TEAM-MEMBER-SECTION": {
-            "HEADING": "These people make it happen"
-          }
+          "HEADING": "These people make it happen"
         }
+      }
     }
   },
   "ELEWA-WEBSITE-HEADER": {
     "SOLUTIONS": "Solutions",
     "PROJECTS": "Projects",
-    "COMPANY": "Company",
     "NEWS": "News",
+    "ABOUT": "About",
+    "BLOGS": "Blogs",
     "CONTACT-US": "Contact Us",
     "LOGO-ALT": "Elewa Company Logo"
   },
@@ -30,8 +31,9 @@
     },
     "ACTIVITIES": {
       "NAVIGATION": "Navigation",
-      "ABOUT": "About",
+      "ABOUT-US": "About",
       "BLOGS": "Blogs",
+      "NEWS": "News",
       "CONTACT": "Contact"
     },
     "BRANDS": {
