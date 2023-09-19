@@ -42,6 +42,8 @@ Thumbs.db
 
 # Ignore env
 .env
+.firebase
+
 package-lock.json
 environment.ts
 environment.prod.ts
