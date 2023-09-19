@@ -13,8 +13,7 @@ const __overviewContentText: ContentText = {
 
 const __overviewImageConfig: ImageConfig = {
   title: '',
-  imageSrc:
-    'https://images.unsplash.com/photo-1602867741746-6df80f40b3f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80',
+  imageSrc: 'assets/images/farm.png',
   visualisation: ImageVisualisation.Window,
 };
 

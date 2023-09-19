@@ -23,11 +23,9 @@
       <div class="footer-nav-wrapper activities">
         <h4>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.NAVIGATION' | transloco }}</h4>
         <div class="content">
-          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.ABOUT-US' | transloco }}</a>
-          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.SOCIAL-IMPACT' | transloco }}</a>
-          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.INVEST' | transloco }}</a>
-          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.NEWS' | transloco }}</a>
-          <a>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONTACT' | transloco }}</a>
+          <a routerLink="/about" >{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.ABOUT-US' | transloco }}</a>
+          <a href="https://blog.elewa.co.ke/" target="_blank">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.NEWS' | transloco }}</a>
+          <a routerLink="/contact">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONTACT' | transloco }}</a>
         </div>
       </div>
 
@@ -51,8 +49,7 @@
 
     <div class="footer-last">
       <div class="footer-imgs">
-        <img src="https://usercontent.one/wp/www.elewa.education/wp-content/uploads/2020/09/logo-2.0.png"
-          alt="elewa-website logo" class="logo" />
+        <img src="assets/images/elewa-logo.png" alt="elewa-website logo" class="logo" />
 
         <div class="icons">
           <img
