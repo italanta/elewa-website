@@ -1,68 +1,100 @@
 .education-background {
-  width: 756px;
-  height: 530px;
-  /* UI Properties */
+  width: auto;
+  height: 400px;
   background: #fae9e8 0% 0% no-repeat padding-box;
   border-radius: 10px;
-  opacity: 1;
   position: relative;
+  overflow: hidden;
 }
 
-.spheres {
-  //   display: flex;
-  //   gap: 30px;
-}
+.container {
+  .sphere {
+    position: absolute;
+    border-radius: 600px;
+    height: 100%;
+    width: 100%;
+    background: transparent
+      linear-gradient(
+        180deg,
+        var(--elewa-website-conversational-learning-bg-color-1) 0%,
+        var(--elewa-website-conversational-learning-bg-color-2) 100%
+      )
+      0% 0% no-repeat padding-box;
 
-.sphere-1 {
-  /* Layout Properties */
-  position: absolute;
-  top: 144px;
-  left: 367px;
-  width: 210px;
-  height: 161px;
-  //   transform: matrix(0, 1, -1, 0, 0, 0);
-  background: transparent linear-gradient(180deg, #e69083 0%, #e6908300 100%) 0%
-    0% no-repeat padding-box;
-  border-radius: 110px;
-  opacity: 1;
-}
+    &--one {
+      top: 70%;
+      left: 35vw;
+      transform: translate(-50%, -50%) matrix(0, -1, 1, 0, 0, 0);
+      width: 150px;
+      height: 260px;
 
-.sphere-2 {
-  position: absolute;
-  top: 247px;
-  left: 441px;
-  width: 298px;
-  height: 146px;
-  //   transform: matrix(0, -1, 1, 0, 0, 0);
-  background: transparent linear-gradient(180deg, #e69083 0%, #e6908300 100%) 0%
-    0% no-repeat padding-box;
-  border-radius: 110px;
-  opacity: 1;
+      @media (max-width: 768px) {
+        top: 70%;
+        left: 70vw;
+      }
+
+      @media (min-width: 768px) and (max-width: 880px) {
+        top: 80%;
+        left: 25vw;
+        height: 150px;
+        width: 100px;
+      }
+
+      @media (min-width: 880px) and (max-width: 1160px) {
+        top: 80%;
+        left: 25vw;
+        height: 200px;
+      }
+    }
+
+    &--two {
+      bottom: -20%;
+      right: 25%;
+      transform: translate(-50%, -50%) matrix(0, 1, -1, 0, 0, 0);
+      margin-top: 100px;
+      width: 150px;
+      height: 260px;
+
+      @media (max-width: 768px) {
+        bottom: -20%;
+        right: 15%;
+      }
+
+      @media (min-width: 769px) and (max-width: 880px) {
+        bottom: -5%;
+        right: 25%;
+        height: 150px;
+        width: 100px;
+      }
+
+      @media (min-width: 880px) and (max-width: 1160px) {
+        bottom: -5%;
+        right: 25%;
+        height: 200px;
+      }
+    }
+  }
 }
 
 .title {
-  /* UI Properties */
+  position: relative;
   text-align: left;
-  font: normal normal medium 36px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
   padding: 195px 0px 0px 49px;
+  z-index: 2000;
 }
 
 .description {
+  position: relative;
   text-align: left;
-  font: normal normal normal 22px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
-  opacity: 1;
-  width: 441px;
+  max-width: 441px;
   padding-left: 49px;
+  z-index: 2000;
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .education-background {
-    margin-top: 10px;
-  }
 }

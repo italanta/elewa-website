@@ -1,32 +1,42 @@
 .education-background {
-  width: 486px;
-  height: 530px;
+  width: auto;
+  height: 400px;
   /* UI Properties */
   background: #fbe8d7 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
   position: relative;
+  overflow: hidden;
 }
 
-.sphere-1 {
-  width: 448px;
-  height: 196px;
-  /* UI Properties */
-  background: transparent linear-gradient(289deg, #f2ad69 0%, #f2ad6900 100%) 0%
-    0% no-repeat padding-box;
-  opacity: 1;
+.container {
   position: absolute;
-  top: 333px;
-  left: 37px;
-  bottom: 0;
-  border-top-right-radius: 60px;
+  width: 95%;
+  height: 80%;
+  right: -3%;
+  bottom: -10%;
+
+  .curved-shape {
+    position: absolute;
+    background: transparent
+      linear-gradient(
+        289deg,
+        var(--elewa-website-booklets-hero-section-curve-color) 0%,
+        var(--elewa-website-booklets-hero-section-curve-color-fade-out) 100%
+      )
+      0% 0% no-repeat padding-box;
+    transform: rotateZ(-35deg);
+    border-radius: 100px;
+    left: 70px;
+    top: 170px;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .title {
-  width: 435px;
-  /* UI Properties */
+  max-width: 435px;
   text-align: left;
-  font: normal normal medium 36px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
@@ -35,12 +45,11 @@
 
 .description {
   text-align: left;
-  font: normal normal normal 22px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
   padding-left: 50px;
-  width: 354px;
+  max-width: 354px;
 }
 
 @media only screen and (max-width: 768px) {

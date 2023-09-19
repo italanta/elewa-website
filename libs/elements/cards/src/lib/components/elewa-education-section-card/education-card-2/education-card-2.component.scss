@@ -1,11 +1,12 @@
 .education-background {
-  width: 756px;
-  height: 530px;
+  width: auto;
+  height: 400px;
   /* UI Properties */
   background: #fcf6e4 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
   position: relative;
+  overflow: hidden;
 }
 
 .spheres {
@@ -59,7 +60,6 @@
 .title {
   /* UI Properties */
   text-align: left;
-  font: normal normal medium 36px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
@@ -68,11 +68,10 @@
 
 .description {
   text-align: left;
-  font: normal normal normal 22px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
-  width: 441px;
+  max-width: 441px;
   padding-left: 49px;
 }
 

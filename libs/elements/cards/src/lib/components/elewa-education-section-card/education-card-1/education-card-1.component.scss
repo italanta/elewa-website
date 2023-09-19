@@ -1,6 +1,6 @@
 .education-background {
-  width: 486px;
-  height: 530px;
+  width: auto;
+  height: 400px;
   /* UI Properties */
   background: #f4edfd 0% 0% no-repeat padding-box;
   border-radius: 10px;
@@ -8,41 +8,51 @@
   position: relative;
 }
 
-.sphere-1 {
-  width: 272px;
-  height: 270px;
+.sphere {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.sphere--one {
   /* UI Properties */
   background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
     0% 0% no-repeat padding-box;
   mix-blend-mode: multiply;
-  opacity: 1;
-  position: absolute;
   border-radius: 50%;
   top: 232px;
-  left: 22px;
+  left: 30%;
   bottom: 28px;
+
+  @media (max-width: 768px) {
+    top: 180px;
+  }
 }
 
-.sphere-2 {
-  width: 272px;
-  height: 270px;
+.sphere--two {
   transform: matrix(-1, 0, 0, -1, 0, 0);
   background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
     0% 0% no-repeat padding-box;
   mix-blend-mode: multiply;
-  opacity: 1;
-  position: absolute;
   border-radius: 50%;
   top: 232px;
-  right: 32px;
+  right: 20%;
   bottom: 28px;
+
+  @media (max-width: 768px) {
+    top: 180px;
+  }
 }
 
 .title {
-  width: 435px;
+  // width: 435px;
   /* UI Properties */
   text-align: left;
-  font: normal normal medium 36px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
@@ -51,10 +61,9 @@
 
 .description {
   text-align: left;
-  font: normal normal normal 22px/30px DM Sans;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
   padding-left: 50px;
-  width: 354px;
+  max-width: 354px;
 }
