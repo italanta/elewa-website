@@ -1,10 +1,18 @@
 .image-details-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 10rem;
+
+  @media (max-width: 1100px) {
+    padding: 2rem 4rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 2rem;
+  }
 
   @media (max-width: 490px) {
     min-height: 70vh;

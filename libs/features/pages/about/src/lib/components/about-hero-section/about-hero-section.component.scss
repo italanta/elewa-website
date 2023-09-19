@@ -3,16 +3,15 @@
   justify-content: center;
   background: var(--elewa-website-color-primary-offwhite-bg);
   min-height: calc(100vh - 6rem);
-  padding: 4rem;
+  padding: 4rem 10rem;
 
-  @media (max-width: 493px) {
+  @media (max-width: 1100px) {
     min-height: 70vh;
+    padding: 4rem;
   }
 
-  @media (max-width: 550px) {
-    min-height: 85vh;
+  @media (max-width: 900px) {
     padding: 2rem;
-    padding-top: 8rem;
   }
 
   @media (max-width: 768px) {
@@ -22,9 +21,10 @@
 
 .about-hero-container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
   gap: 2rem;
-  width: 80vw;
+  width: 100%;
 
   @media (max-width: 768px) {
     width: auto;

@@ -23,26 +23,23 @@
 
     &--one {
       top: 70%;
-      left: 35vw;
+      right: 5%;
       transform: translate(-50%, -50%) matrix(0, -1, 1, 0, 0, 0);
       width: 150px;
       height: 260px;
 
       @media (max-width: 768px) {
         top: 70%;
-        left: 70vw;
       }
 
       @media (min-width: 768px) and (max-width: 880px) {
         top: 80%;
-        left: 25vw;
         height: 150px;
         width: 100px;
       }
 
       @media (min-width: 880px) and (max-width: 1160px) {
         top: 80%;
-        left: 25vw;
         height: 200px;
       }
     }
