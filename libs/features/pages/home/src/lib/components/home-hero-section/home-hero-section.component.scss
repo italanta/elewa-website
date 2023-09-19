@@ -9,8 +9,13 @@
     min-height: 70vh;
   }
 
+  @media (max-width: 768px) {
+    padding-top: 8rem;
+  }
+
   @media (max-width: 550px) {
     padding: 2rem;
+    padding-top: 8rem;
   }
 }
 
