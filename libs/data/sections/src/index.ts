@@ -20,3 +20,4 @@ export * from './lib/home-hero-section.data'
 export * from './lib/home-overview-section.data';
 export * from './lib/highlighted-about.data';
 export * from './lib/education-section.data';
+export * from './lib/about-hero-section.data'

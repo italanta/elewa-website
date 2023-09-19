@@ -17,8 +17,7 @@ const __homebuttonData: SliderButtonData = {
 };
 
 const __homeHeroImg: ImageConfig = {
-  imageSrc:
-    'https://images.unsplash.com/photo-1693924614710-fb0a4865cffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+  imageSrc:'assets/images/Union.png',
   title: '',
   visualisation: ImageVisualisation.Stacked,
   maxWidth: '',
