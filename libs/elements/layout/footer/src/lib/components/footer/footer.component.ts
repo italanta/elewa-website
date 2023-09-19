@@ -17,7 +17,7 @@ export class FooterComponent {
     const url = this._route.url.slice(1);
 
     switch (url) {
-      case 'about':
+      case 'about/en':
         return '#dbc2f5';
       default:
         return '#f9f8f4';

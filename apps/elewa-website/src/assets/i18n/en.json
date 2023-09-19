@@ -34,7 +34,11 @@
       "ABOUT-US": "About",
       "BLOGS": "Blogs",
       "NEWS": "News",
-      "CONTACT": "Contact"
+      "CONTACT": "Contact",
+      "CONTENT-DEVELOPMENT": "Content development",
+      "CONSULTANCY": "Consultancy",
+      "CONVERSATIONAL-LEARNING": "Conversational learning",
+      "BOOKLETS": "Booklets"
     },
     "BRANDS": {
       "TITLE": "Brands",
