@@ -35,17 +35,17 @@ export class HeaderComponent {
     const url = this._route.url.slice(1);
 
     switch (url) {
-      case 'home':
+      case 'home/en':
         return '#f9f8f4';
-      case 'about':
+      case 'about/en':
         return '#f9f8f4';
-      case 'consultancy':
+      case 'consultancy/en':
         return '#dbc2f5';
-      case 'booklets':
+      case 'booklets/en':
         return '#FBE8D7';
-      case 'content-development':
+      case 'content-development/en':
         return '#FCF6E4';
-      case 'conversational-learning':
+      case 'conversational-learning/en':
         return '#FAE9E8';
       default:
         return '#f9f8f4';
