@@ -6,22 +6,22 @@ const cards: InfoCard[] = [
   {
     title: 'Course Design',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor',
+      'We conceive, plan, and create effective learning experiences.',
   },
   {
     title: 'Course Production',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor',
+      'We put together the awesome content we design for educational programs.',
   },
   {
     title: 'Course Operations',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor',
+      'We manage all logistics for the effective delivery of our designed content.',
   },
   {
     title: 'Course Evaluation',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor',
+      'We assess the effectiveness of our content and iterate to improve learning.',
   },
 ];
 

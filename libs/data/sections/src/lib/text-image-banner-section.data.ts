@@ -5,7 +5,8 @@ import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 const _section: ContentText = {
   title: 'Development of educational manuals and booklets',
   descriptions: [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'After thorough research, planning, identifying the learning objectives, and target audience, expert content developers craft clear, engaging, and informative text complemented by visuals.',
+    'Throughout this process, user-friendliness, relevance, and alignment with educational goals remain paramount. The end goal is an educational resource that simplifies complex concepts, making learning more accessible and effective for learners of all ages.'
   ],
 };
 

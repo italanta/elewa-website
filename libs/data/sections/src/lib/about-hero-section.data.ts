@@ -6,10 +6,10 @@ import {
 } from '@elewa-website/models/schema/ui/images';
 
 const __aboutHeroText: HeroText = {
-  title: 'Lorem ipsum dolorem sit eos',
+  title: 'Who are we?',
   subtitle: '',
-  description:
-    'Neque porro quisquam dolorem ipsum quia dolor sit Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam dolorem ipsum quia dolor sit Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam dolorem ipsum quia dolor.',
+  description: `Eight years ago, Elewa began turbocharging talent via <strong>blended learning</strong> (We train thousands of professionals using a dynamic mix of digital and in-person training.)
+   and <strong>unique apprenticeships</strong>(Our unique apprenticeship program transforms junior tech interns into senior developers).`,
 };
 
 const __aboutHeroImg: ImageConfig = {

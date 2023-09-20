@@ -15,7 +15,7 @@ export const __learningDevicesData: InfoCard[] = [
     },
     {
       title: 'Transformative Ed',
-      description: 'Education for the 21st Century. How do we teach for tomorrow? From Knowledge Graphs, to Key Areas and Connectivist learning, elewa contributed to learning theories over the last years that take ed forward.',
+      description: 'Education for the 21st Century. How do we teach for tomorrow? From Knowledge Graphs, to Key Areas and Connectivist learning, Elewa has made meaningful contributions to learning theories over the last years.',
     },
     {
       title: 'Basic Education',
@@ -27,10 +27,10 @@ export const __learningDevicesData: InfoCard[] = [
     },
     {
       title: 'Agriculture & Environment',
-      description: 'The foundation of society, we designed programs from sustainable land management, to climate change, pollution management and more.',
+      description: 'The foundation of society, we designed programs from sustainable land management, to climate change, pollution management, and more.',
     },
     {
       title: 'Evaluation',
-      description: 'Evaluation of eLearning programs. Monitoring of effectiveness....Todo',
+      description: 'Evaluation of eLearning programs. Monitoring the effectiveness of the training we deliver is key in iteration to ensure it remains dynamic and relevant.',
     },
   ];

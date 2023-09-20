@@ -5,31 +5,31 @@ const __highlightedSDGList: SDGCard[] = [
   {
     title: 'Quality Education',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
+      'Our training ensures inclusive, quality education, expands access, and enhances learning outcomes.',
     icon: 'assets/svgs/Quality education.svg',
   },
   {
     title: 'Reduced Inequalities',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
+      'We endeavour to reduce education inequalities, targeting access, outcomes, and resources for disadvantaged groups.',
     icon: 'assets/svgs/Reduced inequalities.svg',
   },
   {
     title: 'Gender Equality',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
+      'We strive to empower women and girls, becasue we understand it is vital for equitable, safe education.',
     icon: 'assets/svgs/Gender equality.svg',
   },
   {
     title: 'Economic Growth',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
+      'We seek to foster economic growth by upskilling the entering and current workforce to increase productivity.',
     icon: 'assets/svgs/Economic growth.svg',
   },
   {
     title: 'Partnership For The Goals',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
+      'We seek to forge global partnerships which are crucial for successful education, uniting governments, organizations, and sectors.',
     icon: 'assets/svgs/Partnership for the goals.svg',
   },
 ];

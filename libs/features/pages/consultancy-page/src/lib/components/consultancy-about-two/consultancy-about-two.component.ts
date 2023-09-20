@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
-import { __contentDevAboutTwo } from '@elewa-website/data/sections';
+import { __consultancyDevAboutTwo } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-consultancy-about-two',
@@ -9,7 +9,7 @@ import { __contentDevAboutTwo } from '@elewa-website/data/sections';
   styleUrls: ['./consultancy-about-two.component.scss'],
 })
 export class ConsultancyAboutTwoComponent {
-  imageData = __contentDevAboutTwo;
+  imageData = __consultancyDevAboutTwo;
 
   getLayoutClass(item: ImageAndText): string {
     return item.imagePosition === 'left' ? 'left-image' : 'right-image';

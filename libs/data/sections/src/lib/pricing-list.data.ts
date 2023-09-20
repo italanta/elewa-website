@@ -3,10 +3,10 @@ import { PriceItem } from "@elewa-website/models/schema/ui/cards";
 
 export const __highlightedPricingList: PriceItem[] = [
     {
-        title: "Elewa model",
+        title: "Elewa Bronze model",
         amount: 500,
-        subTitle: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        subTitle: "Design support",
+        description: "We empower you to design your own content by offering you 2 expert-led design workshops and marginal support while allowing you to leverage our LMS to deliver, host, and monitor your content.",
         amountColor:"#292a50",
         textColor:"#000000",
         backgroundColor:"#f4edfd",
@@ -15,10 +15,10 @@ export const __highlightedPricingList: PriceItem[] = [
         }
     },
     {
-        title: "Elewa model",
+        title: "Elewa Silver Model",
         amount: 1000,
-        subTitle: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        subTitle: "Co-design",
+        description: "Let's design amazing content together! This package offers you up to 3 collaborative design sessions in which to design, create and deploy content. Our LMS is the vehicle used for delivering and monitoring content progress.",
         amountColor:"#292a50",
         textColor:"#000000",
         backgroundColor:"#f4edfd",
@@ -27,10 +27,10 @@ export const __highlightedPricingList: PriceItem[] = [
         }
     },
     {
-        title: "Elewa model",
+        title: "Elewa Gold Model",
         amount: 1250,
-        subTitle: "Lorem ipsum",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        subTitle: "In-house content design",
+        description: "Relax and let us do all the heavy lifting! We will design, create, and deploy content on our LMS ensuring maximum alignment through weekly check-ins, and a rigorous content approval process. Our LMS deliver, and monitor performance.",
         amountColor:"#ffffff",
         textColor:"#ffffff",
         backgroundColor:"#292a50",
