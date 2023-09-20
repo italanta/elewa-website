@@ -41,6 +41,14 @@
   }
 
   .nav-links {
+    &.solutions {
+      position: relative;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      z-index: 20000;
+    }
+
     i {
       transition: 0.5s ease;
     }

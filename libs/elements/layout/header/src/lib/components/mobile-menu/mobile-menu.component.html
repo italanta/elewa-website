@@ -13,6 +13,7 @@
 </div>
 
 <div class="mobile-navbar" [ngClass]="isMobileMenuActive ? 'active' : ''">
+  <div class="overlay" (click)="toggleSolutionsMenu()" [ngClass]="isMenuActive ? 'active' : ''"></div>
   <nav>
     <ul class="nav-menu">
       <li class="nav-item" [routerLinkActive]="'active-menu'">

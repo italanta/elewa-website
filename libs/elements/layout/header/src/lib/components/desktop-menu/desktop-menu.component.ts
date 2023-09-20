@@ -9,9 +9,13 @@ export class DesktopMenuComponent {
   @Input() isMenuActive!: boolean;
   @Output() solutionsMenuStatus = new EventEmitter<boolean>();
 
-  /** toggle the solutions menu state */
-  toggleSolutionsMenu(event: any) {
-    event.preventDefault();
-    this.solutionsMenuStatus.emit(!this.isMenuActive);
+  /** open the solutions menu state */
+  openSolutionsMenu() {
+    this.solutionsMenuStatus.emit(true);
+  }
+
+  /** close the solutions menu state */
+  closeSolutionsMenu() {
+    this.solutionsMenuStatus.emit(false);
   }
 }
