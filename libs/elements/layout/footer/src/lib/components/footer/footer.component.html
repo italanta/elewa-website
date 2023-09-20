@@ -23,22 +23,22 @@
       <div class="footer-nav-wrapper activities">
         <h4>{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.NAVIGATION' | transloco }}</h4>
         <div class="content">
-          <a routerLink="/about" >{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.ABOUT-US' | transloco }}</a>
+          <a (click)="goToPage('/about')" >{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.ABOUT-US' | transloco }}</a>
           <a href="https://blog.elewa.co.ke/" target="_blank">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.NEWS' | transloco }}</a>
-          <a routerLink="/contact">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONTACT' | transloco }}</a>
-          <a routerLink="/conversational-learning">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONVERSATIONAL-LEARNING' | transloco }}</a>
-          <a routerLink="/content-development">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONTENT-DEVELOPMENT' | transloco }}</a>
-          <a routerLink="/consultancy">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONSULTANCY' | transloco }}</a>
-          <a routerLink="/booklets">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.BOOKLETS' | transloco }}</a>
+          <a (click)="goToPage('/contact')">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONTACT' | transloco }}</a>
+          <a (click)="goToPage('/conversational-learning')">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONVERSATIONAL-LEARNING' | transloco }}</a>
+          <a (click)="goToPage('/content-development')">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONTENT-DEVELOPMENT' | transloco }}</a>
+          <a (click)="goToPage('/consultancy')">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.CONSULTANCY' | transloco }}</a>
+          <a (click)="goToPage('/booklets')">{{ 'ELEWA_WEBSITE-FOOTER.ACTIVITIES.BOOKLETS' | transloco }}</a>
         </div>
       </div>
 
       <div class="footer-nav-wrapper brands">
         <h4>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.TITLE' | transloco }}</h4>
         <div class="content">
-          <p>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.ELEWA' | transloco }}</p>
-          <p>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.ITALANTA' | transloco }}</p>
-          <p>{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.VENTURE-LABS' | transloco }}</p>
+          <a href="https://elewa.be/" target="_blank">{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.ELEWA' | transloco }}</a>
+          <a href="https://italanta.net" target="_blank">{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.ITALANTA' | transloco }}</a>
+          <a href="https://elewa.be/venture-labs" target="_blank">{{ 'ELEWA_WEBSITE-FOOTER.BRANDS.VENTURE-LABS' | transloco }}</a>
         </div>
       </div>
 
@@ -60,9 +60,11 @@
             src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg"
             alt="" />
           <img
+          (click)="goToSocial('https://www.instagram.com/elewa_education/')"
             src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg"
             alt="" />
           <img
+            (click)="goToSocial('https://www.linkedin.com/company/elewa/')"
             src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg"
             alt="" />
         </div>

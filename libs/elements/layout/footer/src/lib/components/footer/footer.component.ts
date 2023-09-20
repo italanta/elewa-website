@@ -13,6 +13,14 @@ export class FooterComponent {
     this.backgroundColor = this.getBackgroundColor();
   }
 
+  goToPage(url: string) {
+    this._route.navigate([url]);
+  }
+
+  goToSocial(url: string) {
+    window.open(url, '_blank');
+  }
+
   getBackgroundColor() {
     const url = this._route.url.slice(1);
 
