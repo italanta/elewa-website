@@ -8,11 +8,11 @@
           {{ item.title }}
         </p>
         <p class="description">
-          {{ item.description }}
+          {{ trancateDescription(item.description) }}
         </p>
 
         <!-- read-more tag -->
-        <button class="read-more">
+        <button class="read-more" (click)="openBlogPost(item.link)">
           {{ item.buttonText }}
         </button>
       </div>
