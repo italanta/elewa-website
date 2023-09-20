@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--elewa-website-color-primary-offwhite-bg);
+}
+
 h1,
 h2,
 h3,
@@ -25,33 +29,38 @@ p {
   margin: 0;
 }
 
-
 @font-face {
-  font-family: "DMSans-Bold";
-  src: local("UtileDisplay-Regular"), url(./assets/fonts/DM_Sans/DMSans-Bold.ttf) format("truetype");
+  font-family: 'DMSans-Bold';
+  src: local('UtileDisplay-Regular'),
+    url(./assets/fonts/DM_Sans/DMSans-Bold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "DMSans-Bold-Italic";
-  src: local("UtileDisplay-Regular"), url(./assets/fonts/DM_Sans/DMSans-BoldItalic.ttf) format("truetype");
+  font-family: 'DMSans-Bold-Italic';
+  src: local('UtileDisplay-Regular'),
+    url(./assets/fonts/DM_Sans/DMSans-BoldItalic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "DMSans-Italic";
-  src: local("UtileDisplay-Regular"), url(./assets/fonts/DM_Sans/DMSans-Italic.ttf) format("truetype");
+  font-family: 'DMSans-Italic';
+  src: local('UtileDisplay-Regular'),
+    url(./assets/fonts/DM_Sans/DMSans-Italic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "DMSans-Medium";
-  src: local("UtileDisplay-Regular"), url(./assets/fonts/DM_Sans/DMSans-Medium.ttf) format("truetype");
+  font-family: 'DMSans-Medium';
+  src: local('UtileDisplay-Regular'),
+    url(./assets/fonts/DM_Sans/DMSans-Medium.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "DMSans-Medium-Italic";
-  src: local("UtileDisplay-Regular"), url(./assets/fonts/DM_Sans/DMSans-MediumItalic.ttf) format("truetype");
+  font-family: 'DMSans-Medium-Italic';
+  src: local('UtileDisplay-Regular'),
+    url(./assets/fonts/DM_Sans/DMSans-MediumItalic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "DMSans-Regular";
-  src: local("UtileDisplay-Regular"), url(./assets/fonts/DM_Sans/DMSans-Regular.ttf) format("truetype");
+  font-family: 'DMSans-Regular';
+  src: local('UtileDisplay-Regular'),
+    url(./assets/fonts/DM_Sans/DMSans-Regular.ttf) format('truetype');
 }
