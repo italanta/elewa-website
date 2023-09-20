@@ -2,16 +2,16 @@
   <h2 class="title">Our educational solutions</h2>
 
   <div class="cards">
-    <div class="one">
+    <div class="card one" (click)="openConsultancy()">
       <elewa-website-education-card-1 [educationItem]="educationSection"></elewa-website-education-card-1>
     </div>
-    <div class="two grid-span-2">
+    <div class="card two grid-span-2" (click)="openContentDev()">
       <elewa-website-education-card-2 [educationItem2]="educationSection2"></elewa-website-education-card-2>
     </div>
-    <div class="three grid-span-2">
+    <div class="card three grid-span-2" (click)="openConvLearning()">
       <elewa-website-education-card-3 [educationItem3]="educationSection3"></elewa-website-education-card-3>
     </div>
-    <div class="four">
+    <div class="card four" (click)="openBooklets()">
       <elewa-website-education-card-4 [educationItem4]="educationSection4"></elewa-website-education-card-4>
     </div>
   </div>
