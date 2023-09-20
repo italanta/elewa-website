@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import {
   __consultancyItem,
@@ -15,8 +15,15 @@ import {
 export class HeaderMenuComponent {
   @Input({ required: true }) isMenuActive!: boolean;
 
+  @Output() solutionsMenuStatus = new EventEmitter<boolean>();
+
   consultancyItem = __consultancyItem;
   contentDevelopmentItem = __contentDevelopmentItem;
   bookletsItem = __bookletsItem;
   conversationalLearningItem = __conversationalLearningItem;
+
+  /** close the solutions menu state */
+  closeSolutionsMenu() {
+    this.solutionsMenuStatus.emit(false);
+  }
 }

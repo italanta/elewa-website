@@ -28,7 +28,8 @@
   grid-template-columns: repeat(4, 1fr);
   max-width: 1200px;
   margin-inline: auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  gap: 1rem;
 
   @media (max-width: 481px) {
     grid-template-columns: 1fr; /* Change to a single column layout */
@@ -44,6 +45,11 @@
     a {
       color: inherit;
       text-decoration: none;
+    }
+
+    &:hover {
+      border-radius: 10px;
+      background: var(--elewa-website-header-active-link-background);
     }
   }
 }

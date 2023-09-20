@@ -10,4 +10,5 @@
   </ng-template>
 </header>
 
-<elewa-website-header-menu [isMenuActive]="isMenuActive"></elewa-website-header-menu>
+<elewa-website-header-menu [isMenuActive]="isMenuActive" (solutionsMenuStatus)="toggleSolutionsMenuState($event)">
+</elewa-website-header-menu>

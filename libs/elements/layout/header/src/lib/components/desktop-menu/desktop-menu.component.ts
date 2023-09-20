@@ -13,9 +13,4 @@ export class DesktopMenuComponent {
   openSolutionsMenu() {
     this.solutionsMenuStatus.emit(true);
   }
-
-  /** close the solutions menu state */
-  closeSolutionsMenu() {
-    this.solutionsMenuStatus.emit(false);
-  }
 }
