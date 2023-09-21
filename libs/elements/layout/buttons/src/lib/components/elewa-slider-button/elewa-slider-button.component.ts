@@ -9,7 +9,7 @@ import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
   styleUrls: ['./elewa-slider-button.component.scss'],
 })
 export class SliderButtonComponent {
-  constructor(private _router:Router){}
+  constructor(private _router: Router) {}
 
   /** initial values that checks if the button is hovered  */
   isHovered = false;
@@ -30,12 +30,27 @@ export class SliderButtonComponent {
   }
 
   /** function to be executed when the button is clicked */
-  onClick = () => {
-    // this.btnClickEvent.emit();
+  onClick() {
+    this.btnClickEvent.emit();
 
-    // temp fix
-    this._router.navigateByUrl('/contact');  
-  };
+    const { action } = this.buttonData;
+
+    if (!action) {
+      this._router.navigateByUrl('/contact');
+    } else if (this.isExternalLink(action)) {
+      window.open(action, '_blank');
+    } else {
+      this.navigateToInternalPage(action);
+    }
+  }
+
+  private isExternalLink(link: string) {
+    return link.startsWith('http');
+  }
+
+  private navigateToInternalPage(page: string) {
+    this._router.navigate([page]);
+  }
 
   /** toggles button background color when the button is hovered  */
   get btnBgColor() {

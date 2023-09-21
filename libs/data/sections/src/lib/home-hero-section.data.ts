@@ -14,6 +14,8 @@ const __homeHeroText: HeroText = {
 
 const __homebuttonData: SliderButtonData = {
   text: 'Unlock your Potential',
+  borderColor: 'black',
+  hoverBorderColor: 'white'
 };
 
 const __homeHeroImg: ImageConfig = {

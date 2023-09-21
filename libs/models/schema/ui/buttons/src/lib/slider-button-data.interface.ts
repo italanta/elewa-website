@@ -10,4 +10,7 @@ export interface SliderButtonData extends ButtonData {
   hoverBorderColor?: string;
   hoverIconColor?: string;
   hoverIconBackgroundColor?: string;
+
+  /** button click action */
+  action?: string;
 }
