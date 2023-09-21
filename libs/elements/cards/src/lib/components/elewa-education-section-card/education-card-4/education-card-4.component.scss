@@ -7,6 +7,15 @@
   opacity: 1;
   position: relative;
   overflow: hidden;
+
+  &:hover .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+  }
 }
 
 .container {
@@ -34,27 +43,12 @@
   }
 }
 
-.title {
-  max-width: 435px;
-  text-align: left;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
-  padding: 195px 0px 0px 50px;
-}
-
-.description {
-  text-align: left;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
-  padding-left: 50px;
-  max-width: 354px;
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .education-background {
-    margin-top: 10px;
-  }
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  max-width: 320px;
+  top: 40%;
+  left: 5%;
 }
