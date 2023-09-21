@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+
+  @media (max-width: 1100px) {
+    padding: 2rem 4rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 2rem 2rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h3 {
+    font-size: clamp(0.5rem, 0.3478rem + 0.6957vw, 1rem);
+  }
+
+  P {
+    font-size: clamp(1rem, 1.104rem + 0.896vw, 2rem);
+    font-weight: bold;
+    border-bottom: 5px solid #dbc2f5;
+  }
+}
