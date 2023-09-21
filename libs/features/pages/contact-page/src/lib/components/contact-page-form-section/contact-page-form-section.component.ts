@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 import { __buttonData } from '@elewa-website/data/sections';
 
@@ -13,21 +15,35 @@ export class ContactPageFormSectionComponent implements OnInit {
 
   buttonData = __buttonData;
 
+  constructor(private _gtmService: GoogleTagManagerService) {}
+
   ngOnInit(): void {
     this.buildContactForm();
   }
 
-  handleSubmit() {
-    this.contactForm.value;
-  }
-
   buildContactForm() {
     this.contactForm = new FormGroup({
-      name: new FormControl(''),
-      companyName: new FormControl(''),
-      email: new FormControl(''),
-      option: new FormControl(''),
-      message: new FormControl(''),
+      name: new FormControl('', [Validators.required]),
+      company: new FormControl(''),
+      email: new FormControl('', [Validators.required]),
+      message: new FormControl('', [Validators.required]),
     });
+  }
+
+  handleSubmit() {
+    const userFormData = this.contactForm.value;
+    this.createEmailDoc(userFormData);
+  }
+
+  createEmailDoc(contactData: any) {
+    const gtmTag = {
+      event: 'submit-contact-form',
+      eventCategory: 'Form Submitted',
+      eventAction: 'Contact Form',
+      pageName: '/contact',
+      subject: contactData.message,
+    };
+
+    return this._gtmService.pushTag(gtmTag);
   }
 }
