@@ -21,7 +21,7 @@ const __consultancyDevAboutOne: ImageAndText = {
 
 const __consultancyDevAboutTwo: ImageAndText = {
   content: {
-    title: 'Frist-line training',
+    title: 'First-line training',
     descriptions: [
       'Our core expertise lies in training of first-line workers. We identify the “first line” as any group of professionals that are geographically spread and that interface directly with clients or organisation infrastructure.',
       'Through a smart mix of digital and human training modalities, we are able to up-skill the first-line impactfully, continuously, and affordabley.',
