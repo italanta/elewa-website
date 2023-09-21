@@ -2,7 +2,7 @@ import { ImageAndDetails } from '@elewa-website/models/schema/ui/banners';
 import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 import { ImageVisualisation } from '@elewa-website/models/schema/ui/images';
 
-const __contentDevAboutOne: ImageAndText = {
+const __convLearningAboutOne: ImageAndText = {
   content: {
     title: 'People at the center',
     descriptions: [
@@ -12,7 +12,7 @@ const __contentDevAboutOne: ImageAndText = {
   },
   image: {
     imageSrc:
-      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277004/elewa-education-website/banner-images/MicrosoftTeams-image_11_depfrp.png',
+      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695276990/elewa-education-website/banner-images/MicrosoftTeams-image_9_epj9ah.png',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
@@ -20,7 +20,7 @@ const __contentDevAboutOne: ImageAndText = {
   imagePosition: 'left',
 };
 
-const __contentDevAboutTwo: ImageAndDetails = {
+const __convLearningAboutTwo: ImageAndDetails = {
   cards: [
     {
       title: 'Course Design',
@@ -45,7 +45,7 @@ const __contentDevAboutTwo: ImageAndDetails = {
   ],
   image: {
     imageSrc:
-      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277021/elewa-education-website/banner-images/camera_f258rr.png',
+      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277011/elewa-education-website/banner-images/MicrosoftTeams-image_13_kpt3rk.png',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
@@ -53,4 +53,4 @@ const __contentDevAboutTwo: ImageAndDetails = {
   imagePosition: 'right',
 };
 
-export { __contentDevAboutOne, __contentDevAboutTwo };
+export { __convLearningAboutOne, __convLearningAboutTwo };

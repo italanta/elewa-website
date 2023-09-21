@@ -1,5 +1,8 @@
 import { ContentText } from '@elewa-website/models/schema/ui/texts';
-import { ImageConfig, ImageVisualisation } from '@elewa-website/models/schema/ui/images';
+import {
+  ImageConfig,
+  ImageVisualisation,
+} from '@elewa-website/models/schema/ui/images';
 import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 
 const __overviewContentText: ContentText = {
@@ -13,7 +16,8 @@ const __overviewContentText: ContentText = {
 
 const __overviewImageConfig: ImageConfig = {
   title: '',
-  imageSrc: 'assets/images/farm.png',
+  imageSrc:
+    'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695278606/elewa-education-website/Home-And-About/gettyimages-98473330-2048x2048_2x_ozuvtq.png',
   visualisation: ImageVisualisation.Window,
 };
 

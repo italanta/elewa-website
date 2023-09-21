@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { __imageAndDetails } from '@elewa-website/data/sections';
+import { __convLearningAboutTwo } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-conv-about-section-two',
@@ -7,5 +7,5 @@ import { __imageAndDetails } from '@elewa-website/data/sections';
   styleUrls: ['./conv-about-section-two.component.scss'],
 })
 export class ConvAboutSectionTwoComponent {
-  imageAndDetails = __imageAndDetails
+  imageAndDetails = __convLearningAboutTwo
 }

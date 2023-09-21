@@ -9,6 +9,7 @@ import { ContactPageComponent } from './main/contact-page/contact-page.component
 import { ContactPageFormSectionComponent } from './components/contact-page-form-section/contact-page-form-section.component';
 
 import { ContactRoutingModule } from './contact-page.routing';
+import { ContactNumbersSectionComponent } from './components/contact-numbers-section/contact-numbers-section.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,11 @@ import { ContactRoutingModule } from './contact-page.routing';
     MainPageModule,
     ReactiveFormsModule,
   ],
-  declarations: [ContactPageComponent, ContactPageFormSectionComponent],
+  declarations: [
+    ContactPageComponent,
+    ContactPageFormSectionComponent,
+    ContactNumbersSectionComponent,
+  ],
   exports: [ContactPageComponent, ContactPageFormSectionComponent],
 })
 export class ContactPageModule {}

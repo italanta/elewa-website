@@ -12,7 +12,6 @@ export class ElewaImageAndDetailsBannerComponent {
 
   getLayoutClass(imagePosition: string): string {
     const val =  imagePosition === 'left' ? 'left-image' : 'right-image';
-    console.log(val)
     return val
   }
 }

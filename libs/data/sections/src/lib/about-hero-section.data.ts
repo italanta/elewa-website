@@ -13,7 +13,7 @@ const __aboutHeroText: HeroText = {
 };
 
 const __aboutHeroImg: ImageConfig = {
-  imageSrc: 'assets/images/Union.png',
+  imageSrc: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695278309/elewa-education-website/Home-And-About/Union_2_2x_d7smks.png',
   title: '',
   visualisation: ImageVisualisation.Stacked,
   maxWidth: '',

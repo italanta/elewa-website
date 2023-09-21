@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { __imageAndDetails } from '@elewa-website/data/sections';
+import { __bookletsAboutTwo } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-booklets-about-two-section',
@@ -8,5 +8,5 @@ import { __imageAndDetails } from '@elewa-website/data/sections';
   styleUrls: ['./booklets-about-two-section.component.scss'],
 })
 export class BookletsAboutTwoSectionComponent {
-  imageAndDetails = __imageAndDetails
+  imageAndDetails = __bookletsAboutTwo
 }

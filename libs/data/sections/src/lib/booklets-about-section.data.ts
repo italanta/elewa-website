@@ -2,17 +2,17 @@ import { ImageAndDetails } from '@elewa-website/models/schema/ui/banners';
 import { ImageAndText } from '@elewa-website/models/schema/ui/image-and-text';
 import { ImageVisualisation } from '@elewa-website/models/schema/ui/images';
 
-const __contentDevAboutOne: ImageAndText = {
+const __bookletsAboutOne: ImageAndText = {
   content: {
-    title: 'People at the center',
+    title: 'Development of educational manuals and booklets',
     descriptions: [
-      'People are the secret to successful education programs. Through in-depth research, we work with your organization at different levels to understand (“elewa”) how people live and learn.',
-      'Based on decades of research, this understanding allows us to co-create strong learning networks within your organization. Networks that can be re-used every time a training need arises; At a fraction of the cost of current solutions.',
+      'After thorough research, planning, identifying the learning objectives, and target audience, expert content developers craft clear, engaging, and informative text complemented by visuals.',
+      'Throughout this process, user-friendliness, relevance, and alignment with educational goals remain paramount. The end goal is an educational resource that simplifies complex concepts, making learning more accessible and effective for learners of all ages.',
     ],
   },
   image: {
     imageSrc:
-      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277004/elewa-education-website/banner-images/MicrosoftTeams-image_11_depfrp.png',
+      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277007/elewa-education-website/banner-images/MicrosoftTeams-image_12_joxqos.png',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
@@ -20,7 +20,7 @@ const __contentDevAboutOne: ImageAndText = {
   imagePosition: 'left',
 };
 
-const __contentDevAboutTwo: ImageAndDetails = {
+const __bookletsAboutTwo: ImageAndDetails = {
   cards: [
     {
       title: 'Course Design',
@@ -45,12 +45,11 @@ const __contentDevAboutTwo: ImageAndDetails = {
   ],
   image: {
     imageSrc:
-      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277021/elewa-education-website/banner-images/camera_f258rr.png',
+      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695276998/elewa-education-website/banner-images/MicrosoftTeams-image_10_pgflw2.png',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
   },
   imagePosition: 'right',
 };
-
-export { __contentDevAboutOne, __contentDevAboutTwo };
+export { __bookletsAboutOne, __bookletsAboutTwo };

@@ -11,7 +11,7 @@ const __consultancyDevAboutOne: ImageAndText = {
   },
   image: {
     imageSrc:
-      'https://images.unsplash.com/photo-1522896736962-5f80685ea3e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80',
+      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277016/elewa-education-website/banner-images/MicrosoftTeams-image_14_qnvp0c.png',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
@@ -29,7 +29,7 @@ const __consultancyDevAboutTwo: ImageAndText = {
   },
   image: {
     imageSrc:
-      'https://images.unsplash.com/photo-1522896736962-5f80685ea3e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80',
+      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1695277018/elewa-education-website/banner-images/MicrosoftTeams-image_15_h0hesg.png',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
