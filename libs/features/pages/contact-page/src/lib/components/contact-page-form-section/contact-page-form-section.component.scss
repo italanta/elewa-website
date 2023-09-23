@@ -29,7 +29,6 @@
 
 .left-side {
   width: 30%;
-  height: 100%;
   justify-content: space-between;
 
   @media screen and (max-width: 768px) {
@@ -49,6 +48,10 @@
 }
 
 .icons {
+  img {
+    cursor: pointer;
+  }
+
   justify-self: flex-end;
   @media screen and (max-width: 1200px) {
     padding-top: 9rem;

@@ -35,6 +35,10 @@ export class ContactPageFormSectionComponent implements OnInit {
     this.createEmailDoc(userFormData);
   }
 
+  goToSocial(url: string) {
+    window.open(url, '_blank');
+  }
+
   createEmailDoc(contactData: any) {
     const gtmTag = {
       event: 'submit-contact-form',
