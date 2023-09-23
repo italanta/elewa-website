@@ -42,6 +42,10 @@
   .grid-item {
     padding: 10px;
 
+    @media (max-width: 481px) {
+      padding: 0;
+    }
+
     a {
       color: inherit;
       text-decoration: none;
