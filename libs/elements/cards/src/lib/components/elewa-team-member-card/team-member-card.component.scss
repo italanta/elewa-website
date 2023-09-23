@@ -12,13 +12,7 @@
   height: 370px;
   object-fit: cover;
 
-
-  @media (max-width: 490px) {
-    width: 100px;
-    height: 140px;
-  }
-
-  @media (min-width: 490px) and (max-width: 630px) {
+  @media (max-width: 630px) {
     width: 180px;
     height: 240px;
   }
