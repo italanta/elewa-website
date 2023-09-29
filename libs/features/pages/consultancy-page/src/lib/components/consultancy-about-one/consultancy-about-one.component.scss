@@ -1,16 +1,3 @@
-/* styles */
-.image-text-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.section-wrapper {
   background: var(--elewa-website-color-primary-mildwhite-bg);
-}
-
-/* Media query for screens up to 768px wide (tablets) */
-@media (max-width: 768px) {
-  .image-text-banner {
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center; /* Center align text */
-  }
 }

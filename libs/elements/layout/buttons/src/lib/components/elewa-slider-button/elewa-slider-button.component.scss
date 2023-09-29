@@ -42,6 +42,7 @@
   white-space: nowrap;
   left: var(--elewa-website-slider-btn-text-position);
   transition: left 1s ease-in-out;
+  text-transform: capitalize;
 }
 
 .right-arrow {

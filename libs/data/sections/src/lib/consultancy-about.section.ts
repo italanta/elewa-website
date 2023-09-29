@@ -6,7 +6,7 @@ const __consultancyDevAboutOne: ImageAndText = {
     title: 'People at the center',
     descriptions: [
       'People are the secret to successful education programs. Through in-depth research, we work with your organization at different levels to understand (“elewa”) how people live and learn.',
-      'Based on decades of research, this understanding allows us to co-create strong learning networks within your organization. Networks that can be re-used every time a training need arises; at a fraction of the cost of current solutions.',
+      'Based on decades of research, this understanding allows us to co-create strong learning networks within your organization. Networks that can be re-used every time a training need arises, at a fraction of the cost of current solutions.',
     ],
   },
   image: {
@@ -24,7 +24,7 @@ const __consultancyDevAboutTwo: ImageAndText = {
     title: 'First-line training',
     descriptions: [
       'Our core expertise lies in training of first-line workers. We identify the “first line” as any group of professionals that are geographically spread and that interface directly with clients or organisation infrastructure.',
-      'Through a smart mix of digital and human training modalities, we are able to up-skill the first-line impactfully, continuously, and affordabley.',
+      'Through a smart mix of digital and human training modalities, we are able to up-skill the first-line impactfully, continuously, and affordably.',
     ],
   },
   image: {
