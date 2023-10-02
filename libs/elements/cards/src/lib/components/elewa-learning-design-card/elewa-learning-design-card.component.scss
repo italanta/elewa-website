@@ -1,0 +1,23 @@
+.learning-design-card {
+  display: flex;
+  gap: 3rem;
+
+  .learning-design-card-icon {
+    .icon-img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.learning-design-card-content {
+  max-width: 410px;
+
+  .learning-design-card-title {
+    font-size: clamp(1.2rem, 1.1087rem + 0.4174vw, 1.5rem);
+  }
+
+  .learning-design-card-text {
+    font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  }
+}

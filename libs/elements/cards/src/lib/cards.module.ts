@@ -17,6 +17,7 @@ import { EducationCard1Component } from './components/elewa-education-section-ca
 import { EducationCard2Component } from './components/elewa-education-section-card/education-card-2/education-card-2.component';
 import { EducationCard3Component } from './components/elewa-education-section-card/education-card-3/education-card-3.component';
 import { EducationCard4Component } from './components/elewa-education-section-card/education-card-4/education-card-4.component';
+import { ElewaLearningDesignCardComponent } from './components/elewa-learning-design-card/elewa-learning-design-card.component';
 
 @NgModule({
   imports: [CommonModule, ButtonsModule, CarouselModule],
@@ -34,6 +35,7 @@ import { EducationCard4Component } from './components/elewa-education-section-ca
     EducationCard2Component,
     EducationCard3Component,
     EducationCard4Component,
+    ElewaLearningDesignCardComponent,
   ],
   exports: [
     ElewaInfoCardComponent,
@@ -49,6 +51,7 @@ import { EducationCard4Component } from './components/elewa-education-section-ca
     EducationCard2Component,
     EducationCard3Component,
     EducationCard4Component,
+    ElewaLearningDesignCardComponent,
   ],
 })
 export class CardsModule {}
