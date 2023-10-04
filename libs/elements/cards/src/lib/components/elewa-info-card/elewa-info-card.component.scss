@@ -14,6 +14,7 @@
   max-width: 410px;
 
   .info-card-title {
+    text-transform: capitalize;
     font-size: clamp(1.2rem, 1.1087rem + 0.4174vw, 1.5rem);
   }
 
