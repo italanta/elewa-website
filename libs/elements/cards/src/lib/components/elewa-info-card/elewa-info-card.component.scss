@@ -2,10 +2,19 @@
   display: flex;
   gap: 3rem;
 
+  @media (max-width: 550px) {
+    gap: 2rem;
+  }
+
   .info-card-icon {
     .icon-img {
       height: 40px;
       width: 40px;
+
+      @media (max-width: 550px) {
+        height: 30px;
+        width: 30px;
+      }
     }
   }
 }
@@ -19,6 +28,6 @@
   }
 
   .info-card-text {
-    font-size: clamp(1rem, 1rem + 0vw, 1rem);
+    font-size: clamp(0.9rem, 0.872rem + 0.128vw, 1rem);
   }
 }
