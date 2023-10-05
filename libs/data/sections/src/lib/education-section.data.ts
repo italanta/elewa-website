@@ -2,7 +2,7 @@ import { EducationText } from '@elewa-website/models/schema/ui/texts';
 
 /** education-items mock data*/
 export const __highlightedEducationSection1: EducationText = {
-  title: 'Learning design',
+  title: 'Consultancy - Learning design',
   description:
     'We build training and coaching networks that can live and grow inside of your organisation.',
 };

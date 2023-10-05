@@ -8,8 +8,8 @@ import {
 const __aboutHeroText: HeroText = {
   title: 'Who are we?',
   subtitle: '',
-  description: `Eight years ago, Elewa began turbocharging talent via <strong>blended learning</strong> (We train thousands of professionals using a dynamic mix of digital and in-person training.)
-   and <strong>unique apprenticeships</strong>(Our unique apprenticeship program transforms junior tech interns into senior developers).`,
+  description: `Eight years ago, Elewa began turbocharging talent via <strong>blended learning</strong> (we train thousands of professionals using a dynamic mix of digital and in-person training)
+   and <strong>unique apprenticeships</strong> (our unique apprenticeship program transforms junior tech interns into senior developers).`,
 };
 
 const __aboutHeroImg: ImageConfig = {

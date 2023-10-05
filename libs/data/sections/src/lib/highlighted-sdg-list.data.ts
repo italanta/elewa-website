@@ -17,7 +17,7 @@ const __highlightedSDGList: SDGCard[] = [
   {
     title: 'Gender Equality',
     description:
-      'We strive to empower women and girls, becasue we understand it is vital for equitable, safe education.',
+      'We strive to empower women and girls, because we understand it is vital for equitable, safe education.',
     icon: 'assets/svgs/Gender equality.svg',
   },
   {
