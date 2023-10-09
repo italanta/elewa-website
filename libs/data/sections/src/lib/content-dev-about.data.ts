@@ -12,7 +12,7 @@ const __contentDevAboutOne: ImageAndText = {
   },
   image: {
     imageSrc:
-      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1696420569/elewa-education-website/banner-images/MicrosoftTeams-image_18_xl9lna.jpg',
+      'https://res.cloudinary.com/dyl3rncv3/image/upload/v1696831737/elewa-education-website/banner-images/content-two_hux8nb.png',
     title: 'Image 1',
     maxWidth: '500',
     visualisation: ImageVisualisation.Pill,
